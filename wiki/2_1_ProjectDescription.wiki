@@ -1,4 +1,4 @@
-#summary Detailed description of the project
+#summary Project description: What and whom this project is for
 
 = Introduction =
 

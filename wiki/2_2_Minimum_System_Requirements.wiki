@@ -1,4 +1,4 @@
-#summary What you need to get things running
+#summary Minimum system requirements: What you need to get things running
 
 = Introduction =
 

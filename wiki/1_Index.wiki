@@ -8,8 +8,8 @@
 ==Section B: Appendix==
 
 [Appendix_A_HowTos Appendix A: HowTos & Tutorials]
-===Appendix B===
-===Appendix C===
+[Appendix_B_How_We_Test Appendix B: How we test]
+
 
 
 

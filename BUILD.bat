@@ -27,7 +27,7 @@ xcopy "Slovakia" "XBMC-TV\Slovakia" /E /Q /I /Y
 xcopy "Sweden" "XBMC-TV\Sweden" /E /Q /I /Y
 xcopy "Switzerland" "XBMC-TV\Switzerland" /E /Q /I /Y
 xcopy "United Kingdom" "XBMC-TV\United Kingdom" /E /Q /I /Y
-# xcopy "USA" "XBMC-TV\United States" /E /Q /I /Y
+xcopy "United States" "XBMC-TV\United States" /E /Q /I /Y
 xcopy "Webcams" "XBMC-TV\Webcams" /E /Q /I /Y
 
 ECHO ------------------------------

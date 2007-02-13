@@ -29,6 +29,7 @@ xcopy "Romania" "XBMC-TV\Romania" /E /Q /I /Y
 xcopy "Russia" "XBMC-TV\Russia" /E /Q /I /Y
 xcopy "Slovakia" "XBMC-TV\Slovakia" /E /Q /I /Y
 xcopy "Slovenia" "XBMC-TV\Slovenia" /E /Q /I /Y
+xcopy "Spain" "XBMC-TV\Spain" /E /Q /I /Y
 xcopy "Sweden" "XBMC-TV\Sweden" /E /Q /I /Y
 xcopy "Switzerland" "XBMC-TV\Switzerland" /E /Q /I /Y
 xcopy "United Kingdom" "XBMC-TV\United Kingdom" /E /Q /I /Y

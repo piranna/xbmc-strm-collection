@@ -11,6 +11,7 @@ xcopy "Argentina" "XBMC-TV\Argentina" /E /Q /I /Y
 xcopy "Armenia" "XBMC-TV\Armenia" /E /Q /I /Y
 xcopy "Austria" "XBMC-TV\Austria" /E /Q /I /Y
 xcopy "Australia" "XBMC-TV\Australia" /E /Q /I /Y
+xcopy "Belgium" "XBMC-TV\Belgium" /E /Q /I /Y
 xcopy "Brazil" "XBMC-TV\Brazil" /E /Q /I /Y
 xcopy "Canada" "XBMC-TV\Canada" /E /Q /I /Y
 xcopy "Chile" "XBMC-TV\Chile" /E /Q /I /Y
@@ -25,6 +26,7 @@ xcopy "France" "XBMC-TV\France" /E /Q /I /Y
 xcopy "Germany" "XBMC-TV\Germany" /E /Q /I /Y
 xcopy "Honduras" "XBMC-TV\Honduras" /E /Q /I /Y
 xcopy "Hungary" "XBMC-TV\Hungary" /E /Q /I /Y
+xcopy "India" "XBMC-TV\India" /E /Q /I /Y
 xcopy "Italy" "XBMC-TV\Italy" /E /Q /I /Y
 xcopy "Latvia" "XBMC-TV\Latvia" /E /Q /I /Y
 xcopy "Lithuania" "XBMC-TV\Lithuania" /E /Q /I /Y
@@ -42,6 +44,7 @@ xcopy "Slovenia" "XBMC-TV\Slovenia" /E /Q /I /Y
 xcopy "Spain" "XBMC-TV\Spain" /E /Q /I /Y
 xcopy "Sweden" "XBMC-TV\Sweden" /E /Q /I /Y
 xcopy "Switzerland" "XBMC-TV\Switzerland" /E /Q /I /Y
+xcopy "Ukraine" "XBMC-TV\Ukraine" /E /Q /I /Y
 xcopy "United Kingdom" "XBMC-TV\United Kingdom" /E /Q /I /Y
 xcopy "United States" "XBMC-TV\United States" /E /Q /I /Y
 xcopy "Venezuela" "XBMC-TV\Venezuela" /E /Q /I /Y

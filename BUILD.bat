@@ -29,6 +29,7 @@ xcopy "Greece" "XBMC-TV\Greece" /E /Q /I /Y
 xcopy "Honduras" "XBMC-TV\Honduras" /E /Q /I /Y
 xcopy "Hungary" "XBMC-TV\Hungary" /E /Q /I /Y
 xcopy "India" "XBMC-TV\India" /E /Q /I /Y
+xcopy "Israel" "XBMC-TV\Israel" /E /Q /I /Y
 xcopy "Italy" "XBMC-TV\Italy" /E /Q /I /Y
 xcopy "Japan" "XBMC-TV\Japan" /E /Q /I /Y
 xcopy "Korea" "XBMC-TV\Korea" /E /Q /I /Y

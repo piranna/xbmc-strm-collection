@@ -26,6 +26,7 @@ xcopy "Estonia" "XBMC-TV\Estonia" /E /Q /I /Y
 xcopy "France" "XBMC-TV\France" /E /Q /I /Y
 xcopy "Germany" "XBMC-TV\Germany" /E /Q /I /Y
 xcopy "Greece" "XBMC-TV\Greece" /E /Q /I /Y
+xcopy "Haiti" "XBMC-TV\Haiti" /E /Q /I /Y
 xcopy "Honduras" "XBMC-TV\Honduras" /E /Q /I /Y
 xcopy "Hungary" "XBMC-TV\Hungary" /E /Q /I /Y
 xcopy "India" "XBMC-TV\India" /E /Q /I /Y
@@ -57,6 +58,7 @@ xcopy "Ukraine" "XBMC-TV\Ukraine" /E /Q /I /Y
 xcopy "United Kingdom" "XBMC-TV\United Kingdom" /E /Q /I /Y
 xcopy "United States" "XBMC-TV\United States" /E /Q /I /Y
 xcopy "Venezuela" "XBMC-TV\Venezuela" /E /Q /I /Y
+xcopy "Vietnam" "XBMC-TV\Vietnam" /E /Q /I /Y
 xcopy "Webcams" "XBMC-TV\Webcams" /E /Q /I /Y
 
 ECHO ------------------------------

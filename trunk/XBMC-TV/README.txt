@@ -11,6 +11,8 @@ Team Members:
 - Vanadium
 - QuazarXpress
 - Direttissimer
+- Cirusdervirus
+- Chi3f
 
 Find updates at http://www.xbmc-tv.com or in the official SVN at http://xbmc-strm-collection.googlecode.com/svn/trunk/
 

@@ -1,0 +1,2025 @@
+<!-- Media Home -->
+<!-- This XML was created by Team Blackbolt 2006 -->
+<window id="0">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<previouswindow>0</previouswindow>
+	<controls>
+		<control type="group">
+			<posx>70</posx>
+			<include>Background-animation-blades</include>
+		</control>
+		<control type="visualisation">
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [!Skin.HasSetting(backgroundvis) + Player.HasAudio]</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="videowindow">
+			<description>video preview window</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [!Skin.HasSetting(backgroundvideo) + Player.HasVideo]</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Blue Background static Alpha</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Skin.String(Media)</visible>
+			<texture>background-blue-alpha.png</texture>
+		</control>
+		<control type="image">
+			<description>Media Custom Background static</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<texture>-</texture>
+			<info>Skin.String(Media)</info>
+			<colordiffuse>D1FFFFFF</colordiffuse>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<!-- Begin Media Controls -->
+		<control type="image">
+			<description>Whitewash Glass Top Left</description>
+			<posx>140</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-left</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>156</posx>
+			<posy>0</posy>
+			<width>492</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Right</description>
+			<posx>648</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-right</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Left</description>
+			<posx>140</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-left</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>156</posx>
+			<posy>512</posy>
+			<width>492</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Right</description>
+			<posx>648</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-right</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(Media)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Left</description>
+			<posx>130</posx>
+			<posy>0</posy>
+			<width>32</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-left</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>162</posx>
+			<posy>0</posy>
+			<width>453</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Right</description>
+			<posx>615</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-right</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="rss">
+			<description>RSS Feeds</description>
+			<posx>150</posx>
+			<posy>8</posy>
+			<width>505</width>
+			<font>special13</font>
+			<scroll>true</scroll>
+			<urlset>1</urlset>
+			<titlecolor>E1ffffff</titlecolor>
+			<headlinecolor>A1FFFFFF</headlinecolor>
+			<include>TextcolorWhite</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Skin.HasSetting(rss-feeds)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="label">
+			<description>Media Label</description>
+			<posx>172</posx>
+			<posy>42</posy>
+			<include>19002</include>
+			<align>left</align>
+			<font>font18</font>
+			<include>shadow-black</include>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="label">
+			<description>Clock Label</description>
+			<posx>630</posx>
+			<posy>48</posy>
+			<info>System.Time</info>
+			<align>right</align>
+			<font>bold14</font>
+			<include>shadow-black</include>
+			<visible>Skin.HasSetting(BladeClock) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<!-- Begin GamerCard -->
+		<control type="group" id="4">
+			<posx>156</posx>
+			<posy>77</posy>
+			<control type="group">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Skin.HasSetting(media_card_sysinfo) | Skin.HasSetting(media_card_weather)] + ![Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<include>GamerCardButton</include>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(media_card_weather) + ![Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<include>WeatherCardButton</include>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(media_card_sysinfo) + ![Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<include>SysInfoCardButton</include>
+			</control>
+			<control type="group">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<include>NowPlayingCard</include>
+			</control>
+			<onup>10</onup>
+			<ondown>5</ondown>
+		</control>
+		<!-- End GamerCard -->
+		<control type="group" id="9000">
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<control type="image">
+				<description>MC360 Logo</description>
+				<posx>463</posx>
+				<posy>83</posy>
+				<width>128</width>
+				<height>128</height>
+				<texture>MC360_logo.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Logo Shadow</description>
+				<posx>413</posx>
+				<posy>186</posy>
+				<width>232</width>
+				<height>16</height>
+				<texture>home_logoshadow.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<!-- Begin Main Buttons -->
+			<control type="image">
+				<description>Button Seperator</description>
+				<posx>170</posx>
+				<posy>194</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(5)</visible>
+			</control>
+			<control type="image">
+				<description>Music Button Highlight</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-1a.png</texture>
+				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Music Highlight Shadow</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-1-shadow.png</texture>
+				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<include>button-shadow</include>
+			</control>
+			<control type="button" id="5">
+				<description>Music Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>180</posx>
+				<posy>200</posy>
+				<label>1211</label>
+				<onclick>ActivateWindow(5)</onclick>
+				<texturefocus>icon-music.png</texturefocus>
+				<texturenofocus>icon-music.png</texturenofocus>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>4</onup>
+				<ondown>6</ondown>
+			</control>
+			<control type="multiimage">
+				<description>Music Button Shine</description>
+				<posx>185</posx>
+				<posy>195</posy>
+				<width>220</width>
+				<height>38</height>
+				<include>Shine</include>
+				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>Music description Multiline</description>
+				<posx>425</posx>
+				<posy>205</posy>
+				<width>210</width>
+				<height>200</height>
+				<wrapmultiline>true</wrapmultiline>
+				<include>19091</include>
+				<font>font14</font>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Button Seperator</description>
+				<posx>170</posx>
+				<posy>234</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(5) | Control.HasFocus(6)]</visible>
+			</control>
+			<control type="image">
+				<description>Pictures Button Highlight</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-2a.png</texture>
+				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Pictures Highlight Shadow</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-2-shadow.png</texture>
+				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<include>button-shadow</include>
+			</control>
+			<control type="button" id="6">
+				<description>Pictures Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>180</posx>
+				<posy>240</posy>
+				<label>1213</label>
+				<onclick>ActivateWindow(2)</onclick>
+				<texturefocus>icon-pictures.png</texturefocus>
+				<texturenofocus>icon-pictures.png</texturenofocus>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>5</onup>
+				<ondown>7</ondown>
+			</control>
+			<control type="multiimage">
+				<description>Pictures Button Shine</description>
+				<posx>185</posx>
+				<posy>235</posy>
+				<width>220</width>
+				<height>38</height>
+				<include>Shine</include>
+				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>Pictures description Multiline</description>
+				<posx>425</posx>
+				<posy>205</posy>
+				<width>210</width>
+				<height>200</height>
+				<wrapmultiline>true</wrapmultiline>
+				<include>19092</include>
+				<font>font14</font>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="image">
+				<description>Button Seperator</description>
+				<posx>170</posx>
+				<posy>274</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(6) | Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74)]</visible>
+			</control>
+			
+			<!-- BEGIN LEVEL 3 BUTTONS (7) -->
+			
+			<control type="image">
+				<description>Button 3 Button Highlight</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-3a.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 3 Highlight Shadow</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-3-shadow.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74)]</visible>
+				<include>button-shadow</include>
+			</control>
+			
+			
+			<control type="group" id="7">
+				<description>Video Button</description>
+				<visible>!Skin.HasSetting(USE_tvandmovies)</visible>
+				<control type="button" id="70">
+					<description>Video Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>280</posy>
+					<include>19007</include>
+					<onclick>ActivateWindow(6)</onclick>
+					<texturefocus>icon-videos.png</texturefocus>
+					<texturenofocus>icon-videos.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>6</onup>
+					<ondown>8</ondown>
+				</control>
+				<control type="label">
+					<description>Videos description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<include>19093</include>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				</control>
+			</control>
+			
+			
+			<control type="group" id="7">
+				<description>Movie Overflow Button</description>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(72) + !Control.HasFocus(73) + Skin.HasSetting(USE_tvandmovies) + [[Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)] + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + System.HasNetwork]</visible>
+				<control type="button" id="71">
+					<description>Movies Overflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>280</posy>
+					<label>Movies</label>
+					<onclick>XBMC.ActivateWindow(myvideos,$INFO[Skin.String(movies_path)])</onclick>
+					<texturefocus>icon-videos.png</texturefocus>
+					<texturenofocus>icon-videos.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<onleft>1</onleft>
+					<onright>72</onright>
+					<onup>6</onup>
+					<ondown>8</ondown>
+				</control>
+			</control>
+			
+			
+			<control type="group" id="7">
+				<description>Regular Movie Button</description>
+				<visible>Skin.HasSetting(USE_tvandmovies) + ![[Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)] + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + System.HasNetwork]</visible>
+				<control type="button" id="74">
+					<description>Movies Regular Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>280</posy>
+					<label>Movies</label>
+					<onclick>XBMC.ActivateWindow(myvideos,$INFO[Skin.String(movies_path)])</onclick>
+					<texturefocus>icon-videos.png</texturefocus>
+					<texturenofocus>icon-videos.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>6</onup>
+					<ondown>8</ondown>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				</control>
+			</control>
+				
+				
+			<control type="group">
+				<description>On Right Movies and TV buttons</description>
+				<control type="button" id="72">
+					<description>TV Overflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>280</posy>
+					<label>TV Shows</label>
+					<onclick>XBMC.ActivateWindow(myvideos,$INFO[Skin.String(tvshows_path)])</onclick>
+					<texturefocus>defaultNetworkBig.png</texturefocus>
+					<texturenofocus>defaultNetworkBig.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Control.HasFocus(1) + !Control.HasFocus(2) + Control.HasFocus(72)</visible>
+					<onleft>1</onleft>
+					<onright>73</onright>
+					<onup>6</onup>
+					<ondown>8</ondown>
+				</control>
+				<control type="button" id="73">
+					<description>Movies Overflow Push Button 2</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>280</posy>
+					<label>Movies</label>
+					<onclick>XBMC.ActivateWindow(myvideos,$INFO[Skin.String(movies_path)])</onclick>
+					<texturefocus>icon-videos.png</texturefocus>
+					<texturenofocus>icon-videos.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Control.HasFocus(1) + !Control.HasFocus(2) + Control.HasFocus(73)</visible>
+					<onleft>1</onleft>
+					<onright>72</onright>
+					<onup>6</onup>
+					<ondown>8</ondown>
+				</control>
+				<control type="image">
+					<description>Right Arrow</description>
+					<posx>408</posx>
+					<posy>278</posy>
+					<width>16</width>
+					<height>32</height>
+					<texture>selectarrow-right.png</texture>
+					<visible>[Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73)] + !Control.HasFocus(2) + !Control.HasFocus(1)</visible>
+				</control>
+			</control>
+			
+			
+			<control type="multiimage">
+				<description>Button 3 Button Shine</description>
+				<posx>185</posx>
+				<posy>275</posy>
+				<width>220</width>
+				<height>38</height>
+				<include>Shine</include>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 3 Button Seperator</description>
+				<posx>170</posx>
+				<posy>313</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(70) + !Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84)</visible>
+			</control>
+				
+				<!-- END LEVEL 3 BUTTONS (7) -->
+				
+				<!-- BEGIN LEVEL 4 BUTTONS (8) -->
+			
+			<control type="image">
+				<description>Button 4 Button Highlight</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-4a.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(80) | Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Control.HasFocus(84)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 4 Highlight Shadow</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-4-shadow.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(80) | Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Control.HasFocus(84)]</visible>
+				<include>button-shadow</include>
+			</control>
+			
+			
+			<control type="group" id="8">
+				<visible>!Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(remote-control] + !Skin.HasSetting(USE_tvandmovies)]</visible>
+				<control type="button" id="80">
+					<description>Remote Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>	
+			</control>
+			
+			
+			<control type="group" id="8">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [[Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | !Skin.HasSetting(USE_tvandmovies)]</visible>
+				<control type="button" id="81">
+					<description>AMT Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<include>19036</include>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
+					<texturefocus>icon-appletrailers.png</texturefocus>
+					<texturenofocus>icon-appletrailers.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_AppleMovieTrailers)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>
+			</control>
+			
+			<control type="group" id="8">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_VideoMarketplace) + [[Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | !Skin.HasSetting(USE_tvandmovies)]</visible>
+				<control type="button" id="82">
+					<description>Marketplace Default Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<label>Video Marketplace</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.String(MarketplaceName) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>
+				<control type="button" id="82">
+					<description>Marketplace Custom Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<label>$INFO[Skin.String(MarketplaceName)]</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>Skin.String(MarketplaceName)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>
+			</control>
+				
+			<control type="group" id="8">
+				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + !Skin.HasSetting(USE_tvandmovies)</visible>
+				<control type="button" id="83">
+					<description>MCE Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<label>Media Center</label>
+					<onclick>XBMC.ActivateWindow(1997)</onclick>
+					<texturefocus>media_center_extender.png</texturefocus>
+					<texturenofocus>media_center_extender.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_MediaCenterExtender)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>
+			</control>
+			
+			<control type="group" id="8">
+				<visible>Skin.HasSetting(USE_tvandmovies) + ![Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)]]</visible>
+				<control type="button" id="84">
+					<description>TV Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>320</posy>
+					<label>TV Shows</label>
+					<onclick>XBMC.ActivateWindow(myvideos,$INFO[Skin.String(tvshows_path)])</onclick>
+					<texturefocus>defaultNetworkBig.png</texturefocus>
+					<texturenofocus>defaultNetworkBig.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_tvandmovies)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>7</onup>
+					<ondown>9</ondown>
+				</control>
+			</control>
+
+			
+			<control type="multiimage">
+				<description>Button 4 Button Shine</description>
+				<posx>185</posx>
+				<posy>315</posy>
+				<width>220</width>
+				<height>38</height>
+				<include>Shine</include>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(80) | Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Control.HasFocus(84)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 4 Seperator</description>
+				<posx>170</posx>
+				<posy>354</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84) + [!Skin.HasSetting(remote-control) | Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_MediaCenterExtender)]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+				
+				<!-- END LEVEL 4 BUTTONS (8) -->
+				
+				<!-- BEGIN LEVEL 5 BUTTONS (9) -->
+				
+			<control type="image">
+				<description>Button 5 Button Highlight</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-5a.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(96) | Control.HasFocus(97) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(990) | Control.HasFocus(991) | Control.HasFocus(992) | Control.HasFocus(993) | Control.HasFocus(994) | Control.HasFocus(995)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 5 Highlight Shadow</description>
+				<posx>147</posx>
+				<posy>180</posy>
+				<width>281</width>
+				<height>270</height>
+				<texture>homebutton-5-shadow.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(96) | Control.HasFocus(97) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(990) | Control.HasFocus(991) | Control.HasFocus(992) | Control.HasFocus(993) | Control.HasFocus(994) | Control.HasFocus(995)]</visible>
+				<include>button-shadow</include>
+			</control>
+			
+			
+			<control type="group" id="9">
+				<control type="button" id="90">
+					<description>Remote Standard Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[Skin.HasSetting(USE_tvandmovies) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace)] | [!Skin.HasSetting(USE_tvandmovies) + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_tvandmovies)]]]</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			
+			
+			<control type="group" id="9">
+				<visible>Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_tvandmovies) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]</visible>
+				<control type="button" id="94">
+					<description>AMT Regular Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>19036</include>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
+					<texturefocus>icon-appletrailers.png</texturefocus>
+					<texturenofocus>icon-appletrailers.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_tvandmovies) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="994">
+					<description>AMT Overflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>19036</include>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
+					<texturefocus>icon-appletrailers.png</texturefocus>
+					<texturenofocus>icon-appletrailers.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + !Control.HasFocus(91) + !Control.HasFocus(95) + Skin.HasSetting(USE_AppleMovieTrailers)</visible>
+					<onleft>1</onleft>
+					<onright>91</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			<control type="group">
+				<control type="button" id="91">
+					<description>Remote AMTOverflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Control.HasFocus(91) + Skin.HasSetting(USE_AppleMovieTrailers)</visible>
+					<onleft>1</onleft>
+					<onright>95</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="95">
+					<description>AMT Overflow Push Button 2</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>19036</include>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
+					<texturefocus>icon-appletrailers.png</texturefocus>
+					<texturenofocus>icon-appletrailers.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Control.HasFocus(95) + Skin.HasSetting(USE_AppleMovieTrailers)</visible>
+					<onleft>1</onleft>
+					<onright>91</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			
+			<control type="group" id="9">
+				<visible>Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_tvandmovies) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<control type="button" id="96">
+					<description>Marketplace Standard Default Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Video Marketplace</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.String(MarketplaceName) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="96">
+					<description>Marketplace Standard Custom Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>$INFO[Skin.String(MarketplaceName)]</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>Skin.String(MarketplaceName) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="993">
+					<description>Marketplace Overflow Default Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Video Marketplace</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.String(MarketplaceName)  + !Skin.HasSetting(remote-control) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(92) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>92</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="993">
+					<description>Marketplace Overflow Custom Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>$INFO[Skin.String(MarketplaceName)]</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>Skin.String(MarketplaceName) + !Skin.HasSetting(remote-control) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>93</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			
+			<control type="group">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<control type="button" id="98">
+					<description>Default Marketplace Overflow  Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Video Marketplace</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">Skin.HasSetting(USE_VideoMarketplace) + !Skin.String(MarketplaceName)  + !Skin.HasSetting(remote-control) + Control.HasFocus(98)</visible>
+					<onleft>1</onleft>
+					<onright>92</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="92">
+					<description>Remote MarketplaceDefaultOverflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Skin.HasSetting(remote-control) + Control.HasFocus(92) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>98</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="99">
+					<description>Marketplace Overflow Custom Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>$INFO[Skin.String(MarketplaceName)]</label>
+					<onclick>XBMC.ActivateWindow(1996)</onclick>
+					<texturefocus>videomarketplace_icon.png</texturefocus>
+					<texturenofocus>videomarketplace_icon.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">Skin.String(MarketplaceName) + !Skin.HasSetting(remote-control) + Control.HasFocus(99) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>93</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="93">
+					<description>Remote MarketplaceCustomOverflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Skin.HasSetting(remote-control) + Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace)</visible>
+					<onleft>1</onleft>
+					<onright>99</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			
+			<control type="group" id="9">
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_tvandmovies)]</visible>
+				<control type="button" id="990">
+					<description>MCE Standard Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Media Center</label>
+					<onclick>XBMC.ActivateWindow(1997)</onclick>
+					<texturefocus>media_center_extender.png</texturefocus>
+					<texturenofocus>media_center_extender.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_tvandmovies)]</visible>
+					<onleft>1</onleft>
+					<onright>2</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="995">
+					<description>MCE Overflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Media Center</label>
+					<onclick>XBMC.ActivateWindow(1997)</onclick>
+					<texturefocus>media_center_extender.png</texturefocus>
+					<texturenofocus>media_center_extender.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible>!Skin.HasSetting(remote-control) + !Control.HasFocus(991) + !Control.HasFocus(992) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork</visible>
+					<onleft>1</onleft>
+					<onright>992</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			<control type="group">
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork</visible>
+				<control type="button" id="991">
+					<description>MCE Overflow Push Button 2</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<label>Media Center</label>
+					<onclick>XBMC.ActivateWindow(1997)</onclick>
+					<texturefocus>media_center_extender.png</texturefocus>
+					<texturenofocus>media_center_extender.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Skin.HasSetting(remote-control) + Control.HasFocus(991) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork</visible>
+					<onleft>1</onleft>
+					<onright>992</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+				<control type="button" id="992">
+					<description>Remote MCEOverflow Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>180</posx>
+					<posy>360</posy>
+					<include>190071</include>
+					<onclick>XBMC.ActivateWindow(114)</onclick>
+					<texturefocus>icon-x360globe.png</texturefocus>
+					<texturenofocus>icon-x360globe.png</texturenofocus>
+					<pulseonselect>no</pulseonselect>
+					<visible allowhiddenfocus="true">!Skin.HasSetting(remote-control) + Control.HasFocus(992) + Skin.HasSetting(USE_MediaCenterExtender)</visible>
+					<onleft>1</onleft>
+					<onright>991</onright>
+					<onup>8</onup>
+					<ondown>10</ondown>
+				</control>
+			</control>
+			
+			
+			
+			<control type="multiimage">
+				<description>Button 5 Button Shine</description>
+				<posx>185</posx>
+				<posy>315</posy>
+				<width>220</width>
+				<height>38</height>
+				<include>Shine</include>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(96) | Control.HasFocus(97) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(990) | Control.HasFocus(991) | Control.HasFocus(992) | Control.HasFocus(993) | Control.HasFocus(994) | Control.HasFocus(995)]</visible>
+			</control>
+			<control type="image">
+				<description>Button 5 Seperator</description>
+				<posx>170</posx>
+				<posy>394</posy>
+				<width>235</width>
+				<height>1</height>
+				<texture>divider.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(993) + !Control.HasFocus(994) + !Control.HasFocus(995) + [[[!Skin.HasSetting(remote-control) + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_tvandmovies) | Skin.HasSetting(USE_MediaCenterExtender)]] | [[Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [Skin.HasSetting(USE_tvandmovies) | Skin.HasSetting(USE_MediaCenterExtender)]] | [Skin.HasSetting(USE_tvandmovies) + Skin.HasSetting(USE_MediaCenterExtender)]]]</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+			<control type="image">
+				<description>Right Arrow</description>
+				<posx>408</posx>
+				<posy>357</posy>
+				<width>16</width>
+				<height>32</height>
+				<texture>selectarrow-right.png</texture>
+				<visible>[Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(95) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(991) | Control.HasFocus(992) | Control.HasFocus(993) | Control.HasFocus(994) | Control.HasFocus(995)] + !Control.HasFocus(2) + !Control.HasFocus(1)</visible>
+			</control>
+			
+			<!-- END LEVEL 5 BUTTONS (9) -->
+			
+			<!-- BEGIN DESCRIPTION MULTILINES -->
+			
+			<control type="group">
+				<visible>!Skin.HasSetting(nodescriptions) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<control type="label">
+					<description>TV Shows description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>Watch TV Shows stored on your PC, CD, DVD or Xbox Hard Drive</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(72) | Control.HasFocus(84)</visible>
+				</control>
+				<control type="label">
+					<description>Movies description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>Watch Movies stored on your PC, CD, DVD or Xbox Hard Drive</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(71) | Control.HasFocus(73) | Control.HasFocus(74)</visible>
+				</control>
+				<control type="label">
+					<description>Remote description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<include>19150</include>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(80) | Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(992)</visible>
+					<animation effect="fade" time="100">WindowOpen</animation>
+				</control>
+				<control type="label">
+					<description>AMT description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<include>19096</include>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(81) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(994)</visible>
+					<animation effect="fade" time="100">WindowOpen</animation>
+				</control>
+				<control type="label">
+					<description>Marketplace description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>Get the latest in video and entertainment from XBMC Video Marketplace.</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(82) | Control.HasFocus(96) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(993)</visible>
+					<animation effect="fade" time="100">WindowOpen</animation>
+				</control>
+				<control type="label">
+					<description>Media Center Extender description multiline</description>
+					<posx>425</posx>
+					<posy>205</posy>
+					<width>210</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>Connect or set up Media Center Extender.&#10;&#10;* Live and recorded TV&#10;* On-demand movies&#10;* Music and photos</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>Control.HasFocus(83) | Control.HasFocus(990) | Control.HasFocus(991) | Control.HasFocus(995)</visible>
+					<animation effect="fade" time="100">WindowOpen</animation>
+				</control>
+			</control>
+			
+			<!-- END DESCRIPTION MULTILINES -->
+
+			<control type="button" id="10">
+				<description>DVD Launch Button Tray</description>
+				<posx>156</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>4</ondown>
+				<texturefocus>dvdtrayeject-focus.png</texturefocus>
+				<texturenofocus>dvdtrayeject-nofocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>![System.hasmediadvd] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<onclick>XBMC.EjectTray()</onclick>
+				<!-- Begin Fake Label Name for LCD displays dont touch -->
+				<include>19049</include>
+				<textcolor>00000000</textcolor>
+				<!-- End Fake Label Name for LCD displays dont touch -->
+			</control>
+			<control type="button" id="10">
+				<description>DVD Launch Button Play Mode</description>
+				<posx>156</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>4</ondown>
+				<texturefocus>dvdtray-focus.png</texturefocus>
+				<texturenofocus>dvdtray-nofocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<onclick>XBMC.PlayDVD()</onclick>
+				<!-- Begin Fake Label Name for LCD displays dont touch -->
+				<include>19148</include>
+				<textcolor>00000000</textcolor>
+				<!-- End Fake Label Name for LCD displays dont touch -->
+			</control>
+			<control type="label">
+				<description>DVD Launch Label 2</description>
+				<posx>226</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<include>19148</include>
+				<font>font14</font>
+				<aligny>center</aligny>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>DVD Launch Open Tray</description>
+				<posx>226</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<include>19049a</include>
+				<font>font14</font>
+				<aligny>center</aligny>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!System.hasmediadvd + !System.trayopen + System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+			<control type="label">
+				<description>DVD Launch Close Tray</description>
+				<posx>226</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<include>19049b</include>
+				<font>font14</font>
+				<aligny>center</aligny>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!System.hasmediadvd + System.trayopen + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>DVD Launch Drive Busy Tray</description>
+				<posx>226</posx>
+				<posy>413</posy>
+				<width>492</width>
+				<height>71</height>
+				<include>19049c</include>
+				<font>font14</font>
+				<aligny>center</aligny>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!System.hasmediadvd + !System.trayopen + !System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>DVD Button start Disc description 1</description>
+				<posx>425</posx>
+				<posy>205</posy>
+				<width>256</width>
+				<height>15</height>
+				<include>19158</include>
+				<font>font14</font>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Skin.HasSetting(nodescriptions) + System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+			<control type="label">
+				<description>DVD Button description MultiLine No Disc</description>
+				<posx>425</posx>
+				<posy>205</posy>
+				<width>210</width>
+				<height>200</height>
+				<wrapmultiline>true</wrapmultiline>
+				<include>19147</include>
+				<font>font14</font>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
+		</control>
+		<control type="image">
+			<description>Y Button</description>
+			<posx>195</posx>
+			<posy>505</posy>
+			<include>Button-Map-Texture-Width</include>
+			<height>21</height>
+			<texture>button-Y-turnedoff.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>X Button</description>
+			<posx>182</posx>
+			<posy>525</posy>
+			<include>Button-Map-Texture-Width</include>
+			<height>21</height>
+			<texture>button-X-turnedoff.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Player.HasMedia</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>X Button</description>
+			<posx>182</posx>
+			<posy>525</posy>
+			<include>Button-Map-Texture-Width</include>
+			<height>21</height>
+			<texture>button-X.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasMedia</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="label">
+			<description>Full-Screen Visualisation Label</description>
+			<include>KeymapFont</include>
+			<posx>213</posx>
+			<posy>528</posy>
+			<include>20002</include>
+			<align>left</align>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasAudio</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="label">
+			<description>Full-Screen Video Label</description>
+			<include>KeymapFont</include>
+			<posx>213</posx>
+			<posy>528</posy>
+			<include>20003</include>
+			<align>left</align>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>B Button</description>
+			<posx>585</posx>
+			<posy>505</posy>
+			<include>Button-Map-Texture-Width</include>
+			<height>21</height>
+			<texture>button-B-turnedoff.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>A Button</description>
+			<posx>598</posx>
+			<posy>525</posy>
+			<include>Button-Map-Texture-Width</include>
+			<height>21</height>
+			<texture>button-A.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="label">
+			<description>Select Label</description>
+			<include>KeymapFont</include>
+			<posx>588</posx>
+			<posy>528</posy>
+			<include>19020</include>
+			<align>right</align>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<!-- End Media Controls -->
+		<control type="image">
+			<description>Green Background Slide Right Alpha</description>
+			<posx>53</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+			<animation effect="slide" start="-585,0" time="100">Visible</animation>
+			<texture>background-green-alpha.png</texture>
+		</control>
+		<control type="image">
+			<description>Games Custom Background Slide Right</description>
+			<posx>53</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<texture>-</texture>
+			<info>Skin.String(Games)</info>
+			<colordiffuse>D1FFFFFF</colordiffuse>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="slide" start="-585,0" time="100">Visible</animation>
+		</control>
+		<!-- Begin Games Blink -->
+		<control type="image">
+			<description>Whitewash Glass Top Left</description>
+			<posx>105</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-left</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>121</posx>
+			<posy>0</posy>
+			<width>492</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Right</description>
+			<posx>613</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-right</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Left</description>
+			<posx>105</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-left</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>121</posx>
+			<posy>512</posy>
+			<width>492</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Right</description>
+			<posx>613</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-right</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Games)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Left</description>
+			<posx>95</posx>
+			<posy>0</posy>
+			<width>32</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-left</include>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="zoom" center="111,288" start="100,30" time="100">visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>127</posx>
+			<posy>0</posy>
+			<width>453</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="zoom" center="353,288" start="100,30" time="100">visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Right</description>
+			<posx>580</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-right</include>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="zoom" center="612,288" start="100,30" time="100">visible</animation>
+		</control>
+		<!-- End Games Blink -->
+		<control type="image">
+			<description>Blue Background Slide Right</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>Control.HasFocus(1) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+			<texture>background-blue.png</texture>
+		</control>
+		<control type="image">
+			<description>Media Custom Background Slide Right</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<texture>-</texture>
+			<info>Skin.String(Media)</info>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>72</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>72</posx>
+			<posy>512</posy>
+			<width>610</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>Control.HasFocus(1) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Left</description>
+			<posx>90</posx>
+			<posy>100</posy>
+			<width>20</width>
+			<height>360</height>
+			<include>Image-whitewash-overlay-left</include>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>110</posx>
+			<posy>100</posy>
+			<width>552</width>
+			<height>360</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Purple Background Slide Left Alpha</description>
+			<posx>123</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+			<animation effect="slide" start="585,0" time="100">Visible</animation>
+			<texture>background-purple-alpha.png</texture>
+		</control>
+		<control type="image">
+			<description>System Custom Background Slide Left</description>
+			<posx>123</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<texture>-</texture>
+			<info>Skin.String(System)</info>
+			<colordiffuse>D1FFFFFF</colordiffuse>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="slide" start="585,0" time="100">Visible</animation>
+		</control>
+		<!-- Begin System Blink -->
+		<control type="image">
+			<description>Whitewash Glass Top Left</description>
+			<posx>175</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-left</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>191</posx>
+			<posy>0</posy>
+			<width>484</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Right</description>
+			<posx>675</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-right</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Left</description>
+			<posx>175</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-left</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>191</posx>
+			<posy>512</posy>
+			<width>484</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Right</description>
+			<posx>675</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-right</include>
+			<visible>Control.HasFocus(2) + !Skin.String(System)</visible>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Left</description>
+			<posx>165</posx>
+			<posy>0</posy>
+			<width>32</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-left</include>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="zoom" center="181,288" start="100,30" time="100">visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>197</posx>
+			<posy>0</posy>
+			<width>446</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="zoom" center="423,288" start="100,30" time="100">visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Right</description>
+			<posx>643</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-right</include>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="zoom" center="682,288" start="100,30" time="100">visible</animation>
+		</control>
+		<!-- End System Blink -->
+		<control type="image">
+			<description>Blue Background Slide Left</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<visible>Control.HasFocus(2) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+			<texture>background-blue.png</texture>
+		</control>
+		<control type="image">
+			<description>Media Custom Background Slide Left</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>576</height>
+			<texture>-</texture>
+			<info>Skin.String(Media)</info>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>92</posx>
+			<posy>0</posy>
+			<width>610</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>Control.HasFocus(2) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>92</posx>
+			<posy>512</posy>
+			<width>610</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>Control.HasFocus(2) + !Skin.String(Media)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay right</description>
+			<posx>685</posx>
+			<posy>100</posy>
+			<width>20</width>
+			<height>360</height>
+			<include>Image-whitewash-overlay-right</include>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>115</posx>
+			<posy>100</posy>
+			<width>570</width>
+			<height>360</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<!-- Begin Sliding Textures -->
+		<control type="image">
+			<description>Blank Blade Slide Right</description>
+			<posx>43</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-blank-left.png</texture>
+			<visible>Control.HasFocus(1)</visible>
+			<animation effect="slide" end="585,0" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>Blank Blade Slide Left</description>
+			<posx>678</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-blank-right.png</texture>
+			<visible>Control.HasFocus(2)</visible>
+			<animation effect="slide" end="-585,0" time="100">Visible</animation>
+		</control>
+		<!-- End Sliding Textures -->
+		<!-- Begin Real Blade Runners -->
+		<control type="image">
+			<description>Left Blade Runner</description>
+			<posx>-61</posx>
+			<posy>0</posy>
+			<width>128</width>
+			<height>576</height>
+			<texture>blades-runner-left.png</texture>
+		</control>
+		<control type="image">
+			<description>Right Blade Runner</description>
+			<posx>665</posx>
+			<posy>0</posy>
+			<width>128</width>
+			<height>576</height>
+			<texture>blades-runner-right.png</texture>
+		</control>
+		<!-- End Real Blade Runners -->
+		<!-- Begin Real Blades -->
+		<control type="image">
+			<description>XBMC Live Blade</description>
+			<posx>18</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size2-left-NF.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>XBMC Live Label</description>
+			<include>19046a</include>
+			<posx>79</posx>
+			<posy>170</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Games Blade</description>
+			<posx>53</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size3-left-NF.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>Games Label</description>
+			<include>19008</include>
+			<posx>114</posx>
+			<posy>163</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Media Blade Image Focus on Left</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size4-header.png</texture>
+			<visible>!Control.HasFocus(1)</visible>
+		</control>
+		<control type="label">
+			<description>Media Blade Label on Left</description>
+			<include>19009</include>
+			<posx>149</posx>
+			<posy>155</posy>
+			<font>BladeFont</font>
+			<include>TextcolorBlack</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>!Control.HasFocus(1)</visible>
+		</control>
+		<control type="image">
+			<description>System Blade Image on Right</description>
+			<posx>633</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size3-right-NF.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>System Blade Label on Right</description>
+			<include>19011</include>
+			<posx>676</posx>
+			<posy>163</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Media Blade Haze Left</description>
+			<posx>0</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-blue-left.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">Hidden</animation>
+		</control>
+		<control type="image">
+			<description>Media Blade Haze Right</description>
+			<posx>657</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-blue-right.png</texture>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">Hidden</animation>
+		</control>
+		<!-- End Real Blades -->
+		<!-- Begin Blades for Games -->
+		<control type="image">
+			<description>XBMC Live Blade</description>
+			<posx>18</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size3-left-NF.png</texture>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="label">
+			<description>XBMC Live Label</description>
+			<include>19046a</include>
+			<posx>79</posx>
+			<posy>163</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="image">
+			<description>Games Blade</description>
+			<posx>53</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size4-header.png</texture>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="label">
+			<description>Games Label</description>
+			<include>19008</include>
+			<posx>114</posx>
+			<posy>155</posy>
+			<font>BladeFont</font>
+			<include>TextcolorBlack</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="image">
+			<description>System Blade</description>
+			<posx>633</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size2-right-NF.png</texture>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="label">
+			<description>System Label</description>
+			<include>19011</include>
+			<posx>676</posx>
+			<posy>170</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(1)</visible>
+		</control>
+		<control type="button" id="1">
+			<description>Media Blade Image on Right</description>
+			<posx>598</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<include>19009</include>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<textoffsetx>43</textoffsetx>
+			<textoffsety>163</textoffsety>
+			<angle>270</angle>
+			<onup>1</onup>
+			<ondown>1</ondown>
+			<onright>1</onright>
+			<onleft>1</onleft>
+			<pulseonselect>no</pulseonselect>
+			<visible allowhiddenfocus="true">Control.HasFocus(1)</visible>
+			<animation effect="fade" time="100">Focus</animation>
+			<texturefocus>blades-size3-right-NF.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onfocus>XBMC.ReplaceWindow(1112)</onfocus>
+		</control>
+		<control type="image">
+			<description>Games Blade Haze Left</description>
+			<posx>-41</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-green-left.png</texture>
+			<visible>Control.HasFocus(1) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">visible</animation>
+		</control>
+		<control type="image">
+			<description>Games Blade Haze Right</description>
+			<posx>615</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-green-right.png</texture>
+			<visible>Control.HasFocus(1) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">visible</animation>
+		</control>
+		<!-- End Blades for Games -->
+		<!-- Begin Blades for System -->
+		<control type="image">
+			<description>XBMC Live Blade</description>
+			<posx>18</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size1-left-NF.png</texture>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>XBMC Live Label</description>
+			<include>19046a</include>
+			<posx>79</posx>
+			<posy>177</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Games Blade</description>
+			<posx>53</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size2-left-NF.png</texture>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>Games Label</description>
+			<include>19008</include>
+			<posx>114</posx>
+			<posy>170</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="image">
+			<description>Media Blade</description>
+			<posx>88</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<texture>blades-size3-left-NF.png</texture>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="label">
+			<description>Media Label</description>
+			<include>19009</include>
+			<posx>149</posx>
+			<posy>163</posy>
+			<font>BladeFont</font>
+			<include>TextcolorDarkGrey</include>
+			<aligny>top</aligny>
+			<angle>270</angle>
+			<visible>Control.HasFocus(2)</visible>
+		</control>
+		<control type="button" id="2">
+			<description>System Blade Left</description>
+			<posx>123</posx>
+			<posy>0</posy>
+			<width>80</width>
+			<height>576</height>
+			<include>19011</include>
+			<font>BladeFont</font>
+			<include>TextcolorBlack</include>
+			<aligny>top</aligny>
+			<textoffsetx>61</textoffsetx>
+			<textoffsety>155</textoffsety>
+			<angle>270</angle>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<pulseonselect>no</pulseonselect>
+			<visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
+			<animation effect="fade" time="100">Focus</animation>
+			<texturefocus>blades-size4-header.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onfocus>XBMC.ReplaceWindow(settings)</onfocus>
+		</control>
+		<control type="image">
+			<description>System Blade Haze Left</description>
+			<posx>35</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-purple-left.png</texture>
+			<visible>Control.HasFocus(2) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">Visible</animation>
+		</control>
+		<control type="image">
+			<description>System Blade Haze Right</description>
+			<posx>660</posx>
+			<posy>350</posy>
+			<width>150</width>
+			<height>228</height>
+			<texture>haze-purple-right.png</texture>
+			<visible>Control.HasFocus(2) + !Skin.HasSetting(DisableHazes)</visible>
+			<animation effect="fade" time="100">Visible</animation>
+		</control>
+		<!-- End Blades for System -->
+	</controls>
+</window>

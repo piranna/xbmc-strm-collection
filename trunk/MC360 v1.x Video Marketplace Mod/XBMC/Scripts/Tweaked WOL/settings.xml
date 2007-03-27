@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<settings name="WebSaver controlpanel">
+	
+	<param id="mac1" name="Timothy's Computer" type="string">
+               <value><![CDATA[00-17-31-8B-2E-1C]]></value>
+        </param>
+
+	<param id="mac1name" name="Computer 1 Name" type="string">
+               <value><![CDATA[Computer 1]]></value>
+        </param>
+
+	<param id="mac2" name="Computer 2 MAC" type="string">
+               <value><![CDATA[00-00-00-00-00-00]]></value>
+        </param>
+
+	<param id="mac2name" name="Computer 2 Name" type="string">
+               <value><![CDATA[Computer 2]]></value>
+        </param>
+
+	<param id="mac3" name="Computer 3 MAC" type="string">
+               <value><![CDATA[00-00-00-00-00-00]]></value>
+        </param>
+
+	<param id="mac3name" name="Computer 3 Name" type="string">
+               <value><![CDATA[Computer 3]]></value>
+        </param>
+
+
+	<param id="mac4" name="Computer 4 MAC" type="string">
+               <value><![CDATA[00-00-00-00-00-00]]></value>
+        </param>
+
+
+	<param id="mac4name" name="Computer 4 Name" type="string">
+               <value><![CDATA[Computer 4]]></value>
+        </param>
+
+
+	<param id="mac5" name="Computer 5 MAC" type="string">
+               <value><![CDATA[00-00-00-00-00-00]]></value>
+        </param>
+
+
+	<param id="mac5name" name="Computer 5 Name" type="string">
+               <value><![CDATA[Computer 5]]></value>
+        </param>
+	
+</settings>

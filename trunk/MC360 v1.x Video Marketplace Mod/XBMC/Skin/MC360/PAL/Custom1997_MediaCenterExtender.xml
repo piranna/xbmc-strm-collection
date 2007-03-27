@@ -1,0 +1,102 @@
+<window type="window" id="1997">
+	<defaultcontrol>9000</defaultcontrol>
+	<previouswindow>home</previouswindow>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<!-- Setup Background and Window Transition -->
+		<include>Background-vis-sub-blades</include>
+		<include>MediaIconBackGroundWhiteWash</include>
+		<!-- Start Normal Window Controls -->
+		<control type="group">
+			<animation effect="fade" delay="100" time="250">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+			<control type="group" id="9000">
+				<control type="label">
+					<description>Top description Multiline</description>
+					<posx>110</posx>
+					<posy>105</posy>
+					<width>550</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>A PC running Windows Media Center is the all-in-one entertainment and computing solution for your home.  For more info, go to:</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+				</control>
+				<control type="label">
+					<description>Website</description>
+					<posx>280</posx>
+					<posy>230</posy>
+					<width>410</width>
+					<height>200</height>
+					<label>www.microsoft.com/extender</label>
+					<font>font14</font>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+					<visible>yes</visible>
+				</control>
+				<control type="label">
+					<description>Bottom description Multiline</description>
+					<posx>110</posx>
+					<posy>330</posy>
+					<width>550</width>
+					<height>200</height>
+					<wrapmultiline>true</wrapmultiline>
+					<label>To connect your Xbox console to a PC powered by Windows Media Center on your home network, select Media Center now.</label>
+					<font>font14</font>
+					<visible>yes</visible>
+					<include>TextcolorBlack</include>
+					<include>shadow-grey</include>
+				</control>
+				<control type="button" id="3">
+					<description>Media Center Button</description>
+					<posx>220</posx>
+					<posy>435</posy>
+					<width>320</width>
+					<height>42</height>
+					<align>center</align>
+					<label>MediaCenter</label>										
+					<onclick>XBMC.ActivateWindow(1972)</onclick>
+					<pulseonselect>no</pulseonselect>
+					<onleft>1</onleft>
+					<onright>1</onright>
+					<onup>1</onup>
+					<ondown>1</ondown>
+					<visible>yes</visible>
+				</control>
+				<control type="image">
+					<description>Media Center Label</description>
+					<posx>290</posx>
+					<posy>445</posy>
+					<width>120</width>
+					<height>20</height>
+					<texture>MediaCenterLabel.png</texture>
+					<visible>no</visible>
+				</control>
+				<control type="image">
+					<description>Media Center Logo</description>
+					<posx>428</posx>
+					<posy>435</posy>
+					<width>44</width>
+					<height>40</height>
+					<texture>media_center_extender.png</texture>
+					<visible>yes</visible>
+				</control>
+				<control type="label">
+					<description>Video Marketplace label</description>
+					<posx>102</posx>
+					<posy>42</posy>
+					<align>left</align>
+					<label>Windows Media Center</label>
+					<include>TextcolorWhite</include>
+					<include>shadow-black</include>
+					<font>font18</font>
+				</control>
+			</control>
+			<!--- Insert New stuff here -->
+			<include>SystemCustomKeymaps</include>
+		</control>
+		<!-- Start Screen Close Animation -->
+		<include>MediaCommonsBlades</include>
+	</controls>
+</window>

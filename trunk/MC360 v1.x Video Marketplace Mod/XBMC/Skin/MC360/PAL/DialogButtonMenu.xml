@@ -1,0 +1,888 @@
+<window type="dialog" id="111">
+	<defaultcontrol>3113</defaultcontrol>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" delay="500" time="50">WindowClose</animation>
+	<controls>
+		<include>TheDialogs</include>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>188</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<visible>System.HasNetwork + System.LoggedOn + [System.HasLocks + System.HasLoginScreen + Skin.HasSetting(USE_RemoteComputer)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>225</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<visible>[System.LoggedOn + [System.HasLocks + System.HasLoginScreen] | [Skin.HasSetting(USE_RemoteComputer) + System.HasNetwork + [System.HasLocks | System.HasLoginScreen]]]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>262</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<visible>System.LoggedOn + [System.HasLocks | System.HasLoginScreen | [Skin.HasSetting(USE_RemoteComputer) + System.HasNetwork]]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>299</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>336</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>373</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>410</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>447</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<!-- Button Description Text -->
+		<control type="label">
+			<description>Shutdown Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19301</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3113)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Reboot Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19302</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3112)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Restart Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19303</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3111)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Dashboard Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19304</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3110)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Log Off Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19305</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3115)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Master Mode Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<include>19306</include>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3116)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Start PC Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<label>Press A to remotely start your personal computer to stream media or play online.</label>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + [Control.HasFocus(3117) | Control.HasFocus(3119) | Control.HasFocus(3120) | Control.HasFocus(3122) | Control.HasFocus(3123) | Control.HasFocus(3125)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>Shutdown PC Description MultiLine</description>
+			<posx>380</posx>
+			<posy>115</posy>
+			<width>300</width>
+			<height>200</height>
+			<wrapmultiline>true</wrapmultiline>
+			<label>Press A to remotely shutdown your personal computer.</label>
+			<font>font14</font>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(nodescriptions) + [Control.HasFocus(3118) | Control.HasFocus(3121) | Control.HasFocus(3124)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<!-- YES/YES - Lock Button enabled, Log off Button enabled -->
+		<control type="button" id="3125">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>178</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3124</onleft>
+			<onright>3124</onright>
+			<onup>3113</onup>
+			<ondown>3120</ondown>
+			<visible allowhiddenfocus="true">Control.HasFocus(3125)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3124">
+			<description>Shutdown PC Button</description>
+			<posx>340</posx>
+			<posy>178</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Shutdown PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<onclick>XBMC.ReplaceWindow(1998)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3125</onleft>
+			<onright>3125</onright>
+			<onup>3113</onup>
+			<ondown>3120</ondown>
+			<visible allowhiddenfocus="true">Control.HasFocus(3124)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3123">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>178</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3124</onleft>
+			<onright>3124</onright>
+			<onup>3113</onup>
+			<ondown>3120</ondown>
+			<visible>System.HasNetwork + System.LoggedOn + System.HasLocks + System.HasLoginScreen + Skin.HasSetting(USE_RemoteComputer) + [!Control.HasFocus(3124) + !Control.HasFocus(3125)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="togglebutton" id="3116">
+			<description>Enter master mode / Leave master mode</description>
+			<posx>340</posx>
+			<posy>215</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>20045</label>
+			<altlabel>20046</altlabel>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<usealttexture>System.IsMaster</usealttexture>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>xbmc.mastermode</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3116</onleft>
+			<onright>3116</onright>
+			<onup>3117</onup>
+			<ondown>3115</ondown>
+			<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3122">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>215</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3121</onleft>
+			<onright>3121</onright>
+			<onup>3123</onup>
+			<ondown>3117</ondown>
+			<visible allowhiddenfocus="true">Control.HasFocus(3122)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3121">
+			<description>Shutdown PC Button</description>
+			<posx>340</posx>
+			<posy>215</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Shutdown PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.ReplaceWindow(1998)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3122</onleft>
+			<onright>3122</onright>
+			<onup>3123</onup>
+			<ondown>3117</ondown>
+			<visible allowhiddenfocus="true">Control.HasFocus(3121)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3120">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>215</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3121</onleft>
+			<onright>3121</onright>
+			<onup>3123</onup>
+			<ondown>3117</ondown>
+			<visible>[[[System.LoggedOn + System.HasLocks] | [System.LoggedOn + System.HasLoginScreen]] + ![System.LoggedOn + System.HasLocks + System.HasLoginScreen]] + Skin.HasSetting(USE_RemoteComputer) + System.HasNetwork + [!Control.HasFocus(3121) + !Control.HasFocus(3122)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="togglebutton" id="3115">
+			<description>Log Off Button</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<onclick>system.logoff</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3115</onleft>
+			<onright>3115</onright>
+			<onup>3116</onup>
+			<ondown>3110</ondown>
+			<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,282" time="300" reversible="false">focus</animation>
+		</control>
+		<!-- YES/NO - Lock Button enabled, Log off Button Disabled -->
+		<control type="togglebutton" id="3116">
+			<description>Enter master mode / Leave master mode</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>20045</label>
+			<altlabel>20046</altlabel>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<usealttexture>System.IsMaster</usealttexture>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>xbmc.mastermode</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3116</onleft>
+			<onright>3116</onright>
+			<onup>3117</onup>
+			<ondown>3110</ondown>
+			<visible>System.LoggedOn + System.HasLocks + !System.HasLoginScreen</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,282" time="300" reversible="false">focus</animation>
+		</control>
+		<!-- NO/YES - Lock Button Disabled, Log off Button Enabled -->
+		<control type="togglebutton" id="3115">
+			<description>Log Off Button</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<onclick>system.logoff</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3115</onleft>
+			<onright>3115</onright>
+			<onup>3116</onup>
+			<ondown>3110</ondown>
+			<visible>System.LoggedOn + !System.HasLocks + System.HasLoginScreen</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,282" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3119">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3118</onleft>
+			<onright>3118</onright>
+			<onup>3120</onup>
+			<ondown>3116</ondown>
+			<visible  allowhiddenfocus="true">Control.HasFocus(3119)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3118">
+			<description>Shutdown PC Button</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Shutdown PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.ReplaceWindow(1998)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3119</onleft>
+			<onright>3119</onright>
+			<onup>3120</onup>
+			<ondown>3116</ondown>
+			<visible allowhiddenfocus="true">Control.HasFocus(3118)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3117">
+			<description>Start PC Button</description>
+			<posx>340</posx>
+			<posy>252</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Start PC</label>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<aligny>center</aligny>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<alttexturefocus>guide-button-focus.png</alttexturefocus>
+			<alttexturenofocus>-</alttexturenofocus>
+			<onclick>XBMC.RunScript(Q:\scripts\Tweaked WOL\default.py)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3118</onleft>
+			<onright>3118</onright>
+			<onup>3120</onup>
+			<ondown>3116</ondown>
+			<visible>!System.HasLocks + !System.HasLoginScreen + Skin.HasSetting(USE_RemoteComputer) + System.HasNetwork + [!Control.HasFocus(3118) + !Control.HasFocus(3119)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<!-- NO/NO - Lock Button Disabled, Log off Button Disabled -->
+		<control type="button" id="3110">
+			<description>Dashboard button</description>
+			<posx>340</posx>
+			<posy>289</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.Dashboard()</onclick>
+			<onleft>3110</onleft>
+			<onright>3110</onright>
+			<onup>3115</onup>
+			<ondown>3111</ondown>
+			<font>font14</font>
+			<label>13006</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,319" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3111">
+			<description>restart xbmc Button</description>
+			<posx>340</posx>
+			<posy>326</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.RestartApp()</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3111</onleft>
+			<onright>3111</onright>
+			<onup>3110</onup>
+			<ondown>3112</ondown>
+			<font>font14</font>
+			<label>Restart XBMC</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,356" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3112">
+			<description>reboot xbox button</description>
+			<posx>340</posx>
+			<posy>363</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.Reset()</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3112</onleft>
+			<onright>3112</onright>
+			<onup>3111</onup>
+			<ondown>3113</ondown>
+			<font>font14</font>
+			<include>19300</include>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,393" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3113">
+			<description>Shutdown button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.ShutDown()</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3204</onleft>
+			<onright>3200</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>13005</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(3200) + !Control.HasFocus(3201) + !Control.HasFocus(3202) + !Control.HasFocus(3203) + !Control.HasFocus(3204)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3200">
+			<description>Shutdown in 30 button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.ShutDown(),30)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3113</onleft>
+			<onright>3201</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>20147</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3200)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3201">
+			<description>Shutdown in 60 button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.ShutDown(),60)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3200</onleft>
+			<onright>3202</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>20148</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3201)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3202">
+			<description>Shutdown in 120 button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.ShutDown(),120)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3201</onleft>
+			<onright>3203</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>20149</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3202)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3203">
+			<description>Shutdown in Custom button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.ShutDown())</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3202</onleft>
+			<onright>3204</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>20150</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3203)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3204">
+			<description>Shutdown timer cancel button</description>
+			<posx>340</posx>
+			<posy>400</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3203</onleft>
+			<onright>3113</onright>
+			<onup>3112</onup>
+			<ondown>3123</ondown>
+			<font>font14</font>
+			<label>20151</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3204)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,430" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow for Shutdown</description>
+			<posx>358</posx>
+			<posy>413</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>Control.HasFocus(3113) | Control.HasFocus(3200) | Control.HasFocus(3201) | Control.HasFocus(3202) | Control.HasFocus(3203) | Control.HasFocus(3204)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Top Left Arrow for Remote PC</description>
+			<posx>358</posx>
+			<posy>191</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>Control.HasFocus(3123) | Control.HasFocus(3124) | Control.HasFocus(3125)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Middle Left Arrow for Remote PC</description>
+			<posx>358</posx>
+			<posy>228</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>Control.HasFocus(3120) | Control.HasFocus(3121) | Control.HasFocus(3122)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Bottom Left Arrow for Remote PC</description>
+			<posx>358</posx>
+			<posy>265</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>Control.HasFocus(3117) | Control.HasFocus(3118) | Control.HasFocus(3119)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow for Shutdown</description>
+			<posx>668</posx>
+			<posy>413</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>Control.HasFocus(3113) | Control.HasFocus(3200) | Control.HasFocus(3201) | Control.HasFocus(3202) | Control.HasFocus(3203) | Control.HasFocus(3204)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Top Right Arrow for Remote PC</description>
+			<posx>668</posx>
+			<posy>191</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>Control.HasFocus(3123) | Control.HasFocus(3124) | Control.HasFocus(3125)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Middle Right Arrow for Remote PC</description>
+			<posx>668</posx>
+			<posy>228</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>Control.HasFocus(3120) | Control.HasFocus(3121) | Control.HasFocus(3122)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Middle Right Arrow for Remote PC</description>
+			<posx>668</posx>
+			<posy>265</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>Control.HasFocus(3117) | Control.HasFocus(3118) | Control.HasFocus(3119)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<!-- End Normal Buttons -->
+		<control type="label">
+			<description>Top label</description>
+			<posx>407</posx>
+			<posy>40</posy>
+			<width>270</width>
+			<label>13005</label>
+			<align>left</align>
+			<include>DialogTitle</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Question Icon</description>
+			<posx>365</posx>
+			<posy>40</posy>
+			<width>30</width>
+			<height>30</height>
+			<texture>icon-question.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+	</controls>
+</window>

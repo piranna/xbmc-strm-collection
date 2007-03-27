@@ -1,0 +1,947 @@
+<window id="1973">
+	<defaultcontrol>1</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<previouswindow>1974</previouswindow>
+	<controls>
+		<!-- Setup Background and Window Transition -->
+		<include>Background-vis-sub-blades</include>
+		<control type="group">
+			<animation effect="zoom" center="285.063,288" end="86.895,100" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="zoom" center="285.063,288" start="86.895,100" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+			<include>Background-animation-sub-blades</include>
+			<control type="image">
+				<description>Games Background image</description>
+				<posx>18</posx>
+				<posy>0</posy>
+				<width>702</width>
+				<height>576</height>
+				<visible>!Skin.String(Games)</visible>
+				<texture>background-green-alpha.png</texture>
+			</control>
+			<control type="image">
+				<description>Games Custom Background image</description>
+				<posx>18</posx>
+				<posy>0</posy>
+				<width>702</width>
+				<height>576</height>
+				<texture>-</texture>
+				<info>Skin.String(Games)</info>
+				<colordiffuse>D1FFFFFF</colordiffuse>
+			</control>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Left</description>
+			<posx>70</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-left</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="slide" end="35,0" time="100" reversible="false" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="slide" start="35,0" time="100" reversible="false" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Middle</description>
+			<posx>86</posx>
+			<posy>0</posy>
+			<width>590</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-middle</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="zoom" end="121,0,492,64" time="100" reversible="false" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="zoom" start="121,0,492,64" time="100" reversible="false" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Top Right</description>
+			<posx>676</posx>
+			<posy>0</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-top-right</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="slide" start="-63,0" time="100" reversible="false" condition="Window.Previous(1112)">WindowOpen</animation>
+			<animation effect="slide" end="-63,0" time="100" reversible="false" condition="Window.Next(1112)">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Left</description>
+			<posx>70</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-left</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="slide" end="35,0" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="slide" start="35,0" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Middle</description>
+			<posx>86</posx>
+			<posy>512</posy>
+			<width>590</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-middle</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="zoom" end="121,401,492,64" time="100" reversible="false" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="zoom" start="121,401,492,64" time="100" reversible="false" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Glass Bottom Right</description>
+			<posx>676</posx>
+			<posy>512</posy>
+			<width>16</width>
+			<height>64</height>
+			<include>Image-whitewash-glass-bottom-right</include>
+			<visible>!Skin.String(Games)</visible>
+			<animation effect="slide" end="-63,0" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="slide" start="-63,0" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Left</description>
+			<posx>60</posx>
+			<posy>0</posy>
+			<width>32</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-left</include>
+			<animation effect="slide" end="35,0" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="slide" start="35,0" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Middle</description>
+			<posx>92</posx>
+			<posy>0</posy>
+			<width>553</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-middle</include>
+			<animation effect="zoom" end="127,0,453,576" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="zoom" start="127,0,453,576" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Whitewash Overlay Right</description>
+			<posx>645</posx>
+			<posy>0</posy>
+			<width>64</width>
+			<height>576</height>
+			<include>Image-whitewash-overlay-right</include>
+			<animation effect="slide" end="-65,0" time="100" condition="Window.Next(1112)">WindowClose</animation>
+			<animation effect="slide" start="-65,0" time="100" condition="Window.Previous(1112)">WindowOpen</animation>
+		</control>
+		<!-- Start Normal Window Controls -->
+		<control type="group">
+			<animation effect="fade" delay="100" time="250">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+			<control type="group" id="9000">
+				<posy>-7</posy>
+				<control type="image">
+					<description>Market Place Button 2 Hightlight Image</description>
+					<posx>90</posx>
+					<posy>165</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(2)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 2 Universal Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>167</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-2)</info>
+					<visible>Skin.String(UniversalImage-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(BookmarkMode-2)] | [!Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(BookmarkImage-2) + Skin.HasSetting(BookmarkMode-2)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 2 Default Image Icon</description>
+					<posx>95</posx>
+					<posy>167</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(BookmarkMode-2)] | [!Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(BookmarkImage-2) + Skin.HasSetting(BookmarkMode-2)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 2 Single Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>167</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-2)</info>
+					<visible>Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 2 Category Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>167</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-2)</info>
+					<visible>Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 2 Bookmark Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>167</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-2)</info>
+					<visible>Skin.String(BookmarkImage-2) + Skin.HasSetting(BookmarkMode-2)</visible>
+				</control>
+				<control type="button" id="2">
+					<description>Market Place Button 2 push button</description>
+					<posx>90</posx>
+					<posy>165</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<visible>yes</visible>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1993)</onclick>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>1</onup>
+					<ondown>3</ondown>
+				</control>
+				<control type="label">
+					<description>Button 2 Universal Custom Label</description>
+					<posx>100</posx>
+					<posy>205</posy>
+					<info>Skin.String(UniversalButtonName-2)</info>
+					<visible>Skin.String(UniversalButtonName-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(BookmarkMode-2)] | [!Skin.String(ScriptButtonName-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(BookmarkButtonName-2) + Skin.HasSetting(BookmarkMode-2)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 2 Single Script Custom Label</description>
+					<posx>100</posx>
+					<posy>205</posy>
+					<info>Skin.String(ScriptButtonName-2)</info>
+					<visible>Skin.String(ScriptButtonName-2) + Skin.HasSetting(ScriptMode-2)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 2 Category Script Custom Label</description>
+					<posx>100</posx>
+					<posy>205</posy>
+					<info>Skin.String(CategoryButtonName-2)</info>
+					<visible>Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 2 Bookmark Custom Label</description>
+					<posx>100</posx>
+					<posy>205</posy>
+					<info>Skin.String(BookmarkButtonName-2)</info>
+					<visible>Skin.String(BookmarkButtonName-2) + Skin.HasSetting(BookmarkMode-2)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 2 Default Label</description>
+					<posx>100</posx>
+					<posy>170</posy>
+					<label>Custom 2...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Hightlight Image</description>
+					<posx>90</posx>
+					<posy>235</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(3)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Universal Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-3)</info>
+					<visible>Skin.String(UniversalImage-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(BookmarkMode-3)] | [!Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(BookmarkImage-3) + Skin.HasSetting(BookmarkMode-3)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 3 Default Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(BookmarkMode-3)] | [!Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(BookmarkImage-3) + Skin.HasSetting(BookmarkMode-3)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Single Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-3)</info>
+					<visible>Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Category Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-3)</info>
+					<visible>Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Bookmark Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-3)</info>
+					<visible>Skin.String(BookmarkImage-3) + Skin.HasSetting(BookmarkMode-3)</visible>
+				</control>
+				<control type="button" id="3">
+					<description>Market Place Button 3 push button</description>
+					<posx>90</posx>
+					<posy>235</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1992)</onclick>
+					<visible>yes</visible>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+				</control>
+				<control type="label">
+					<description>Button 3 Universal Custom Label</description>
+					<posx>100</posx>
+					<posy>275</posy>
+					<info>Skin.String(UniversalButtonName-3)</info>
+					<visible>Skin.String(UniversalButtonName-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(BookmarkMode-3)] | [!Skin.String(ScriptButtonName-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(BookmarkButtonName-3) + Skin.HasSetting(BookmarkMode-3)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 3 Single Script Custom Label</description>
+					<posx>100</posx>
+					<posy>275</posy>
+					<info>Skin.String(ScriptButtonName-3)</info>
+					<visible>Skin.String(ScriptButtonName-3) + Skin.HasSetting(ScriptMode-3)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 3 Category Script Custom Label</description>
+					<posx>100</posx>
+					<posy>275</posy>
+					<info>Skin.String(CategoryButtonName-3)</info>
+					<visible>Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 3 Bookmark Custom Label</description>
+					<posx>100</posx>
+					<posy>275</posy>
+					<info>Skin.String(BookmarkButtonName-3)</info>
+					<visible>Skin.String(BookmarkButtonName-3) + Skin.HasSetting(BookmarkMode-3)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 3 Default Label</description>
+					<posx>100</posx>
+					<posy>240</posy>
+					<label>Custom 3...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="image">
+					<description>Market Place Button 4 Hightlight Image</description>
+					<posx>90</posx>
+					<posy>305</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(4)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 4 Universal Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>307</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-4)</info>
+					<visible>Skin.String(UniversalImage-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(BookmarkMode-4)] | [!Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(BookmarkImage-4) + Skin.HasSetting(BookmarkMode-4)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 4 Default Image Icon</description>
+					<posx>95</posx>
+					<posy>307</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(BookmarkMode-4)] | [!Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(BookmarkImage-4) + Skin.HasSetting(BookmarkMode-4)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 4 Single Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>307</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-4)</info>
+					<visible>Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 4 Category Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>307</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-4)</info>
+					<visible>Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 4 Bookmark Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>307</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-4)</info>
+					<visible>Skin.String(BookmarkImage-4) + Skin.HasSetting(BookmarkMode-4)</visible>
+				</control>
+				<control type="button" id="4">
+					<description>Market Place Button 4 push button</description>
+					<posx>90</posx>
+					<posy>305</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1991)</onclick>
+					<visible>yes</visible>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>3</onup>
+					<ondown>5</ondown>
+				</control>
+				<control type="label">
+					<description>Button 4 Universal Custom Label</description>
+					<posx>100</posx>
+					<posy>345</posy>
+					<info>Skin.String(UniversalButtonName-4)</info>
+					<visible>Skin.String(UniversalButtonName-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(BookmarkMode-4)] | [!Skin.String(ScriptButtonName-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(BookmarkButtonName-4) + Skin.HasSetting(BookmarkMode-4)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 4 Single Script Custom Label</description>
+					<posx>100</posx>
+					<posy>345</posy>
+					<info>Skin.String(ScriptButtonName-4)</info>
+					<visible>Skin.String(ScriptButtonName-4) + Skin.HasSetting(ScriptMode-4)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 4 Category Script Custom Label</description>
+					<posx>100</posx>
+					<posy>345</posy>
+					<info>Skin.String(CategoryButtonName-4)</info>
+					<visible>Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 4 Bookmark Custom Label</description>
+					<posx>100</posx>
+					<posy>345</posy>
+					<info>Skin.String(BookmarkButtonName-4)</info>
+					<visible>Skin.String(BookmarkButtonName-4) + Skin.HasSetting(BookmarkMode-4)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 4 Default Label</description>
+					<posx>100</posx>
+					<posy>310</posy>
+					<label>Custom 4...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="image">
+					<description>Market Place Button 5 Hightlight Image</description>
+					<posx>90</posx>
+					<posy>375</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(5)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 5 Universal Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>377</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-5)</info>
+					<visible>Skin.String(UniversalImage-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(BookmarkMode-5)] | [!Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(BookmarkImage-5) + Skin.HasSetting(BookmarkMode-5)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 5 Default Image Icon</description>
+					<posx>95</posx>
+					<posy>377</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(BookmarkMode-5)] | [!Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(BookmarkImage-5) + Skin.HasSetting(BookmarkMode-5)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 5 Single Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>377</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-5)</info>
+					<visible>Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 5 Category Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>377</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-5)</info>
+					<visible>Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 5 Bookmark Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>377</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-5)</info>
+					<visible>Skin.String(BookmarkImage-5) + Skin.HasSetting(BookmarkMode-5)</visible>
+				</control>
+				<control type="button" id="5">
+					<description>Market Place Button 5 push button</description>
+					<posx>90</posx>
+					<posy>375</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1990)</onclick>
+					<visible>yes</visible>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>4</onup>
+					<ondown>9</ondown>
+				</control>
+				<control type="label">
+					<description>Button 5 Universal Custom Label</description>
+					<posx>100</posx>
+					<posy>415</posy>
+					<info>Skin.String(UniversalButtonName-5)</info>
+					<visible>Skin.String(UniversalButtonName-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(BookmarkMode-5)] | [!Skin.String(ScriptButtonName-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(BookmarkButtonName-5) + Skin.HasSetting(BookmarkMode-5)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 5 Single Script Custom Label</description>
+					<posx>100</posx>
+					<posy>415</posy>
+					<info>Skin.String(ScriptButtonName-5)</info>
+					<visible>Skin.String(ScriptButtonName-5) + Skin.HasSetting(ScriptMode-5)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 5 Category Script Custom Label</description>
+					<posx>100</posx>
+					<posy>415</posy>
+					<info>Skin.String(CategoryButtonName-5)</info>
+					<visible>Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 5 Bookmark Custom Label</description>
+					<posx>100</posx>
+					<posy>415</posy>
+					<info>Skin.String(BookmarkButtonName-5)</info>
+					<visible>Skin.String(BookmarkButtonName-5) + Skin.HasSetting(BookmarkMode-5)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 5 Default Label</description>
+					<posx>100</posx>
+					<posy>380</posy>
+					<label>Custom 5...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="image">
+					<description>Market Place Button 9 Highlight Image Shadow</description>
+					<posx>90</posx>
+					<posy>481</posy>
+					<width>290</width>
+					<height>16</height>
+					<texture>button-shadow.png</texture>
+					<visible>Control.HasFocus(9)</visible>
+					<animation effect="fade" time="250">Visible</animation>
+				</control>
+				<control type="image">
+					<description>Market Place Button 9 Highlight Image</description>
+					<posx>90</posx>
+					<posy>441</posy>
+					<width>290</width>
+					<height>44</height>
+					<texture>button-focus.png</texture>
+					<visible>Control.HasFocus(9)</visible>
+				</control>
+				<control type="button" id="9">
+					<description>Market Place Button 9 Push Button</description>
+					<include>Home-Button-Commons</include>
+					<posx>110</posx>
+					<posy>446</posy>
+					<label>Change Marketplace Name</label>
+					<onclick>Skin.SetString(MarketplaceName)</onclick>
+					<texturefocus>icon-scripts.png</texturefocus>
+					<texturenofocus>icon-scripts.png</texturenofocus>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>5</onup>
+					<ondown>1</ondown>
+					<visible>yes</visible>
+				</control>
+				<control type="multiimage">
+					<description>Market Place Button 9 Button Shine</description>
+					<posx>83</posx>
+					<posy>384</posy>
+					<width>280</width>
+					<height>34</height>
+					<include>Shine</include>
+					<visible>Control.HasFocus(9)</visible>
+					<animation effect="fade" delay="275">Visible</animation>
+				</control>
+				<control type="image">
+					<description>Button Seperator</description>
+					<posx>95</posx>
+					<posy>479</posy>
+					<width>280</width>
+					<height>1</height>
+					<texture>divider.png</texture>
+					<visible>yes</visible>
+				</control>
+			</control>
+			<control type="group" id="9001">
+				<posy>-7</posy>
+				<control type="image">
+					<description>Market Place Button 1 Hightlight Image</description>
+					<posx>90</posx>
+					<posy>95</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(1)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 1 Universal Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-1)</info>
+					<visible>Skin.String(UniversalImage-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(BookmarkMode-1)] | [!Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(BookmarkImage-1) + Skin.HasSetting(BookmarkMode-1)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 1 Default Image Icon</description>
+					<posx>95</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(BookmarkMode-1)] | [!Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(BookmarkImage-1) + Skin.HasSetting(BookmarkMode-1)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 1 Single Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-1)</info>
+					<visible>Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 1 Category Script Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-1)</info>
+					<visible>Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 1 Bookmark Custom Image Icon</description>
+					<posx>95</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-1)</info>
+					<visible>Skin.String(BookmarkImage-1) + Skin.HasSetting(BookmarkMode-1)</visible>
+				</control>
+				<control type="button" id="1">
+					<description>Market Place Button 1 push button</description>
+					<posx>90</posx>
+					<posy>95</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1994)</onclick>
+					<visible>yes</visible>
+					<onleft>6</onleft>
+					<onright>6</onright>
+					<onup>9</onup>
+					<ondown>2</ondown>
+				</control>
+				<control type="label">
+					<description>Button 1 Universal Custom Label</description>
+					<posx>100</posx>
+					<posy>135</posy>
+					<info>Skin.String(UniversalButtonName-1)</info>
+					<visible>Skin.String(UniversalButtonName-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(BookmarkMode-1)] | [!Skin.String(ScriptButtonName-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(BookmarkButtonName-1) + Skin.HasSetting(BookmarkMode-1)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 1 Single Script Custom Label</description>
+					<posx>100</posx>
+					<posy>135</posy>
+					<info>Skin.String(ScriptButtonName-1)</info>
+					<visible>Skin.String(ScriptButtonName-1) + Skin.HasSetting(ScriptMode-1)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 1 Category Script Custom Label</description>
+					<posx>100</posx>
+					<posy>135</posy>
+					<info>Skin.String(CategoryButtonName-1)</info>
+					<visible>Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 1 Bookmark Custom Label</description>
+					<posx>100</posx>
+					<posy>135</posy>
+					<info>Skin.String(BookmarkButtonName-1)</info>
+					<visible>Skin.String(BookmarkButtonName-1) + Skin.HasSetting(BookmarkMode-1)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 1 Default Label</description>
+					<posx>100</posx>
+					<posy>100</posy>
+					<label>Custom 1...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="image">
+					<description>Market Place Button 6 Hightlight Image</description>
+					<posx>380</posx>
+					<posy>95</posy>
+					<width>290</width>
+					<height>70</height>
+					<texture>button-liveplace-big-focus.png</texture>
+					<visible>Control.HasFocus(6)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 6 Universal Custom Image Icon</description>
+					<posx>384</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(UniversalImage-6)</info>
+					<visible>Skin.String(UniversalImage-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(BookmarkMode-6)] | [!Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(BookmarkImage-6) + Skin.HasSetting(BookmarkMode-6)]]</visible>
+					<aspectratio>scale</aspectratio>
+				</control>				
+				<control type="image">
+					<description>Market Place Button 6 Default Image Icon</description>
+					<posx>384</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>default.png</texture>
+					<aspectratio>scale</aspectratio>
+					<visible>!Skin.String(UniversalImage-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(BookmarkMode-6)] | [!Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(BookmarkImage-6) + Skin.HasSetting(BookmarkMode-6)]]</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 6 Single Script Custom Image Icon</description>
+					<posx>384</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(ScriptImage-6)</info>
+					<visible>Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 6 Category Script Custom Image Icon</description>
+					<posx>384</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(CategoryImage-6)</info>
+					<visible>Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 6 Bookmark Script Custom Image Icon</description>
+					<posx>384</posx>
+					<posy>97</posy>
+					<width>280</width>
+					<height>64</height>
+					<info>Skin.String(BookmarkImage-6)</info>
+					<visible>Skin.String(BookmarkImage-6) + Skin.HasSetting(BookmarkMode-6)</visible>
+				</control>
+				<control type="button" id="6">
+					<description>Market Place Button 6 push button</description>
+					<posx>380</posx>
+					<posy>95</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(1989)</onclick>
+					<visible>yes</visible>
+					<onleft>1</onleft>
+					<onright>1</onright>
+					<onup>7</onup>
+					<ondown>7</ondown>
+				</control>
+				<control type="label">
+					<description>Button 6 Universal Custom Label</description>
+					<posx>389</posx>
+					<posy>135</posy>
+					<info>Skin.String(UniversalButtonName-6)</info>
+					<visible>Skin.String(UniversalButtonName-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(BookmarkMode-6)] | [!Skin.String(ScriptButtonName-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(BookmarkButtonName-6) + Skin.HasSetting(BookmarkMode-6)]]</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 6 Single Script Custom Label</description>
+					<posx>389</posx>
+					<posy>135</posy>
+					<info>Skin.String(ScriptButtonName-6)</info>
+					<visible>Skin.String(ScriptButtonName-6) + Skin.HasSetting(ScriptMode-6)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 6 Category Script Custom Label</description>
+					<posx>389</posx>
+					<posy>135</posy>
+					<info>Skin.String(CategoryButtonName-6)</info>
+					<visible>Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 6 Bookmark Custom Label</description>
+					<posx>389</posx>
+					<posy>135</posy>
+					<info>Skin.String(BookmarkButtonName-6)</info>
+					<visible>Skin.String(BookmarkButtonName-6) + Skin.HasSetting(BookmarkMode-6)</visible>
+					<include>TextcolorBlack</include>
+				</control>
+				<control type="label">
+					<description>Button 6 Default Label</description>
+					<posx>389</posx>
+					<posy>100</posy>
+					<label>Custom 6...</label>
+					<visible>yes</visible>
+					<textcolor>FF333333</textcolor>
+				</control>
+				<control type="button" id="7">
+					<description>Video Button 7</description>
+					<posx>385</posx>
+					<posy>175</posy>
+					<width>290</width>
+					<height>280</height>
+					<onright>9000</onright>
+					<onleft>9000</onleft>
+					<onup>6</onup>
+					<ondown>6</ondown>
+					<visible>!Player.HasVideo</visible>
+					<pulseonselect>no</pulseonselect>
+					<texturefocus border="15">xbmc_live_eX_ad002.png</texturefocus>
+					<texturenofocus border="15">XBMCLivePlace\xbmc_live_eX_ad001.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(28)</onclick>
+				</control>
+				<control type="button" id="7">
+					<description>Video Button 7</description>
+					<posx>385</posx>
+					<posy>175</posy>
+					<width>290</width>
+					<height>280</height>
+					<onright>9000</onright>
+					<onleft>9000</onleft>
+					<onup>6</onup>
+					<ondown>6</ondown>
+					<visible>Player.HasVideo</visible>
+					<pulseonselect>no</pulseonselect>
+					<texturefocus border="15">xbmc_live_eX_ad002_video.png</texturefocus>
+					<texturenofocus border="15">xbmc_live_eX_ad001_video.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(28)</onclick>
+				</control>
+				<control type="videowindow">
+					<posx>404</posx>
+					<posy>215</posy>
+					<width>249</width>
+					<height>197</height>
+				</control>
+				<control type="label" id="8">
+					<description>Video Marketplace label</description>
+					<posx>102</posx>
+					<posy>49</posy>
+					<align>left</align>
+					<label>Video Marketplace Configuration</label>
+					<include>TextcolorWhite</include>
+					<include>shadow-black</include>
+					<font>font18</font>
+					<visible>!Skin.String(MarketplaceName)</visible>
+				</control>
+				<control type="label" id="8">
+					<description>Video Marketplace Custom label</description>
+					<posx>102</posx>
+					<posy>49</posy>
+					<align>left</align>
+					<label>$INFO[Skin.String(MarketplaceName)] Configuration</label>
+					<include>TextcolorWhite</include>
+					<include>shadow-black</include>
+					<font>font18</font>
+					<visible>Skin.String(MarketplaceName)</visible>
+				</control>
+			</control>
+			<!--- Insert New stuff here -->
+			<include>SystemCustomKeymaps</include>
+		</control>
+		<!-- Start Screen Close Animation -->
+		<include>ProgramsCommonsBlades</include>
+	</controls>
+</window>

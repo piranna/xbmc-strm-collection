@@ -1,0 +1,703 @@
+<window type="dialog" id="1992">
+	<defaultcontrol always="true">1</defaultcontrol>
+	<previouswindow>1995</previouswindow>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" delay="1050" time="50">WindowClose</animation>
+	<controls>
+		<include>TheDialogs</include>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>98</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>134</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>170</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>206</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>242</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>278</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>314</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>350</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>[Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(USE_Category-3) | Skin.HasSetting(BookmarkMode-3)] + !Skin.HasSetting(DisableButton-3)</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Alert Icon</description>
+			<posx>370</posx>
+			<posy>40</posy>
+			<width>30</width>
+			<height>30</height>
+			<texture>icon-info.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label" id="4">
+			<description>dialog Heading</description>
+			<posx>410</posx>
+			<posy>40</posy>
+			<width>303</width>
+			<label>Configure Button 3</label>
+			<align>left</align>
+			<include>DialogTitle</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="button" id="1">
+			<description>Mode Not Chosen Universal Name Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(UniversalButtonName-3)</onclick>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>6</onup>
+			<ondown>2</ondown>
+			<font>font14</font>
+			<label>Change Basic Button Name</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(USE_Category-3) | Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(BookmarkMode-3) | Skin.HasSetting(DisableButton-3)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="1">
+			<description>Single Script Name Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(ScriptButtonName-3)</onclick>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>7</onup>
+			<ondown>2</ondown>
+			<font>font14</font>
+			<label>Change Script Button Name</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="1">
+			<description>Category Name Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(CategoryButtonName-3)</onclick>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>7</onup>
+			<ondown>2</ondown>
+			<font>font14</font>
+			<label>Change Category Button Name</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="1">
+			<description>Bookmark Name Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(BookmarkButtonName-3)</onclick>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>7</onup>
+			<ondown>2</ondown>
+			<font>font14</font>
+			<label>Change Bookmark Button Name</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(BookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="1">
+			<description>Button Disabled Name Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(UniversalButtonName-3)</onclick>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<onup>3</onup>
+			<ondown>2</ondown>
+			<font>font14</font>
+			<label>Change Basic Button Name</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="2">
+			<description>Universal Icon Chooser Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>1</onup>
+			<ondown>3</ondown>
+			<onclick>Skin.SetImage(UniversalImage-3)</onclick>
+			<font>font14</font>
+			<label>Change Basic Button Icon</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(USE_Category-3) | Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(BookmarkMode-3)] | Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="2">
+			<description>Single Script Icon Chooser Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>1</onup>
+			<ondown>3</ondown>
+			<onclick>Skin.SetImage(ScriptImage-3)</onclick>
+			<font>font14</font>
+			<label>Change Script Button Icon</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="2">
+			<description>Category Script Icon Chooser Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>1</onup>
+			<ondown>3</ondown>
+			<onclick>Skin.SetImage(CategoryImage-3)</onclick>
+			<font>font14</font>
+			<label>Change Category Button Icon</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="2">
+			<description>Bookmark Icon Chooser Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<onup>1</onup>
+			<ondown>3</ondown>
+			<onclick>Skin.SetImage(BookmarkImage-3)</onclick>
+			<font>font14</font>
+			<label>Change Bookmark Button Icon</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(BookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="3">
+			<description>Bookmark Disable Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Disable Button</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>2</onup>
+			<ondown>5</ondown>
+			<selected>Skin.HasSetting(DisableButton-3)</selected>
+			<onclick>Skin.ToggleSetting(DisableButton-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(BookmarkMode-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="3">
+			<description>Regular Disable Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Disable Button</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>2</onup>
+			<ondown>4</ondown>
+			<selected>Skin.HasSetting(DisableButton-3)</selected>
+			<onclick>Skin.ToggleSetting(DisableButton-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>!Skin.HasSetting(BookmarkMode-3) + !Skin.HasSetting(USE_Category-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="3">
+			<description>Category Disable Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Disable Button</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>2</onup>
+			<ondown>5</ondown>
+			<selected>Skin.HasSetting(DisableButton-3)</selected>
+			<onclick>Skin.ToggleSetting(DisableButton-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(use_Category-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(4)</visible>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>350</width>
+			<height>59</height>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="4">
+			<description>Single Script Mode Button</description>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Single Script Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<selected>Skin.HasSetting(ScriptMode-3)</selected>
+			<onclick>Skin.ToggleSetting(ScriptMode-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(USE_Category-3) | Skin.HasSetting(BookmarkMode-3)] + !Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="4">
+			<description>Single Script Mode Button</description>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Single Script Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<onup>3</onup>
+			<ondown>7</ondown>
+			<selected>Skin.HasSetting(ScriptMode-3)</selected>
+			<onclick>Skin.ToggleSetting(ScriptMode-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(USE_Category-3) | Skin.HasSetting(BookmarkMode-3)] + Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="label">
+			<description>Disabled Single Script Mode label</description>
+			<posx>380</posx>
+			<posy>214</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Single Script Mode</label>
+			<font>font14</font>
+			<textcolor>FF444444</textcolor>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(USE_Category-3) | Skin.HasSetting(BookmarkMode-3) | Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(5)</visible>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>350</width>
+			<height>59</height>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="5">
+			<description>Not Selected Category Script Mode Button</description>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Category Script Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>4</onup>
+			<ondown>6</ondown>
+			<selected>Skin.HasSetting(USE_Category-3)</selected>
+			<onclick>Skin.ToggleSetting(USE_Category-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(BookmarkMode-3)] + !Skin.HasSetting(DisableButton-3) + !Skin.HasSetting(USE_Category-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="5">
+			<description>Selected Category Script Mode Button</description>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Category Script Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>7</ondown>
+			<selected>Skin.HasSetting(USE_Category-3)</selected>
+			<onclick>Skin.ToggleSetting(USE_Category-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="label">
+			<description>Disabled Category Script Mode label</description>
+			<posx>380</posx>
+			<posy>250</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Category Script Mode</label>
+			<font>font14</font>
+			<textcolor>FF444444</textcolor>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(BookmarkMode-3) | Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(6)</visible>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>350</width>
+			<height>59</height>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="6">
+			<description>Bookmark Mode Button</description>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Bookmark Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>6</onleft>
+			<onright>6</onright>
+			<onup>5</onup>
+			<ondown>7</ondown>
+			<selected>Skin.HasSetting(BookmarkMode-3)</selected>
+			<onclick>Skin.ToggleSetting(BookmarkMode-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>![Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(USE_Category-3)] + !Skin.HasSetting(DisableButton-3) + !Skin.HasSetting(BookmarkMode-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="6">
+			<description>Bookmark Mode Button</description>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Bookmark Mode</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>6</onleft>
+			<onright>6</onright>
+			<onup>3</onup>
+			<ondown>7</ondown>
+			<selected>Skin.HasSetting(BookmarkMode-3)</selected>
+			<onclick>Skin.ToggleSetting(BookmarkMode-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(BookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="label">
+			<description>Disabled Bookmark Mode label</description>
+			<posx>380</posx>
+			<posy>286</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Enable Bookmark Mode</label>
+			<font>font14</font>
+			<textcolor>FF444444</textcolor>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(ScriptMode-3) | Skin.HasSetting(USE_Category-3) | Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="7">
+			<description>Single Script Chooser Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Link to Script...</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>7</onleft>
+			<onright>7</onright>
+			<onup>4</onup>
+			<ondown>1</ondown>
+			<onclick>Skin.SetPath(ScriptPath-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="7">
+			<description>Category Scripts Chooser Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Link to Scripts...</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>7</onleft>
+			<onright>7</onright>
+			<onup>5</onup>
+			<ondown>1</ondown>
+			<onclick>XBMC.ActivateWindow(1980)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="7">
+			<description>Video Bookmark Chooser Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>350</width>
+			<height>59</height>
+			<label>Link to Video Bookmark...</label>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onleft>7</onleft>
+			<onright>7</onright>
+			<onup>6</onup>
+			<ondown>1</ondown>
+			<onclick>Skin.SetString(VideoBookmark-3)</onclick>
+			<font>font14</font>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible>Skin.HasSetting(BookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+	</controls>
+</window>

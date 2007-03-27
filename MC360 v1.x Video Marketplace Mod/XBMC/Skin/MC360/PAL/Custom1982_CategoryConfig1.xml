@@ -1,0 +1,1095 @@
+<window type="dialog" id="1982">
+	<defaultcontrol>1</defaultcontrol>
+	<previouswindow>1994</previouswindow>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" delay="1050" time="50">WindowClose</animation>
+	<controls>
+		<include>TheDialogs</include>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>98</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>134</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>170</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>206</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>242</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>278</posy>
+			<width>300</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>314</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>350</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>386</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>422</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>370</posx>
+			<posy>458</posy>
+			<width>300</width>
+			<height>1</height>
+			<visible>yes</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Alert Icon</description>
+			<posx>370</posx>
+			<posy>40</posy>
+			<width>30</width>
+			<height>30</height>
+			<texture>icon-info.png</texture>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="label">
+			<description>dialog Heading</description>
+			<posx>410</posx>
+			<posy>40</posy>
+			<width>303</width>
+			<label>Category Mode Config 1</label>
+			<align>left</align>
+			<include>DialogTitle</include>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="radiobutton" id="1">
+			<description>Button 1 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable1)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable1)</onclick>
+			<onleft>3</onleft>
+			<onright>2</onright>
+			<onup>28</onup>
+			<ondown>4</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 1</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(2) + !Control.HasFocus(3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="2">
+			<description>Button 1 Set Script Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script1)</onclick>
+			<onleft>1</onleft>
+			<onright>3</onright>
+			<onup>28</onup>
+			<ondown>4</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 1</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="3">
+			<description>Button 1 Name Script Button</description>
+			<posx>340</posx>
+			<posy>88</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name1)</onclick>
+			<onleft>2</onleft>
+			<onright>1</onright>
+			<onup>28</onup>
+			<ondown>4</ondown>
+			<font>font14</font>
+			<label>Name Script 1</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(3)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="4">
+			<description>Button 2 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable2)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable2)</onclick>
+			<onleft>6</onleft>
+			<onright>5</onright>
+			<onup>1</onup>
+			<ondown>7</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 2</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(5) + !Control.HasFocus(6)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="5">
+			<description>Button 2 Set Script Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script2)</onclick>
+			<onleft>4</onleft>
+			<onright>6</onright>
+			<onup>1</onup>
+			<ondown>7</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 2</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(5)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="6">
+			<description>Button 2 Name Script Button</description>
+			<posx>340</posx>
+			<posy>124</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name2)</onclick>
+			<onleft>5</onleft>
+			<onright>4</onright>
+			<onup>1</onup>
+			<ondown>7</ondown>
+			<font>font14</font>
+			<label>Name Script 2</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(6)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="7">
+			<description>Button 3 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable3)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable3)</onclick>
+			<onleft>9</onleft>
+			<onright>8</onright>
+			<onup>4</onup>
+			<ondown>10</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 3</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(8) + !Control.HasFocus(9)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="8">
+			<description>Button 3 Set Script Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script3)</onclick>
+			<onleft>7</onleft>
+			<onright>9</onright>
+			<onup>4</onup>
+			<ondown>10</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 3</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="9">
+			<description>Button 3 Name Script Button</description>
+			<posx>340</posx>
+			<posy>160</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name3)</onclick>
+			<onleft>8</onleft>
+			<onright>7</onright>
+			<onup>4</onup>
+			<ondown>10</ondown>
+			<font>font14</font>
+			<label>Name Script 3</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(9)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="10">
+			<description>Button 4 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable4)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable4)</onclick>
+			<onleft>12</onleft>
+			<onright>11</onright>
+			<onup>7</onup>
+			<ondown>13</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 4</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(11) + !Control.HasFocus(12)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="11">
+			<description>Button 4 Set Script Button</description>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script4)</onclick>
+			<onleft>10</onleft>
+			<onright>12</onright>
+			<onup>7</onup>
+			<ondown>13</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 4</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="12">
+			<description>Button 4 Name Script Button</description>
+			<posx>340</posx>
+			<posy>196</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name4)</onclick>
+			<onleft>11</onleft>
+			<onright>10</onright>
+			<onup>7</onup>
+			<ondown>13</ondown>
+			<font>font14</font>
+			<label>Name Script 4</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(12)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="13">
+			<description>Button 5 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable5)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable5)</onclick>
+			<onleft>15</onleft>
+			<onright>14</onright>
+			<onup>10</onup>
+			<ondown>16</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 5</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(14) + !Control.HasFocus(15)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="14">
+			<description>Button 5 Set Script Button</description>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script5)</onclick>
+			<onleft>13</onleft>
+			<onright>15</onright>
+			<onup>10</onup>
+			<ondown>16</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 5</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(14)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="15">
+			<description>Button 5 Name Script Button</description>
+			<posx>340</posx>
+			<posy>232</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name5)</onclick>
+			<onleft>14</onleft>
+			<onright>13</onright>
+			<onup>10</onup>
+			<ondown>16</ondown>
+			<font>font14</font>
+			<label>Name Script 5</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(15)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="16">
+			<description>Button 6 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable6)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable6)</onclick>
+			<onleft>18</onleft>
+			<onright>17</onright>
+			<onup>13</onup>
+			<ondown>19</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 6</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(17) + !Control.HasFocus(18)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="17">
+			<description>Button 6 Set Script Button</description>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script6)</onclick>
+			<onleft>16</onleft>
+			<onright>18</onright>
+			<onup>13</onup>
+			<ondown>19</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 6</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(17)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="18">
+			<description>Button 6 Name Script Button</description>
+			<posx>340</posx>
+			<posy>268</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name6)</onclick>
+			<onleft>17</onleft>
+			<onright>16</onright>
+			<onup>13</onup>
+			<ondown>19</ondown>
+			<font>font14</font>
+			<label>Name Script 6</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(18)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="19">
+			<description>Button 7 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable7)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable7)</onclick>
+			<onleft>21</onleft>
+			<onright>20</onright>
+			<onup>16</onup>
+			<ondown>22</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 7</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(20) + !Control.HasFocus(21)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="20">
+			<description>Button 7 Set Script Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script7)</onclick>
+			<onleft>19</onleft>
+			<onright>21</onright>
+			<onup>16</onup>
+			<ondown>22</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 7</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(20)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="21">
+			<description>Button 7 Name Script Button</description>
+			<posx>340</posx>
+			<posy>304</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name7)</onclick>
+			<onleft>20</onleft>
+			<onright>19</onright>
+			<onup>16</onup>
+			<ondown>22</ondown>
+			<font>font14</font>
+			<label>Name Script 7</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(21)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="22">
+			<description>Button 8 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>340</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable8)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable8)</onclick>
+			<onleft>21</onleft>
+			<onright>23</onright>
+			<onup>19</onup>
+			<ondown>25</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 8</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(23) + !Control.HasFocus(24)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="23">
+			<description>Button 8 Set Script Button</description>
+			<posx>340</posx>
+			<posy>340</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script8)</onclick>
+			<onleft>22</onleft>
+			<onright>24</onright>
+			<onup>19</onup>
+			<ondown>25</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 8</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(23)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="24">
+			<description>Button 8 Name Script Button</description>
+			<posx>340</posx>
+			<posy>340</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name8)</onclick>
+			<onleft>23</onleft>
+			<onright>21</onright>
+			<onup>19</onup>
+			<ondown>25</ondown>
+			<font>font14</font>
+			<label>Name Script 8</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(24)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="25">
+			<description>Button 9 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>376</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable9)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable9)</onclick>
+			<onleft>27</onleft>
+			<onright>26</onright>
+			<onup>22</onup>
+			<ondown>28</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 9</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(26) + !Control.HasFocus(27)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="26">
+			<description>Button 9 Set Script Button</description>
+			<posx>340</posx>
+			<posy>376</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script9)</onclick>
+			<onleft>25</onleft>
+			<onright>27</onright>
+			<onup>22</onup>
+			<ondown>28</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 9</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(26)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="27">
+			<description>Button 9 Name Script Button</description>
+			<posx>340</posx>
+			<posy>376</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name9)</onclick>
+			<onleft>26</onleft>
+			<onright>25</onright>
+			<onup>22</onup>
+			<ondown>28</ondown>
+			<font>font14</font>
+			<label>Name Script 9</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(27)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="28">
+			<description>Button 10 Enable Script Button</description>
+			<posx>340</posx>
+			<posy>412</posy>
+			<width>285</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<selected>Skin.HasSetting(Button-1Enable10)</selected>
+			<onclick>Skin.ToggleSetting(Button-1Enable10)</onclick>
+			<onleft>30</onleft>
+			<onright>29</onright>
+			<onup>25</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<label>Enable Script Button 10</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">!Control.HasFocus(29) + !Control.HasFocus(30)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="29">
+			<description>Button 10 Set Script Button</description>
+			<posx>340</posx>
+			<posy>412</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetPath(Button-1Script10)</onclick>
+			<onleft>28</onleft>
+			<onright>30</onright>
+			<onup>25</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<label>Add/Change Script 10</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(29)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="30">
+			<description>Button 10 Name Script Button</description>
+			<posx>340</posx>
+			<posy>412</posy>
+			<width>350</width>
+			<height>59</height>
+			<texturefocus>guide-button-focus.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<pulseonselect>no</pulseonselect>
+			<onclick>Skin.SetString(Button-1Name10)</onclick>
+			<onleft>29</onleft>
+			<onright>28</onright>
+			<onup>25</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<label>Name Script 10</label>
+			<textoffsetx>40</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-white</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(30)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 1</description>
+			<posx>358</posx>
+			<posy>100</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 1</description>
+			<posx>668</posx>
+			<posy>100</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(3)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 2</description>
+			<posx>358</posx>
+			<posy>136</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(6)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 2</description>
+			<posx>668</posx>
+			<posy>136</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(4) | Control.HasFocus(5) | Control.HasFocus(6)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 3</description>
+			<posx>358</posx>
+			<posy>172</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(9)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 3</description>
+			<posx>668</posx>
+			<posy>172</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(7) | Control.HasFocus(8) | Control.HasFocus(9)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 4</description>
+			<posx>358</posx>
+			<posy>208</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(10) | Control.HasFocus(11) | Control.HasFocus(12)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 4</description>
+			<posx>668</posx>
+			<posy>208</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(10) | Control.HasFocus(11) | Control.HasFocus(12)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 5</description>
+			<posx>358</posx>
+			<posy>244</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(15)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 5</description>
+			<posx>668</posx>
+			<posy>244</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(13) | Control.HasFocus(14) | Control.HasFocus(15)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 6</description>
+			<posx>358</posx>
+			<posy>280</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(16) | Control.HasFocus(17) | Control.HasFocus(18)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 6</description>
+			<posx>668</posx>
+			<posy>280</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(16) | Control.HasFocus(17) | Control.HasFocus(18)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 7</description>
+			<posx>358</posx>
+			<posy>316</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(19) | Control.HasFocus(20) | Control.HasFocus(21)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 7</description>
+			<posx>668</posx>
+			<posy>316</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(19) | Control.HasFocus(20) | Control.HasFocus(21)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 8</description>
+			<posx>358</posx>
+			<posy>352</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 8</description>
+			<posx>668</posx>
+			<posy>352</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(22) | Control.HasFocus(23) | Control.HasFocus(24)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 9</description>
+			<posx>358</posx>
+			<posy>388</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 9</description>
+			<posx>668</posx>
+			<posy>388</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(25) | Control.HasFocus(26) | Control.HasFocus(27)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Left Arrow 10</description>
+			<posx>358</posx>
+			<posy>424</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(30)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<description>Right Arrow 10</description>
+			<posx>668</posx>
+			<posy>424</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(28) | Control.HasFocus(29) | Control.HasFocus(30)]</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+	</controls>
+</window>

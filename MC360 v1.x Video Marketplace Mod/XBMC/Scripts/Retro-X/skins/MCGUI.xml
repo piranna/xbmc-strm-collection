@@ -1,0 +1,435 @@
+<window id="1156">
+
+ <allowoverlay>no</allowoverlay>
+ <defaultcontrol always="false">4</defaultcontrol>
+ <resolution>PAL</resolution>
+ 
+ <controls>
+
+<!-- MAIN WINDOW - START -->
+
+  <control type="image">
+   	<description>background image</description>
+	<posx>18</posx>
+	<posy>0</posy>
+	<width>702</width>
+	<height>576</height>
+   	<texture>background-green-alpha.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>70</posx>
+   	<posy>0</posy>
+   	<width>16</width>
+   	<height>54</height>
+   	<texture>bkgd-whitewash-glass-top-left.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>86</posx>
+   	<posy>0</posy>
+   	<width>667</width>
+   	<height>64</height>
+   	<texture>bkgd-whitewash-glass-top-middle.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>753</posx>
+   	<posy>0</posy>
+   	<width>16</width>
+   	<height>64</height>
+   	<texture>bkgd-whitewash-glass-top-right.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>86</posx>
+   	<posy>512</posy>
+   	<width>667</width>
+   	<height>64</height>
+   	<texture>bkgd-whitewash-glass-bottom-middle.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>70</posx>
+   	<posy>512</posy>
+   	<width>16</width>
+   	<height>64</height>
+   	<texture>bkgd-whitewash-glass-bottom-left.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>753</posx>
+   	<posy>512</posy>
+   	<width>667</width>
+   	<height>64</height>
+   	<texture>bkgd-whitewash-glass-bottom-right.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>60</posx>
+   	<posy>0</posy>
+   	<width>32</width>
+   	<height>576</height>
+   	<texture>background-overlay-whitewash-left.png</texture>
+  </control>
+
+  <control type="image">
+   	<description>background image</description>
+   	<posx>92</posx>
+   	<posy>0</posy>
+   	<width>628</width>
+   	<height>576</height>
+   	<texture>background-overlay-whitewash-centertile.png</texture>
+  </control>
+
+  <control type="image">
+	<description>background image</description>
+   	<posx>-61</posx>
+   	<posy>0</posy>
+   	<width>128</width>
+   	<height>576</height>
+   	<texture>blades-runner-left.png</texture>
+  </control>
+
+
+  <control type="image">
+	<description>background image</description>
+   	<posx>18</posx>
+   	<posy>0</posy>
+   	<width>80</width>
+   	<height>576</height>
+   	<texture>blades-size4-header.png</texture>
+        <visible>!skin.string(header)</visible>
+  </control>
+
+  <control type="image">
+	<description>background image</description>
+   	<posx>18</posx>
+   	<posy>0</posy>
+   	<width>80</width>
+   	<height>576</height>
+   	<info>skin.string(header)</info>
+        <visible></visible>
+  </control>
+
+  <control type="image">
+	<description>background image</description>
+   	<posx>78</posx>
+   	<posy>80</posy>
+   	<width>210</width>
+   	<height>355</height>
+   	<texture>systemhomebutton-1-top.png</texture>
+  </control>
+
+
+<!-- START of Function Buttons A  -->
+  <control type="image" id="10">
+   	<description>A image</description>
+   	<posx>633</posx>
+   	<posy>525</posy>
+   	<width>21</width>
+   	<height>21</height>
+   	<texture>button-A.png</texture>
+  </control>
+
+  <control type="label" id="11">
+   	<description>A LABEL</description>
+   	<posx>623</posx>
+   	<posy>528</posy>
+   	<width>200</width>
+   	<height>25</height>
+   	<align>right</align>
+   	<label> </label>
+   	<font>font12</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+<!-- START of Function Buttons  B  -->
+  <control type="image" id="12">
+   	<description>B image</description>
+   	<posx>620</posx>
+   	<posy>505</posy>
+   	<width>21</width>
+   	<height>21</height>
+   	<texture>button-B-turnedoff.png</texture>
+  </control>
+
+  <control type="label" id="13">
+   	<description>B LABEL</description>
+   	<posx>610</posx>
+   	<posy>508</posy>
+   	<width>200</width>
+   	<height>25</height>
+   	<align>right</align>
+   	<label> </label>
+   	<font>font12</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+<!-- START of Function Buttons  X  -->
+  <control type="image" id="14">
+   	<description>X image</description>
+   	<posx>112</posx>
+   	<posy>525</posy>
+   	<width>21</width>
+   	<height>21</height>
+   	<texture>button-X-turnedoff.png</texture>
+  </control>
+
+  <control type="label" id="15">
+   	<description>X LABEL</description>
+   	<posx>145</posx>
+   	<posy>528</posy>
+   	<width>200</width>
+   	<height>25</height>
+   	<align>left</align>
+   	<label> </label>
+   	<font>font12</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+<!-- START of Function Buttons  Y  -->
+  <control type="image" id="16">
+   	<description>Y image</description>
+   	<posx>125</posx>
+   	<posy>505</posy>
+   	<width>21</width>
+   	<height>21</height>
+   	<texture>button-Y-turnedoff.png</texture>
+  </control>
+
+  <control type="label" id="17">
+   	<description>Y LABEL</description>
+   	<posx>155</posx>
+   	<posy>508</posy>
+   	<width>200</width>
+   	<height>25</height>
+   	<align>left</align>
+   	<label> </label>
+   	<font>font12</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+<!-- Blade Label -->
+
+  <control type="label" id="18">
+   	<description>Blade LABEL</description>
+   	<posx>79</posx>
+   	<posy>155</posy>
+   	<width>200</width>
+   	<height>355</height>
+   	<align>left</align>
+        <angle>270</angle>
+   	<label>games</label>
+        <textcolor>0xff000000</textcolor>
+   	<font>font14</font>
+  </control>
+
+<!-- HEADER LABEL: -->
+
+  <control type="label" id="19">
+   	<description>Emulators Header</description>
+   	<posx>102</posx>
+   	<posy>42</posy>
+   	<width>300</width>
+   	<align>left</align>
+   	<label>Retro-X:</label>
+   	<font>font18</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+  <control type="label" id="40">
+   	<description>Roms Header</description>
+   	<posx>320</posx>
+   	<posy>42</posy>
+   	<width>300</width>
+   	<align>left</align>
+   	<label></label>
+	<font>special13</font>
+	<textcolor>0xffffffff</textcolor>
+  </control>
+
+<!-- Item Labels -->
+
+  <control type="label" id="22">
+   	<description>lbdTitle</description>
+	<posx>335</posx>
+	<posy>475</posy>
+   	<width>400</width>
+   	<height>35</height>
+   	<label> </label>
+   	<font>font10</font>
+	<textcolor>0xff000000</textcolor>
+        <visible>false</visible>
+  </control>
+
+  <control type="label" id="20">
+   	<description>Label Count</description>
+	<posx>335</posx>
+	<posy>475</posy>
+   	<width>200</width>
+   	<height>35</height>
+   	<align>left</align>
+   	<label> </label>
+   	<font>font12</font>
+	<textcolor>0xff000000</textcolor>
+        <visible></visible>
+  </control>
+
+<!-- Top Image Display -->
+
+  <control type="image" id="95">
+	<description>background image</description>
+   	<posx>100</posx>
+   	<posy>90</posy>
+   	<width>172</width>
+   	<height>172</height>
+   	<texture>thumb-focus.png</texture>
+  </control>
+
+  <control type="image" id="96">
+   	<description>BIG ImgIcon BIG</description>
+   	<posx>110</posx>
+   	<posy>100</posy>
+   	<width>150</width>
+   	<height>150</height>
+        <texture>icon-emulators.png</texture>
+  </control>
+
+<!-- Bottom Image Display -->
+
+  <control type="image">
+	<description>background image</description>
+   	<posx>100</posx>
+   	<posy>290</posy>
+   	<width>172</width>
+   	<height>172</height>
+   	<texture>thumb-focus.png</texture>
+  </control>
+
+  <control type="image" id="21">
+   	<description>ImgIcon</description>
+   	<posx>110</posx>
+   	<posy>300</posy>
+   	<width>150</width>
+   	<height>150</height>
+  </control>
+
+
+<!-- EMUS/ROMS Display -->
+
+  <control type="listcontrol" id="50">
+	<description>Main Display</description>
+	<posx>300</posx>
+	<posy>90</posy>
+	<width>390</width>
+	<height>400</height>
+	<font>font13</font>
+	<font2>font12</font2>
+	<textureheight>26</textureheight>
+	<textxoff>4</textxoff>
+	<textxoff2>0</textxoff2>
+	<textureup>sortup-nofocus.png</textureup>
+	<texturedown>sortdown-nofocus.png</texturedown>
+	<textureupfocus>sortup-focus.png</textureupfocus>
+	<texturedownfocus>sortdown-focus.png</texturedownfocus>
+	<texturefocus>iconlist-focus.png</texturefocus>
+	<texturenofocus>iconlist-nofocus.png</texturenofocus>
+	<suffix> |</suffix>
+        <onup>50</onup>
+        <ondown>50</ondown>
+        <onleft>4</onleft>
+	<aligny>center</aligny>
+  </control>
+
+<!-- Modify -->
+
+  <control type="button" id="4">
+	<description>MODIFY</description>
+	<posx>82</posx>
+	<posy>85</posy>
+	<width>205</width>
+	<height>40</height>
+        <label>Emulator: Modify</label>
+	<font>special13</font>
+	<textcolor>0xff000000</textcolor>
+        <textoffsetx>45</textoffsetx>
+	<texturefocus>button-focus.png</texturefocus>
+	<texturenofocus>button-nofocus.png</texturenofocus>
+	<aligny>center</aligny>
+        <onup>7</onup>
+        <ondown>5</ondown>
+        <onright>50</onright>
+  </control>
+
+<!-- Add -->
+
+  <control type="button" id="5">
+	<description>ADD</description>
+	<posx>82</posx>
+	<posy>121</posy>
+	<width>205</width>
+	<height>40</height>
+        <label>Emulator: Add</label>
+	<font>special13</font>
+	<textcolor>0xff000000</textcolor>
+        <textoffsetx>45</textoffsetx>
+	<texturefocus>button-focus.png</texturefocus>
+	<texturenofocus>button-nofocus.png</texturenofocus>
+	<aligny>center</aligny>
+        <onup>4</onup>
+        <ondown>6</ondown>
+        <onright>50</onright>
+  </control>
+
+<!-- Delete -->
+
+  <control type="button" id="6">
+	<description>DEL</description>
+	<posx>82</posx>
+	<posy>154</posy>
+	<width>205</width>
+	<height>40</height>
+        <label>Emulator: Delete</label>
+	<font>special13</font>
+	<textcolor>0xff000000</textcolor>
+        <textoffsetx>45</textoffsetx>
+	<texturefocus>button-focus.png</texturefocus>
+	<texturenofocus>button-nofocus.png</texturenofocus>
+	<aligny>center</aligny>
+        <onup>5</onup>
+        <ondown>7</ondown>
+        <onright>50</onright>
+  </control>
+
+<!-- Config -->
+
+  <control type="button" id="7">
+	<description>Config</description>
+	<posx>82</posx>
+	<posy>187</posy>
+	<width>205</width>
+	<height>40</height>
+        <label>System: Config</label>
+	<font>special13</font>
+	<textcolor>0xff000000</textcolor>
+        <textoffsetx>45</textoffsetx>
+	<texturefocus>button-focus.png</texturefocus>
+	<texturenofocus>button-nofocus.png</texturenofocus>
+	<aligny>center</aligny>
+        <onup>6</onup>
+        <ondown>4</ondown>
+        <onright>50</onright>
+  </control>
+
+ </controls>
+
+</window>
+

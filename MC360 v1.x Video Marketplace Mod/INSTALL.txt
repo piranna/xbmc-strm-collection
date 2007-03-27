@@ -1,0 +1,69 @@
+++++++++++++++++++++++++++
+INSTALLATION INSTRUCTIONS: 
+++++++++++++++++++++++++++
+
+
+1.  FTP into your xbox and find the XBMC folder on your xbox.  Copy the XBMC folder found in this mod over the XBMC folder on the xbox. Note: no parts of XBMC itself are modified, this is simply so you can transfer all scripts and everything with one step.  If there are any scripts included with this mod that you already have on your xbox and would rather just keep the version you have, simply delete them from the mod before transfering over.
+
+
+
+2.  Download the latest release of XBMC-TV from http://xbmc-tv.com OR checkout the latest code from the project SVN on http://code.google.com/p/xbmc-strm-collection (Tortoise SVN or any other SVN client is needed for that operation!)
+
+
+
+3.  FTP the "Marketplace Icons" and "XBMC-TV" folders to somewhere convenient on your xbox hard drive.  I simply placed mine in the root of my E drive.
+
+
+
+4.  Make sure everything copied properly, and restart XBMC.
+
+
+
+5.  Once XBMC restarts, go into Videos and select "Add Source."  Navigate to the XBMC-TV folder and select OK.  Make sure the Bookmark is named XBMC-TV and select "done."  Note: this is needed for the Video Marketplace default settings, otherwise one of the buttons will be broken.
+
+
+
+6.  Go to the MC360 Guide by pressing Start on the controller or selecting the MC360 Guide button with the remote control.  Go to "Personal Settings" and then "Skin Mods Settings."  Configure things as you like.  Things are fairly self explanatory.  MCE stands for Media Center Extender.  WOL/SOL stands for Wake-On-LAN and Shutdown-On-LAN and enables the button to remotely start and shutdown your computer.
+
+
+
+
+++++++++++++++++++++++++++++++++++++
+Movie / TV Show Button Instructions:
+++++++++++++++++++++++++++++++++++++
+
+
+1.  Create 2 bookmarks that separately link to your TV Shows and Movies
+
+
+
+2.  Enable option in Skin Mods Settings.
+
+
+
+3.  Link buttons to appropriate Bookmarks by type in the name of the corresponding bookmark in the "Link to Movie/TV Show Bookmark" buttons.
+
+
+
+
++++++++++++++++++++++++++++++++++++
+Media Center Extender Instructions:
++++++++++++++++++++++++++++++++++++
+
+
+1.  Make sure you have Media Center Extender for Xbox installed in your xbox hard driveor in the DVD drive.
+
+
+
+2.  Enable option "Enable MCE Button" in Skin Mods Settings.
+
+
+
+3.  Select button "Specify Media Center folder..." and navigate to your Xbox Media Center Extender folder (probably named Media Center Extender for Xbox).  Select "done" and exit window.
+
+
+
+4.  Navigate to Media Blade and select Media Center to launch program.
+
+
+For further instructions for both the Media Center button and the Remote Computer start/shutdown, please see appropriate readme's included with mod.

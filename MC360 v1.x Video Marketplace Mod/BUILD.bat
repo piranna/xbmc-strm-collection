@@ -4,7 +4,7 @@ ECHO Creating "BUILD" Folder
 rmdir BUILD /S /Q
 
 ECHO ------------------------------
-ECHO Building XBMC-TV Directory...
+ECHO Building BUILD Directory...
 xcopy "Marketplace Icons" "BUILD\Marketplace Icons" /E /Q /I /Y
 xcopy "XBMC" "BUILD\XBMC" /E /Q /I /Y
 

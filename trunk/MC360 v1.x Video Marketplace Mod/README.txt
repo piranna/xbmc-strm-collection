@@ -1,4 +1,6 @@
-MC360 monster mod by timdog82001
+MC360 monster mod by timdog82001 (ElenionTolto)
+
+For suggestions, requests, comments, criticism, bug reports, or anything at all, go to the original thread at http://forums.xbox-scene.com/index.php?act=ST&f=193&t=593354
 
 1.  XBMC Video Marketplace / Script  Marketplace
         
@@ -40,13 +42,8 @@ Here are some basic instructions for installation of this mod.  There will be re
 FUTURE POSSIBILITIES?
 
 
-Let me know what you guys think about these features being added in the future.  Any other features you would like?  Assuming anybody even wants this mod in the first place haha
-
 
 - Add bookmarks to category scripts dialogs
-
-
-- Add ability to use library mode with bookmarks
 
 
 - Add option to link TV Shows and Movies to scripts and to have custom names
@@ -56,9 +53,6 @@ Let me know what you guys think about these features being added in the future. 
 
 
 - Make custom square image icon thing for marketplace.  I have almost no experience with Illustrator.  If someone wants to whip up a custom icon for the Video Marketplace and it looks good, I'd be happy to include it in place of the eX button, since that's somewhat redundant, already found in the XBMC Live Place.
-
-
-- Evolve into more of a "Media Marketplace" and add options for music or picture bookmarks
 
 
 - Add names of current script in catalog config dialog

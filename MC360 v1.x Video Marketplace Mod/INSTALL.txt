@@ -13,7 +13,7 @@ NOTE: No parts of XBMC itself are modified, this is simply so you can transfer a
 
 
 
-3.  FTP the "Marketplace Icons" and "XBMC-TV" folders to somewhere convenient on your xbox hard drive.  I simply placed mine in the root of my E drive. Note:  If you use a widescreen television or monitor, and you finish installing this mod and decide you don't like how the icons look, you can transfer over the folder named "Wide Marketplace Icons" and removed the "Marketplace Icons" folder and use the icons include inside instead.  These wide marketplace icons will maintain the correct aspect ratio and size for the icons, however they leave a lot of empty space.  It's up to you.
+3.  FTP the "Marketplace Icons" and "XBMC-TV" folders to somewhere convenient on your xbox hard drive.  I simply placed mine in the root of my E drive.
 
 
 

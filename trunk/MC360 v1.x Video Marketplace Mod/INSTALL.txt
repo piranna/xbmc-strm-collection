@@ -3,7 +3,7 @@ INSTALLATION INSTRUCTIONS:
 ++++++++++++++++++++++++++
 
 
-1.  FTP into your xbox and find the XBMC folder on your xbox.  Copy the XBMC folder found in this mod over the XBMC folder on the xbox.
+1.  If building from SVN, run the BUILD.bat.  Choose between Widescreen Icons or Standard Wide Icons.  Widescreen icons maintain the correct aspect ratio without stretching or cropping a lot of the edges off, but leave a lot of empty space.  You can try both and decide which you like better.  Now, FTP into your xbox and find the XBMC folder on your xbox.  Copy the XBMC folder found in this mod over the XBMC folder on the xbox.
 
 NOTE: No parts of XBMC itself are modified, this is simply so you can transfer all scripts and everything with one step.  If there are any scripts included with this mod that you already have on your xbox and would rather just keep the version you have, simply delete them from the mod before transfering over.
 

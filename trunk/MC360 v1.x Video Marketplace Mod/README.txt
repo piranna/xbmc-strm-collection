@@ -55,7 +55,7 @@ FUTURE POSSIBILITIES?
 - Make custom square image icon thing for marketplace.  I have almost no experience with Illustrator.  If someone wants to whip up a custom icon for the Video Marketplace and it looks good, I'd be happy to include it in place of the eX button, since that's somewhat redundant, already found in the XBMC Live Place.
 
 
-- Add names of current script in catalog config dialog
+- Add names of current script in category config dialog
 
 
 - Ability to automatically look in multiple places for XBMC-TV folder (probably root of E and F drives) and default to looking for bookmark if its not located in either of those places.  Not sure if this is possible however, but if anybody knows how, let me know!

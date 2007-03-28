@@ -252,6 +252,12 @@
       <activate>guide_open.wav</activate>
       <deactivate>guide_close.wav</deactivate>
     </window>
+    
+    <window>
+      <name>1971</name>
+      <activate>guide_open.wav</activate>
+      <deactivate>guide_close.wav</deactivate>
+    </window>
 <!-- End Guide sounds -->
 
 

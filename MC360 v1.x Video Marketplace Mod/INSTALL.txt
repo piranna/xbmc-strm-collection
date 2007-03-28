@@ -3,7 +3,9 @@ INSTALLATION INSTRUCTIONS:
 ++++++++++++++++++++++++++
 
 
-1.  FTP into your xbox and find the XBMC folder on your xbox.  Copy the XBMC folder found in this mod over the XBMC folder on the xbox. Note: no parts of XBMC itself are modified, this is simply so you can transfer all scripts and everything with one step.  If there are any scripts included with this mod that you already have on your xbox and would rather just keep the version you have, simply delete them from the mod before transfering over.
+1.  FTP into your xbox and find the XBMC folder on your xbox.  Copy the XBMC folder found in this mod over the XBMC folder on the xbox.
+
+NOTE: No parts of XBMC itself are modified, this is simply so you can transfer all scripts and everything with one step.  If there are any scripts included with this mod that you already have on your xbox and would rather just keep the version you have, simply delete them from the mod before transfering over.
 
 
 
@@ -19,7 +21,7 @@ INSTALLATION INSTRUCTIONS:
 
 
 
-5.  Once XBMC restarts, go into Videos and select "Add Source."  Navigate to the XBMC-TV folder and select OK.  Make sure the Bookmark is named XBMC-TV and select "done."  Note: this is needed for the Video Marketplace default settings, otherwise one of the buttons will be broken.
+5.  Once XBMC restarts, go into Videos and select "Add Source."  Navigate to the XBMC-TV folder and select OK.  Make sure the Bookmark is named XBMC-TV and select "done."  Note: This is needed for the Video Marketplace default settings, otherwise one of the buttons will be broken.
 
 
 
@@ -41,7 +43,7 @@ Movie / TV Show Button Instructions:
 
 
 
-3.  Link buttons to appropriate Bookmarks by type in the name of the corresponding bookmark in the "Link to Movie/TV Show Bookmark" buttons.
+3.  Link buttons to appropriate Bookmarks by typing in the name of the corresponding bookmark in the "Link to Movie/TV Show Bookmark" buttons.
 
 
 

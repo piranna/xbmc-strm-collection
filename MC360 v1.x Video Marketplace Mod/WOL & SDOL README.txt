@@ -18,7 +18,7 @@ Note: This may look like a lot of words, and may seem complicated because of tha
 All this an much more is covered in more depth below
 
 
-IDIOT'S GUIDE TO CONFIGURING SCRIPTS:
+IDIOT'S GUIDE TO CONFIGURING SCRIPTS (just kidding about the idiot part ;):
 
 
 Shutdown On Lan (SOL/SDOL):
@@ -44,4 +44,4 @@ NOTE: There is an "autoupdate.py" included with this script. Don't run it, it wi
 
 HOW TO INSTALL:
 
-Simply copy this MC360 folder over the top of the one already on your xbox.  It may prompt you, saying there is already a file by this name, and so on.  Go ahead and say yes and copy over them.  Also, make sure the scripts are in the root of your scripts folder.
+Simply copy this XBMC folder over the top of the one already on your xbox.  It may prompt you, saying there is already a file by this name, and so on.  Go ahead and say yes and copy over them.

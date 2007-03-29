@@ -11,12 +11,12 @@ ECHO (2) Build with Standard Wide Icons
 
 SET /p SELECTION=Enter the number of your build option and press enter:
 
-IF "%SELECTION%"=="1" GOTO WIDE_ICONS
-IF "%SELECTION%"=="2" GOTO BIG_ICONS
+IF "%SELECTION%"=="1" GOTO WIDESCREEN_ICONS
+IF "%SELECTION%"=="2" GOTO STANDARD_ICONS
 
-:WIDE_ICONS
+:WIDESCREEN_ICONS
 ECHO ------------------------------
-ECHO Building with Wide Icons
+ECHO Building with Widescreen Icons
 ECHO ------------------------------
 
 ECHO Copying content..
@@ -24,9 +24,9 @@ xcopy "Wide Marketplace Icons" "BUILD\Marketplace Icons" /E /Q /I /Y
 GOTO MAIN
 
 
-:BIG_ICONS
+:STANDARD_ICONS
 ECHO ------------------------------
-ECHO Building with Big Icons
+ECHO Building with Standard Wide Icons
 ECHO ------------------------------
 
 ECHO Copying content..

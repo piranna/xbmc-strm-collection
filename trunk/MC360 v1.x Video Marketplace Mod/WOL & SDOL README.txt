@@ -10,12 +10,12 @@ Note: This may look like a lot of words, and may seem complicated because of tha
 
 1. Make sure not to run the SETUP.EXE or SETUP1.EXE files to try to install the sol.exe for the shutdown on lan. It isn't necessary, and they don't work.
 
-2. You have to manually edit the settings.ini and sol.py to make sure they match eachother, as well as the settings of your computer.
+2. You have to manually edit the settings.ini and sol.py to make sure they match eachother and match the settings of your computer.
 
 3. You have to enable Wake On Lan in your computers BIOS. Look in your computer's or motherboard's manual for more info.
 
 
-All this an much more is covered in more depth below
+All this and much more is covered in more depth below.
 
 
 IDIOT'S GUIDE TO CONFIGURING SCRIPTS (just kidding about the idiot part ;):

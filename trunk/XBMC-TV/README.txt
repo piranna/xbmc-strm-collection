@@ -6,7 +6,6 @@ Team Members:
 - MikeSyr
 - Piranna
 - ElenionTolto (timdog82001)
-- Roormonger
 - Muuminpapa
 - Vanadium
 - QuazarXpress

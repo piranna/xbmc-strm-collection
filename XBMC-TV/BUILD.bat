@@ -11,12 +11,14 @@ xcopy "Argentina" "XBMC-TV\Argentina" /E /Q /I /Y
 xcopy "Armenia" "XBMC-TV\Armenia" /E /Q /I /Y
 xcopy "Austria" "XBMC-TV\Austria" /E /Q /I /Y
 xcopy "Australia" "XBMC-TV\Australia" /E /Q /I /Y
+xcopy "Belarus" "XBMC-TV\Belarus" /E /Q /I /Y
 xcopy "Belgium" "XBMC-TV\Belgium" /E /Q /I /Y
 xcopy "Brazil" "XBMC-TV\Brazil" /E /Q /I /Y
 xcopy "Canada" "XBMC-TV\Canada" /E /Q /I /Y
 xcopy "Chile" "XBMC-TV\Chile" /E /Q /I /Y
 xcopy "China" "XBMC-TV\China" /E /Q /I /Y
 xcopy "Colombia" "XBMC-TV\Colombia" /E /Q /I /Y
+xcopy "Croatia" "XBMC-TV\Croatia" /E /Q /I /Y
 xcopy "Cuba" "XBMC-TV\Cuba" /E /Q /I /Y
 xcopy "Czech Republic" "XBMC-TV\Czech Republic" /E /Q /I /Y
 xcopy "Denmark" "XBMC-TV\Denmark" /E /Q /I /Y

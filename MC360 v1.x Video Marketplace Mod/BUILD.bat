@@ -6,8 +6,8 @@ rmdir BUILD /S /Q
 ECHO ------------------------------
 ECHO Please enter your build option 
 
-ECHO (1) Build with Widescreen Icons
-ECHO (2) Build with Standard Wide Icons
+ECHO (1) Build with Widescreen Monitor Wide Icons
+ECHO (2) Build with Standard Monitor Wide Icons
 
 SET /p SELECTION=Enter the number of your build option and press enter:
 

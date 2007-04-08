@@ -15,4 +15,4 @@ Team Members:
 
 Find updates at http://www.xbmc-tv.com or in the official SVN at http://xbmc-strm-collection.googlecode.com/svn/trunk/
 
-(tortoiseSVN needed to obtain SVN - http://tortoisesvn.net/downloads)
+(tortoiseSVN (or any other SVN client) is needed to obtain SVN - http://tortoisesvn.net/downloads)

@@ -62,6 +62,9 @@ xcopy "United States" "XBMC-TV\United States" /E /Q /I /Y
 xcopy "Venezuela" "XBMC-TV\Venezuela" /E /Q /I /Y
 xcopy "Vietnam" "XBMC-TV\Vietnam" /E /Q /I /Y
 xcopy "Webcams" "XBMC-TV\Webcams" /E /Q /I /Y
+copy "Copyright.txt" "XBMC-TV\"
+copy "README.txt" "XBMC-TV\"
+
 
 ECHO ------------------------------
 ECHO Removing SVN directories from XBMC-TV...

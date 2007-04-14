@@ -65,6 +65,7 @@ xcopy "Vietnam" "XBMC-TV\Vietnam" /E /Q /I /Y
 xcopy "Webcams" "XBMC-TV\Webcams" /E /Q /I /Y
 copy "Copyright.txt" "XBMC-TV\"
 copy "README.txt" "XBMC-TV\"
+copy "INSTALL.txt" "XBMC-TV\"
 
 
 ECHO ------------------------------

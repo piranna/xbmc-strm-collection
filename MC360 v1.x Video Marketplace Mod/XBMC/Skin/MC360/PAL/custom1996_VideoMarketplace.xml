@@ -2340,7 +2340,7 @@
 					<posy>377</posy>
 					<width>280</width>
 					<height>64</height>
-					<texture>video clips.png</texture>
+					<texture>videoclips.png</texture>
 					<visible>!Skin.String(UniversalImage-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(XBEMode-5)</visible>
 				</control>
 				<control type="image">

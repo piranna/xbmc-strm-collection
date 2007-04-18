@@ -79,7 +79,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>XBMC.RunXBE($INFO[Skin.String(MediaCenterPath)]\default.xbe)</onclick>
-			<onclick>XBMC.Dialog.Close(1997)</onclick>
+			<onclick>Dialog.Close(1972)</onclick>
 			<onleft>11</onleft>
 			<onright>11</onright>
 			<onup>10</onup>
@@ -102,7 +102,7 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>XBMC.Dialog.Close(1997)</onclick>
+			<onclick>Dialog.Close(1972)</onclick>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>11</onup>

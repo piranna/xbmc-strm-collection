@@ -40,8 +40,3 @@ To configure the Wake on Lan to work, you need to first, make sure your computer
 Now that you've enabled it in the BIOS of your computer, all you should have to do is configure it on your xbox. On your computer, go Start -> Run and type "cmd" and press enter. A black window should pop up, and here type "ipconfig /all" and press enter. Your active network ports should all pop up here with the mac address(es) (should be in a format similar to "00-17-31-8B-2E-1C." If there's more than one, figure out which one is connected to the network your xbox is on. Now, on the xbox, start the script, and go to "Change Settings." Here, you can add up to 5 different computers, and name each one. Go to Computer 1, change the name if you'd like, and change the mac address to the one you found on your computer. Now, when you shutdown your computer, if everything is configured correctly, you should be able to start your computer with a couple easy clicks of a button on your xbox.
 
 NOTE: There is an "autoupdate.py" included with this script. Don't run it, it will only break the script and make it nonfunctional.
-
-
-HOW TO INSTALL:
-
-Simply copy this XBMC folder over the top of the one already on your xbox.  It may prompt you, saying there is already a file by this name, and so on.  Go ahead and say yes and copy over them.

@@ -148,7 +148,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-2)</info>
 					<visible>Skin.String(UniversalImage-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmarkImage-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmarkImage-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmarkImage-2)] | [Skin.HasSetting(XBEMode-2) + !Skin.String(XBEImage-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryImage-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryImage-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryImage-2)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 2 Default Image Icon</description>
@@ -365,7 +364,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-3)</info>
 					<visible>Skin.String(UniversalImage-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkImage-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkImage-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkImage-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEImage-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryImage-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryImage-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryImage-3)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 3 Default Image Icon</description>
@@ -582,7 +580,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-4)</info>
 					<visible>Skin.String(UniversalImage-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(XBEMode-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [Skin.HasSetting(VideoBookmarkMode-4) + !Skin.String(VideoBookmarkImage-4)] | [Skin.HasSetting(AudioBookmarkMode-4) + !Skin.String(AudioBookmarkImage-4)] | [Skin.HasSetting(PictureBookmarkMode-4) + !Skin.String(PictureBookmarkImage-4)] | [Skin.HasSetting(XBEMode-4) + !Skin.String(XBEImage-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryImage-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryImage-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryImage-4)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 4 Default Image Icon</description>
@@ -799,7 +796,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-5)</info>
 					<visible>Skin.String(UniversalImage-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + !Skin.String(VideoBookmarkImage-5)] | [Skin.HasSetting(AudioBookmarkMode-5) + !Skin.String(AudioBookmarkImage-5)] | [Skin.HasSetting(PictureBookmarkMode-5) + !Skin.String(PictureBookmarkImage-5)] | [Skin.HasSetting(XBEMode-5) + !Skin.String(XBEImage-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryImage-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryImage-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryImage-5)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 5 Default Image Icon</description>
@@ -1064,7 +1060,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-1)</info>
 					<visible>Skin.String(UniversalImage-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [Skin.HasSetting(VideoBookmarkMode-1) + !Skin.String(VideoBookmarkImage-1)] | [Skin.HasSetting(AudioBookmarkMode-1) + !Skin.String(AudioBookmarkImage-1)] | [Skin.HasSetting(PictureBookmarkMode-1) + !Skin.String(PictureBookmarkImage-1)] | [Skin.HasSetting(XBEMode-1) + !Skin.String(XBEImage-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryImage-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryImage-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryImage-1)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 1 Default Image Icon</description>
@@ -1281,7 +1276,6 @@
 					<height>64</height>
 					<info>Skin.String(UniversalImage-6)</info>
 					<visible>Skin.String(UniversalImage-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [Skin.HasSetting(VideoBookmarkMode-6) + !Skin.String(VideoBookmarkImage-6)] | [Skin.HasSetting(AudioBookmarkMode-6) + !Skin.String(AudioBookmarkImage-6)] | [Skin.HasSetting(PictureBookmarkMode-6) + !Skin.String(PictureBookmarkImage-6)] | [Skin.HasSetting(XBEMode-6) + !Skin.String(XBEImage-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryImage-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryImage-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryImage-6)]]</visible>
-					<aspectratio>scale</aspectratio>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 6 Default Image Icon</description>
@@ -1494,7 +1488,7 @@
 					<visible>!Player.HasVideo</visible>
 					<pulseonselect>no</pulseonselect>
 					<texturefocus border="15">xbmc_live_eX_ad002.png</texturefocus>
-					<texturenofocus border="15">XBMCLivePlace\xbmc_live_eX_ad001.png</texturenofocus>
+					<texturenofocus border="15">xbmc_live_eX_ad001.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(28)</onclick>
 				</control>
 				<control type="button" id="7">

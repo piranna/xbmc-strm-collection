@@ -183,20 +183,57 @@ def StripHtml(arHtml):
 class CNNBrowser(xbmcgui.Window):
 	def __init__(self):
 		self.setCoordinateResolution(COORD_NTSC_4X3)
-		self.addControl(xbmcgui.ControlImage(0,0, 720,480, 'background.png'))
-		self.lstVideos = xbmcgui.ControlList(211,100,460,355,imageWidth=30,imageHeight=30)
+        	# background image
+		self.addControl(xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png'))
+        	# Whitewash glass top left
+		self.addControl(xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png'))
+        	# Whitewash glass top middle
+		self.addControl(xbmcgui.ControlImage(86, 0, 592, 64, 'bkgd-whitewash-glass-top-middle.png'))
+        	# Whitewash glass top right
+		self.addControl(xbmcgui.ControlImage(678, 0, 16, 64, 'bkgd-whitewash-glass-top-right.png'))
+        	# Whitewash glass bottom left
+		self.addControl(xbmcgui.ControlImage(70, 412, 16, 64, 'bkgd-whitewash-glass-bottom-left.png'))
+        	# Whitewash glass bottom middle
+		self.addControl(xbmcgui.ControlImage(86, 412, 592, 64, 'bkgd-whitewash-glass-bottom-middle.png'))
+        	# Whitewash glass bottom right
+		self.addControl(xbmcgui.ControlImage(678, 412, 16, 64, 'bkgd-whitewash-glass-bottom-right.png'))
+        	# Whitewash overlay left
+		self.addControl(xbmcgui.ControlImage(60, 0, 32, 476, 'background-overlay-whitewash-left.png'))
+        	# Whitewash overlay middle
+		self.addControl(xbmcgui.ControlImage(92, 0, 553, 476, 'background-overlay-whitewash-centertile.png'))
+        	# Whitewash overlay right
+		self.addControl(xbmcgui.ControlImage(645, 0, 64, 476, 'background-overlay-whitewash-right.png'))
+        	# Left blade runner
+		self.addControl(xbmcgui.ControlImage(-61, 0, 128, 476, 'blades-runner-left.png'))
+        	# Right blade runner
+		self.addControl(xbmcgui.ControlImage(665, 0, 128, 476, 'blades-runner-right.png'))
+                # Y Button
+        	self.addControl(xbmcgui.ControlImage(125, 420, 21, 21, 'button-Y-turnedoff.png'))
+                # X Button
+        	self.addControl(xbmcgui.ControlImage(112, 440, 21, 21, 'button-X.png'))
+        	# Back Button
+        	self.addControl(xbmcgui.ControlImage(620, 420, 21, 21, 'button-back.png'))
+                # A Button
+        	self.addControl(xbmcgui.ControlImage(633, 440, 21, 21, 'button-A.png'))
+        	# Header Blade
+		self.addControl(xbmcgui.ControlImage(18, 0, 80, 476, 'blades-size4-header.png'))
+		self.lstVideos = xbmcgui.ControlList(290,63,375,390,imageWidth=30,imageHeight=30)
 		self.addControl(self.lstVideos)
 		self.setFocus(self.lstVideos)
 		self.makeButtons()
-		self.addControl(xbmcgui.ControlImage(60, 20, 142, 73,ROOT_DIR + 'default.tbn'))
-		self.lblDescription = xbmcgui.ControlTextBox(211,25,455,5000,'font12','FFFFFF00')
+		self.addControl(xbmcgui.ControlImage(80, 10, 122, 53,ROOT_DIR + 'default.tbn'))
+		self.lblDescription = xbmcgui.ControlTextBox(221,25,455,5000,'font12','FFFFFFFF')
 		self.addControl(self.lblDescription)
 		self.currentCategory = 0
+		self.addControl(xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270))
+                self.addControl(xbmcgui.ControlLabel(145,443,375,20,'Full Screen Visualization','font12','0xFFFFFFFF'))
+                self.addControl(xbmcgui.ControlLabel(580,423,80,20,'Back','font12','0xFFFFFFFF'))
+                self.addControl(xbmcgui.ControlLabel(577,443,80,20,'Select','font12','0xFFFFFFFF'))
 		
 	def makeButtons(self):
 		self.btnCategories = []
 		for i in range(len(CATEGORIES)):
-			btn = xbmcgui.ControlButton(60, 100+27*i, 140, 27, CATEGORIES[i],textXOffset=17)
+			btn = xbmcgui.ControlButton(85, 80+27*i, 140, 27, CATEGORIES[i],textXOffset=17)
 			self.addControl(btn)
 			self.btnCategories.append(btn)
 		
@@ -272,8 +309,8 @@ class CNNBrowser(xbmcgui.Window):
 			
 	def filterList(self, idx):
 		LOG("selecting " + str(idx))
-		self.btnCategories[self.currentCategory].setLabel(CATEGORIES[self.currentCategory], "font13", "FFFFFFFF")
-		self.btnCategories[idx].setLabel(CATEGORIES[idx], "font13", "FFFFFF00")
+		self.btnCategories[self.currentCategory].setLabel(CATEGORIES[self.currentCategory], "font13", "FF000000")
+		self.btnCategories[idx].setLabel(CATEGORIES[idx], "font13", "FF000000")
 		self.currentCategory = idx
 		self.filterListOn(CATEGORIES[idx].lower())
 		

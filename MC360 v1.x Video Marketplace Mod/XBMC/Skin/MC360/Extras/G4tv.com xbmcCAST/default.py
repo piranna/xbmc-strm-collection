@@ -23,6 +23,17 @@ ACTION_STOP             = 13
 ACTION_NEXT_ITEM        = 14
 ACTION_PREV_ITEM        = 15
 
+COORD_1080I      = 0 
+COORD_720P       = 1 
+COORD_480P_4X3   = 2 
+COORD_480P_16X9  = 3 
+COORD_NTSC_4X3   = 4 
+COORD_NTSC_16X9  = 5 
+COORD_PAL_4X3    = 6 
+COORD_PAL_16X9   = 7 
+COORD_PAL60_4X3  = 8 
+COORD_PAL60_16X9 = 9
+
 # dialog object for the whole app
 dialog = xbmcgui.DialogProgress()
 
@@ -68,6 +79,7 @@ rssFeeds                = {'Around the Net' : 'http://www.g4tv.com/dailynut/podc
                            
 class G4Viewer(xbmcgui.Window):
         def __init__(self):
+                self.setCoordinateResolution(COORD_NTSC_4X3)
                 if Emulating: xbmcgui.Window.__init__(self)
                 dialog.create("Getting RSS Feeds")
                 self.feeds = {}
@@ -75,15 +87,88 @@ class G4Viewer(xbmcgui.Window):
                 W = self.getWidth()
                 H = self.getHeight()
                 LOG("Image: " + IMAGE_DIR + 'background.png')
-                self.ctrlBackGround = xbmcgui.ControlImage(0, 0, W, H, IMAGE_DIR + 'background.png')
-                self.addControl(self.ctrlBackGround)
-                self.ctrlLogo = xbmcgui.ControlImage(50, 30, 600, 118, IMAGE_DIR + 'logo.png')
-                self.addControl(self.ctrlLogo)
+        	# background image
+        	self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
+        	self.addControl(self.imgBackground)
+
+        	# Whitewash glass top left
+        	self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')
+        	self.addControl(self.imgWhiteTL)
+
+        	# Whitewash glass top middle
+        	self.imgWhiteTMID = xbmcgui.ControlImage(86, 0, 592, 64, 'bkgd-whitewash-glass-top-middle.png')
+        	self.addControl(self.imgWhiteTMID)
+
+        	# Whitewash glass top right
+        	self.imgWhiteTR = xbmcgui.ControlImage(678, 0, 16, 64, 'bkgd-whitewash-glass-top-right.png')
+        	self.addControl(self.imgWhiteTR)
+
+        	# Whitewash glass bottom left
+        	self.imgWhiteBL = xbmcgui.ControlImage(70, 412, 16, 64, 'bkgd-whitewash-glass-bottom-left.png')
+        	self.addControl(self.imgWhiteBL)
+
+        	# Whitewash glass bottom middle
+        	self.imgWhiteBMID = xbmcgui.ControlImage(86, 412, 592, 64, 'bkgd-whitewash-glass-bottom-middle.png')
+        	self.addControl(self.imgWhiteBMID)
+
+        	# Whitewash glass bottom right
+        	self.imgWhiteBR = xbmcgui.ControlImage(678, 412, 16, 64, 'bkgd-whitewash-glass-bottom-right.png')
+        	self.addControl(self.imgWhiteBR)
+
+        	# Whitewash overlay left
+        	self.imgWhitewashL = xbmcgui.ControlImage(60, 0, 32, 476, 'background-overlay-whitewash-left.png')
+        	self.addControl(self.imgWhitewashL)
+
+        	# Whitewash overlay middle
+        	self.imgWhitewashMID = xbmcgui.ControlImage(92, 0, 553, 476, 'background-overlay-whitewash-centertile.png')
+        	self.addControl(self.imgWhitewashMID)
+
+        	# Whitewash overlay right
+        	self.imgWhitewashR = xbmcgui.ControlImage(645, 0, 64, 476, 'background-overlay-whitewash-right.png')
+        	self.addControl(self.imgWhitewashR)
+
+        	# Left blade runner
+        	self.imgBladerunL = xbmcgui.ControlImage(-61, 0, 128, 476, 'blades-runner-left.png')
+        	self.addControl(self.imgBladerunL)
+
+        	# Right blade runner
+        	self.imgBladerunR = xbmcgui.ControlImage(665, 0, 128, 476, 'blades-runner-right.png')
+        	self.addControl(self.imgBladerunR)
+
+        	# Header Blade
+        	self.imgBlade = xbmcgui.ControlImage(18, 0, 80, 476, 'blades-size4-header.png')
+        	self.addControl(self.imgBlade)
+
+        	# Y Button
+        	self.imgybutton = xbmcgui.ControlImage(125, 420, 21, 21, 'button-Y-turnedoff.png')
+        	self.addControl(self.imgybutton)
+
+        	# X Button
+        	self.imgxbutton = xbmcgui.ControlImage(112, 440, 21, 21, 'button-X.png')
+        	self.addControl(self.imgxbutton)
+
+        	# Back Button
+        	self.imgbackbutton = xbmcgui.ControlImage(620, 420, 21, 21, 'button-back.png')
+        	self.addControl(self.imgbackbutton)
+
+        	# A Button
+        	self.imgabutton = xbmcgui.ControlImage(633, 440, 21, 21, 'button-A.png')
+        	self.addControl(self.imgabutton)
+
+                self.medialabel           = xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270)
+                self.g4label           = xbmcgui.ControlLabel(95,30,375,20,'G4tv.com xbmcCast','font18','0xFFFFFFFF')
+                self.vislabel           = xbmcgui.ControlLabel(145,443,375,20,'Full Screen Visualization','font12','0xFFFFFFFF')
+                self.backlabel           = xbmcgui.ControlLabel(580,423,80,20,'Back','font12','0xFFFFFFFF')
+                self.selectlabel           = xbmcgui.ControlLabel(577,443,80,20,'Select','font12','0xFFFFFFFF')
                 
                 
-                self.shows              = xbmcgui.ControlList(40,150,160,365)
-                self.itemList           = xbmcgui.ControlList(210,150,450,365,'font13','0xFFFFFFFF')
-                
+                self.shows              = xbmcgui.ControlList(87,64,140,390,'font13','0xFF000000')
+                self.itemList           = xbmcgui.ControlList(290,64,375,390,'font13','0xFF000000')
+                self.addControl(self.medialabel)
+                self.addControl(self.g4label) 
+                self.addControl(self.vislabel)
+                self.addControl(self.backlabel)
+                self.addControl(self.selectlabel)               
                 self.addControl(self.shows)
                 self.addControl(self.itemList)
                 #Move left and right.

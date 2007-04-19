@@ -77,6 +77,7 @@ ACTION_PREV_ITEM        = 15
 ACTION_MUSIC_PLAY       = 79
 ACTION_CONTEXT_MENU     = 117
 
+
 DISPLAY_TRAILERS = 0
 DISPLAY_SEARCH_RESULT = 1
 DISPLAY_GAME = 2
@@ -85,12 +86,12 @@ DOWNLOAD_TYPE_TRAILER_PAGE = 0
 DOWNLOAD_TYPE_RSS = 1
 
 
-MENU_X_POS = 45
-MENU_Y_POS = 45
-MENU_HEIGHT = 30
-MENU_WIDTH = 120
-MENU_SUB_Y_POS = 250
-MENU_SUB_HEIGHT = 25
+MENU_X_POS = 95
+MENU_Y_POS = 80
+MENU_HEIGHT = 25
+MENU_WIDTH = 170
+MENU_SUB_Y_POS = 230
+MENU_SUB_HEIGHT = 24
 
 INFO_Y_POS = 55
 INFO_HEIGHT = 25
@@ -108,17 +109,79 @@ class MyClass(xbmcgui.Window):
         self.setCoordinateResolution(COORD_PAL_4X3) # scales objects automatically
 
         # background image
-        self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, PATH_IMAGE + "gt_background_nolines.jpg")
+        self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
         self.addControl(self.imgBackground)
+
+        # Whitewash glass top left
+        self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')
+        self.addControl(self.imgWhiteTL)
+
+        # Whitewash glass top middle
+        self.imgWhiteTMID = xbmcgui.ControlImage(86, 0, 592, 64, 'bkgd-whitewash-glass-top-middle.png')
+        self.addControl(self.imgWhiteTMID)
+
+        # Whitewash glass top right
+        self.imgWhiteTR = xbmcgui.ControlImage(678, 0, 16, 64, 'bkgd-whitewash-glass-top-right.png')
+        self.addControl(self.imgWhiteTR)
+
+        # Whitewash glass bottom left
+        self.imgWhiteBL = xbmcgui.ControlImage(70, 512, 16, 64, 'bkgd-whitewash-glass-bottom-left.png')
+        self.addControl(self.imgWhiteBL)
+
+        # Whitewash glass bottom middle
+        self.imgWhiteBMID = xbmcgui.ControlImage(86, 512, 592, 64, 'bkgd-whitewash-glass-bottom-middle.png')
+        self.addControl(self.imgWhiteBMID)
+
+        # Whitewash glass bottom right
+        self.imgWhiteBR = xbmcgui.ControlImage(678, 512, 16, 64, 'bkgd-whitewash-glass-bottom-right.png')
+        self.addControl(self.imgWhiteBR)
+
+        # Whitewash overlay left
+        self.imgWhitewashL = xbmcgui.ControlImage(60, 0, 32, 576, 'background-overlay-whitewash-left.png')
+        self.addControl(self.imgWhitewashL)
+
+        # Whitewash overlay middle
+        self.imgWhitewashMID = xbmcgui.ControlImage(92, 0, 553, 576, 'background-overlay-whitewash-centertile.png')
+        self.addControl(self.imgWhitewashMID)
+
+        # Whitewash overlay right
+        self.imgWhitewashR = xbmcgui.ControlImage(645, 0, 64, 576, 'background-overlay-whitewash-right.png')
+        self.addControl(self.imgWhitewashR)
+
+        # Left blade runner
+        self.imgBladerunL = xbmcgui.ControlImage(-61, 0, 128, 576, 'blades-runner-left.png')
+        self.addControl(self.imgBladerunL)
+
+        # Right blade runner
+        self.imgBladerunR = xbmcgui.ControlImage(665, 0, 128, 576, 'blades-runner-right.png')
+        self.addControl(self.imgBladerunR)
+
+        # Header Blade
+        self.imgBlade = xbmcgui.ControlImage(18, 0, 80, 576, 'blades-size4-header.png')
+        self.addControl(self.imgBlade)
+
+        # Y Button
+        self.addControl(xbmcgui.ControlImage(125, 520, 21, 21, 'button-Y-turnedoff.png'))
+        # X Button
+        self.addControl(xbmcgui.ControlImage(112, 540, 21, 21, 'button-X.png'))
+        # Back Button
+        self.addControl(xbmcgui.ControlImage(620, 520, 21, 21, 'button-back.png'))
+        # A Button
+        self.addControl(xbmcgui.ControlImage(633, 540, 21, 21, 'button-A.png'))
+        self.addControl(xbmcgui.ControlLabel(79,149,100,20,'media','font14','0xFF000000',angle=270))
+        self.addControl(xbmcgui.ControlLabel(145,543,375,20,'Full Screen Visualization','font12','0xFFFFFFFF'))
+        self.addControl(xbmcgui.ControlLabel(580,523,80,20,'Back','font12','0xFFFFFFFF'))
+        self.addControl(xbmcgui.ControlLabel(577,543,80,20,'Select','font12','0xFFFFFFFF'))
+
  
         # top title bar with channel info
-        if (Emulating): self.lblScreenTitle = xbmcgui.ControlLabel(50, 5, 620, 10, "font13", "0xFF000000")
-        else: self.lblScreenTitle = xbmcgui.ControlFadeLabel(50, 5, 620, 10, "font13", "0xFF000000")
+        if (Emulating): self.lblScreenTitle = xbmcgui.ControlLabel(102, 42, 620, 10, "font18", "0xFFFFFFFF")
+        else: self.lblScreenTitle = xbmcgui.ControlFadeLabel(102, 42, 620, 10, "font18", "0xFFFFFFFF")
         self.addControl(self.lblScreenTitle)
         self.setTitle("GameTrailers.com - RSS Reader v" + VERSION_STR)
 
         # bottom bar with copyright stuff
-        self.lblCopyright = xbmcgui.ControlFadeLabel(50, 550, 550, 10, "font12", "0xFF7777AA")
+        self.lblCopyright = xbmcgui.ControlFadeLabel(70, 570, 550, 10, "font12", "0xFFFFFFFF")
         self.addControl(self.lblCopyright)
         self.lblCopyright.addLabel("All logotypes, videos, text is Copyright (c) 2005 Gametrailers.com, all rights reserved.")
         self.lblCopyright.addLabel("GameTrailers.com RSS Reader v" + VERSION_STR + " developed by RedSolo. For latest version check www.xbmcscripts.com.")
@@ -136,9 +199,9 @@ class MyClass(xbmcgui.Window):
         self.imgBoxArt = None
 
         # media list
-        if (Emulating): self.listMedia = xbmcgui.ControlList(195, 52 + 162, 475, 514 - 200)
-        else: self.listMedia = xbmcgui.ControlList(195, 52, 475, 514)
-        self.listMedia.setItemHeight(79)
+        if (Emulating): self.listMedia = xbmcgui.ControlList(290, 85 + 162, 375, 390 - 200, "font14", "0xFF000000")
+        else: self.listMedia = xbmcgui.ControlList(290, 85, 375, 390, "font14", "0xFF000000")
+        self.listMedia.setItemHeight(30)
         self.addControl(self.listMedia)
 
         self.btnNextYPos = MENU_Y_POS
@@ -175,10 +238,10 @@ class MyClass(xbmcgui.Window):
         self.btnSubMenuPsp = self.addSubMenu("PSP", "psp")
         #self.btnSubMenuNgage = self.addSubMenu("N-Gage", "ngage")
         #self.btnSubMenuHand = self.addSubMenu("Handhelds", "hand")
-        
-        self.imgSubMenuTop = xbmcgui.ControlImage(MENU_X_POS, MENU_SUB_Y_POS - MENU_SUB_HEIGHT, MENU_WIDTH, MENU_SUB_HEIGHT, PATH_IMAGE + "gt_submenu_top.jpg")
+
+        self.imgSubMenuTop = xbmcgui.ControlImage(MENU_X_POS, MENU_SUB_Y_POS - MENU_SUB_HEIGHT, MENU_WIDTH, MENU_SUB_HEIGHT, PATH_IMAGE + "fuckthisimage.jpg")
         self.addControl(self.imgSubMenuTop)
-        self.imgSubMenuBottom = xbmcgui.ControlImage(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_SUB_HEIGHT, PATH_IMAGE + "gt_submenu_bottom.jpg")
+        self.imgSubMenuBottom = xbmcgui.ControlImage(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_SUB_HEIGHT, PATH_IMAGE + "fuckthisimage.jpg")
         self.addControl(self.imgSubMenuBottom)
         
         self.listMedia.controlLeft(self.btnMenuNewest)
@@ -490,9 +553,9 @@ class MyClass(xbmcgui.Window):
             
             text         : The button text.
         '''        
-        btn = xbmcgui.ControlButton(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_HEIGHT, text, PATH_IMAGE + "gt_menu_button_selected.jpg", PATH_IMAGE + "gt_menu_button.jpg")
+        btn = xbmcgui.ControlButton(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_HEIGHT, text, PATH_IMAGE + "button-focus.png", PATH_IMAGE + "button-nofocus.png")
         self.addControl(btn)
-        #btn.setLabel(text, "font12", "0xFFFFFFFF", "0xFFFF0000")
+        btn.setLabel(text, "font12", "0xFF000000", "0xFF000000")
         self.mapMenu[btn.getId()] = MenuItem(text, link, downloadtype)
         if (self.btnTemp <> None):
             btn.controlUp(self.btnTemp)
@@ -513,9 +576,9 @@ class MyClass(xbmcgui.Window):
             text         : The button text.
             abbrev       : String that is used when building the rss feed list to retrieve. (Check http://www.gametrailers.com/rss/ for more info)
         '''        
-        btn = xbmcgui.ControlButton(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_SUB_HEIGHT, text, PATH_IMAGE + "gt_submenu_button_selected.jpg", PATH_IMAGE + "gt_submenu_button.jpg")
+        btn = xbmcgui.ControlButton(MENU_X_POS, self.btnNextYPos, MENU_WIDTH, MENU_SUB_HEIGHT, text, PATH_IMAGE + "button-focus.png", PATH_IMAGE + "button-nofocus.png")
         self.addControl(btn)
-        #btn.setLabel(text, "font12", "0xFFFFFFFF", "0xFFFFFFFF")
+        btn.setLabel(text, "font12", "0xFF000000", "0xFF000000")
         self.mapSubMenu[btn.getId()] = MenuItem(text, link)
         if (self.btnTemp <> None):
             btn.controlUp(self.btnTemp)
@@ -535,9 +598,9 @@ class MyClass(xbmcgui.Window):
             
             text         : The button text.
         '''        
-        lblKey = xbmcgui.ControlLabel(INFO_KEY_X_POS, self.lblInfoNextYPos, INFO_KEY_WIDTH, 10, text, "font13")
+        lblKey = xbmcgui.ControlLabel(INFO_KEY_X_POS, self.lblInfoNextYPos, INFO_KEY_WIDTH, 10, text, "font13", "0xFF000000")
         self.addControl(lblKey)
-        lblValue = xbmcgui.ControlLabel(INFO_VALUE_X_POS, self.lblInfoNextYPos, INFO_VALUE_WIDTH, 10, "", "font13")
+        lblValue = xbmcgui.ControlLabel(INFO_VALUE_X_POS, self.lblInfoNextYPos, INFO_VALUE_WIDTH, 10, "", "font13", "0xFF000000")
         self.addControl(lblValue)
         
         self.lblInfoKeys.append(lblKey)
@@ -591,12 +654,12 @@ class MyClass(xbmcgui.Window):
             
             if (visible):                
                 #print "setting smaller view"
-                self.listMedia.setPosition(195, 52 + 162)
-                self.listMedia.setHeight(514 - 162)
+                self.listMedia.setPosition(290, 85 + 162)
+                self.listMedia.setHeight(386 - 162)
             else:
                 #print "setting bigger view"
-                self.listMedia.setPosition(195, 52)
-                self.listMedia.setHeight(514)
+                self.listMedia.setPosition(290, 85)
+                self.listMedia.setHeight(386)
         xbmcgui.unlock()
 
     def setDisplayState(self, newState):

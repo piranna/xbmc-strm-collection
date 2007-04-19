@@ -994,7 +994,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\scripts\CNN\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>2</onup>
@@ -1725,7 +1725,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\scripts\GameTrailersRssReader\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\GameTrailersRssReader\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -2456,7 +2456,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\scripts\ComedyCentral\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>4</onup>
@@ -3072,7 +3072,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>110</posx>
 					<posy>446</posy>
-					<label>Customize  Marketplace</label>
+					<label>Customize Marketplace</label>
 					<onclick>ReplaceWindow(1995)</onclick>
 					<texturefocus>icon-scripts.png</texturefocus>
 					<texturenofocus>icon-scripts.png</texturenofocus>
@@ -3090,7 +3090,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>110</posx>
 					<posy>446</posy>
-					<label>Customize  Marketplace</label>
+					<label>Customize Marketplace</label>
 					<onclick>ReplaceWindow(1995)</onclick>
 					<texturefocus>icon-scripts.png</texturefocus>
 					<texturenofocus>icon-scripts.png</texturenofocus>
@@ -3990,7 +3990,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\scripts\G4tv.com xbmcCAST\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\default.py)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>
@@ -4603,7 +4603,7 @@
 					<visible>!Player.HasVideo</visible>
 					<pulseonselect>no</pulseonselect>
 					<texturefocus border="15">xbmc_live_eX_ad002.png</texturefocus>
-					<texturenofocus border="15">XBMCLivePlace\xbmc_live_eX_ad001.png</texturenofocus>
+					<texturenofocus border="15">xbmc_live_eX_ad001.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(28)</onclick>
 				</control>
 				<control type="button" id="7">

@@ -35,7 +35,18 @@ ACTION_SHOW_INFO       = 11
 ACTION_PAUSE           = 12
 ACTION_STOP            = 13
 ACTION_NEXT_ITEM       = 14
-ACTION_PREV_ITEM       = 15		
+ACTION_PREV_ITEM       = 15
+
+COORD_1080I      = 0 
+COORD_720P       = 1 
+COORD_480P_4X3   = 2 
+COORD_480P_16X9  = 3 
+COORD_NTSC_4X3   = 4 
+COORD_NTSC_16X9  = 5 
+COORD_PAL_4X3    = 6 
+COORD_PAL_16X9   = 7 
+COORD_PAL60_4X3  = 8 
+COORD_PAL60_16X9 = 9
 
 ######################################################################
 
@@ -577,14 +588,85 @@ class MainWindow(xbmcgui.Window):
 
         def __init__(self):
             if Emulating: xbmcgui.Window.__init__(self)
+            self.setCoordinateResolution(COORD_NTSC_4X3)
 
-            self.bg = xbmcgui.ControlImage(0,0,0,0, RootDir + "comcenbg.png")
-            self.addControl(self.bg)
+            # background image
+            self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
+            self.addControl(self.imgBackground)
 
-            self.title = xbmcgui.ControlLabel(72, 48, 576, 40, "", "font18", "0xFFFFFFFF")
+            # Whitewash glass top left
+            self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')
+            self.addControl(self.imgWhiteTL)
+
+            # Whitewash glass top middle
+            self.imgWhiteTMID = xbmcgui.ControlImage(86, 0, 592, 64, 'bkgd-whitewash-glass-top-middle.png')
+            self.addControl(self.imgWhiteTMID)
+
+            # Whitewash glass top right
+            self.imgWhiteTR = xbmcgui.ControlImage(678, 0, 16, 64, 'bkgd-whitewash-glass-top-right.png')
+            self.addControl(self.imgWhiteTR)
+
+            # Whitewash glass bottom left
+            self.imgWhiteBL = xbmcgui.ControlImage(70, 412, 16, 64, 'bkgd-whitewash-glass-bottom-left.png')
+            self.addControl(self.imgWhiteBL)
+
+            # Whitewash glass bottom middle
+            self.imgWhiteBMID = xbmcgui.ControlImage(86, 412, 592, 64, 'bkgd-whitewash-glass-bottom-middle.png')
+            self.addControl(self.imgWhiteBMID)
+
+            # Whitewash glass bottom right
+            self.imgWhiteBR = xbmcgui.ControlImage(678, 412, 16, 64, 'bkgd-whitewash-glass-bottom-right.png')
+            self.addControl(self.imgWhiteBR)
+
+            # Whitewash overlay left
+            self.imgWhitewashL = xbmcgui.ControlImage(60, 0, 32, 476, 'background-overlay-whitewash-left.png')
+            self.addControl(self.imgWhitewashL)
+
+            # Whitewash overlay middle
+            self.imgWhitewashMID = xbmcgui.ControlImage(92, 0, 553, 476, 'background-overlay-whitewash-centertile.png')
+            self.addControl(self.imgWhitewashMID)
+
+            # Whitewash overlay right
+            self.imgWhitewashR = xbmcgui.ControlImage(645, 0, 64, 476, 'background-overlay-whitewash-right.png')
+            self.addControl(self.imgWhitewashR)
+
+            # Left blade runner
+            self.imgBladerunL = xbmcgui.ControlImage(-61, 0, 128, 476, 'blades-runner-left.png')
+            self.addControl(self.imgBladerunL)
+
+            # Right blade runner
+            self.imgBladerunR = xbmcgui.ControlImage(665, 0, 128, 476, 'blades-runner-right.png')
+            self.addControl(self.imgBladerunR)
+
+            # Header Blade
+            self.imgBlade = xbmcgui.ControlImage(18, 0, 80, 476, 'blades-size4-header.png')
+            self.addControl(self.imgBlade)
+
+            # Y Button
+            self.imgybutton = xbmcgui.ControlImage(125, 420, 21, 21, 'button-Y-turnedoff.png')
+            self.addControl(self.imgybutton)
+
+            # X Button
+            self.imgxbutton = xbmcgui.ControlImage(112, 440, 21, 21, 'button-X.png')
+            self.addControl(self.imgxbutton)
+
+            # Back Button
+            self.imgbackbutton = xbmcgui.ControlImage(620, 420, 21, 21, 'button-back.png')
+            self.addControl(self.imgbackbutton)
+
+            # A Button
+            self.imgabutton = xbmcgui.ControlImage(633, 440, 21, 21, 'button-A.png')
+            self.addControl(self.imgabutton)
+
+            self.addControl(xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270))
+            self.addControl(xbmcgui.ControlLabel(145,443,375,20,'Full Screen Visualization','font12','0xFFFFFFFF'))
+            self.addControl(xbmcgui.ControlLabel(580,423,80,20,'Back','font12','0xFFFFFFFF'))
+            self.addControl(xbmcgui.ControlLabel(577,443,80,20,'Select','font12','0xFFFFFFFF'))
+
+            self.title = xbmcgui.ControlLabel(90, 30, 576, 40, "", "font18", "0xFFFFFFFF")
             self.addControl(self.title)
 	    
-            self.itemsControlList = xbmcgui.ControlList(72, 96, 612, 360,'font14','0xFFDDDDDD')
+            self.itemsControlList = xbmcgui.ControlList(92, 64, 578, 385,'font14','0xFF000000')
             self.addControl(self.itemsControlList)
             self.activelist = self.itemsControlList
 
@@ -596,7 +678,7 @@ class MainWindow(xbmcgui.Window):
             self.addControl(self.detail)
             self.detail.setVisible(0)
 
-            self.smallControlList = xbmcgui.ControlList(72, 340, 570, 160,'font14','0xFFDDDDDD')
+            self.smallControlList = xbmcgui.ControlList(72, 340, 570, 160,'font14','0xFF000000')
             self.addControl(self.smallControlList)
             self.smallControlList.setVisible(0)
 

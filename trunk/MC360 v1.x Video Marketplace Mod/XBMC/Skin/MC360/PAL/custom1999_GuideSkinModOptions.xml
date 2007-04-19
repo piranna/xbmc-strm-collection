@@ -301,7 +301,7 @@
 				<onup>6</onup>
 				<ondown>8</ondown>
 				<font>font14</font>
-				<label>TV Button: Video Bookmark</label>
+				<label>TV Button: Bookmark</label>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
@@ -478,7 +478,7 @@
 			<onup>6</onup>
 			<ondown>8</ondown>
 			<font>font14</font>
-			<label>TV Button: Video Bookmark</label>
+			<label>TV Button: Bookmark</label>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -667,7 +667,7 @@
 				<onup>7</onup>
 				<ondown>9</ondown>
 				<font>font14</font>
-				<label>Movie Button: Video Bookmark</label>
+				<label>Movie Button: Bookmark</label>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
@@ -844,7 +844,7 @@
 			<onup>7</onup>
 			<ondown>9</ondown>
 			<font>font14</font>
-			<label>Movie Button: Video Bookmark</label>
+			<label>Movie Button: Bookmark</label>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1151,7 +1151,7 @@
 			<onup>9</onup>
 			<ondown>92</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Genres</label>
+			<label>TV Library Folder: Genres</label>
 			<visible>Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-LibraryTitle) + !Skin.HasSetting(USE_tv-LibraryYear) + !Skin.HasSetting(USE_tv-LibraryActors) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(910) + !Control.HasFocus(920) + !Control.HasFocus(930) + !Control.HasFocus(940)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1178,7 +1178,7 @@
 			<onup>91</onup>
 			<ondown>93</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Title</label>
+			<label>TV Library Folder: Title</label>
 			<visible>Skin.HasSetting(USE_tv-library) + !Control.HasFocus(910) + !Control.HasFocus(920) + !Control.HasFocus(930) + !Control.HasFocus(940) + [Skin.HasSetting(USE_tv-LibraryTitle) | Control.HasFocus(92)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1205,7 +1205,7 @@
 			<onup>92</onup>
 			<ondown>94</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Year</label>
+			<label>Movie Library Folder: Year</label>
 			<visible>Skin.HasSetting(USE_tv-library) + !Control.HasFocus(910) + !Control.HasFocus(920) + !Control.HasFocus(930) + !Control.HasFocus(940) + [Skin.HasSetting(USE_tv-LibraryYear) | Control.HasFocus(93)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1232,7 +1232,7 @@
 			<onup>93</onup>
 			<ondown>911</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Actors</label>
+			<label>TV Library Folder: Actors</label>
 			<visible>Skin.HasSetting(USE_tv-library) + !Control.HasFocus(910) + !Control.HasFocus(920) + !Control.HasFocus(930) + !Control.HasFocus(940) + [Skin.HasSetting(USE_tv-LibraryActors) | Control.HasFocus(94)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1261,7 +1261,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Genres</label>
+			<label>TV Library Folder: Genres</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(910)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1288,7 +1288,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Title</label>
+			<label>TV Library Folder: Title</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(920)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1315,7 +1315,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Year</label>
+			<label>TV Library Folder: Year</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(930)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1342,7 +1342,7 @@
 			<onup>8</onup>
 			<ondown>911</ondown>
 			<font>font14</font>
-			<label>TV Library Subfolder: Actors</label>
+			<label>TV Library Folder: Actors</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(940)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1371,7 +1371,7 @@
 			<onup>94</onup>
 			<ondown>921</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Genres</label>	
+			<label>Movie Library Folder: Genres</label>	
 			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(921) + !Control.HasFocus(931) + !Control.HasFocus(941) + !Control.HasFocus(951) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1399,7 +1399,7 @@
 			<onup>911</onup>
 			<ondown>931</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Title</label>
+			<label>Movie Library Folder: Title</label>
 			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(921)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1427,7 +1427,7 @@
 			<onup>921</onup>
 			<ondown>941</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Year</label>
+			<label>Movie Library Folder: Year</label>
 			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(931)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1455,7 +1455,7 @@
 			<onup>931</onup>
 			<ondown>951</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Actors</label>
+			<label>Movie Library Folder: Actors</label>
 			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(941)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1483,7 +1483,7 @@
 			<onup>941</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Directors</label>
+			<label>Movie Library Folder: Dir.</label>
 			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-(Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(951)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1512,7 +1512,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Genres</label>
+			<label>Movie Library Folder: Genres</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(9101)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1540,7 +1540,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Title</label>
+			<label>Movie Library Folder: Title</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(9201)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1568,7 +1568,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Year</label>
+			<label>Movie Library Folder: Year</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(9301)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1596,7 +1596,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Actors</label>
+			<label>Movie Library Folder: Actors</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(9401)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1624,7 +1624,7 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Directors</label>
+			<label>Movie Library Folder: Directors</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(9501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1900,7 +1900,7 @@
 			<onup>10</onup>
 			<ondown>1021</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Genres</label>	
+			<label>Movie Library Folder: Genres</label>	
 			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(1021) + !Control.HasFocus(1031) + !Control.HasFocus(1041) + !Control.HasFocus(1051) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1928,7 +1928,7 @@
 			<onup>1011</onup>
 			<ondown>1031</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Title</label>
+			<label>Movie Library Folder: Title</label>
 			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(1021)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1956,7 +1956,7 @@
 			<onup>1021</onup>
 			<ondown>1041</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Year</label>
+			<label>Movie Library Folder: Year</label>
 			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(1031)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1984,7 +1984,7 @@
 			<onup>1031</onup>
 			<ondown>1051</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Actors</label>
+			<label>Movie Library Folder: Actors</label>
 			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(1041)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2012,7 +2012,7 @@
 			<onup>1041</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Directors</label>
+			<label>Movie Library Folder: Directors</label>
 			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(1051)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2041,7 +2041,7 @@
 			<onup>10</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Genres</label>
+			<label>Movie Library Folder: Genres</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(10101)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2069,7 +2069,7 @@
 			<onup>10</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Title</label>
+			<label>Movie Library Folder: Title</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(10201)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2097,7 +2097,7 @@
 			<onup>10</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Year</label>
+			<label>Movie Library Folder: Year</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(10301)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2125,7 +2125,7 @@
 			<onup>10</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Actors</label>
+			<label>Movie Library Folder: Actors</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(10401)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -2153,7 +2153,7 @@
 			<onup>10</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Movie Library Subfolder: Directors</label>
+			<label>Movie Library Folder: Dir.</label>
 			<visible allowhiddenfocus="true">Control.HasFocus(10501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>

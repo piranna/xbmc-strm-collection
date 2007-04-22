@@ -108,9 +108,18 @@ class MyClass(xbmcgui.Window):
         if Emulating: xbmcgui.Window.__init__(self)
         self.setCoordinateResolution(COORD_PAL_4X3) # scales objects automatically
 
+        # background animation
+        self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 576, "Q:\\skin\\MC360\\Extras\\background-ani.gif")
+        self.addControl(self.imgBackgroundani)
+
         # background image
-        self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
+        self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue-alpha.png')
         self.addControl(self.imgBackground)
+
+        # custom background image
+        self.imgCustomBackground = xbmcgui.ControlImage(0, 0, 720, 576, xbmc.getInfoLabel('Skin.String(Media)'))
+        self.addControl(self.imgCustomBackground)
+        self.imgCustomBackground.setColorDiffuse('D1FFFFFF')
 
         # Whitewash glass top left
         self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')

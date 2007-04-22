@@ -126,7 +126,37 @@
 					<posy>237</posy>
 					<width>280</width>
 					<height>64</height>
-					<texture>xbmc.png</texture>
+					<texture>XBMCLivePlace\icon-amt.png</texture>
+					<visible>!Skin.HasSetting(T3CHButton)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>xbmcupdater.png</texture>
+					<visible>Skin.HasSetting(T3CHButton)</visible>
+				</control>
+				<control type="button" id="3">
+					<description>Market Place Button 3 push button</description>
+					<posx>90</posx>
+					<posy>235</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<include>19036</include>
+					<include>shadow-grey</include>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
+					<visible>!Skin.HasSetting(T3chButton)</visible>
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
 				</control>
 				<control type="button" id="3">
 					<description>Market Place Button 3 push button</description>
@@ -142,7 +172,7 @@
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\scripts\T3CH Downloader\default.py)</onclick>
-					<visible>yes</visible>
+					<visible>Skin.HasSetting(T3chButton)</visible>
 					<onleft>3</onleft>
 					<onright>3</onright>
 					<onup>2</onup>

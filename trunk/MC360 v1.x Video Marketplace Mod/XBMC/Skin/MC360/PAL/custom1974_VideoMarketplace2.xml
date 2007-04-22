@@ -1608,7 +1608,7 @@
 					<posy>307</posy>
 					<width>280</width>
 					<height>64</height>
-					<texture>XBMCLivePlace\icon-Trainers.png</texture>
+					<texture>gamevideos.png</texture>
 					<visible>!Skin.String(UniversalImage-4) + !Skin.HasSetting(DisableButton-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4) + !Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(XBEMode-4)</visible>
 				</control>
 				<control type="image">

@@ -73,7 +73,7 @@ COORD_PAL60_16X9 = 9
 
 #------------------------------------------------------------------
 
-ROOT_DIR = os.getcwd()[:-1]+'\\'    
+ROOT_DIR = os.getcwd()[:-1]+'\\'
 
 import feedparser
 Dependencies = ["time"]
@@ -183,8 +183,18 @@ def StripHtml(arHtml):
 class CNNBrowser(xbmcgui.Window):
 	def __init__(self):
 		self.setCoordinateResolution(COORD_NTSC_4X3)
+
+                
+                # background animation
+                self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 476, "Q:\\Skin\\MC360\\Extras\\background-ani.gif")
+                self.addControl(self.imgBackgroundani)
         	# background image
-		self.addControl(xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png'))
+		self.imgBackgroundBlue = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue-alpha.png')
+                self.addControl(self.imgBackgroundBlue)
+                # custom background image
+                self.imgCustomBackground = xbmcgui.ControlImage(0, 0, 720, 576, xbmc.getInfoLabel('Skin.String(Media)'))
+                self.addControl(self.imgCustomBackground)
+                self.imgCustomBackground.setColorDiffuse('D1FFFFFF')
         	# Whitewash glass top left
 		self.addControl(xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png'))
         	# Whitewash glass top middle
@@ -217,12 +227,12 @@ class CNNBrowser(xbmcgui.Window):
         	self.addControl(xbmcgui.ControlImage(633, 440, 21, 21, 'button-A.png'))
         	# Header Blade
 		self.addControl(xbmcgui.ControlImage(18, 0, 80, 476, 'blades-size4-header.png'))
-		self.lstVideos = xbmcgui.ControlList(290,63,375,390,imageWidth=30,imageHeight=30)
+		self.lstVideos = xbmcgui.ControlList(290,63,375,390,imageWidth=30, textColor='0xFF000000', imageHeight=30)
 		self.addControl(self.lstVideos)
 		self.setFocus(self.lstVideos)
 		self.makeButtons()
 		self.addControl(xbmcgui.ControlImage(80, 10, 122, 53,ROOT_DIR + 'default.tbn'))
-		self.lblDescription = xbmcgui.ControlTextBox(221,25,455,5000,'font12','FFFFFFFF')
+		self.lblDescription = xbmcgui.ControlTextBox(221,25,455,5000,'font12','0xFFFFFFFF')
 		self.addControl(self.lblDescription)
 		self.currentCategory = 0
 		self.addControl(xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270))
@@ -233,7 +243,7 @@ class CNNBrowser(xbmcgui.Window):
 	def makeButtons(self):
 		self.btnCategories = []
 		for i in range(len(CATEGORIES)):
-			btn = xbmcgui.ControlButton(85, 80+27*i, 140, 27, CATEGORIES[i],textXOffset=17)
+			btn = xbmcgui.ControlButton(85, 80+27*i, 140, 27, CATEGORIES[i], textColor='0xFF000000', textXOffset=17)
 			self.addControl(btn)
 			self.btnCategories.append(btn)
 		
@@ -309,8 +319,8 @@ class CNNBrowser(xbmcgui.Window):
 			
 	def filterList(self, idx):
 		LOG("selecting " + str(idx))
-		self.btnCategories[self.currentCategory].setLabel(CATEGORIES[self.currentCategory], "font13", "FF000000")
-		self.btnCategories[idx].setLabel(CATEGORIES[idx], "font13", "FF000000")
+		self.btnCategories[self.currentCategory].setLabel(CATEGORIES[self.currentCategory], "font13", "0xFF000000")
+		self.btnCategories[idx].setLabel(CATEGORIES[idx], "font13",'0xFF000000')
 		self.currentCategory = idx
 		self.filterListOn(CATEGORIES[idx].lower())
 		

@@ -35,18 +35,7 @@ ACTION_SHOW_INFO       = 11
 ACTION_PAUSE           = 12
 ACTION_STOP            = 13
 ACTION_NEXT_ITEM       = 14
-ACTION_PREV_ITEM       = 15
-
-COORD_1080I      = 0 
-COORD_720P       = 1 
-COORD_480P_4X3   = 2 
-COORD_480P_16X9  = 3 
-COORD_NTSC_4X3   = 4 
-COORD_NTSC_16X9  = 5 
-COORD_PAL_4X3    = 6 
-COORD_PAL_16X9   = 7 
-COORD_PAL60_4X3  = 8 
-COORD_PAL60_16X9 = 9
+ACTION_PREV_ITEM       = 15		
 
 ######################################################################
 
@@ -588,11 +577,19 @@ class MainWindow(xbmcgui.Window):
 
         def __init__(self):
             if Emulating: xbmcgui.Window.__init__(self)
-            self.setCoordinateResolution(COORD_NTSC_4X3)
+
+            # background animation
+            self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 476, "Q:\\skin\\MC360\\Extras\\background-ani.gif")
+            self.addControl(self.imgBackgroundani)
 
             # background image
-            self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
+            self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue-alpha.png')
             self.addControl(self.imgBackground)
+
+            # custom background image
+            self.imgCustomBackground = xbmcgui.ControlImage(0, 0, 720, 576, xbmc.getInfoLabel('Skin.String(Media)'))
+            self.addControl(self.imgCustomBackground)
+	    self.imgCustomBackground.setColorDiffuse('D1FFFFFF')
 
             # Whitewash glass top left
             self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')
@@ -658,10 +655,15 @@ class MainWindow(xbmcgui.Window):
             self.imgabutton = xbmcgui.ControlImage(633, 440, 21, 21, 'button-A.png')
             self.addControl(self.imgabutton)
 
-            self.addControl(xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270))
-            self.addControl(xbmcgui.ControlLabel(145,443,375,20,'Full Screen Visualization','font12','0xFFFFFFFF'))
-            self.addControl(xbmcgui.ControlLabel(580,423,80,20,'Back','font12','0xFFFFFFFF'))
-            self.addControl(xbmcgui.ControlLabel(577,443,80,20,'Select','font12','0xFFFFFFFF'))
+            self.medialabel           = xbmcgui.ControlLabel(79,129,100,20,'media','font14','0xFF000000',angle=270)
+            self.vislabel           = xbmcgui.ControlLabel(145,443,375,20,'Full Screen Visualization','font12','0xFFFFFFFF')
+            self.backlabel           = xbmcgui.ControlLabel(580,423,80,20,'Back','font12','0xFFFFFFFF')
+            self.selectlabel           = xbmcgui.ControlLabel(577,443,80,20,'Select','font12','0xFFFFFFFF')
+
+            self.addControl(self.medialabel) 
+            self.addControl(self.vislabel)
+            self.addControl(self.backlabel)
+            self.addControl(self.selectlabel)
 
             self.title = xbmcgui.ControlLabel(90, 30, 576, 40, "", "font18", "0xFFFFFFFF")
             self.addControl(self.title)

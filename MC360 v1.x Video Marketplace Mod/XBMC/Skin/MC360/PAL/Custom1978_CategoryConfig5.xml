@@ -663,7 +663,7 @@
 			<pulseonselect>no</pulseonselect>
 			<selected>Skin.HasSetting(Button-5Enable8)</selected>
 			<onclick>Skin.ToggleSetting(Button-5Enable8)</onclick>
-			<onleft>21</onleft>
+			<onleft>24</onleft>
 			<onright>23</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
@@ -712,7 +712,7 @@
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(Button-5Name8)</onclick>
 			<onleft>23</onleft>
-			<onright>21</onright>
+			<onright>22</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>

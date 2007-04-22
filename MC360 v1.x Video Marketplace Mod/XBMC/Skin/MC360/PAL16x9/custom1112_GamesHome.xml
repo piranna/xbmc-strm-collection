@@ -505,7 +505,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-5a.png</texture>
-				<visible>Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Custom Highlight Shadow</description>
@@ -514,11 +514,12 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-5-shadow.png</texture>
-				<visible>Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<include>button-shadow</include>
 			</control>
+			
 			<control type="button" id="9">
-				<description>Custom Push Button</description>
+				<description>Marketplace Push Button</description>
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>360</posy>
@@ -527,13 +528,13 @@
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
 				<!-- Delete this line to show in skin -->
-				<visible>Skin.HasSetting(GamesMarketplace) + !Skin.HasSEtting(MarketplaceName)</visible>
+				<visible>Skin.HasSetting(GamesMarketplace) + !Skin.String(MarketplaceName)</visible>
 				<!-- Delete this line to show in skin -->
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
 				<onright>2</onright>
 				<onup>8</onup>
-				<ondown>10</ondown>
+				<ondown>90</ondown>
 			</control>
 			<control type="button" id="9">
 				<description>Marketplace Custom Push Button</description>
@@ -549,6 +550,70 @@
 				<onleft>1</onleft>
 				<onright>2</onright>
 				<onup>8</onup>
+				<ondown>90</ondown>
+			</control>
+			<control type="button" id="90">
+				<description>Homebrew XBE Custom Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>145</posx>
+				<posy>360</posy>
+				<label>$INFO[Skin.String(HomebrewName)]</label>
+				<onclick>XBMC.RunXBE($INFO[Skin.String(HomebrewXBE_path)]\default.xbe)</onclick>
+				<texturefocus>videomarketplace_icon.png</texturefocus>
+				<texturenofocus>videomarketplace_icon.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewXBE)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>10</ondown>
+			</control>
+			<control type="button" id="90">
+				<description>Homebrew Script Custom Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>145</posx>
+				<posy>360</posy>
+				<label>$INFO[Skin.String(HomebrewName)]</label>
+				<onclick>XBMC.RunScript($INFO[Skin.String(HomebrewScript_path)]\default.py)</onclick>
+				<texturefocus>videomarketplace_icon.png</texturefocus>
+				<texturenofocus>videomarketplace_icon.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewScript)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>10</ondown>
+			</control>
+			<control type="button" id="90">
+				<description>Homebrew XBE Default Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>145</posx>
+				<posy>360</posy>
+				<label>Homebrew</label>
+				<onclick>XBMC.RunXBE($INFO[Skin.String(HomebrewXBE_path)]\default.xbe)</onclick>
+				<texturefocus>videomarketplace_icon.png</texturefocus>
+				<texturenofocus>videomarketplace_icon.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>!Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewXBE)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
+				<ondown>10</ondown>
+			</control>
+			<control type="button" id="90">
+				<description>Homebrew Script Default Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>145</posx>
+				<posy>360</posy>
+				<label>Homebrew</label>
+				<onclick>XBMC.RunScript($INFO[Skin.String(HomebrewScript_path)]\default.py)</onclick>
+				<texturefocus>videomarketplace_icon.png</texturefocus>
+				<texturenofocus>videomarketplace_icon.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<visible>!Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewScript)</visible>
+				<onleft>1</onleft>
+				<onright>2</onright>
+				<onup>9</onup>
 				<ondown>10</ondown>
 			</control>
 			<control type="multiimage">
@@ -558,10 +623,10 @@
 				<width>220</width>
 				<height>38</height>
 				<include>Shine</include>
-				<visible>Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
-				<description>Custom Button Multiline</description>
+				<description>Marketplace Button Multiline</description>
 				<posx>390</posx>
 				<posy>205</posy>
 				<width>210</width>
@@ -573,6 +638,19 @@
 				<include>shadow-grey</include>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
+			<control type="label">
+				<description>Marketplace Button Multiline</description>
+				<posx>390</posx>
+				<posy>205</posy>
+				<width>210</width>
+				<height>200</height>
+				<wrapmultiline>true</wrapmultiline>
+				<label>Launch a custom Application, Game, or Script.</label>
+				<font>font14</font>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(90) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			</control>
 			<control type="image">
 				<description>Button Seperator</description>
 				<posx>135</posx>
@@ -580,7 +658,7 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>Control.IsVisible(9) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(9)</visible>
+				<visible>[Control.IsVisible(9) | Control.IsVisible(90)] + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(9) + !Control.HasFocus(90)</visible>
 			</control>
 			<!-- END Custom Button for modders -->
 			<control type="button" id="10">
@@ -591,7 +669,7 @@
 				<height>71</height>
 				<onleft>1</onleft>
 				<onright>2</onright>
-				<onup>9</onup>
+				<onup>90</onup>
 				<ondown>4</ondown>
 				<texturefocus>dvdtrayeject-focus.png</texturefocus>
 				<texturenofocus>dvdtrayeject-nofocus.png</texturenofocus>
@@ -611,7 +689,7 @@
 				<height>71</height>
 				<onleft>1</onleft>
 				<onright>2</onright>
-				<onup>9</onup>
+				<onup>90</onup>
 				<ondown>4</ondown>
 				<texturefocus>dvdtray-focus.png</texturefocus>
 				<texturenofocus>dvdtray-nofocus.png</texturenofocus>

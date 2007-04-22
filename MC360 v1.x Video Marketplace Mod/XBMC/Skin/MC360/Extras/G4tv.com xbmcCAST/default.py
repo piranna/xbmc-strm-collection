@@ -87,9 +87,17 @@ class G4Viewer(xbmcgui.Window):
                 W = self.getWidth()
                 H = self.getHeight()
                 LOG("Image: " + IMAGE_DIR + 'background.png')
+        	# background animation
+                self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 476, "Q:\\Skin\\MC360\\Extras\\background-ani.gif")
+                self.addControl(self.imgBackgroundani)
+            
         	# background image
-        	self.imgBackground = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue.png')
-        	self.addControl(self.imgBackground)
+		self.imgBackgroundBlue = xbmcgui.ControlImage(0, 0, 720, 576, 'background-blue-alpha.png')
+                self.addControl(self.imgBackgroundBlue)
+                # custom background image
+                self.imgCustomBackground = xbmcgui.ControlImage(0, 0, 720, 576, xbmc.getInfoLabel('Skin.String(Media)'))
+                self.addControl(self.imgCustomBackground)
+                self.imgCustomBackground.setColorDiffuse('D1FFFFFF')
 
         	# Whitewash glass top left
         	self.imgWhiteTL = xbmcgui.ControlImage(70, 0, 16, 64, 'bkgd-whitewash-glass-top-left.png')

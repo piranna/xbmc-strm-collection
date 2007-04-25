@@ -61,7 +61,7 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>A restart is required for your changes to take effect.  Would you like to restart now or later?&#10;&#10;NOTE: This will affect your keymap functions in other skins as well.  For best results, disable before switching to another skin.</label>
+			<label>A restart is required for your changes to take effect.  Would you like to restart now or later?&#10;&#10;NOTE: This will affect your keymap functions in other skins as well.  For best results, disable and restart before switching to another skin.</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
 			<include>TextcolorBlack</include>

@@ -243,7 +243,7 @@ class CNNBrowser(xbmcgui.Window):
 	def makeButtons(self):
 		self.btnCategories = []
 		for i in range(len(CATEGORIES)):
-			btn = xbmcgui.ControlButton(85, 80+27*i, 140, 27, CATEGORIES[i], textColor='0xFF000000', textXOffset=17)
+			btn = xbmcgui.ControlButton(85, 80+27*i, 140, 27, CATEGORIES[i], textColor='0xFF000000', textXOffset=17, focusedColor='0xFF000000')
 			self.addControl(btn)
 			self.btnCategories.append(btn)
 		

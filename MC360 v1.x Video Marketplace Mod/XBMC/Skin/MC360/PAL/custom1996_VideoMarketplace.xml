@@ -975,7 +975,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\CNN</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>2</onup>
@@ -994,7 +994,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\CNN\glassdefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\glassdefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>2</onup>
@@ -1013,7 +1013,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\CNN\carbondefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\carbondefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>2</onup>
@@ -1725,7 +1725,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\GameTrailersRssReader</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\GameTrailersRssReader\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -1744,7 +1744,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\GlassGameTrailersRssReader</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\GlassGameTrailersRssReader\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -1763,7 +1763,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\CarbonGameTrailersRssReader</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CarbonGameTrailersRssReader\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -2456,7 +2456,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\ComedyCentral</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>4</onup>
@@ -2475,7 +2475,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\ComedyCentral\glassdefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\glassdefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>4</onup>
@@ -2494,7 +2494,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\ComedyCentral\carbondefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\carbondefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>4</onup>
@@ -3259,7 +3259,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\scripts\Apple Movie Trailers</onclick>
+					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<onleft>6</onleft>
 					<onright>6</onright>
 					<onup>9</onup>
@@ -3971,7 +3971,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\G4tv.com xbmcCAST</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\default.py)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>
@@ -3990,7 +3990,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\G4tv.com xbmcCAST\glassdefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\glassdefault.py)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>
@@ -4009,7 +4009,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>Q:\skin\MC360\extras\G4tv.com xbmcCAST\carbondefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\carbondefault.py)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>

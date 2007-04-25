@@ -109,7 +109,7 @@ class MyClass(xbmcgui.Window):
         self.setCoordinateResolution(COORD_PAL_4X3) # scales objects automatically
 
         # background animation
-        self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 576, "Q:\\skin\\MC360\\Extras\\background-ani.gif")
+        self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 576, "Q:\\skin\\MC360\\Extras\\default-ani.gif")
         self.addControl(self.imgBackgroundani)
 
         # background image

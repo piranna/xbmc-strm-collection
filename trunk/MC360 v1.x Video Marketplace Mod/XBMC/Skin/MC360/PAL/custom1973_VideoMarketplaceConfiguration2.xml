@@ -147,7 +147,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-2)</info>
-					<visible>Skin.String(UniversalImage-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmarkImage-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmarkImage-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmarkImage-2)] | [Skin.HasSetting(XBEMode-2) + !Skin.String(XBEImage-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryImage-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryImage-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryImage-2)]]</visible>
+					<visible>Skin.String(UniversalImage-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(FileImage-2) + Skin.HasSetting(FileMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmarkImage-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmarkImage-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmarkImage-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryImage-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryImage-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryImage-2)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 2 Default Image Icon</description>
@@ -157,19 +157,19 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)] | [Skin.HasSetting(XBEMode-2) + !Skin.String(XBEImage-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(VideoBookmarkImage-2) + Skin.HasSetting(VideoBookmarkMode-2)] | [!Skin.String(AudioBookmarkImage-2) + Skin.HasSetting(AudioBookmarkMode-2)] | [!Skin.String(PictureBookmarkImage-2) + Skin.HasSetting(PictureBookmarkMode-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryImage-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryImage-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryImage-2)]]</visible>
+					<visible>!Skin.String(UniversalImage-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(FileImage-2) + Skin.HasSetting(FileMode-2)] | [!Skin.String(CategoryImage-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(VideoBookmarkImage-2) + Skin.HasSetting(VideoBookmarkMode-2)] | [!Skin.String(AudioBookmarkImage-2) + Skin.HasSetting(AudioBookmarkMode-2)] | [!Skin.String(PictureBookmarkImage-2) + Skin.HasSetting(PictureBookmarkMode-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryImage-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryImage-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryImage-2)]]</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 2 Single Script Custom Image Icon</description>
+					<description>Market Place Button 2 Single File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>167</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-2)</info>
-					<visible>Skin.String(ScriptImage-2) + Skin.HasSetting(ScriptMode-2)</visible>
+					<info>Skin.String(FileImage-2)</info>
+					<visible>Skin.String(FileImage-2) + Skin.HasSetting(FileMode-2)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 2 Category Script Custom Image Icon</description>
+					<description>Market Place Button 2 Category File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>167</posy>
 					<width>280</width>
@@ -203,15 +203,6 @@
 					<height>64</height>
 					<info>Skin.String(PictureBookmarkImage-2)</info>
 					<visible>Skin.String(PictureBookmarkImage-2) + Skin.HasSetting(PictureBookmarkMode-2)</visible>
-				</control>
-				<control type="image">
-					<description>Market Place Button 2 XBE Custom Image Icon</description>
-					<posx>95</posx>
-					<posy>167</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-2)</info>
-					<visible>Skin.String(XBEImage-2) + Skin.HasSetting(XBEMode-2)</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 2 Movie Library Custom Image Icon</description>
@@ -264,19 +255,19 @@
 					<posx>100</posx>
 					<posy>205</posy>
 					<info>Skin.String(UniversalButtonName-2)</info>
-					<visible>Skin.String(UniversalButtonName-2) + [[!Skin.HasSetting(ScriptMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(ScriptButtonName-2) + Skin.HasSetting(ScriptMode-2)] | [!Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(VideoBookmarkButtonName-2) + Skin.HasSetting(VideoBookmarkMode-2)] | [!Skin.String(AudioBookmarkButtonName-2) + Skin.HasSetting(AudioBookmarkMode-2)] | [!Skin.String(PictureBookmarkButtonName-2) + Skin.HasSetting(PictureBookmarkMode-2)] | [!Skin.String(XBEButtonName-2) + Skin.HasSetting(XBEMode-2)] | [!Skin.String(MovieLibraryButtonName-2) + Skin.HasSetting(MovieLibraryMode-2)] | [!Skin.String(TVLibraryButtonName-2) + Skin.HasSetting(TVLibraryMode-2)] | [!Skin.String(MusicLibraryButtonName-2) + Skin.HasSetting(MusicLibraryMode-2)]]</visible>
+					<visible>Skin.String(UniversalButtonName-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(FileButtonName-2) + Skin.HasSetting(FileMode-2)] | [!Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(VideoBookmarkButtonName-2) + Skin.HasSetting(VideoBookmarkMode-2)] | [!Skin.String(AudioBookmarkButtonName-2) + Skin.HasSetting(AudioBookmarkMode-2)] | [!Skin.String(PictureBookmarkButtonName-2) + Skin.HasSetting(PictureBookmarkMode-2)] | [!Skin.String(MovieLibraryButtonName-2) + Skin.HasSetting(MovieLibraryMode-2)] | [!Skin.String(TVLibraryButtonName-2) + Skin.HasSetting(TVLibraryMode-2)] | [!Skin.String(MusicLibraryButtonName-2) + Skin.HasSetting(MusicLibraryMode-2)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 2 Single Script Custom Label</description>
+					<description>Button 2 Single File Custom Label</description>
 					<posx>100</posx>
 					<posy>205</posy>
-					<info>Skin.String(ScriptButtonName-2)</info>
-					<visible>Skin.String(ScriptButtonName-2) + Skin.HasSetting(ScriptMode-2)</visible>
+					<info>Skin.String(FileButtonName-2)</info>
+					<visible>Skin.String(FileButtonName-2) + Skin.HasSetting(FileMode-2)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 2 Category Script Custom Label</description>
+					<description>Button 2 Category File Custom Label</description>
 					<posx>100</posx>
 					<posy>205</posy>
 					<info>Skin.String(CategoryButtonName-2)</info>
@@ -305,14 +296,6 @@
 					<posy>205</posy>
 					<info>Skin.String(PictureBookmarkButtonName-2)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-2) + Skin.HasSetting(PictureBookmarkMode-2)</visible>
-					<include>TextcolorBlack</include>
-				</control>
-				<control type="label">
-					<description>Button 2 XBE Custom Label</description>
-					<posx>100</posx>
-					<posy>205</posy>
-					<info>Skin.String(XBEButtonName-2)</info>
-					<visible>Skin.String(XBEButtonName-2) + Skin.HasSetting(XBEMode-2)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -363,7 +346,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-3)</info>
-					<visible>Skin.String(UniversalImage-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkImage-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkImage-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkImage-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEImage-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryImage-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryImage-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryImage-3)]]</visible>
+					<visible>Skin.String(UniversalImage-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(FileImage-3) + Skin.HasSetting(FileMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkImage-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkImage-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkImage-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryImage-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryImage-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryImage-3)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 3 Default Image Icon</description>
@@ -373,7 +356,7 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEImage-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(VideoBookmarkImage-3) + Skin.HasSetting(VideoBookmarkMode-3)] | [!Skin.String(AudioBookmarkImage-3) + Skin.HasSetting(AudioBookmarkMode-3)] | [!Skin.String(PictureBookmarkImage-3) + Skin.HasSetting(PictureBookmarkMode-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryImage-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryImage-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryImage-3)]]</visible>
+					<visible>!Skin.String(UniversalImage-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(FileImage-3) + Skin.HasSetting(FileMode-3)] | [!Skin.String(CategoryImage-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(VideoBookmarkImage-3) + Skin.HasSetting(VideoBookmarkMode-3)] | [!Skin.String(AudioBookmarkImage-3) + Skin.HasSetting(AudioBookmarkMode-3)] | [!Skin.String(PictureBookmarkImage-3) + Skin.HasSetting(PictureBookmarkMode-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryImage-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryImage-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryImage-3)]]</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 3 Movie Library Custom Image Icon</description>
@@ -403,16 +386,16 @@
 					<visible>Skin.String(MusicLibraryImage-3) + Skin.HasSetting(MusicLibraryMode-3)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 3 Single Script Custom Image Icon</description>
+					<description>Market Place Button 3 Single File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>237</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-3)</info>
-					<visible>Skin.String(ScriptImage-3) + Skin.HasSetting(ScriptMode-3)</visible>
+					<info>Skin.String(FileImage-3)</info>
+					<visible>Skin.String(FileImage-3) + Skin.HasSetting(FileMode-3)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 3 Category Script Custom Image Icon</description>
+					<description>Market Place Button 3 Category File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>237</posy>
 					<width>280</width>
@@ -447,15 +430,6 @@
 					<info>Skin.String(PictureBookmarkImage-3)</info>
 					<visible>Skin.String(PictureBookmarkImage-3) + Skin.HasSetting(PictureBookmarkMode-3)</visible>
 				</control>
-				<control type="image">
-					<description>Market Place Button 3 XBE Custom Image Icon</description>
-					<posx>95</posx>
-					<posy>237</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-3)</info>
-					<visible>Skin.String(XBEImage-3) + Skin.HasSetting(XBEMode-3)</visible>
-				</control>
 				<control type="button" id="3">
 					<description>Market Place Button 3 push button</description>
 					<posx>90</posx>
@@ -480,7 +454,7 @@
 					<posx>100</posx>
 					<posy>275</posy>
 					<info>Skin.String(UniversalButtonName-3)</info>
-					<visible>Skin.String(UniversalButtonName-3) + [[!Skin.HasSetting(ScriptMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(ScriptButtonName-3) + Skin.HasSetting(ScriptMode-3)] | [!Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(VideoBookmarkButtonName-3) + Skin.HasSetting(VideoBookmarkMode-3)] | [!Skin.String(AudioBookmarkButtonName-3) + Skin.HasSetting(AudioBookmarkMode-3)] | [!Skin.String(PictureBookmarkButtonName-3) + Skin.HasSetting(PictureBookmarkMode-3)] | [!Skin.String(XBEButtonName-3) + Skin.HasSetting(XBEMode-3)] | [!Skin.String(MovieLibraryButtonName-3) + Skin.HasSetting(MovieLibraryMode-3)] | [!Skin.String(TVLibraryButtonName-3) + Skin.HasSetting(TVLibraryMode-3)] | [!Skin.String(MusicLibraryButtonName-3) + Skin.HasSetting(MusicLibraryMode-3)]]</visible>
+					<visible>Skin.String(UniversalButtonName-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(FileButtonName-3) + Skin.HasSetting(FileMode-3)] | [!Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(VideoBookmarkButtonName-3) + Skin.HasSetting(VideoBookmarkMode-3)] | [!Skin.String(AudioBookmarkButtonName-3) + Skin.HasSetting(AudioBookmarkMode-3)] | [!Skin.String(PictureBookmarkButtonName-3) + Skin.HasSetting(PictureBookmarkMode-3)] | [!Skin.String(MovieLibraryButtonName-3) + Skin.HasSetting(MovieLibraryMode-3)] | [!Skin.String(TVLibraryButtonName-3) + Skin.HasSetting(TVLibraryMode-3)] | [!Skin.String(MusicLibraryButtonName-3) + Skin.HasSetting(MusicLibraryMode-3)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -508,15 +482,15 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 3 Single Script Custom Label</description>
+					<description>Button 3 Single File Custom Label</description>
 					<posx>100</posx>
 					<posy>275</posy>
-					<info>Skin.String(ScriptButtonName-3)</info>
-					<visible>Skin.String(ScriptButtonName-3) + Skin.HasSetting(ScriptMode-3)</visible>
+					<info>Skin.String(FileButtonName-3)</info>
+					<visible>Skin.String(FileButtonName-3) + Skin.HasSetting(FileMode-3)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 3 Category Script Custom Label</description>
+					<description>Button 3 Category File Custom Label</description>
 					<posx>100</posx>
 					<posy>275</posy>
 					<info>Skin.String(CategoryButtonName-3)</info>
@@ -548,14 +522,6 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 3 XBE Custom Label</description>
-					<posx>100</posx>
-					<posy>275</posy>
-					<info>Skin.String(XBEButtonName-3)</info>
-					<visible>Skin.String(XBEButtonName-3) + Skin.HasSetting(XBEMode-3)</visible>
-					<include>TextcolorBlack</include>
-				</control>
-				<control type="label">
 					<description>Button 3 Default Label</description>
 					<posx>100</posx>
 					<posy>240</posy>
@@ -579,7 +545,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-4)</info>
-					<visible>Skin.String(UniversalImage-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(XBEMode-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [Skin.HasSetting(VideoBookmarkMode-4) + !Skin.String(VideoBookmarkImage-4)] | [Skin.HasSetting(AudioBookmarkMode-4) + !Skin.String(AudioBookmarkImage-4)] | [Skin.HasSetting(PictureBookmarkMode-4) + !Skin.String(PictureBookmarkImage-4)] | [Skin.HasSetting(XBEMode-4) + !Skin.String(XBEImage-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryImage-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryImage-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryImage-4)]]</visible>
+					<visible>Skin.String(UniversalImage-4) + [[!Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(FileImage-4) + Skin.HasSetting(FileMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [Skin.HasSetting(VideoBookmarkMode-4) + !Skin.String(VideoBookmarkImage-4)] | [Skin.HasSetting(AudioBookmarkMode-4) + !Skin.String(AudioBookmarkImage-4)] | [Skin.HasSetting(PictureBookmarkMode-4) + !Skin.String(PictureBookmarkImage-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryImage-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryImage-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryImage-4)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 4 Default Image Icon</description>
@@ -589,7 +555,7 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(XBEMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)] | [Skin.HasSetting(XBEMode-4) + !Skin.String(XBEImage-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(VideoBookmarkImage-4) + Skin.HasSetting(VideoBookmarkMode-4)] | [!Skin.String(AudioBookmarkImage-4) + Skin.HasSetting(AudioBookmarkMode-4)] | [!Skin.String(PictureBookmarkImage-4) + Skin.HasSetting(PictureBookmarkMode-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryImage-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryImage-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryImage-4)]]</visible>
+					<visible>!Skin.String(UniversalImage-4) + [[!Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(FileImage-4) + Skin.HasSetting(FileMode-4)] | [!Skin.String(CategoryImage-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(VideoBookmarkImage-4) + Skin.HasSetting(VideoBookmarkMode-4)] | [!Skin.String(AudioBookmarkImage-4) + Skin.HasSetting(AudioBookmarkMode-4)] | [!Skin.String(PictureBookmarkImage-4) + Skin.HasSetting(PictureBookmarkMode-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryImage-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryImage-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryImage-4)]]</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 4 Movie Library Custom Image Icon</description>
@@ -619,16 +585,16 @@
 					<visible>Skin.String(MusicLibraryImage-4) + Skin.HasSetting(MusicLibraryMode-4)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 4 Single Script Custom Image Icon</description>
+					<description>Market Place Button 4 Single File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>307</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-4)</info>
-					<visible>Skin.String(ScriptImage-4) + Skin.HasSetting(ScriptMode-4)</visible>
+					<info>Skin.String(FileImage-4)</info>
+					<visible>Skin.String(FileImage-4) + Skin.HasSetting(FileMode-4)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 4 Category Script Custom Image Icon</description>
+					<description>Market Place Button 4 Category File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>307</posy>
 					<width>280</width>
@@ -663,15 +629,6 @@
 					<info>Skin.String(PictureBookmarkImage-4)</info>
 					<visible>Skin.String(PictureBookmarkImage-4) + Skin.HasSetting(PictureBookmarkMode-4)</visible>
 				</control>
-				<control type="image">
-					<description>Market Place Button 4 XBE Script Custom Image Icon</description>
-					<posx>95</posx>
-					<posy>307</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-4)</info>
-					<visible>Skin.String(XBEImage-4) + Skin.HasSetting(XBEMode-4)</visible>
-				</control>
 				<control type="button" id="4">
 					<description>Market Place Button 4 push button</description>
 					<posx>90</posx>
@@ -696,7 +653,7 @@
 					<posx>100</posx>
 					<posy>345</posy>
 					<info>Skin.String(UniversalButtonName-4)</info>
-					<visible>Skin.String(UniversalButtonName-4) + [[!Skin.HasSetting(ScriptMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(XBEMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(ScriptButtonName-4) + Skin.HasSetting(ScriptMode-4)] | [!Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(VideoBookmarkButtonName-4) + Skin.HasSetting(VideoBookmarkMode-4)] | [!Skin.String(AudioBookmarkButtonName-4) + Skin.HasSetting(AudioBookmarkMode-4)] | [!Skin.String(PictureBookmarkButtonName-4) + Skin.HasSetting(PictureBookmarkMode-4)] | [!Skin.String(XBEButtonName-4) + Skin.HasSetting(XBEMode-4)] | [!Skin.String(MovieLibraryButtonName-4) + Skin.HasSetting(MovieLibraryMode-4)] | [!Skin.String(TVLibraryButtonName-4) + Skin.HasSetting(TVLibraryMode-4)] | [!Skin.String(MusicLibraryButtonName-4) + Skin.HasSetting(MusicLibraryMode-4)]]</visible>
+					<visible>Skin.String(UniversalButtonName-4) + [[!Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(FileButtonName-4) + Skin.HasSetting(FileMode-4)] | [!Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(VideoBookmarkButtonName-4) + Skin.HasSetting(VideoBookmarkMode-4)] | [!Skin.String(AudioBookmarkButtonName-4) + Skin.HasSetting(AudioBookmarkMode-4)] | [!Skin.String(PictureBookmarkButtonName-4) + Skin.HasSetting(PictureBookmarkMode-4)] | [!Skin.String(MovieLibraryButtonName-4) + Skin.HasSetting(MovieLibraryMode-4)] | [!Skin.String(TVLibraryButtonName-4) + Skin.HasSetting(TVLibraryMode-4)] | [!Skin.String(MusicLibraryButtonName-4) + Skin.HasSetting(MusicLibraryMode-4)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -724,15 +681,15 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 4 Single Script Custom Label</description>
+					<description>Button 4 Single File Custom Label</description>
 					<posx>100</posx>
 					<posy>345</posy>
-					<info>Skin.String(ScriptButtonName-4)</info>
-					<visible>Skin.String(ScriptButtonName-4) + Skin.HasSetting(ScriptMode-4)</visible>
+					<info>Skin.String(FileButtonName-4)</info>
+					<visible>Skin.String(FileButtonName-4) + Skin.HasSetting(FileMode-4)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 4 Category Script Custom Label</description>
+					<description>Button 4 Category File Custom Label</description>
 					<posx>100</posx>
 					<posy>345</posy>
 					<info>Skin.String(CategoryButtonName-4)</info>
@@ -764,14 +721,6 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 4 XBE Custom Label</description>
-					<posx>100</posx>
-					<posy>345</posy>
-					<info>Skin.String(XBEButtonName-4)</info>
-					<visible>Skin.String(XBEButtonName-4) + Skin.HasSetting(XBEMode-4)</visible>
-					<include>TextcolorBlack</include>
-				</control>
-				<control type="label">
 					<description>Button 4 Default Label</description>
 					<posx>100</posx>
 					<posy>310</posy>
@@ -795,7 +744,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-5)</info>
-					<visible>Skin.String(UniversalImage-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + !Skin.String(VideoBookmarkImage-5)] | [Skin.HasSetting(AudioBookmarkMode-5) + !Skin.String(AudioBookmarkImage-5)] | [Skin.HasSetting(PictureBookmarkMode-5) + !Skin.String(PictureBookmarkImage-5)] | [Skin.HasSetting(XBEMode-5) + !Skin.String(XBEImage-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryImage-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryImage-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryImage-5)]]</visible>
+					<visible>Skin.String(UniversalImage-5) + [[!Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(FileImage-5) + Skin.HasSetting(FileMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + !Skin.String(VideoBookmarkImage-5)] | [Skin.HasSetting(AudioBookmarkMode-5) + !Skin.String(AudioBookmarkImage-5)] | [Skin.HasSetting(PictureBookmarkMode-5) + !Skin.String(PictureBookmarkImage-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryImage-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryImage-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryImage-5)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 5 Default Image Icon</description>
@@ -805,7 +754,7 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)] | [Skin.HasSetting(XBEMode-5) + !Skin.String(XBEImage-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(VideoBookmarkImage-5) + Skin.HasSetting(VideoBookmarkMode-5)] | [!Skin.String(AudioBookmarkImage-5) + Skin.HasSetting(AudioBookmarkMode-5)] | [!Skin.String(PictureBookmarkImage-5) + Skin.HasSetting(PictureBookmarkMode-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryImage-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryImage-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryImage-5)]]</visible>
+					<visible>!Skin.String(UniversalImage-5) + [[!Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(FileImage-5) + Skin.HasSetting(FileMode-5)] | [!Skin.String(CategoryImage-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(VideoBookmarkImage-5) + Skin.HasSetting(VideoBookmarkMode-5)] | [!Skin.String(AudioBookmarkImage-5) + Skin.HasSetting(AudioBookmarkMode-5)] | [!Skin.String(PictureBookmarkImage-5) + Skin.HasSetting(PictureBookmarkMode-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryImage-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryImage-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryImage-5)]]</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 5 Movie Library Custom Image Icon</description>
@@ -835,16 +784,16 @@
 					<visible>Skin.String(MusicLibraryImage-5) + Skin.HasSetting(MusicLibraryMode-5)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 5 Single Script Custom Image Icon</description>
+					<description>Market Place Button 5 Single File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>377</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-5)</info>
-					<visible>Skin.String(ScriptImage-5) + Skin.HasSetting(ScriptMode-5)</visible>
+					<info>Skin.String(FileImage-5)</info>
+					<visible>Skin.String(FileImage-5) + Skin.HasSetting(FileMode-5)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 5 Category Script Custom Image Icon</description>
+					<description>Market Place Button 5 Category File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>377</posy>
 					<width>280</width>
@@ -879,15 +828,6 @@
 					<info>Skin.String(PictureBookmarkImage-5)</info>
 					<visible>Skin.String(PictureBookmarkImage-5) + Skin.HasSetting(PictureBookmarkMode-5)</visible>
 				</control>
-				<control type="image">
-					<description>Market Place Button 5 XBE Custom Image Icon</description>
-					<posx>95</posx>
-					<posy>377</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-5)</info>
-					<visible>Skin.String(XBEImage-5) + Skin.HasSetting(XBEMode-5)</visible>
-				</control>
 				<control type="button" id="5">
 					<description>Market Place Button 5 push button</description>
 					<posx>90</posx>
@@ -912,7 +852,7 @@
 					<posx>100</posx>
 					<posy>415</posy>
 					<info>Skin.String(UniversalButtonName-5)</info>
-					<visible>Skin.String(UniversalButtonName-5) + [[!Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(ScriptButtonName-5) + Skin.HasSetting(ScriptMode-5)] | [!Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(VideoBookmarkButtonName-5) + Skin.HasSetting(VideoBookmarkMode-5)] | [!Skin.String(AudioBookmarkButtonName-5) + Skin.HasSetting(AudioBookmarkMode-5)] | [!Skin.String(PictureBookmarkButtonName-5) + Skin.HasSetting(PictureBookmarkMode-5)] | [!Skin.String(XBEButtonName-5) + Skin.HasSetting(XBEMode-5)] | [!Skin.String(MovieLibraryButtonName-5) + Skin.HasSetting(MovieLibraryMode-5)] | [!Skin.String(TVLibraryButtonName-5) + Skin.HasSetting(TVLibraryMode-5)] | [!Skin.String(MusicLibraryButtonName-5) + Skin.HasSetting(MusicLibraryMode-5)]]</visible>
+					<visible>Skin.String(UniversalButtonName-5) + [[!Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(FileButtonName-5) + Skin.HasSetting(FileMode-5)] | [!Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(VideoBookmarkButtonName-5) + Skin.HasSetting(VideoBookmarkMode-5)] | [!Skin.String(AudioBookmarkButtonName-5) + Skin.HasSetting(AudioBookmarkMode-5)] | [!Skin.String(PictureBookmarkButtonName-5) + Skin.HasSetting(PictureBookmarkMode-5)] | [!Skin.String(MovieLibraryButtonName-5) + Skin.HasSetting(MovieLibraryMode-5)] | [!Skin.String(TVLibraryButtonName-5) + Skin.HasSetting(TVLibraryMode-5)] | [!Skin.String(MusicLibraryButtonName-5) + Skin.HasSetting(MusicLibraryMode-5)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -940,15 +880,15 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 5 Single Script Custom Label</description>
+					<description>Button 5 Single File Custom Label</description>
 					<posx>100</posx>
 					<posy>415</posy>
-					<info>Skin.String(ScriptButtonName-5)</info>
-					<visible>Skin.String(ScriptButtonName-5) + Skin.HasSetting(ScriptMode-5)</visible>
+					<info>Skin.String(FileButtonName-5)</info>
+					<visible>Skin.String(FileButtonName-5) + Skin.HasSetting(FileMode-5)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 5 Category Script Custom Label</description>
+					<description>Button 5 Category File Custom Label</description>
 					<posx>100</posx>
 					<posy>415</posy>
 					<info>Skin.String(CategoryButtonName-5)</info>
@@ -971,14 +911,6 @@
 					<visible>Skin.String(AudioBookmarkButtonName-5) + Skin.HasSetting(AudioBookmarkMode-5)</visible>
 					<include>TextcolorBlack</include>
 				</control>	
-				<control type="label">
-					<description>Button 5 XBE Custom Label</description>
-					<posx>100</posx>
-					<posy>415</posy>
-					<info>Skin.String(XBEButtonName-5)</info>
-					<visible>Skin.String(XBEButtonName-5) + Skin.HasSetting(XBEMode-5)</visible>
-					<include>TextcolorBlack</include>
-				</control>
 				<control type="label">
 					<description>Button 5 Default Label</description>
 					<posx>100</posx>
@@ -1059,7 +991,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-1)</info>
-					<visible>Skin.String(UniversalImage-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [Skin.HasSetting(VideoBookmarkMode-1) + !Skin.String(VideoBookmarkImage-1)] | [Skin.HasSetting(AudioBookmarkMode-1) + !Skin.String(AudioBookmarkImage-1)] | [Skin.HasSetting(PictureBookmarkMode-1) + !Skin.String(PictureBookmarkImage-1)] | [Skin.HasSetting(XBEMode-1) + !Skin.String(XBEImage-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryImage-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryImage-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryImage-1)]]</visible>
+					<visible>Skin.String(UniversalImage-1) + [[!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(FileImage-1) + Skin.HasSetting(FileMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [Skin.HasSetting(VideoBookmarkMode-1) + !Skin.String(VideoBookmarkImage-1)] | [Skin.HasSetting(AudioBookmarkMode-1) + !Skin.String(AudioBookmarkImage-1)] | [Skin.HasSetting(PictureBookmarkMode-1) + !Skin.String(PictureBookmarkImage-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryImage-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryImage-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryImage-1)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 1 Default Image Icon</description>
@@ -1069,7 +1001,7 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)] | [Skin.HasSetting(XBEMode-1) + !Skin.String(XBEImage-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(VideoBookmarkImage-1) + Skin.HasSetting(VideoBookmarkMode-1)] | [!Skin.String(AudioBookmarkImage-1) + Skin.HasSetting(AudioBookmarkMode-1)] | [!Skin.String(PictureBookmarkImage-1) + Skin.HasSetting(PictureBookmarkMode-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryImage-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryImage-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryImage-1)]]</visible>
+					<visible>!Skin.String(UniversalImage-1) + [[!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(FileImage-1) + Skin.HasSetting(FileMode-1)] | [!Skin.String(CategoryImage-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(VideoBookmarkImage-1) + Skin.HasSetting(VideoBookmarkMode-1)] | [!Skin.String(AudioBookmarkImage-1) + Skin.HasSetting(AudioBookmarkMode-1)] | [!Skin.String(PictureBookmarkImage-1) + Skin.HasSetting(PictureBookmarkMode-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryImage-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryImage-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryImage-1)]]</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 1 Movie Library Custom Image Icon</description>
@@ -1099,16 +1031,16 @@
 					<visible>Skin.String(MusicLibraryImage-1) + Skin.HasSetting(MusicLibraryMode-1)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 1 Single Script Custom Image Icon</description>
+					<description>Market Place Button 1 Single File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>97</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-1)</info>
-					<visible>Skin.String(ScriptImage-1) + Skin.HasSetting(ScriptMode-1)</visible>
+					<info>Skin.String(FileImage-1)</info>
+					<visible>Skin.String(FileImage-1) + Skin.HasSetting(FileMode-1)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 1 Category Script Custom Image Icon</description>
+					<description>Market Place Button 1 Category File Custom Image Icon</description>
 					<posx>95</posx>
 					<posy>97</posy>
 					<width>280</width>
@@ -1143,15 +1075,6 @@
 					<info>Skin.String(PictureBookmarkImage-1)</info>
 					<visible>Skin.String(PictureBookmarkImage-1) + Skin.HasSetting(PictureBookmarkMode-1)</visible>
 				</control>
-				<control type="image">
-					<description>Market Place Button 1 XBE Custom Image Icon</description>
-					<posx>95</posx>
-					<posy>97</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-1)</info>
-					<visible>Skin.String(XBEImage-1) + Skin.HasSetting(XBEMode-1)</visible>
-				</control>
 				<control type="button" id="1">
 					<description>Market Place Button 1 push button</description>
 					<posx>90</posx>
@@ -1176,7 +1099,7 @@
 					<posx>100</posx>
 					<posy>135</posy>
 					<info>Skin.String(UniversalButtonName-1)</info>
-					<visible>Skin.String(UniversalButtonName-1) + [[!Skin.HasSetting(ScriptMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(ScriptButtonName-1) + Skin.HasSetting(ScriptMode-1)] | [!Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(VideoBookmarkButtonName-1) + Skin.HasSetting(VideoBookmarkMode-1)] | [!Skin.String(AudioBookmarkButtonName-1) + Skin.HasSetting(AudioBookmarkMode-1)] | [!Skin.String(PictureBookmarkButtonName-1) + Skin.HasSetting(PictureBookmarkMode-1)] | [!Skin.String(XBEButtonName-1) + Skin.HasSetting(XBEMode-1)] | [!Skin.String(MovieLibraryButtonName-1) + Skin.HasSetting(MovieLibraryMode-1)] | [!Skin.String(TVLibraryButtonName-1) + Skin.HasSetting(TVLibraryMode-1)] | [!Skin.String(MusicLibraryButtonName-1) + Skin.HasSetting(MusicLibraryMode-1)]]</visible>
+					<visible>Skin.String(UniversalButtonName-1) + [[!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(FileButtonName-1) + Skin.HasSetting(FileMode-1)] | [!Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(VideoBookmarkButtonName-1) + Skin.HasSetting(VideoBookmarkMode-1)] | [!Skin.String(AudioBookmarkButtonName-1) + Skin.HasSetting(AudioBookmarkMode-1)] | [!Skin.String(PictureBookmarkButtonName-1) + Skin.HasSetting(PictureBookmarkMode-1)] | [!Skin.String(MovieLibraryButtonName-1) + Skin.HasSetting(MovieLibraryMode-1)] | [!Skin.String(TVLibraryButtonName-1) + Skin.HasSetting(TVLibraryMode-1)] | [!Skin.String(MusicLibraryButtonName-1) + Skin.HasSetting(MusicLibraryMode-1)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -1204,15 +1127,15 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 1 Single Script Custom Label</description>
+					<description>Button 1 Single File Custom Label</description>
 					<posx>100</posx>
 					<posy>135</posy>
-					<info>Skin.String(ScriptButtonName-1)</info>
-					<visible>Skin.String(ScriptButtonName-1) + Skin.HasSetting(ScriptMode-1)</visible>
+					<info>Skin.String(FileButtonName-1)</info>
+					<visible>Skin.String(FileButtonName-1) + Skin.HasSetting(FileMode-1)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 1 Category Script Custom Label</description>
+					<description>Button 1 Category File Custom Label</description>
 					<posx>100</posx>
 					<posy>135</posy>
 					<info>Skin.String(CategoryButtonName-1)</info>
@@ -1244,14 +1167,6 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 1 XBE Custom Label</description>
-					<posx>100</posx>
-					<posy>135</posy>
-					<info>Skin.String(XBEButtonName-1)</info>
-					<visible>Skin.String(XBEButtonName-1) + Skin.HasSetting(XBEMode-1)</visible>
-					<include>TextcolorBlack</include>
-				</control>
-				<control type="label">
 					<description>Button 1 Default Label</description>
 					<posx>100</posx>
 					<posy>100</posy>
@@ -1275,7 +1190,7 @@
 					<width>280</width>
 					<height>64</height>
 					<info>Skin.String(UniversalImage-6)</info>
-					<visible>Skin.String(UniversalImage-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [Skin.HasSetting(VideoBookmarkMode-6) + !Skin.String(VideoBookmarkImage-6)] | [Skin.HasSetting(AudioBookmarkMode-6) + !Skin.String(AudioBookmarkImage-6)] | [Skin.HasSetting(PictureBookmarkMode-6) + !Skin.String(PictureBookmarkImage-6)] | [Skin.HasSetting(XBEMode-6) + !Skin.String(XBEImage-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryImage-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryImage-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryImage-6)]]</visible>
+					<visible>Skin.String(UniversalImage-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(FileImage-6) + Skin.HasSetting(FileMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [Skin.HasSetting(VideoBookmarkMode-6) + !Skin.String(VideoBookmarkImage-6)] | [Skin.HasSetting(AudioBookmarkMode-6) + !Skin.String(AudioBookmarkImage-6)] | [Skin.HasSetting(PictureBookmarkMode-6) + !Skin.String(PictureBookmarkImage-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryImage-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryImage-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryImage-6)]]</visible>
 				</control>				
 				<control type="image">
 					<description>Market Place Button 6 Default Image Icon</description>
@@ -1285,7 +1200,7 @@
 					<height>64</height>
 					<texture>default.png</texture>
 					<aspectratio>scale</aspectratio>
-					<visible>!Skin.String(UniversalImage-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)] | [Skin.HasSetting(XBEMode-6) + !Skin.String(XBEImage-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(VideoBookmarkImage-6) + Skin.HasSetting(VideoBookmarkMode-6)] | [!Skin.String(AudioBookmarkImage-6) + Skin.HasSetting(AudioBookmarkMode-6)] | [!Skin.String(PictureBookmarkImage-6) + Skin.HasSetting(PictureBookmarkMode-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryImage-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryImage-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryImage-6)]]</visible>
+					<visible>!Skin.String(UniversalImage-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(FileImage-6) + Skin.HasSetting(FileMode-6)] | [!Skin.String(CategoryImage-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(VideoBookmarkImage-6) + Skin.HasSetting(VideoBookmarkMode-6)] | [!Skin.String(AudioBookmarkImage-6) + Skin.HasSetting(AudioBookmarkMode-6)] | [!Skin.String(PictureBookmarkImage-6) + Skin.HasSetting(PictureBookmarkMode-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryImage-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryImage-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryImage-6)]]</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 6 Movie Library Custom Image Icon</description>
@@ -1315,16 +1230,16 @@
 					<visible>Skin.String(MusicLibraryImage-6) + Skin.HasSetting(MusicLibraryMode-6)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 6 Single Script Custom Image Icon</description>
+					<description>Market Place Button 6 Single File Custom Image Icon</description>
 					<posx>384</posx>
 					<posy>97</posy>
 					<width>280</width>
 					<height>64</height>
-					<info>Skin.String(ScriptImage-6)</info>
-					<visible>Skin.String(ScriptImage-6) + Skin.HasSetting(ScriptMode-6)</visible>
+					<info>Skin.String(FileImage-6)</info>
+					<visible>Skin.String(FileImage-6) + Skin.HasSetting(FileMode-6)</visible>
 				</control>
 				<control type="image">
-					<description>Market Place Button 6 Category Script Custom Image Icon</description>
+					<description>Market Place Button 6 Category File Custom Image Icon</description>
 					<posx>384</posx>
 					<posy>97</posy>
 					<width>280</width>
@@ -1359,15 +1274,6 @@
 					<info>Skin.String(PictureBookmarkImage-6)</info>
 					<visible>Skin.String(PictureBookmarkImage-6) + Skin.HasSetting(PictureBookmarkMode-6)</visible>
 				</control>
-				<control type="image">
-					<description>Market Place Button 6 XBE Custom Image Icon</description>
-					<posx>384</posx>
-					<posy>97</posy>
-					<width>280</width>
-					<height>64</height>
-					<info>Skin.String(XBEImage-6)</info>
-					<visible>Skin.String(XBEImage-6) + Skin.HasSetting(XBEMode-6)</visible>
-				</control>
 				<control type="button" id="6">
 					<description>Market Place Button 6 push button</description>
 					<posx>380</posx>
@@ -1392,7 +1298,7 @@
 					<posx>389</posx>
 					<posy>135</posy>
 					<info>Skin.String(UniversalButtonName-6)</info>
-					<visible>Skin.String(UniversalButtonName-6) + [[!Skin.HasSetting(ScriptMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(ScriptButtonName-6) + Skin.HasSetting(ScriptMode-6)] | [!Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(VideoBookmarkButtonName-6) + Skin.HasSetting(VideoBookmarkMode-6)] | [!Skin.String(AudioBookmarkButtonName-6) + Skin.HasSetting(AudioBookmarkMode-6)] | [!Skin.String(PictureBookmarkButtonName-6) + Skin.HasSetting(PictureBookmarkMode-6)] | [!Skin.String(XBEButtonName-6) + Skin.HasSetting(XBEMode-6)] | [!Skin.String(MovieLibraryButtonName-6) + Skin.HasSetting(MovieLibraryMode-6)] | [!Skin.String(TVLibraryButtonName-6) + Skin.HasSetting(TVLibraryMode-6)] | [!Skin.String(MusicLibraryButtonName-6) + Skin.HasSetting(MusicLibraryMode-6)]]</visible>
+					<visible>Skin.String(UniversalButtonName-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(FileButtonName-6) + Skin.HasSetting(FileMode-6)] | [!Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(VideoBookmarkButtonName-6) + Skin.HasSetting(VideoBookmarkMode-6)] | [!Skin.String(AudioBookmarkButtonName-6) + Skin.HasSetting(AudioBookmarkMode-6)] | [!Skin.String(PictureBookmarkButtonName-6) + Skin.HasSetting(PictureBookmarkMode-6)] | [!Skin.String(MovieLibraryButtonName-6) + Skin.HasSetting(MovieLibraryMode-6)] | [!Skin.String(TVLibraryButtonName-6) + Skin.HasSetting(TVLibraryMode-6)] | [!Skin.String(MusicLibraryButtonName-6) + Skin.HasSetting(MusicLibraryMode-6)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
@@ -1420,15 +1326,15 @@
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 6 Single Script Custom Label</description>
+					<description>Button 6 Single File Custom Label</description>
 					<posx>389</posx>
 					<posy>135</posy>
-					<info>Skin.String(ScriptButtonName-6)</info>
-					<visible>Skin.String(ScriptButtonName-6) + Skin.HasSetting(ScriptMode-6)</visible>
+					<info>Skin.String(FileButtonName-6)</info>
+					<visible>Skin.String(FileButtonName-6) + Skin.HasSetting(FileMode-6)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">
-					<description>Button 6 Category Script Custom Label</description>
+					<description>Button 6 Category File Custom Label</description>
 					<posx>389</posx>
 					<posy>135</posy>
 					<info>Skin.String(CategoryButtonName-6)</info>
@@ -1457,14 +1363,6 @@
 					<posy>135</posy>
 					<info>Skin.String(PictureBookmarkButtonName-6)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-6) + Skin.HasSetting(PictureBookmarkMode-6)</visible>
-					<include>TextcolorBlack</include>
-				</control>
-				<control type="label">
-					<description>Button 6 XBE Custom Label</description>
-					<posx>389</posx>
-					<posy>135</posy>
-					<info>Skin.String(XBEButtonName-6)</info>
-					<visible>Skin.String(XBEButtonName-6) + Skin.HasSetting(XBEMode-6)</visible>
 					<include>TextcolorBlack</include>
 				</control>
 				<control type="label">

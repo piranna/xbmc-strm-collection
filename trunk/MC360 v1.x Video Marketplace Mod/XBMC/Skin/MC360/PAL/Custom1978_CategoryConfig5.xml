@@ -1,6 +1,6 @@
-<window type="dialog" id="1978">
+<window type="dialog" id="1982">
 	<defaultcontrol>1</defaultcontrol>
-	<previouswindow>1988</previouswindow>
+	<previouswindow>1994</previouswindow>
 	<animation effect="fade" time="200">WindowOpen</animation>
 	<animation effect="fade" delay="1050" time="50">WindowClose</animation>
 	<controls>
@@ -142,7 +142,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="radiobutton" id="1">
-			<description>Button 1 Enable Script Button</description>
+			<description>Button 1 Enable File Button</description>
 			<posx>340</posx>
 			<posy>88</posy>
 			<width>285</width>
@@ -157,7 +157,7 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 1</label>
+			<label>Enable File Button 1</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -167,7 +167,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="2">
-			<description>Button 1 Set Script Button</description>
+			<description>Button 1 Set File Button</description>
 			<posx>340</posx>
 			<posy>88</posy>
 			<width>350</width>
@@ -175,13 +175,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script1)</onclick>
+			<onclick>Skin.SetFile(Button-5File1)</onclick>
 			<onleft>1</onleft>
 			<onright>3</onright>
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 1</label>
+			<label>Add/Change File 1</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -191,7 +191,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="3">
-			<description>Button 1 Name Script Button</description>
+			<description>Button 1 Name File Button</description>
 			<posx>340</posx>
 			<posy>88</posy>
 			<width>350</width>
@@ -205,7 +205,7 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Name Script 1</label>
+			<label>Name File 1</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -215,7 +215,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="4">
-			<description>Button 2 Enable Script Button</description>
+			<description>Button 2 Enable File Button</description>
 			<posx>340</posx>
 			<posy>124</posy>
 			<width>285</width>
@@ -230,7 +230,7 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 2</label>
+			<label>Enable File Button 2</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -240,7 +240,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="5">
-			<description>Button 2 Set Script Button</description>
+			<description>Button 2 Set File Button</description>
 			<posx>340</posx>
 			<posy>124</posy>
 			<width>350</width>
@@ -248,13 +248,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script2)</onclick>
+			<onclick>Skin.SetFile(Button-5File2)</onclick>
 			<onleft>4</onleft>
 			<onright>6</onright>
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 2</label>
+			<label>Add/Change File 2</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -264,7 +264,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="6">
-			<description>Button 2 Name Script Button</description>
+			<description>Button 2 Name File Button</description>
 			<posx>340</posx>
 			<posy>124</posy>
 			<width>350</width>
@@ -278,7 +278,7 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Name Script 2</label>
+			<label>Name File 2</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -288,7 +288,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="7">
-			<description>Button 3 Enable Script Button</description>
+			<description>Button 3 Enable File Button</description>
 			<posx>340</posx>
 			<posy>160</posy>
 			<width>285</width>
@@ -303,7 +303,7 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 3</label>
+			<label>Enable File Button 3</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -313,7 +313,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="8">
-			<description>Button 3 Set Script Button</description>
+			<description>Button 3 Set File Button</description>
 			<posx>340</posx>
 			<posy>160</posy>
 			<width>350</width>
@@ -321,13 +321,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script3)</onclick>
+			<onclick>Skin.SetFile(Button-5File3)</onclick>
 			<onleft>7</onleft>
 			<onright>9</onright>
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 3</label>
+			<label>Add/Change File 3</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -337,7 +337,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Button 3 Name Script Button</description>
+			<description>Button 3 Name File Button</description>
 			<posx>340</posx>
 			<posy>160</posy>
 			<width>350</width>
@@ -351,7 +351,7 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Name Script 3</label>
+			<label>Name File 3</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -361,7 +361,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10">
-			<description>Button 4 Enable Script Button</description>
+			<description>Button 4 Enable File Button</description>
 			<posx>340</posx>
 			<posy>196</posy>
 			<width>285</width>
@@ -376,7 +376,7 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 4</label>
+			<label>Enable File Button 4</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -386,7 +386,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="11">
-			<description>Button 4 Set Script Button</description>
+			<description>Button 4 Set File Button</description>
 			<posx>340</posx>
 			<posy>196</posy>
 			<width>350</width>
@@ -394,13 +394,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script4)</onclick>
+			<onclick>Skin.SetFile(Button-5File4)</onclick>
 			<onleft>10</onleft>
 			<onright>12</onright>
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 4</label>
+			<label>Add/Change File 4</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -410,7 +410,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="12">
-			<description>Button 4 Name Script Button</description>
+			<description>Button 4 Name File Button</description>
 			<posx>340</posx>
 			<posy>196</posy>
 			<width>350</width>
@@ -424,7 +424,7 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Name Script 4</label>
+			<label>Name File 4</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -434,7 +434,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="13">
-			<description>Button 5 Enable Script Button</description>
+			<description>Button 5 Enable File Button</description>
 			<posx>340</posx>
 			<posy>232</posy>
 			<width>285</width>
@@ -449,7 +449,7 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 5</label>
+			<label>Enable File Button 5</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -459,7 +459,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="14">
-			<description>Button 5 Set Script Button</description>
+			<description>Button 5 Set File Button</description>
 			<posx>340</posx>
 			<posy>232</posy>
 			<width>350</width>
@@ -467,13 +467,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script5)</onclick>
+			<onclick>Skin.SetFile(Button-5File5)</onclick>
 			<onleft>13</onleft>
 			<onright>15</onright>
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 5</label>
+			<label>Add/Change File 5</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -483,7 +483,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="15">
-			<description>Button 5 Name Script Button</description>
+			<description>Button 5 Name File Button</description>
 			<posx>340</posx>
 			<posy>232</posy>
 			<width>350</width>
@@ -497,7 +497,7 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Name Script 5</label>
+			<label>Name File 5</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -507,7 +507,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="16">
-			<description>Button 6 Enable Script Button</description>
+			<description>Button 6 Enable File Button</description>
 			<posx>340</posx>
 			<posy>268</posy>
 			<width>285</width>
@@ -522,7 +522,7 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 6</label>
+			<label>Enable File Button 6</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -532,7 +532,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="17">
-			<description>Button 6 Set Script Button</description>
+			<description>Button 6 Set File Button</description>
 			<posx>340</posx>
 			<posy>268</posy>
 			<width>350</width>
@@ -540,13 +540,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script6)</onclick>
+			<onclick>Skin.SetFile(Button-5File6)</onclick>
 			<onleft>16</onleft>
 			<onright>18</onright>
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 6</label>
+			<label>Add/Change File 6</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -556,7 +556,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="18">
-			<description>Button 6 Name Script Button</description>
+			<description>Button 6 Name File Button</description>
 			<posx>340</posx>
 			<posy>268</posy>
 			<width>350</width>
@@ -570,7 +570,7 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Name Script 6</label>
+			<label>Name File 6</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -580,7 +580,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="19">
-			<description>Button 7 Enable Script Button</description>
+			<description>Button 7 Enable File Button</description>
 			<posx>340</posx>
 			<posy>304</posy>
 			<width>285</width>
@@ -595,7 +595,7 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 7</label>
+			<label>Enable File Button 7</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -605,7 +605,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="20">
-			<description>Button 7 Set Script Button</description>
+			<description>Button 7 Set File Button</description>
 			<posx>340</posx>
 			<posy>304</posy>
 			<width>350</width>
@@ -613,13 +613,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script7)</onclick>
+			<onclick>Skin.SetFile(Button-5File7)</onclick>
 			<onleft>19</onleft>
 			<onright>21</onright>
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 7</label>
+			<label>Add/Change File 7</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -629,7 +629,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="21">
-			<description>Button 7 Name Script Button</description>
+			<description>Button 7 Name File Button</description>
 			<posx>340</posx>
 			<posy>304</posy>
 			<width>350</width>
@@ -643,7 +643,7 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Name Script 7</label>
+			<label>Name File 7</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -653,7 +653,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="22">
-			<description>Button 8 Enable Script Button</description>
+			<description>Button 8 Enable File Button</description>
 			<posx>340</posx>
 			<posy>340</posy>
 			<width>285</width>
@@ -668,7 +668,7 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 8</label>
+			<label>Enable File Button 8</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -678,7 +678,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="23">
-			<description>Button 8 Set Script Button</description>
+			<description>Button 8 Set File Button</description>
 			<posx>340</posx>
 			<posy>340</posy>
 			<width>350</width>
@@ -686,13 +686,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script8)</onclick>
+			<onclick>Skin.SetFile(Button-5File8)</onclick>
 			<onleft>22</onleft>
 			<onright>24</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 8</label>
+			<label>Add/Change File 8</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -702,7 +702,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="24">
-			<description>Button 8 Name Script Button</description>
+			<description>Button 8 Name File Button</description>
 			<posx>340</posx>
 			<posy>340</posy>
 			<width>350</width>
@@ -716,7 +716,7 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Name Script 8</label>
+			<label>Name File 8</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -726,7 +726,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="25">
-			<description>Button 9 Enable Script Button</description>
+			<description>Button 9 Enable File Button</description>
 			<posx>340</posx>
 			<posy>376</posy>
 			<width>285</width>
@@ -741,7 +741,7 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 9</label>
+			<label>Enable File Button 9</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -751,7 +751,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="26">
-			<description>Button 9 Set Script Button</description>
+			<description>Button 9 Set File Button</description>
 			<posx>340</posx>
 			<posy>376</posy>
 			<width>350</width>
@@ -759,13 +759,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script9)</onclick>
+			<onclick>Skin.SetFile(Button-5File9)</onclick>
 			<onleft>25</onleft>
 			<onright>27</onright>
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 9</label>
+			<label>Add/Change File 9</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -775,7 +775,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="27">
-			<description>Button 9 Name Script Button</description>
+			<description>Button 9 Name File Button</description>
 			<posx>340</posx>
 			<posy>376</posy>
 			<width>350</width>
@@ -789,7 +789,7 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Name Script 9</label>
+			<label>Name File 9</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -799,7 +799,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="28">
-			<description>Button 10 Enable Script Button</description>
+			<description>Button 10 Enable File Button</description>
 			<posx>340</posx>
 			<posy>412</posy>
 			<width>285</width>
@@ -814,7 +814,7 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Enable Script Button 10</label>
+			<label>Enable File Button 10</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -824,7 +824,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="29">
-			<description>Button 10 Set Script Button</description>
+			<description>Button 10 Set File Button</description>
 			<posx>340</posx>
 			<posy>412</posy>
 			<width>350</width>
@@ -832,13 +832,13 @@
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(Button-5Script10)</onclick>
+			<onclick>Skin.SetFile(Button-5File10)</onclick>
 			<onleft>28</onleft>
 			<onright>30</onright>
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Add/Change Script 10</label>
+			<label>Add/Change File 10</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -848,7 +848,7 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="30">
-			<description>Button 10 Name Script Button</description>
+			<description>Button 10 Name File Button</description>
 			<posx>340</posx>
 			<posy>412</posy>
 			<width>350</width>
@@ -862,7 +862,7 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Name Script 10</label>
+			<label>Name File 10</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>

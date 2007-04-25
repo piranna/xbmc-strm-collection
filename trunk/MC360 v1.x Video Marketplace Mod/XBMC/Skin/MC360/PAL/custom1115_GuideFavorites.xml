@@ -4,7 +4,7 @@
 		<control type="group" id="9000">
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>98</posy>
 				<width>230</width>
@@ -13,7 +13,7 @@
 				<visible>control.isvisible(1)</visible>
 			</control>
 			<control type="image">
-				<description>Button 1 Highlight</description>
+				<deFileion>Button 1 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>88</posy>
 				<width>290</width>
@@ -23,7 +23,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="1">
-				<description>Default File Manager Button 1</description>
+				<deFileion>Default File Manager Button 1</deFileion>
 				<posx>22</posx>
 				<posy>88</posy>
 				<width>290</width>
@@ -40,14 +40,14 @@
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
 				<onclick>XBMC.ActivateWindow(myfiles)</onclick>
-				<visible>!Skin.HasSetting(FavoritesButtonEnable1) | [!Skin.String(FavoritesScript1) + !Skin.String(FavoritesXBE1)]</visible>
+				<visible>!Skin.HasSetting(FavoritesButtonEnable1) | [!Skin.String(FavoritesFile1) + !Skin.String(FavoritesXBE1)]</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="1">
-				<description>Default Script Button 1</description>
+				<deFileion>Default File Button 1</deFileion>
 				<posx>22</posx>
 				<posy>88</posy>
 				<width>290</width>
@@ -63,39 +63,15 @@
 				<label>Favorite 1</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript1)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesScript1) + !Skin.String(FavoritesButtonName1)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile1)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesFile1) + !Skin.String(FavoritesButtonName1)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="1">
-				<description>Default XBE Button 1</description>
-				<posx>22</posx>
-				<posy>88</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>1</onleft>
-				<onright>1</onright>
-				<onup>9</onup>
-				<ondown>2</ondown>
-				<font>font14</font>
-				<label>Favorite 1</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE1)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesXBE1) + !Skin.String(FavoritesButtonName1)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="1">
-				<description>Custom Named Script Button 1</description>
+				<deFileion>Custom Named File Button 1</deFileion>
 				<posx>22</posx>
 				<posy>88</posy>
 				<width>290</width>
@@ -111,39 +87,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName1)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript1)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesScript1) + Skin.String(FavoritesButtonName1)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="1">
-				<description>Custom Named XBEButton 1</description>
-				<posx>22</posx>
-				<posy>88</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>1</onleft>
-				<onright>1</onright>
-				<onup>9</onup>
-				<ondown>2</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName1)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE1)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesXBE1) + Skin.String(FavoritesButtonName1)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile1)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable1) + Skin.String(FavoritesFile1) + Skin.String(FavoritesButtonName1)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>134</posy>
 				<width>230</width>
@@ -152,7 +104,7 @@
 				<visible>control.isvisible(1) | control.isvisible(2)</visible>
 			</control>
 			<control type="image">
-				<description>Button 2 Highlight</description>
+				<deFileion>Button 2 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -162,7 +114,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="2">
-				<description>Default Script Button 2</description>
+				<deFileion>Default File Button 2</deFileion>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -178,39 +130,15 @@
 				<label>Favorite 2</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript2)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesScript2) + !Skin.String(FavoritesButtonName2)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile2)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesFile2) + !Skin.String(FavoritesButtonName2)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="2">
-				<description>Default XBE Button 2</description>
-				<posx>22</posx>
-				<posy>124</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>1</onup>
-				<ondown>3</ondown>
-				<font>font14</font>
-				<label>Favorite 2</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE2)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesXBE2) + !Skin.String(FavoritesButtonName2)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="2">
-				<description>Custom Named Script Button 2</description>
+				<deFileion>Custom Named File Button 2</deFileion>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -226,39 +154,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName2)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript2)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesScript2) + Skin.String(FavoritesButtonName2)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="2">
-				<description>Custom Named XBEButton 2</description>
-				<posx>22</posx>
-				<posy>124</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>1</onup>
-				<ondown>3</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName2)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE2)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesXBE2) + Skin.String(FavoritesButtonName2)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile2)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable2) + Skin.String(FavoritesFile2) + Skin.String(FavoritesButtonName2)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>170</posy>
 				<width>230</width>
@@ -267,7 +171,7 @@
 				<visible>control.isvisible(2) | control.isvisible(3)</visible>
 			</control>
 			<control type="image">
-				<description>Button 3 Highlight</description>
+				<deFileion>Button 3 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>160</posy>
 				<width>290</width>
@@ -277,7 +181,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="3">
-				<description>Default Script Button 3</description>
+				<deFileion>Default File Button 3</deFileion>
 				<posx>22</posx>
 				<posy>160</posy>
 				<width>290</width>
@@ -293,39 +197,15 @@
 				<label>Favorite 3</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript3)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesScript3) + !Skin.String(FavoritesButtonName3)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile3)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesFile3) + !Skin.String(FavoritesButtonName3)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="3">
-				<description>Default XBE Button 3</description>
-				<posx>22</posx>
-				<posy>160</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>2</onup>
-				<ondown>4</ondown>
-				<font>font14</font>
-				<label>Favorite 3</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE3)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesXBE3) + !Skin.String(FavoritesButtonName3)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="3">
-				<description>Custom Named Script Button 3</description>
+				<deFileion>Custom Named File Button 3</deFileion>
 				<posx>22</posx>
 				<posy>160</posy>
 				<width>290</width>
@@ -341,39 +221,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName3)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript3)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesScript3) + Skin.String(FavoritesButtonName3)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="3">
-				<description>Custom Named XBEButton 3</description>
-				<posx>22</posx>
-				<posy>160</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>3</onleft>
-				<onright>3</onright>
-				<onup>2</onup>
-				<ondown>4</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName3)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE3)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesXBE3) + Skin.String(FavoritesButtonName3)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile3)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable3) + Skin.String(FavoritesFile3) + Skin.String(FavoritesButtonName3)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>206</posy>
 				<width>230</width>
@@ -382,7 +238,7 @@
 				<visible>control.isvisible(3) | control.isvisible(4)</visible>
 			</control>
 			<control type="image">
-				<description>Button 4 Highlight</description>
+				<deFileion>Button 4 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>196</posy>
 				<width>290</width>
@@ -392,7 +248,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="4">
-				<description>Default Script Button 4</description>
+				<deFileion>Default File Button 4</deFileion>
 				<posx>22</posx>
 				<posy>196</posy>
 				<width>290</width>
@@ -408,39 +264,15 @@
 				<label>Favorite 4</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript4)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesScript4) + !Skin.String(FavoritesButtonName4)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile4)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesFile4) + !Skin.String(FavoritesButtonName4)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="4">
-				<description>Default XBE Button 4</description>
-				<posx>22</posx>
-				<posy>196</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>4</onleft>
-				<onright>4</onright>
-				<onup>3</onup>
-				<ondown>5</ondown>
-				<font>font14</font>
-				<label>Favorite 4</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE4)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesXBE4) + !Skin.String(FavoritesButtonName4)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="4">
-				<description>Custom Named Script Button 4</description>
+				<deFileion>Custom Named File Button 4</deFileion>
 				<posx>22</posx>
 				<posy>196</posy>
 				<width>290</width>
@@ -456,39 +288,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName4)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript4)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesScript4) + Skin.String(FavoritesButtonName4)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="4">
-				<description>Custom Named XBEButton 4</description>
-				<posx>22</posx>
-				<posy>196</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>4</onleft>
-				<onright>4</onright>
-				<onup>3</onup>
-				<ondown>5</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName4)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE4)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesXBE4) + Skin.String(FavoritesButtonName4)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile4)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable4) + Skin.String(FavoritesFile4) + Skin.String(FavoritesButtonName4)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>242</posy>
 				<width>230</width>
@@ -497,7 +305,7 @@
 				<visible>Control.IsVisible(4) | Control.IsVisible(5)</visible>
 			</control>
 			<control type="image">
-				<description>Button 5 Highlight</description>
+				<deFileion>Button 5 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -507,7 +315,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="5">
-				<description>Default Script Button 5</description>
+				<deFileion>Default File Button 5</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -523,39 +331,15 @@
 				<label>Favorite 5</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript5)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesScript5) + !Skin.String(FavoritesButtonName5)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile5)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesFile5) + !Skin.String(FavoritesButtonName5)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="5">
-				<description>Default XBE Button 5</description>
-				<posx>22</posx>
-				<posy>232</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>4</onup>
-				<ondown>6</ondown>
-				<font>font14</font>
-				<label>Favorite 5</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE5)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesXBE5) + !Skin.String(FavoritesButtonName5)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="5">
-				<description>Custom Named Script Button 5</description>
+				<deFileion>Custom Named File Button 5</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -571,39 +355,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName5)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript5)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesScript5) + Skin.String(FavoritesButtonName5)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="5">
-				<description>Custom Named XBEButton 5</description>
-				<posx>22</posx>
-				<posy>232</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>5</onleft>
-				<onright>5</onright>
-				<onup>4</onup>
-				<ondown>6</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName5)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE5)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesXBE5) + Skin.String(FavoritesButtonName5)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile5)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable5) + Skin.String(FavoritesFile5) + Skin.String(FavoritesButtonName5)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>278</posy>
 				<width>230</width>
@@ -612,7 +372,7 @@
 				<visible>control.isvisible(5) | control.isvisible(6)</visible>
 			</control>
 			<control type="image">
-				<description>Button 6 Highlight</description>
+				<deFileion>Button 6 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -622,7 +382,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="6">
-				<description>Default Script Button 6</description>
+				<deFileion>Default File Button 6</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -638,39 +398,15 @@
 				<label>Favorite 6</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript6)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesScript6) + !Skin.String(FavoritesButtonName6)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile6)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesFile6) + !Skin.String(FavoritesButtonName6)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="6">
-				<description>Default XBE Button 6</description>
-				<posx>22</posx>
-				<posy>268</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>6</onleft>
-				<onright>6</onright>
-				<onup>5</onup>
-				<ondown>7</ondown>
-				<font>font14</font>
-				<label>Favorite 6</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE6)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesXBE6) + !Skin.String(FavoritesButtonName6)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="6">
-				<description>Custom Named Script Button 6</description>
+				<deFileion>Custom Named File Button 6</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -686,39 +422,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName6)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript6)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesScript6) + Skin.String(FavoritesButtonName6)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="6">
-				<description>Custom Named XBEButton 6</description>
-				<posx>22</posx>
-				<posy>268</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>6</onleft>
-				<onright>6</onright>
-				<onup>5</onup>
-				<ondown>7</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName6)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE6)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesXBE6) + Skin.String(FavoritesButtonName6)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile6)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable6) + Skin.String(FavoritesFile6) + Skin.String(FavoritesButtonName6)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>314</posy>
 				<width>230</width>
@@ -727,7 +439,7 @@
 				<visible>control.isvisible(6) | control.isvisible(7)</visible>
 			</control>
 			<control type="image">
-				<description>Button 7 Highlight</description>
+				<deFileion>Button 7 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>304</posy>
 				<width>290</width>
@@ -737,7 +449,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="7">
-				<description>Default Script Button 7</description>
+				<deFileion>Default File Button 7</deFileion>
 				<posx>22</posx>
 				<posy>304</posy>
 				<width>290</width>
@@ -753,39 +465,15 @@
 				<label>Favorite 7</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript7)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesScript7) + !Skin.String(FavoritesButtonName7)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile7)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesFile7) + !Skin.String(FavoritesButtonName7)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="7">
-				<description>Default XBE Button 7</description>
-				<posx>22</posx>
-				<posy>304</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>7</onleft>
-				<onright>7</onright>
-				<onup>6</onup>
-				<ondown>8</ondown>
-				<font>font14</font>
-				<label>Favorite 7</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE7)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesXBE7) + !Skin.String(FavoritesButtonName7)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="7">
-				<description>Custom Named Script Button 7</description>
+				<deFileion>Custom Named File Button 7</deFileion>
 				<posx>22</posx>
 				<posy>304</posy>
 				<width>290</width>
@@ -801,39 +489,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName7)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript7)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesScript7) + Skin.String(FavoritesButtonName7)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="7">
-				<description>Custom Named XBEButton 7</description>
-				<posx>22</posx>
-				<posy>304</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>7</onleft>
-				<onright>7</onright>
-				<onup>6</onup>
-				<ondown>8</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName7)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE7)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesXBE7) + Skin.String(FavoritesButtonName7)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile7)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable7) + Skin.String(FavoritesFile7) + Skin.String(FavoritesButtonName7)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>350</posy>
 				<width>230</width>
@@ -842,7 +506,7 @@
 				<visible>control.isvisible(7) | control.isvisible(8)</visible>
 			</control>
 			<control type="image">
-				<description>Button 8 Highlight</description>
+				<deFileion>Button 8 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>340</posy>
 				<width>290</width>
@@ -852,7 +516,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="8">
-				<description>Default Script Button 8</description>
+				<deFileion>Default File Button 8</deFileion>
 				<posx>22</posx>
 				<posy>340</posy>
 				<width>290</width>
@@ -868,39 +532,15 @@
 				<label>Favorite 8</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript8)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesScript8) + !Skin.String(FavoritesButtonName8)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile8)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesFile8) + !Skin.String(FavoritesButtonName8)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="8">
-				<description>Default XBE Button 8</description>
-				<posx>22</posx>
-				<posy>340</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>7</onup>
-				<ondown>9</ondown>
-				<font>font14</font>
-				<label>Favorite 8</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE8)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesXBE8) + !Skin.String(FavoritesButtonName8)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="8">
-				<description>Custom Named Script Button 8</description>
+				<deFileion>Custom Named File Button 8</deFileion>
 				<posx>22</posx>
 				<posy>340</posy>
 				<width>290</width>
@@ -916,39 +556,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName8)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript8)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesScript8) + Skin.String(FavoritesButtonName8)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="8">
-				<description>Custom Named XBEButton 8</description>
-				<posx>22</posx>
-				<posy>340</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>8</onleft>
-				<onright>8</onright>
-				<onup>7</onup>
-				<ondown>9</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName8)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE8)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesXBE8) + Skin.String(FavoritesButtonName8)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile8)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable8) + Skin.String(FavoritesFile8) + Skin.String(FavoritesButtonName8)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>386</posy>
 				<width>230</width>
@@ -957,7 +573,7 @@
 				<visible>control.isvisible(8) | control.isvisible(9)</visible>
 			</control>
 			<control type="image">
-				<description>Button 9 Highlight</description>
+				<deFileion>Button 9 Highlight</deFileion>
 				<posx>22</posx>
 				<posy>376</posy>
 				<width>290</width>
@@ -967,7 +583,7 @@
 				<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			</control>
 			<control type="button" id="9">
-				<description>Default Script Button 9</description>
+				<deFileion>Default File Button 9</deFileion>
 				<posx>22</posx>
 				<posy>376</posy>
 				<width>290</width>
@@ -983,39 +599,15 @@
 				<label>Favorite 9</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript9)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesScript9) + !Skin.String(FavoritesButtonName9)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile9)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesFile9) + !Skin.String(FavoritesButtonName9)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="9">
-				<description>Default XBE Button 9</description>
-				<posx>22</posx>
-				<posy>376</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>9</onleft>
-				<onright>9</onright>
-				<onup>8</onup>
-				<ondown>1</ondown>
-				<font>font14</font>
-				<label>Favorite 9</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE9)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesXBE9) + !Skin.String(FavoritesButtonName9)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="9">
-				<description>Custom Named Script Button 9</description>
+				<deFileion>Custom Named File Button 9</deFileion>
 				<posx>22</posx>
 				<posy>376</posy>
 				<width>290</width>
@@ -1031,39 +623,15 @@
 				<label>$INFO[Skin.String(FavoritesButtonName9)]</label>
 				<onclick>Dialog.Close(1115)</onclick>
 				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunScript($INFO[Skin.String(FavoritesScript9)]\default.py)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesScript9) + Skin.String(FavoritesButtonName9)</visible>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="button" id="9">
-				<description>Custom Named XBEButton 9</description>
-				<posx>22</posx>
-				<posy>376</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<onleft>9</onleft>
-				<onright>9</onright>
-				<onup>8</onup>
-				<ondown>1</ondown>
-				<font>font14</font>
-				<label>$INFO[Skin.String(FavoritesButtonName9)]</label>
-				<onclick>Dialog.Close(1115)</onclick>
-				<onclick>Dialog.Close(PlayerControls)</onclick>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(FavoritesXBE9)]\default.xbe)</onclick>
-				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesXBE9) + Skin.String(FavoritesButtonName9)</visible>
+				<onclick>$INFO[Skin.String(FavoritesFile9)]</onclick>
+				<visible>Skin.HasSetting(FavoritesButtonEnable9) + Skin.String(FavoritesFile9) + Skin.String(FavoritesButtonName9)</visible>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="image">
-				<description>Divider</description>
+				<deFileion>Divider</deFileion>
 				<posx>45</posx>
 				<posy>422</posy>
 				<width>230</width>

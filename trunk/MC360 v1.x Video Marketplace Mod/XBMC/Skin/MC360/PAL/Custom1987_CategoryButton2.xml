@@ -1,4 +1,4 @@
-<window type="dialog" id="1987">
+<window type="dialog" id="1988">
 	<defaultcontrol>7500</defaultcontrol>
 	<previouswindow>1996</previouswindow>
 	<animation effect="fade" time="200">WindowOpen</animation>
@@ -10,12 +10,12 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>Either you do not have any scripts set up for this button in Category Mode, or they are all disabled.  Please go to the Marketplace configuration menu to add or enable scripts.</label>
+			<label>Either you do not have any files set up for this button in Category Mode, or they are all disabled.  Please go to the Marketplace configuration menu to add or enable files.</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>[!Skin.String(Button-2Script1) | !Skin.HasSetting(Button-2Enable1)] + [!Skin.String(Button-2Script2) | !Skin.HasSetting(Button-2Enable2)] + [!Skin.String(Button-2Script3) | !Skin.HasSetting(Button-2Enable3)] + [!Skin.String(Button-2Script4) | !Skin.HasSetting(Button-2Enable4)] + [!Skin.String(Button-2Script5) | !Skin.HasSetting(Button-2Enable5)] + [!Skin.String(Button-2Script6) | !Skin.HasSetting(Button-2Enable6)] + [!Skin.String(Button-2Script7) | !Skin.HasSetting(Button-2Enable7)] + [!Skin.String(Button-2Script8) | !Skin.HasSetting(Button-2Enable8)] + [!Skin.String(Button-2Script9) | !Skin.HasSetting(Button-2Enable9)] + [!Skin.String(Button-2Script10) | !Skin.HasSetting(Button-2Enable10)]</visible>
+			<visible>[!Skin.String(Button-2File1) | !Skin.HasSetting(Button-2Enable1)] + [!Skin.String(Button-2File2) | !Skin.HasSetting(Button-2Enable2)] + [!Skin.String(Button-2File3) | !Skin.HasSetting(Button-2Enable3)] + [!Skin.String(Button-2File4) | !Skin.HasSetting(Button-2Enable4)] + [!Skin.String(Button-2File5) | !Skin.HasSetting(Button-2Enable5)] + [!Skin.String(Button-2File6) | !Skin.HasSetting(Button-2Enable6)] + [!Skin.String(Button-2File7) | !Skin.HasSetting(Button-2Enable7)] + [!Skin.String(Button-2File8) | !Skin.HasSetting(Button-2Enable8)] + [!Skin.String(Button-2File9) | !Skin.HasSetting(Button-2Enable9)] + [!Skin.String(Button-2File10) | !Skin.HasSetting(Button-2Enable10)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -160,10 +160,10 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>Script Launcher</label>
+			<label>File Launcher</label>
 			<align>left</align>
 			<include>DialogTitle</include>
-			<visible>!Skin.String(category-2) + [Skin.String(Button-2Script1) | Skin.String(Button-2Script2) | Skin.String(Button-2Script3) | Skin.String(Button-2Script4) | Skin.String(Button-2Script5) | Skin.String(Button-2Script6) | Skin.String(Button-2Script7) |Skin.String(Button-2Script8) | Skin.String(Button-2Script9) | Skin.String(Button-2Script10)]</visible>
+			<visible>!Skin.String(category-2) + [Skin.String(Button-2File1) | Skin.String(Button-2File2) | Skin.String(Button-2File3) | Skin.String(Button-2File4) | Skin.String(Button-2File5) | Skin.String(Button-2File6) | Skin.String(Button-2File7) |Skin.String(Button-2File8) | Skin.String(Button-2File9) | Skin.String(Button-2File10)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -177,23 +177,23 @@
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<visible>Skin.String(category-2) + [Skin.String(Button-2Script1) | Skin.String(Button-2Script2) | Skin.String(Button-2Script3) | Skin.String(Button-2Script4) | Skin.String(Button-2Script5) | Skin.String(Button-2Script6) | Skin.String(Button-2Script7) |Skin.String(Button-2Script8) | Skin.String(Button-2Script9) | Skin.String(Button-2Script10)]</visible>
+			<visible>Skin.String(category-2) + [Skin.String(Button-2File1) | Skin.String(Button-2File2) | Skin.String(Button-2File3) | Skin.String(Button-2File4) | Skin.String(Button-2File5) | Skin.String(Button-2File6) | Skin.String(Button-2File7) |Skin.String(Button-2File8) | Skin.String(Button-2File9) | Skin.String(Button-2File10)]</visible>
 		</control>
 		<control type="label">
 			<description>dialog Heading</description>
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>No Scripts Found</label>
+			<label>No Files Found</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<visible>!Skin.String(Button-2Script1) + !Skin.String(Button-2Script2) + !Skin.String(Button-2Script3) + !Skin.String(Button-2Script4) + !Skin.String(Button-2Script5) + !Skin.String(Button-2Script6) + !Skin.String(Button-2Script7) + !Skin.String(Button-2Script8) + !Skin.String(Button-2Script9) + !Skin.String(Button-2Script10)</visible>
+			<visible>!Skin.String(Button-2File1) + !Skin.String(Button-2File2) + !Skin.String(Button-2File3) + !Skin.String(Button-2File4) + !Skin.String(Button-2File5) + !Skin.String(Button-2File6) + !Skin.String(Button-2File7) + !Skin.String(Button-2File8) + !Skin.String(Button-2File9) + !Skin.String(Button-2File10)</visible>
 		</control>
 		<control type="group" id="7500">
 			<control type="button" id="1">
-				<description>Script 1 Button</description>
+				<description>File 1 Button</description>
 				<posx>340</posx>
 				<posy>88</posy>
 				<width>350</width>
@@ -201,8 +201,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script1)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File1)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>1</onleft>
 				<onright>1</onright>
 				<onup>10</onup>
@@ -211,14 +211,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script1)</visible>
+				<visible>Skin.String(Button-2File1) + Skin.HasSetting(Button-2Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 1 Default Label</description>
-				<label>Script 1</label>
+				<label>File 1</label>
 				<posx>380</posx>
 				<posy>106</posy>
 				<height>59</height>
@@ -226,7 +226,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name1) + Skin.String(Button-2Script1)</visible>
+				<visible>!Skin.String(Button-2Name1) + Skin.String(Button-2File1) + Skin.HasSetting(Button-2Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -241,13 +241,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name1) + Skin.String(Button-2Script1)</visible>
+				<visible>Skin.String(Button-2Name1) + Skin.String(Button-2File1) + Skin.HasSetting(Button-2Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="2">
-				<description>Script 2 Button</description>
+				<description>File 2 Button</description>
 				<posx>340</posx>
 				<posy>124</posy>
 				<width>350</width>
@@ -255,8 +255,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script2)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File2)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<onup>1</onup>
@@ -265,14 +265,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script2)</visible>
+				<visible>Skin.String(Button-2File2) + Skin.HasSetting(Button-2Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 2 Default Label</description>
-				<label>Script 2</label>
+				<label>File 2</label>
 				<posx>380</posx>
 				<posy>142</posy>
 				<height>59</height>
@@ -280,7 +280,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name2) + Skin.String(Button-2Script2)</visible>
+				<visible>!Skin.String(Button-2Name2) + Skin.String(Button-2File2) + Skin.HasSetting(Button-2Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -295,13 +295,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name2) + Skin.String(Button-2Script2)</visible>
+				<visible>Skin.String(Button-2Name2) + Skin.String(Button-2File2) + Skin.HasSetting(Button-2Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="3">
-				<description>Script 3 Button</description>
+				<description>File 3 Button</description>
 				<posx>340</posx>
 				<posy>160</posy>
 				<width>350</width>
@@ -309,8 +309,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script3)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File3)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>3</onleft>
 				<onright>3</onright>
 				<onup>2</onup>
@@ -319,14 +319,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script3)</visible>
+				<visible>Skin.String(Button-2File3) + Skin.HasSetting(Button-2Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 3 Default Label</description>
-				<label>Script 3</label>
+				<label>File 3</label>
 				<posx>380</posx>
 				<posy>178</posy>
 				<height>59</height>
@@ -334,7 +334,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name3) + Skin.String(Button-2Script3)</visible>
+				<visible>!Skin.String(Button-2Name3) + Skin.String(Button-2File3) + Skin.HasSetting(Button-2Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -349,13 +349,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name3) + Skin.String(Button-2Script3)</visible>
+				<visible>Skin.String(Button-2Name3) + Skin.String(Button-2File3) + Skin.HasSetting(Button-2Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="4">
-				<description>Script 4 Button</description>
+				<description>File 4 Button</description>
 				<posx>340</posx>
 				<posy>196</posy>
 				<width>350</width>
@@ -363,8 +363,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script4)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File4)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>4</onleft>
 				<onright>4</onright>
 				<onup>3</onup>
@@ -373,14 +373,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script4)</visible>
+				<visible>Skin.String(Button-2File4) + Skin.HasSetting(Button-2Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 4 Default Label</description>
-				<label>Script 4</label>
+				<label>File 4</label>
 				<posx>380</posx>
 				<posy>214</posy>
 				<height>59</height>
@@ -388,7 +388,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name4) + Skin.String(Button-2Script4)</visible>
+				<visible>!Skin.String(Button-2Name4) + Skin.String(Button-2File4) + Skin.HasSetting(Button-2Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -403,13 +403,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name4) + Skin.String(Button-2Script4)</visible>
+				<visible>Skin.String(Button-2Name4) + Skin.String(Button-2File4) + Skin.HasSetting(Button-2Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="5">
-				<description>Script 5 Button</description>
+				<description>File 5 Button</description>
 				<posx>340</posx>
 				<posy>232</posy>
 				<width>350</width>
@@ -417,8 +417,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script5)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File5)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>5</onleft>
 				<onright>5</onright>
 				<onup>4</onup>
@@ -427,14 +427,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script5)</visible>
+				<visible>Skin.String(Button-2File5) + Skin.HasSetting(Button-2Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 5 Default Label</description>
-				<label>Script 5</label>
+				<label>File 5</label>
 				<posx>380</posx>
 				<posy>250</posy>
 				<height>59</height>
@@ -442,7 +442,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name5) + Skin.String(Button-2Script5)</visible>
+				<visible>!Skin.String(Button-2Name5) + Skin.String(Button-2File5) + Skin.HasSetting(Button-2Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -457,13 +457,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name5) + Skin.String(Button-2Script5)</visible>
+				<visible>Skin.String(Button-2Name5) + Skin.String(Button-2File5) + Skin.HasSetting(Button-2Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="6">
-				<description>Script 6 Button</description>
+				<description>File 6 Button</description>
 				<posx>340</posx>
 				<posy>268</posy>
 				<width>350</width>
@@ -471,8 +471,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script6)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File6)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>6</onleft>
 				<onright>6</onright>
 				<onup>5</onup>
@@ -481,14 +481,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script6)</visible>
+				<visible>Skin.String(Button-2File6) + Skin.HasSetting(Button-2Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 6 Default Label</description>
-				<label>Script 6</label>
+				<label>File 6</label>
 				<posx>380</posx>
 				<posy>286</posy>
 				<height>59</height>
@@ -496,7 +496,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name6) + Skin.String(Button-2Script6)</visible>
+				<visible>!Skin.String(Button-2Name6) + Skin.String(Button-2File6) + Skin.HasSetting(Button-2Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -511,13 +511,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name6) + Skin.String(Button-2Script6)</visible>
+				<visible>Skin.String(Button-2Name6) + Skin.String(Button-2File6) + Skin.HasSetting(Button-2Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="7">
-				<description>Script 7 Button</description>
+				<description>File 7 Button</description>
 				<posx>340</posx>
 				<posy>304</posy>
 				<width>350</width>
@@ -525,8 +525,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script7)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File7)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>7</onleft>
 				<onright>7</onright>
 				<onup>6</onup>
@@ -535,14 +535,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script7)</visible>
+				<visible>Skin.String(Button-2File7) + Skin.HasSetting(Button-2Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 7 Default Label</description>
-				<label>Script 7</label>
+				<label>File 7</label>
 				<posx>380</posx>
 				<posy>322</posy>
 				<height>59</height>
@@ -550,7 +550,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name7) + Skin.String(Button-2Script7)</visible>
+				<visible>!Skin.String(Button-2Name7) + Skin.String(Button-2File7) + Skin.HasSetting(Button-2Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -565,13 +565,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name7) + Skin.String(Button-2Script7)</visible>
+				<visible>Skin.String(Button-2Name7) + Skin.String(Button-2File7) + Skin.HasSetting(Button-2Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="8">
-				<description>Script 8 Button</description>
+				<description>File 8 Button</description>
 				<posx>340</posx>
 				<posy>340</posy>
 				<width>350</width>
@@ -579,8 +579,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script8)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File8)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>8</onleft>
 				<onright>8</onright>
 				<onup>7</onup>
@@ -589,14 +589,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script8)</visible>
+				<visible>Skin.String(Button-2File8) + Skin.HasSetting(Button-2Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 8 Default Label</description>
-				<label>Script 8</label>
+				<label>File 8</label>
 				<posx>380</posx>
 				<posy>358</posy>
 				<height>59</height>
@@ -604,7 +604,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name8) + Skin.String(Button-2Script8)</visible>
+				<visible>!Skin.String(Button-2Name8) + Skin.String(Button-2File8) + Skin.HasSetting(Button-2Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -619,13 +619,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name8) + Skin.String(Button-2Script8)</visible>
+				<visible>Skin.String(Button-2Name8) + Skin.String(Button-2File8) + Skin.HasSetting(Button-2Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="9">
-				<description>Script 9 Button</description>
+				<description>File 9 Button</description>
 				<posx>340</posx>
 				<posy>376</posy>
 				<width>350</width>
@@ -633,8 +633,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script9)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File9)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>9</onleft>
 				<onright>9</onright>
 				<onup>8</onup>
@@ -643,14 +643,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script9)</visible>
+				<visible>Skin.String(Button-2File9) + Skin.HasSetting(Button-2Enable9)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 9 Default Label</description>
-				<label>Script 9</label>
+				<label>File 9</label>
 				<posx>380</posx>
 				<posy>394</posy>
 				<height>59</height>
@@ -658,7 +658,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name9) + Skin.String(Button-2Script9)</visible>
+				<visible>!Skin.String(Button-2Name9) + Skin.String(Button-2File9) + Skin.HasSetting(Button-2Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -673,13 +673,13 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name9) + Skin.String(Button-2Script9)</visible>
+				<visible>Skin.String(Button-2Name9) + Skin.String(Button-2File9) + Skin.HasSetting(Button-2Enable9)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="button" id="10">
-				<description>Script 10 Button</description>
+				<description>File 10 Button</description>
 				<posx>340</posx>
 				<posy>412</posy>
 				<width>350</width>
@@ -687,8 +687,8 @@
 				<texturefocus>guide-button-focus.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<onclick>XBMC.RunScript($INFO[Skin.String(Button-2Script10)]\default.py)</onclick>
-				<onclick>Dialog.Close(1987)</onclick>
+				<onclick>$INFO[Skin.String(Button-2File10)]</onclick>
+				<onclick>Dialog.Close(1988)</onclick>
 				<onleft>10</onleft>
 				<onright>10</onright>
 				<onup>9</onup>
@@ -697,14 +697,14 @@
 				<textoffsetx>40</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Script10)</visible>
+				<visible>Skin.String(Button-2File10) + Skin.HasSetting(Button-2Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 			</control>
 			<control type="label">
 				<description>Button 10 Default Label</description>
-				<label>Script 10</label>
+				<label>File 10</label>
 				<posx>380</posx>
 				<posy>430</posy>
 				<height>59</height>
@@ -712,7 +712,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>!Skin.String(Button-2Name10) + Skin.String(Button-2Script10)</visible>
+				<visible>!Skin.String(Button-2Name10) + Skin.String(Button-2File10) + Skin.HasSetting(Button-2Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -727,7 +727,7 @@
 				<include>TextcolorBlack</include>
 				<font>font14</font>
 				<include>shadow-white</include>
-				<visible>Skin.String(Button-2Name10) + Skin.String(Button-2Script10)</visible>
+				<visible>Skin.String(Button-2Name10) + Skin.String(Button-2File10) + Skin.HasSetting(Button-2Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 				<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>

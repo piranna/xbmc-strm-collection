@@ -1,4 +1,4 @@
-<window type="dialog" id="1982">
+<window type="dialog" id="1978">
 	<defaultcontrol>1</defaultcontrol>
 	<previouswindow>1994</previouswindow>
 	<animation effect="fade" time="200">WindowOpen</animation>

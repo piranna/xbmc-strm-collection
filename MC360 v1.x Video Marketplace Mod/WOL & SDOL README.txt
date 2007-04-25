@@ -1,6 +1,6 @@
 MC360 Remote Computer Startup/Shutdown Mod for v1.0 (works with newer versions as well...and the xml files this changes aren't likely to change in the official build any time soon.)
 
-If you have any problems with this script, feel free to post in the thread, or PM on xbox-scene, as screen name timdog82001
+If you have any problems with this script, feel free to post in the thread, or PM on xbox-scene, at screen name timdog82001
 
 HOW TO SET UP SCRIPTS:
 

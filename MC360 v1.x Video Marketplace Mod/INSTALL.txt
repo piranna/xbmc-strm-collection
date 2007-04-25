@@ -28,6 +28,8 @@ NOTE: No parts of XBMC itself are modified, this is simply so you can transfer a
 6.  Go to the MC360 Guide by pressing Start on the controller or selecting the MC360 Guide button in the Media blade with the remote control.  Go to "Personal Settings" and then "Skin Mod Settings."  Configure things as you like.  Things are fairly self explanatory.  MCE stands for Media Center Extender.  WOL/SOL stands for Wake-On-LAN and Shutdown-On-LAN and enables the button to remotely start and shutdown your computer.
 
 
+NOTE: If you are using a profile other than Master User that was created before installed this mod, things may not work correctly right away.  You will have to either create a new profile to replace the old one, or I believe that you can simply change to a different skin, restart, and then change back to MC360 (not tested - It would be nice if somebody could
+
 
 
 ++++++++++++++++++++++++++++++++++++
@@ -76,4 +78,15 @@ Remote Computer Start/Shutdown Instrucions:
 
 
 -  See separate text document entitled "WOL & SDOL README.txt."
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++
+"Enable Custom Keymap" Option:
+++++++++++++++++++++++++++++++++++++++++++
+
+The keymap.xml was created by Spaceman2004 with the help of Jeroen_JRP and Manturafs.  The script which allows in-skin switching of keymaps was a slight modification of the Splash swapping script by Asteron.  For more information on the keymap about its functions and differences from the default, see here:
+
+http://xboxmediacenter.com/wiki/index.php?title=MC360_keymap.xml_mod
 

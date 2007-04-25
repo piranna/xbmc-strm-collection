@@ -52,8 +52,6 @@ FUTURE POSSIBILITIES?
 - Add bookmarks to category scripts dialogs
 
 
-- Make custom square image icon thing for marketplace.  I have almost no experience with Illustrator.  If someone wants to whip up a custom icon for the Video Marketplace and it looks good, I'd be happy to include it in place of the eX button, since that's somewhat redundant, already found in the XBMC Live Place.
-
 
 - Add names of current script in category config dialog
 
@@ -62,11 +60,8 @@ FUTURE POSSIBILITIES?
 
 - Fix Launch Browser script to replace current "News Videos" button with "Music Videos" to replicate the actual 360 setup.  Not sure how likely this is to happen, since I know hardly anything about python...
 
-- Skin all default scripts to match mc360 better
-
 
 KNOWN BUGS: 
 
-- Video preview doesn't fade with window changes.  Not sure if this is fixable, since it does it in the video playlist window too...
 
 - Some textures randomly disappear when watching certain video files.  Help?  Not sure how to fix this.

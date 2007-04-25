@@ -122,6 +122,12 @@
     </window>
 
     <window>
+      <name>1968</name>
+      <activate>guide_open.wav</activate>
+      <deactivate>guide_close.wav</deactivate>
+    </window>
+    
+    <window>
       <name>1972</name>
       <activate>guide_open.wav</activate>
       <deactivate>guide_close.wav</deactivate>

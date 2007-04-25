@@ -72,6 +72,7 @@
 			<width>300</width>
 			<height>1</height>
 			<texture>divider.png</texture>
+			<visible>!Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -88,22 +89,11 @@
 		</control>
 		<control type="image">
 			<description>Divider</description>
-			<posx>370</posx>
+			<posx>380</posx>
 			<posy>386</posy>
 			<width>300</width>
 			<height>1</height>
-			<visible>!Skin.HasSetting(DisableButton-5)</visible>
-			<texture>divider.png</texture>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-		</control>
-		<control type="image">
-			<description>Divider</description>
-			<posx>370</posx>
-			<posy>422</posy>
-			<width>300</width>
-			<height>1</height>
-			<visible>[Skin.HasSetting(ScriptMode-5) | Skin.HasSetting(XBEMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5)] + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>[Skin.HasSetting(FileMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5)] + !Skin.HasSetting(DisableButton-5)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -180,12 +170,12 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="2">
-			<description>Single Script Mode Button</description>
+			<description>File Mode Button</description>
 			<posx>340</posx>
 			<posy>124</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Enable Single Script Mode</label>
+			<label>Enable File Mode</label>
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
@@ -193,108 +183,68 @@
 			<onright>2</onright>
 			<onup>1</onup>
 			<ondown>3</ondown>
-			<selected>Skin.HasSetting(ScriptMode-5)</selected>
-			<onclick>Skin.ToggleSetting(ScriptMode-5)</onclick>
+			<selected>Skin.HasSetting(FileMode-5)</selected>
+			<onclick>Skin.ToggleSetting(FileMode-5)</onclick>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="label">
-			<description>Disabled Single Script Mode label</description>
+			<description>Disabled File Mode label</description>
 			<posx>380</posx>
 			<posy>142</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Enable Single Script Mode</label>
+			<label>Enable File Mode</label>
 			<font>font14</font>
 			<textcolor>FF444444</textcolor>
 			<include>shadow-white</include>
-			<visible>Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(XBEMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)</visible>
+			<visible>Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="3">
-			<description>Category Script Mode Button</description>
+			<description>Category File Mode Button</description>
 			<posx>340</posx>
 			<posy>160</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Enable Category Script Mode</label>
+			<label>Enable Category File Mode</label>
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>2</onup>
-			<ondown>4</ondown>
+			<ondown>5</ondown>
 			<selected>Skin.HasSetting(USE_Category-5)</selected>
 			<onclick>Skin.ToggleSetting(USE_Category-5)</onclick>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="label">
-			<description>Disabled Category Script Mode label</description>
+			<description>Disabled Category File Mode label</description>
 			<posx>380</posx>
 			<posy>178</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Enable Category Script Mode</label>
+			<label>Enable Category File Mode</label>
 			<font>font14</font>
 			<textcolor>FF444444</textcolor>
 			<include>shadow-white</include>
-			<visible>Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(XBEMode-5) | Skin.HasSetting(ScriptMode-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
-		</control>
-		<control type="radiobutton" id="4">
-			<description>XBE Mode Button</description>
-			<posx>340</posx>
-			<posy>196</posy>
-			<width>350</width>
-			<height>59</height>
-			<label>Enable XBE Mode</label>
-			<texturefocus>guide-button-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onleft>4</onleft>
-			<onright>4</onright>
-			<onup>3</onup>
-			<ondown>5</ondown>
-			<selected>Skin.HasSetting(XBEMode-5)</selected>
-			<onclick>Skin.ToggleSetting(XBEMode-5)</onclick>
-			<font>font14</font>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
-		</control>
-		<control type="label">
-			<description>Disabled XBE Mode label</description>
-			<posx>380</posx>
-			<posy>214</posy>
-			<width>350</width>
-			<height>59</height>
-			<label>Enable XBE Mode</label>
-			<font>font14</font>
-			<textcolor>FF444444</textcolor>
-			<include>shadow-white</include>
-			<visible>Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(ScriptMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)</visible>
+			<visible>Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(FileMode-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -303,7 +253,7 @@
 			<texture>guide-button-focus.png</texture>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5) + !Control.HasFocus(6) + !Control.HasFocus(7) + !Control.HasFocus(8) + !Control.HasFocus(9) + !Control.HasFocus(10) + !Control.HasFocus(11) + </visible>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
@@ -313,7 +263,7 @@
 		<control type="radiobutton" id="5">
 			<description>Main Video Bookmark Mode Button</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Video Bookmark Mode</label>
@@ -322,7 +272,7 @@
 			<pulseonselect>no</pulseonselect>
 			<onleft>54</onleft>
 			<onright>53</onright>
-			<onup>4</onup>
+			<onup>3</onup>
 			<ondown>51</ondown>
 			<selected>Skin.HasSetting(VideoBookmarkMode-5)</selected>
 			<onclick>Skin.ToggleSetting(VideoBookmarkMode-5)</onclick>
@@ -332,7 +282,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Control.HasFocus(51) + !Control.HasFocus(52) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5)</visible>
+			<visible>!Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Control.HasFocus(51) + !Control.HasFocus(52) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -340,7 +290,7 @@
 		<control type="radiobutton" id="51">
 			<description>Main Audio Bookmark Mode Button</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Bookmark Mode</label>
@@ -359,7 +309,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Control.HasFocus(52) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + [Skin.HasSetting(AudioBookmarkMode-5) | Control.HasFocus(51)]</visible>
+			<visible>!Control.HasFocus(52) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + [Skin.HasSetting(AudioBookmarkMode-5) | Control.HasFocus(51)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -367,7 +317,7 @@
 		<control type="radiobutton" id="52">
 			<description>Main Picture Bookmark Mode Button</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Picture Bookmark Mode</label>
@@ -386,7 +336,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Control.HasFocus(51) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + [Skin.HasSetting(PictureBookmarkMode-5) | Control.HasFocus(52)]</visible>
+			<visible>!Control.HasFocus(51) + !Control.HasFocus(53) + !Control.HasFocus(54) + !Control.HasFocus(55) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + [Skin.HasSetting(PictureBookmarkMode-5) | Control.HasFocus(52)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -394,7 +344,7 @@
 		<control type="radiobutton" id="53">
 			<description>Audio Bookmark Mode Button 2</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Bookmark Mode</label>
@@ -421,7 +371,7 @@
 		<control type="radiobutton" id="54">
 			<description>Picture Bookmark Mode Button 2</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Picture Bookmark Mode</label>
@@ -448,7 +398,7 @@
 		<control type="radiobutton" id="55">
 			<description>Video Bookmark Mode Button 2</description>
 			<posx>340</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Video Bookmark Mode</label>
@@ -475,14 +425,14 @@
 		<control type="label">
 			<description>Disabled Video Bookmark Mode label</description>
 			<posx>380</posx>
-			<posy>250</posy>
+			<posy>214</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Video Bookmark Mode</label>
 			<font>font14</font>
 			<textcolor>FF444444</textcolor>
 			<include>shadow-white</include>
-			<visible>[Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(XBEMode-5) | Skin.HasSetting(ScriptMode-5) | Skin.HasSetting(USE_Category-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + Skin.HasSetting(DisableButton-5)] | [!Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + Skin.HasSetting(DisableButton-5)]</visible>
+			<visible>[Skin.HasSetting(MovieLibraryMode-5) | Skin.HasSetting(TVLibraryMode-5) | Skin.HasSetting(MusicLibraryMode-5) | Skin.HasSetting(FileMode-5) | Skin.HasSetting(USE_Category-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + Skin.HasSetting(DisableButton-5)] | [!Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + Skin.HasSetting(DisableButton-5)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -490,7 +440,7 @@
 		<control type="label">
 			<description>Disabled Audio Bookmark Mode label</description>
 			<posx>380</posx>
-			<posy>250</posy>
+			<posy>214</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Bookmark Mode</label>
@@ -505,7 +455,7 @@
 		<control type="label">
 			<description>Disabled Picture Bookmark Mode label</description>
 			<posx>380</posx>
-			<posy>250</posy>
+			<posy>214</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Picture Bookmark Mode</label>
@@ -520,7 +470,7 @@
 		<control type="radiobutton" id="6">
 			<description>Main Movie Library Mode Button</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Movie Library Mode</label>
@@ -539,7 +489,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Control.HasFocus(61) + !Control.HasFocus(62) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>!Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Control.HasFocus(61) + !Control.HasFocus(62) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -547,7 +497,7 @@
 		<control type="radiobutton" id="61">
 			<description>Main TV Library Mode Button</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable TV Library Mode</label>
@@ -566,7 +516,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>[Skin.HasSetting(TVLibraryMode-5) | Control.HasFocus(61)] + !Control.HasFocus(62) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>[Skin.HasSetting(TVLibraryMode-5) | Control.HasFocus(61)] + !Control.HasFocus(62) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -574,7 +524,7 @@
 		<control type="radiobutton" id="62">
 			<description>Main Music Library Mode Button</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Library Mode</label>
@@ -593,7 +543,7 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>[Skin.HasSetting(MusicLibraryMode-5) | Control.HasFocus(62)] + !Control.HasFocus(61) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>[Skin.HasSetting(MusicLibraryMode-5) | Control.HasFocus(62)] + !Control.HasFocus(61) + !Control.HasFocus(63) + !Control.HasFocus(64) + !Control.HasFocus(65) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -601,7 +551,7 @@
 		<control type="radiobutton" id="63">
 			<description>Movie Library Mode Button 2</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Movie Library Mode</label>
@@ -628,7 +578,7 @@
 		<control type="radiobutton" id="64">
 			<description>TV Library Mode Button 2</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable TV Library Mode</label>
@@ -655,7 +605,7 @@
 		<control type="radiobutton" id="65">
 			<description>Music Library Mode Button 2</description>
 			<posx>340</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Library Mode</label>
@@ -682,14 +632,14 @@
 		<control type="label">
 			<description>Disabled Movie Library Mode label</description>
 			<posx>380</posx>
-			<posy>286</posy>
+			<posy>250</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Movie Library Mode</label>
 			<font>font14</font>
 			<textcolor>FF444444</textcolor>
 			<include>shadow-white</include>
-			<visible>[Skin.HasSetting(XBEMode-5) | Skin.HasSetting(ScriptMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)] + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)</visible>
+			<visible>[Skin.HasSetting(FileMode-5) | Skin.HasSetting(USE_Category-5) | Skin.HasSetting(VideoBookmarkMode-5) | Skin.HasSetting(AudioBookmarkMode-5) | Skin.HasSetting(PictureBookmarkMode-5) | Skin.HasSetting(DisableButton-5)] + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -697,7 +647,7 @@
 		<control type="label">
 			<description>Disabled TV Library Mode label</description>
 			<posx>380</posx>
-			<posy>286</posy>
+			<posy>250</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable TV Library Mode</label>
@@ -712,7 +662,7 @@
 		<control type="label">
 			<description>Disabled Music Library Mode label</description>
 			<posx>380</posx>
-			<posy>286</posy>
+			<posy>250</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Enable Music Library Mode</label>
@@ -727,7 +677,7 @@
 		<control type="button" id="7">
 			<description>Basic Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -743,31 +693,31 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>!Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="7">
-			<description>Single Script Name Button</description>
+			<description>File Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetString(ScriptButtonName-5)</onclick>
+			<onclick>Skin.SetString(FileButtonName-5)</onclick>
 			<onleft>7</onleft>
 			<onright>7</onright>
 			<onup>62</onup>
 			<ondown>8</ondown>
 			<font>font14</font>
-			<label>Change Script Button Name</label>
+			<label>Change File Button Name</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>Skin.HasSetting(FileMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
@@ -775,7 +725,7 @@
 		<control type="button" id="7">
 			<description>Category Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -799,7 +749,7 @@
 		<control type="button" id="7">
 			<description>Video Bookmark Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -823,7 +773,7 @@
 		<control type="button" id="7">
 			<description>Audio Bookmark Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -847,7 +797,7 @@
 		<control type="button" id="7">
 			<description>Picture Bookmark Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -869,33 +819,9 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="7">
-			<description>XBE Name Button</description>
-			<posx>340</posx>
-			<posy>304</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>guide-button-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetString(XBEButtonName-5)</onclick>
-			<onleft>7</onleft>
-			<onright>7</onright>
-			<onup>62</onup>
-			<ondown>8</ondown>
-			<font>font14</font>
-			<label>Change XBE Button Name</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible>Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="7">
 			<description>Movie Library Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -919,7 +845,7 @@
 		<control type="button" id="7">
 			<description>TV Library Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -943,7 +869,7 @@
 		<control type="button" id="7">
 			<description>Music Library Name Button</description>
 			<posx>340</posx>
-			<posy>304</posy>
+			<posy>268</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -967,7 +893,7 @@
 		<control type="button" id="8">
 			<description>Basic Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -983,15 +909,15 @@
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>!Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>!Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="8">
-			<description>Single Script Icon Chooser Button</description>
+			<description>File Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1001,21 +927,21 @@
 			<onright>8</onright>
 			<onup>7</onup>
 			<ondown>9</ondown>
-			<onclick>Skin.SetImage(ScriptImage-5)</onclick>
+			<onclick>Skin.SetImage(FileImage-5)</onclick>
 			<font>font14</font>
-			<label>Change Script Button Icon</label>
+			<label>Change File Button Icon</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>Skin.HasSetting(FileMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="8">
-			<description>Category Script Icon Chooser Button</description>
+			<description>Category File Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1039,7 +965,7 @@
 		<control type="button" id="8">
 			<description>Video Bookmark Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1063,7 +989,7 @@
 		<control type="button" id="8">
 			<description>Audio Bookmark Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1087,7 +1013,7 @@
 		<control type="button" id="8">
 			<description>Picture Bookmark Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1109,33 +1035,9 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="8">
-			<description>XBE Icon Chooser Button</description>
-			<posx>340</posx>
-			<posy>340</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>guide-button-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onleft>8</onleft>
-			<onright>8</onright>
-			<onup>7</onup>
-			<ondown>9</ondown>
-			<onclick>Skin.SetImage(XBEImage-5)</onclick>
-			<font>font14</font>
-			<label>Change XBE Button Icon</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible>Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="8">
 			<description>Movie Library Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1159,7 +1061,7 @@
 		<control type="button" id="8">
 			<description>TV Library Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1183,7 +1085,7 @@
 		<control type="button" id="8">
 			<description>Music Library Icon Chooser Button</description>
 			<posx>340</posx>
-			<posy>340</posy>
+			<posy>304</posy>
 			<width>350</width>
 			<height>59</height>
 			<texturefocus>guide-button-focus.png</texturefocus>
@@ -1205,12 +1107,12 @@
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Single Script Chooser Button</description>
+			<description>File Chooser Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Link to Script...</label>
+			<label>Link to File...</label>
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
@@ -1218,23 +1120,23 @@
 			<onright>9</onright>
 			<onup>8</onup>
 			<ondown>1</ondown>
-			<onclick>Skin.SetPath(ScriptPath-5)</onclick>
+			<onclick>Skin.SetFile(FilePath-5)</onclick>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
-			<visible>Skin.HasSetting(ScriptMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
+			<visible>Skin.HasSetting(FileMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Category Scripts Chooser Button</description>
+			<description>Category Files Chooser Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Link to Scripts...</label>
+			<label>Link to Files...</label>
 			<texturefocus>guide-button-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
@@ -1255,7 +1157,7 @@
 		<control type="button" id="9">
 			<description>Video Bookmark Chooser Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Link to Video Bookmark...</label>
@@ -1279,7 +1181,7 @@
 		<control type="button" id="9">
 			<description>Audio Bookmark Chooser Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Link to Audio Bookmark...</label>
@@ -1303,7 +1205,7 @@
 		<control type="button" id="9">
 			<description>Picture Bookmark Chooser Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Link to Picture Bookmark...</label>
@@ -1324,34 +1226,10 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
 		</control>
-		<control type="button" id="9">
-			<description>XBE Chooser Button</description>
-			<posx>340</posx>
-			<posy>376</posy>
-			<width>350</width>
-			<height>59</height>
-			<label>Link to XBE Folder...</label>
-			<texturefocus>guide-button-focus.png</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>8</onup>
-			<ondown>1</ondown>
-			<onclick>Skin.SetPath(XBEPath-5)</onclick>
-			<font>font14</font>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible>Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" start="95" end="100" center="515,245" time="300" reversible="false">focus</animation>
-		</control>
 		<control type="radiobutton" id="90">
 			<description>Movie Library Genre Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -1380,7 +1258,7 @@
 		<control type="radiobutton" id="91">
 			<description>Movie Library Title Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Title</label>
@@ -1409,7 +1287,7 @@
 		<control type="radiobutton" id="92">
 			<description>Movie Library Year Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Year</label>
@@ -1438,7 +1316,7 @@
 		<control type="radiobutton" id="93">
 			<description>Movie Library Actors Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Actors</label>
@@ -1467,7 +1345,7 @@
 		<control type="radiobutton" id="94">
 			<description>Movie Library Directors Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Directors</label>
@@ -1496,7 +1374,7 @@
 		<control type="radiobutton" id="95">
 			<description>Movie Library Genre Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -1528,7 +1406,7 @@
 		<control type="radiobutton" id="96">
 			<description>Main Movie Library Title Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Title</label>
@@ -1557,7 +1435,7 @@
 		<control type="radiobutton" id="97">
 			<description>Main Movie Library Year Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Year</label>
@@ -1586,7 +1464,7 @@
 		<control type="radiobutton" id="98">
 			<description>Main Movie Library Actors Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Actors</label>
@@ -1615,7 +1493,7 @@
 		<control type="radiobutton" id="99">
 			<description>Main Movie Library Directors Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Directors</label>
@@ -1663,7 +1541,7 @@
 		<control type="radiobutton" id="90">
 			<description>Main TV Library Genre Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -1692,7 +1570,7 @@
 		<control type="radiobutton" id="910">
 			<description>TV Library Title Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Title</label>
@@ -1721,7 +1599,7 @@
 		<control type="radiobutton" id="920">
 			<description>TV Library Year Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Year</label>
@@ -1750,7 +1628,7 @@
 		<control type="radiobutton" id="930">
 			<description>TV Library Actors Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Actors</label>
@@ -1779,7 +1657,7 @@
 		<control type="radiobutton" id="950">
 			<description>TV Library Genre Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -1811,7 +1689,7 @@
 		<control type="radiobutton" id="96">
 			<description>Main TV Library Title Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Title</label>
@@ -1840,7 +1718,7 @@
 		<control type="radiobutton" id="97">
 			<description>Main TV Library Year Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Year</label>
@@ -1869,7 +1747,7 @@
 		<control type="radiobutton" id="98">
 			<description>Main TV Library Actors Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Actors</label>
@@ -1898,7 +1776,7 @@
 		<control type="radiobutton" id="99">
 			<description>Main TV Library Directors Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Directors</label>
@@ -1950,7 +1828,7 @@
 		<control type="radiobutton" id="90">
 			<description>Main Music Library Genre Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -1979,7 +1857,7 @@
 		<control type="radiobutton" id="9100">
 			<description>Music Library Artists Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Artists</label>
@@ -2008,7 +1886,7 @@
 		<control type="radiobutton" id="9200">
 			<description>Music Library Albums Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Albums</label>
@@ -2037,7 +1915,7 @@
 		<control type="radiobutton" id="9300">
 			<description>Music Library Songs Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Songs</label>
@@ -2066,7 +1944,7 @@
 		<control type="radiobutton" id="9400">
 			<description>Movie Library Playlists Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Playlists</label>
@@ -2095,7 +1973,7 @@
 		<control type="radiobutton" id="9500">
 			<description>Music Library Genre Button 2</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Genres</label>
@@ -2127,7 +2005,7 @@
 		<control type="radiobutton" id="96">
 			<description>Main Music Library Artists Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Artists</label>
@@ -2156,7 +2034,7 @@
 		<control type="radiobutton" id="97">
 			<description>Main Music Library Albums Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Albums</label>
@@ -2185,7 +2063,7 @@
 		<control type="radiobutton" id="98">
 			<description>Main Music Library Songs Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Songs</label>
@@ -2214,7 +2092,7 @@
 		<control type="radiobutton" id="99">
 			<description>Main Music Library Playlists Button</description>
 			<posx>340</posx>
-			<posy>376</posy>
+			<posy>340</posy>
 			<width>350</width>
 			<height>59</height>
 			<label>Library Subfolder: Playlists</label>
@@ -2262,7 +2140,7 @@
 		<control type="image">
 			<description>Left Bookmark Arrow</description>
 			<posx>358</posx>
-			<posy>245</posy>
+			<posy>209</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-left.png</texture>
@@ -2273,7 +2151,7 @@
 		<control type="image">
 			<description>Right Bookmark Arrow</description>
 			<posx>687</posx>
-			<posy>245</posy>
+			<posy>209</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-right.png</texture>
@@ -2284,7 +2162,7 @@
 		<control type="image">
 			<description>Left Library Arrow</description>
 			<posx>358</posx>
-			<posy>281</posy>
+			<posy>245</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-left.png</texture>
@@ -2295,7 +2173,7 @@
 		<control type="image">
 			<description>Right Library Arrow</description>
 			<posx>687</posx>
-			<posy>281</posy>
+			<posy>245</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-right.png</texture>
@@ -2306,7 +2184,7 @@
 		<control type="image">
 			<description>Left Library Subfolder Arrow</description>
 			<posx>358</posx>
-			<posy>389</posy>
+			<posy>353</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-left.png</texture>
@@ -2317,7 +2195,7 @@
 		<control type="image">
 			<description>Right Library Subfolder Arrow</description>
 			<posx>687</posx>
-			<posy>389</posy>
+			<posy>353</posy>
 			<width>16</width>
 			<height>32</height>
 			<texture>selectarrow-right.png</texture>

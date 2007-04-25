@@ -2,7 +2,7 @@
 	<defaultcontrol>1</defaultcontrol>
 	<controls>
 		<control type="image">
-			<description>Button 1 Image</description>
+			<deFileion>Button 1 Image</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -13,7 +13,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="1">
-			<description>MCE Button</description>
+			<deFileion>MCE Button</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -38,7 +38,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="2">
-			<description>Link to Media Center Extender Button</description>
+			<deFileion>Link to Media Center Extender Button</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -61,7 +61,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="21">
-			<description>MCE Button 2</description>
+			<deFileion>MCE Button 2</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -86,7 +86,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 3, 4 and 41 Image</description>
+			<deFileion>Button 3, 4 and 41 Image</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -98,7 +98,7 @@
 		</control>
 		<control type="group" id="3">
 			<control type="radiobutton" id="30">
-				<description>Video Marketplace in Media</description>
+				<deFileion>Video Marketplace in Media</deFileion>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -123,7 +123,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="31">
-				<description>Video Marketplace in Games</description>
+				<deFileion>Video Marketplace in Games</deFileion>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -149,7 +149,7 @@
 			</control>
 		</control>
 		<control type="radiobutton" id="41">
-			<description>Video Marketplace in Media 2</description>
+			<deFileion>Video Marketplace in Media 2</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -174,7 +174,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="4">
-			<description>Video Marketplace in Games 2</description>
+			<deFileion>Video Marketplace in Games 2</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -199,7 +199,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 5 Image</description>
+			<deFileion>Button 5 Image</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -210,7 +210,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="5">
-			<description>WOL/SOL Button Option</description>
+			<deFileion>WOL/SOL Button Option</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -234,7 +234,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 6 Image</description>
+			<deFileion>Button 6 Image</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -245,7 +245,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="6">
-			<description>Retro-X Button Option</description>
+			<deFileion>Retro-X Button Option</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -269,7 +269,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 7 Image</description>
+			<deFileion>Button 7 Image</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -281,7 +281,7 @@
 		</control>
 		<control type="group" id="7">	
 			<control type="radiobutton" id="70">
-				<description>TV Video Bookmark Mode Button</description>
+				<deFileion>TV Video Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -291,12 +291,11 @@
 				<selected>Skin.HasSetting(USE_tv-VideoBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_tv-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-library)</onclick>
-				<onclick>Skin.Reset(USE_tv-script)</onclick>
-				<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+				<onclick>Skin.Reset(USE_tv-file)</onclick>
 				<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<onleft>791</onleft>
+				<onleft>790</onleft>
 				<onright>77</onright>
 				<onup>6</onup>
 				<ondown>8</ondown>
@@ -305,12 +304,12 @@
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(75) + !Control.HasFocus(76) + !Control.HasFocus(77) + !Control.HasFocus(78) + !Control.HasFocus(79) + !Control.HasFocus(790) + !Control.HasFocus(791) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
+				<visible>!Control.HasFocus(71) + !Control.HasFocus(72) + !Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(75) + !Control.HasFocus(76) + !Control.HasFocus(77) + !Control.HasFocus(78) + !Control.HasFocus(79) + !Control.HasFocus(790) + !Control.HasFocus(791) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="71">
-				<description>TV Music Bookmark Mode Button</description>
+				<deFileion>TV Music Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -320,8 +319,7 @@
 				<selected>Skin.HasSetting(USE_tv-VideoBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_tv-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-library)</onclick>
-				<onclick>Skin.Reset(USE_tv-script)</onclick>
-				<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+				<onclick>Skin.Reset(USE_tv-file)</onclick>
 				<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -340,7 +338,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="72">
-				<description>TV Picture Bookmark Mode Button</description>
+				<deFileion>TV Picture Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -350,8 +348,7 @@
 				<selected>Skin.HasSetting(USE_tv-PictureBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_tv-PictureBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-library)</onclick>
-				<onclick>Skin.Reset(USE_tv-script)</onclick>
-				<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+				<onclick>Skin.Reset(USE_tv-file)</onclick>
 				<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -370,7 +367,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="73">
-				<description>TV Library Mode Button</description>
+				<deFileion>TV Library Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -380,8 +377,7 @@
 				<selected>Skin.HasSetting(USE_tv-library)</selected>
 				<onclick>Skin.ToggleSetting(USE_tv-library)</onclick>
 				<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
-				<onclick>Skin.Reset(USE_tv-script)</onclick>
-				<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+				<onclick>Skin.Reset(USE_tv-file)</onclick>
 				<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -399,66 +395,36 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="74">
-				<description>TV Script Mode Button</description>
+				<deFileion>TV File Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
 				<height>59</height>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<selected>Skin.HasSetting(USE_tv-script)</selected>
-				<onclick>Skin.ToggleSetting(USE_tv-script)</onclick>
+				<selected>Skin.HasSetting(USE_tv-file)</selected>
+				<onclick>Skin.ToggleSetting(USE_tv-file)</onclick>
 				<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-library)</onclick>
-				<onclick>Skin.Reset(USE_tv-xbe)</onclick>
 				<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<onleft>79</onleft>
-				<onright>791</onright>
-				<onup>6</onup>
-				<ondown>8</ondown>
-				<font>font14</font>
-				<label>TV Button: Script Mode</label>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(70) + !Control.HasFocus(71) + !Control.HasFocus(72) + ! Control.HasFocus(73) + !Control.HasFocus(75) + !Control.HasFocus(76) + !Control.HasFocus(77) + !Control.HasFocus(78) + !Control.HasFocus(79) + !Control.HasFocus(790) + !Control.HasFocus(791) + [Skin.HasSetting(USE_tv-script) | Control.HasFocus(74)]</visible>
-				<animation effect="fade" time="100">WindowOpen</animation>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="radiobutton" id="75">
-				<description>TV XBE Mode Button</description>
-				<posx>22</posx>
-				<posy>232</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<selected>Skin.HasSetting(USE_tv-xbe)</selected>
-				<onclick>Skin.ToggleSetting(USE_tv-xbe)</onclick>
-				<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
-				<onclick>Skin.Reset(USE_tv-library)</onclick>
-				<onclick>Skin.Reset(USE_tv-script)</onclick>
-				<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
-				<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
-				<pulseonselect>no</pulseonselect>
-				<onleft>790</onleft>
 				<onright>76</onright>
 				<onup>6</onup>
 				<ondown>8</ondown>
 				<font>font14</font>
-				<label>TV Button: XBE Mode</label>
+				<label>TV Button: File Mode</label>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(70) + !Control.HasFocus(71) + !Control.HasFocus(72) + ! Control.HasFocus(73) + !Control.HasFocus(74) + !Control.HasFocus(76) + !Control.HasFocus(77) + !Control.HasFocus(78) + !Control.HasFocus(79) + !Control.HasFocus(790) + !Control.HasFocus(791) + [Skin.HasSetting(USE_tv-xbe) | Control.HasFocus(75)]</visible>
+				<visible>!Control.HasFocus(70) + !Control.HasFocus(71) + !Control.HasFocus(72) + ! Control.HasFocus(73) + !Control.HasFocus(75) + !Control.HasFocus(76) + !Control.HasFocus(77) + !Control.HasFocus(78) + !Control.HasFocus(79) + !Control.HasFocus(790) + !Control.HasFocus(791) + [Skin.HasSetting(USE_tv-file) | Control.HasFocus(74)]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 		</control>
 		<control type="radiobutton" id="76">
-			<description>TV Video Bookmark Mode Button 2</description>
+			<deFileion>TV Video Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -468,12 +434,11 @@
 			<selected>Skin.HasSetting(USE_tv-VideoBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_tv-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-library)</onclick>
-			<onclick>Skin.Reset(USE_tv-script)</onclick>
-			<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+			<onclick>Skin.Reset(USE_tv-file)</onclick>
 			<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
-			<onleft>791</onleft>
+			<onleft>790</onleft>
 			<onright>77</onright>
 			<onup>6</onup>
 			<ondown>8</ondown>
@@ -487,7 +452,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="77">
-			<description>TV Music Bookmark Mode Button 2</description>
+			<deFileion>TV Music Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -497,8 +462,7 @@
 			<selected>Skin.HasSetting(USE_tv-MusicBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_tv-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-library)</onclick>
-			<onclick>Skin.Reset(USE_tv-script)</onclick>
-			<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+			<onclick>Skin.Reset(USE_tv-file)</onclick>
 			<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -517,7 +481,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="78">
-			<description>TV Picture Bookmark Mode Button 2</description>
+			<deFileion>TV Picture Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -527,8 +491,7 @@
 			<selected>Skin.HasSetting(USE_tv-PictureBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_tv-PictureBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-library)</onclick>
-			<onclick>Skin.Reset(USE_tv-script)</onclick>
-			<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+			<onclick>Skin.Reset(USE_tv-file)</onclick>
 			<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -547,7 +510,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="79">
-			<description>TV Library Mode Button 2</description>
+			<deFileion>TV Library Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -557,8 +520,7 @@
 			<selected>Skin.HasSetting(USE_tv-library)</selected>
 			<onclick>Skin.ToggleSetting(USE_tv-library)</onclick>
 			<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
-			<onclick>Skin.Reset(USE_tv-script)</onclick>
-			<onclick>Skin.Reset(USE_tv-xbe)</onclick>
+			<onclick>Skin.Reset(USE_tv-file)</onclick>
 			<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -576,28 +538,27 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="790">
-			<description>TV Script Mode Button 2</description>
+			<deFileion>TV File Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<selected>Skin.HasSetting(USE_tv-script)</selected>
-			<onclick>Skin.ToggleSetting(USE_tv-script)</onclick>
+			<selected>Skin.HasSetting(USE_tv-file)</selected>
+			<onclick>Skin.ToggleSetting(USE_tv-file)</onclick>
 			<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-library)</onclick>
 			<onclick>Skin.Reset(USE_tv-library)</onclick>
-			<onclick>Skin.Reset(USE_tv-xbe)</onclick>
 			<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>79</onleft>
-			<onright>791</onright>
+			<onright>76</onright>
 			<onup>6</onup>
 			<ondown>8</ondown>
 			<font>font14</font>
-			<label>TV Button: Script Mode</label>
+			<label>TV Button: File Mode</label>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -605,37 +566,8 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
-		<control type="radiobutton" id="791">
-			<description>TV XBE Mode Button 2</description>
-			<posx>22</posx>
-			<posy>232</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<selected>Skin.HasSetting(USE_tv-xbe)</selected>
-			<onclick>Skin.ToggleSetting(USE_tv-xbe)</onclick>
-			<onclick>Skin.Reset(USE_tv-VideoBookmark)</onclick>
-			<onclick>Skin.Reset(USE_tv-library)</onclick>
-			<onclick>Skin.Reset(USE_tv-script)</onclick>
-			<onclick>Skin.Reset(USE_tv-MusicBookmark)</onclick>
-			<onclick>Skin.Reset(USE_tv-PictureBookmark)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>790</onleft>
-			<onright>76</onright>
-			<onup>6</onup>
-			<ondown>8</ondown>
-			<font>font14</font>
-			<label>TV Button: XBE  Mode</label>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(791)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
 		<control type="image">
-			<description>Button 8 Image</description>
+			<deFileion>Button 8 Image</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -647,7 +579,7 @@
 		</control>
 		<control type="group" id="8">	
 			<control type="radiobutton" id="80">
-				<description>Movie Video Bookmark Mode Button</description>
+				<deFileion>Movie Video Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -657,12 +589,11 @@
 				<selected>Skin.HasSetting(USE_movie-VideoBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_movie-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-library)</onclick>
-				<onclick>Skin.Reset(USE_movie-script)</onclick>
-				<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+				<onclick>Skin.Reset(USE_movie-file)</onclick>
 				<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
-				<onleft>891</onleft>
+				<onleft>890</onleft>
 				<onright>87</onright>
 				<onup>7</onup>
 				<ondown>9</ondown>
@@ -671,12 +602,12 @@
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84) + !Control.HasFocus(85) + !Control.HasFocus(86) + !Control.HasFocus(87) + !Control.HasFocus(88) + !Control.HasFocus(89) + !Control.HasFocus(890) + !Control.HasFocus(891) + !Skin.HasSetting(USE_movie-MusicBookmark) + !Skin.HasSetting(USE_movie-PictureBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)</visible>
+				<visible>!Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84) + !Control.HasFocus(85) + !Control.HasFocus(86) + !Control.HasFocus(87) + !Control.HasFocus(88) + !Control.HasFocus(89) + !Control.HasFocus(890) + !Control.HasFocus(891) + !Skin.HasSetting(USE_movie-MusicBookmark) + !Skin.HasSetting(USE_movie-PictureBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="81">
-				<description>Movie Music Bookmark Mode Button</description>
+				<deFileion>Movie Music Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -686,8 +617,7 @@
 				<selected>Skin.HasSetting(USE_movie-MusicBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_movie-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-library)</onclick>
-				<onclick>Skin.Reset(USE_movie-script)</onclick>
-				<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+				<onclick>Skin.Reset(USE_movie-file)</onclick>
 				<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -706,7 +636,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="82">
-				<description>Movie Picture Bookmark Mode Button</description>
+				<deFileion>Movie Picture Bookmark Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -716,8 +646,7 @@
 				<selected>Skin.HasSetting(USE_movie-PictureBookmark)</selected>
 				<onclick>Skin.ToggleSetting(USE_movie-PictureBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-library)</onclick>
-				<onclick>Skin.Reset(USE_movie-script)</onclick>
-				<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+				<onclick>Skin.Reset(USE_movie-file)</onclick>
 				<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -736,7 +665,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="83">
-				<description>Movie Library Mode Button</description>
+				<deFileion>Movie Library Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -746,8 +675,7 @@
 				<selected>Skin.HasSetting(USE_movie-library)</selected>
 				<onclick>Skin.ToggleSetting(USE_movie-library)</onclick>
 				<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
-				<onclick>Skin.Reset(USE_movie-script)</onclick>
-				<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+				<onclick>Skin.Reset(USE_movie-file)</onclick>
 				<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
@@ -765,66 +693,36 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="84">
-				<description>Movie Script Mode Button</description>
+				<deFileion>Movie File Mode Button</deFileion>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
 				<height>59</height>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
-				<selected>Skin.HasSetting(USE_movie-script)</selected>
-				<onclick>Skin.ToggleSetting(USE_movie-script)</onclick>
+				<selected>Skin.HasSetting(USE_movie-file)</selected>
+				<onclick>Skin.ToggleSetting(USE_movie-file)</onclick>
 				<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-library)</onclick>
-				<onclick>Skin.Reset(USE_movie-xbe)</onclick>
 				<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 				<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 				<pulseonselect>no</pulseonselect>
 				<onleft>89</onleft>
-				<onright>891</onright>
-				<onup>7</onup>
-				<ondown>9</ondown>
-				<font>font14</font>
-				<label>Movie Button: Script Mode</label>
-				<textoffsetx>30</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + ! Control.HasFocus(83) + !Control.HasFocus(85) + !Control.HasFocus(86) + !Control.HasFocus(87) + !Control.HasFocus(88) + !Control.HasFocus(89) + !Control.HasFocus(890) + !Control.HasFocus(891) + [Skin.HasSetting(USE_movie-script) | Control.HasFocus(84)]</visible>
-				<animation effect="fade" time="100">WindowOpen</animation>
-				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			</control>
-			<control type="radiobutton" id="85">
-				<description>Movie XBE Mode Button</description>
-				<posx>22</posx>
-				<posy>268</posy>
-				<width>290</width>
-				<height>59</height>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<selected>Skin.HasSetting(USE_movie-xbe)</selected>
-				<onclick>Skin.ToggleSetting(USE_movie-xbe)</onclick>
-				<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
-				<onclick>Skin.Reset(USE_movie-library)</onclick>
-				<onclick>Skin.Reset(USE_movie-script)</onclick>
-				<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
-				<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
-				<pulseonselect>no</pulseonselect>
-				<onleft>890</onleft>
 				<onright>86</onright>
 				<onup>7</onup>
 				<ondown>9</ondown>
 				<font>font14</font>
-				<label>Movie Button: XBE Mode</label>
+				<label>Movie Button: File Mode</label>
 				<textoffsetx>30</textoffsetx>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + ! Control.HasFocus(83) + !Control.HasFocus(84) + !Control.HasFocus(86) + !Control.HasFocus(87) + !Control.HasFocus(88) + !Control.HasFocus(89) + !Control.HasFocus(890) + !Control.HasFocus(891) + [Skin.HasSetting(USE_movie-xbe) | Control.HasFocus(85)]</visible>
+				<visible>!Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + ! Control.HasFocus(83) + !Control.HasFocus(85) + !Control.HasFocus(86) + !Control.HasFocus(87) + !Control.HasFocus(88) + !Control.HasFocus(89) + !Control.HasFocus(890) + !Control.HasFocus(891) + [Skin.HasSetting(USE_movie-file) | Control.HasFocus(84)]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 		</control>
 		<control type="radiobutton" id="86">
-			<description>Movie Video Bookmark Mode Button 2</description>
+			<deFileion>Movie Video Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -834,12 +732,11 @@
 			<selected>Skin.HasSetting(USE_movie-VideoBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_movie-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-library)</onclick>
-			<onclick>Skin.Reset(USE_movie-script)</onclick>
-			<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+			<onclick>Skin.Reset(USE_movie-file)</onclick>
 			<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
-			<onleft>891</onleft>
+			<onleft>890</onleft>
 			<onright>87</onright>
 			<onup>7</onup>
 			<ondown>9</ondown>
@@ -853,7 +750,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="87">
-			<description>Movie Music Bookmark Mode Button 2</description>
+			<deFileion>Movie Music Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -863,8 +760,7 @@
 			<selected>Skin.HasSetting(USE_movie-MusicBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_movie-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-library)</onclick>
-			<onclick>Skin.Reset(USE_movie-script)</onclick>
-			<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+			<onclick>Skin.Reset(USE_movie-file)</onclick>
 			<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -883,7 +779,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="88">
-			<description>Movie Picture Bookmark Mode Button 2</description>
+			<deFileion>Movie Picture Bookmark Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -893,8 +789,7 @@
 			<selected>Skin.HasSetting(USE_movie-PictureBookmark)</selected>
 			<onclick>Skin.ToggleSetting(USE_movie-PictureBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-library)</onclick>
-			<onclick>Skin.Reset(USE_movie-script)</onclick>
-			<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+			<onclick>Skin.Reset(USE_movie-file)</onclick>
 			<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -913,7 +808,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="89">
-			<description>Movie Library Mode Button 2</description>
+			<deFileion>Movie Library Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -923,8 +818,7 @@
 			<selected>Skin.HasSetting(USE_movie-library)</selected>
 			<onclick>Skin.ToggleSetting(USE_movie-library)</onclick>
 			<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
-			<onclick>Skin.Reset(USE_movie-script)</onclick>
-			<onclick>Skin.Reset(USE_movie-xbe)</onclick>
+			<onclick>Skin.Reset(USE_movie-file)</onclick>
 			<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
@@ -942,61 +836,31 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="890">
-			<description>Movie Script Mode Button 2</description>
+			<deFileion>Movie File Mode Button 2</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<selected>Skin.HasSetting(USE_movie-script)</selected>
-			<onclick>Skin.ToggleSetting(USE_movie-script)</onclick>
+			<selected>Skin.HasSetting(USE_movie-file)</selected>
+			<onclick>Skin.ToggleSetting(USE_movie-file)</onclick>
 			<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-library)</onclick>
 			<onclick>Skin.Reset(USE_movie-library)</onclick>
-			<onclick>Skin.Reset(USE_movie-xbe)</onclick>
 			<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
 			<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>89</onleft>
-			<onright>891</onright>
-			<onup>7</onup>
-			<ondown>9</ondown>
-			<font>font14</font>
-			<label>Movie Button: Script Mode</label>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(890)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="radiobutton" id="891">
-			<description>Movie XBE Mode Button 2</description>
-			<posx>22</posx>
-			<posy>268</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<selected>Skin.HasSetting(USE_movie-xbe)</selected>
-			<onclick>Skin.ToggleSetting(USE_movie-xbe)</onclick>
-			<onclick>Skin.Reset(USE_movie-VideoBookmark)</onclick>
-			<onclick>Skin.Reset(USE_movie-library)</onclick>
-			<onclick>Skin.Reset(USE_movie-script)</onclick>
-			<onclick>Skin.Reset(USE_movie-MusicBookmark)</onclick>
-			<onclick>Skin.Reset(USE_movie-PictureBookmark)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>890</onleft>
 			<onright>86</onright>
 			<onup>7</onup>
 			<ondown>9</ondown>
 			<font>font14</font>
-			<label>Movie Button: XBE Mode</label>
+			<label>Movie Button: File Mode</label>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(891)</visible>
+			<visible allowhiddenfocus="true">Control.HasFocus(890)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
@@ -1005,7 +869,7 @@
 		
 		
 		<control type="image">
-			<description>Button 9 Image</description>
+			<deFileion>Button 9 Image</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1016,7 +880,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="9">
-			<description>TV Shows Video Bookmark Selector</description>
+			<deFileion>TV Shows Video Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1039,7 +903,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>TV Shows Music Bookmark Selector</description>
+			<deFileion>TV Shows Music Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1063,7 +927,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>TV Shows Picture Bookmark Selector</description>
+			<deFileion>TV Shows Picture Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1087,45 +951,22 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>TV Shows Script Selector</description>
+			<deFileion>TV Shows File Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(tvshowsscript_path)</onclick>
+			<onclick>Skin.SetFile(tvshowsFile_path)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>9</onleft>
 			<onright>9</onright>
 			<onup>8</onup>
 			<ondown>91</ondown>
 			<font>font14</font>
-			<label>Link to TV Script Folder...</label>
-			<visible>Skin.HasSetting(USE_tv-script)</visible>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="9">
-			<description>TV Shows XBE Selector</description>
-			<posx>22</posx>
-			<posy>304</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(tvshowsxbe_path)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>8</onup>
-			<ondown>91</ondown>
-			<font>font14</font>
-			<label>Link to TV XBE Folder...</label>
-			<visible>Skin.HasSetting(USE_tv-xbe)</visible>
+			<label>Link to TV Script/XBE...</label>
+			<visible>Skin.HasSetting(USE_tv-file)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1133,7 +974,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="91">
-			<description>TV Shows Library Genre Selector</description>
+			<deFileion>TV Shows Library Genre Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1160,7 +1001,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="92">
-			<description>TV Shows Library Title Selector</description>
+			<deFileion>TV Shows Library Title Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1187,7 +1028,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="93">
-			<description>TV Shows Library Year Selector</description>
+			<deFileion>TV Shows Library Year Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1214,7 +1055,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="94">
-			<description>TV Shows Library Actors Selector</description>
+			<deFileion>TV Shows Library Actors Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1243,7 +1084,7 @@
 		
 		
 		<control type="radiobutton" id="910">
-			<description>TV Shows Library Genre Selector 2</description>
+			<deFileion>TV Shows Library Genre Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1270,7 +1111,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="920">
-			<description>TV Shows Library Title Selector 2</description>
+			<deFileion>TV Shows Library Title Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1297,7 +1138,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="930">
-			<description>TV Shows Library Year Selector 2</description>
+			<deFileion>TV Shows Library Year Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1324,7 +1165,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="940">
-			<description>TV Shows Library Actors Selector 2</description>
+			<deFileion>TV Shows Library Actors Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1352,7 +1193,7 @@
 		</control>
 		
 		<control type="radiobutton" id="911">
-			<description>Movie Library Genre Selector</description>
+			<deFileion>Movie Library Genre Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1372,7 +1213,7 @@
 			<ondown>921</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Genres</label>	
-			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(921) + !Control.HasFocus(931) + !Control.HasFocus(941) + !Control.HasFocus(951) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501)</visible>
+			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(921) + !Control.HasFocus(931) + !Control.HasFocus(941) + !Control.HasFocus(951) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1380,7 +1221,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="921">
-			<description>Movie Library Title Selector</description>
+			<deFileion>Movie Library Title Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1400,7 +1241,7 @@
 			<ondown>931</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Title</label>
-			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(921)]</visible>
+			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(921)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1408,7 +1249,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="931">
-			<description>Movie Library Year Selector</description>
+			<deFileion>Movie Library Year Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1428,7 +1269,7 @@
 			<ondown>941</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Year</label>
-			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(931)]</visible>
+			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(931)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1436,7 +1277,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="941">
-			<description>Movie Library Actors Selector</description>
+			<deFileion>Movie Library Actors Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1456,7 +1297,7 @@
 			<ondown>951</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Actors</label>
-			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(941)]</visible>
+			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(941)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1464,7 +1305,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="951">
-			<description>Movie Library Directors Selector</description>
+			<deFileion>Movie Library Directors Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1484,7 +1325,7 @@
 			<ondown>10</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Dir.</label>
-			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-(Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(951)]</visible>
+			<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-(Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(9101) + !Control.HasFocus(9201) + !Control.HasFocus(9301) + !Control.HasFocus(9401) + !Control.HasFocus(9501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(951)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1493,7 +1334,7 @@
 		</control>
 		
 		<control type="radiobutton" id="9101">
-			<description>Movie Library Genre Selector 2</description>
+			<deFileion>Movie Library Genre Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1521,7 +1362,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9201">
-			<description>Movie Library Title Selector 2</description>
+			<deFileion>Movie Library Title Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1549,7 +1390,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9301">
-			<description>Movie Library Year Selector 2</description>
+			<deFileion>Movie Library Year Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1577,7 +1418,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9401">
-			<description>Movie Library Actors Selector 2</description>
+			<deFileion>Movie Library Actors Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1605,7 +1446,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9501">
-			<description>Movie Library Directors Selector</description>
+			<deFileion>Movie Library Directors Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1636,7 +1477,7 @@
 		
 		
 		<control type="button" id="9">
-			<description>Movies, No TV, Video Bookmark Selector</description>
+			<deFileion>Movies, No TV, Video Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1651,7 +1492,7 @@
 			<ondown>91</ondown>
 			<font>font14</font>
 			<label>Link to Movie Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
+			<visible>Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1659,7 +1500,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Movies, No TV, Music Bookmark Selector</description>
+			<deFileion>Movies, No TV, Music Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1674,7 +1515,7 @@
 			<ondown>91</ondown>
 			<font>font14</font>
 			<label>Link to Movie Music Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-MusicBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
+			<visible>Skin.HasSetting(USE_movie-MusicBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)</visible>
 			<visible>no</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1683,7 +1524,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Movies, No TV, Picture Bookmark Selector</description>
+			<deFileion>Movies, No TV, Picture Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1698,7 +1539,7 @@
 			<ondown>91</ondown>
 			<font>font14</font>
 			<label>Link to Movie Picture Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-PictureBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
+			<visible>Skin.HasSetting(USE_movie-PictureBookmark) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)</visible>
 			<visible>no</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1707,45 +1548,22 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<description>Movies, No TV, Script Selector</description>
+			<deFileion>Movies, No TV, File Selector</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(moviesscript_path)</onclick>
+			<onclick>Skin.SetFile(moviesFile_path)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>9</onleft>
 			<onright>9</onright>
 			<onup>8</onup>
 			<ondown>91</ondown>
 			<font>font14</font>
-			<label>Link to Movie Script Folder...</label>
-			<visible>Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="9">
-			<description>Movies, No TV, XBE Selector</description>
-			<posx>22</posx>
-			<posy>304</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(moviesxbe_path)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>8</onup>
-			<ondown>91</ondown>
-			<font>font14</font>
-			<label>Link to Movie XBE Folder...</label>
-			<visible>Skin.HasSetting(USE_movie-xbe) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)</visible>
+			<label>Link to Movie Script/XBE...</label>
+			<visible>Skin.HasSetting(USE_movie-file) + !Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-MusicBookmark) + !Skin.HasSetting(USE_tv-PictureBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1753,7 +1571,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 10, 11, 12 Image</description>
+			<deFileion>Button 10, 11, 12 Image</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1764,7 +1582,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="10">
-			<description>Movie Video Bookmark Selector</description>
+			<deFileion>Movie Video Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1779,7 +1597,7 @@
 			<ondown>1011</ondown>
 			<font>font14</font>
 			<label>Link to Movie Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-VideoBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]</visible>
+			<visible>Skin.HasSetting(USE_movie-VideoBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1787,7 +1605,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<description>Movie Music Bookmark Selector</description>
+			<deFileion>Movie Music Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1802,7 +1620,7 @@
 			<ondown>1011</ondown>
 			<font>font14</font>
 			<label>Link to Movie Music Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-MusicBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]</visible>
+			<visible>Skin.HasSetting(USE_movie-MusicBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]</visible>
 			<visible>no</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1811,7 +1629,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<description>Movie Picture Bookmark Selector</description>
+			<deFileion>Movie Picture Bookmark Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1826,7 +1644,7 @@
 			<ondown>1011</ondown>
 			<font>font14</font>
 			<label>Link to Movie Picture Bookmark...</label>
-			<visible>Skin.HasSetting(USE_movie-PictureBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]</visible>
+			<visible>Skin.HasSetting(USE_movie-PictureBookmark) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]</visible>
 			<visible>no</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -1835,45 +1653,22 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<description>Movie Script Selector</description>
+			<deFileion>Movie File Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(moviesscript_path)</onclick>
+			<onclick>Skin.SetFile(moviesFile_path)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>951</onup>
 			<ondown>1011</ondown>
 			<font>font14</font>
-			<label>Link to Movie Script Folder...</label>
-			<visible>Skin.HasSetting(USE_movie-script) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]</visible>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="10">
-			<description>Movie XBE Selector</description>
-			<posx>22</posx>
-			<posy>340</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.SetString(moviesxbe_path)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>951</onup>
-			<ondown>1011</ondown>
-			<font>font14</font>
-			<label>Link to Movie XBE Folder...</label>
-			<visible>Skin.HasSetting(USE_movie-xbe) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]</visible>
+			<label>Link to Movie Script/XBE...</label>
+			<visible>Skin.HasSetting(USE_movie-file) + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-MusicBookmark) | Skin.HasSetting(USE_tv-PictureBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1881,7 +1676,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1011">
-			<description>Movie Shows Library Genre Selector</description>
+			<deFileion>Movie Shows Library Genre Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1901,7 +1696,7 @@
 			<ondown>1021</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Genres</label>	
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(1021) + !Control.HasFocus(1031) + !Control.HasFocus(1041) + !Control.HasFocus(1051) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501)</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-file) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Skin.HasSetting(USE_Movie-LibraryTitle) + !Skin.HasSetting(USE_Movie-LibraryYear) + !Skin.HasSetting(USE_Movie-LibraryActors) + !Skin.HasSetting(USE_Movie-LibraryDirectors) + !Control.HasFocus(1021) + !Control.HasFocus(1031) + !Control.HasFocus(1041) + !Control.HasFocus(1051) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501)</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1909,7 +1704,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1021">
-			<description>Movie Shows Library Title Selector</description>
+			<deFileion>Movie Shows Library Title Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1929,7 +1724,7 @@
 			<ondown>1031</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Title</label>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(1021)]</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-file) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryTitle) | Control.HasFocus(1021)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1937,7 +1732,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1031">
-			<description>Movie Shows Library Year Selector</description>
+			<deFileion>Movie Shows Library Year Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1957,7 +1752,7 @@
 			<ondown>1041</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Year</label>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(1031)]</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-file)) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryYear) | Control.HasFocus(1031)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1965,7 +1760,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1041">
-			<description>Movie Shows Library Actors Selector</description>
+			<deFileion>Movie Shows Library Actors Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1985,7 +1780,7 @@
 			<ondown>1051</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Actors</label>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(1041)]</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-file) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryActors) | Control.HasFocus(1041)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -1993,7 +1788,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1051">
-			<description>Movie Shows Library Directors Selector</description>
+			<deFileion>Movie Shows Library Directors Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2013,7 +1808,7 @@
 			<ondown>11</ondown>
 			<font>font14</font>
 			<label>Movie Library Folder: Directors</label>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(1051)]</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-file) | Skin.HasSetting(USE_tv-library)] + Skin.HasSetting(USE_Movie-library) + !Control.HasFocus(10101) + !Control.HasFocus(10201) + !Control.HasFocus(10301) + !Control.HasFocus(10401) + !Control.HasFocus(10501) + [Skin.HasSetting(USE_Movie-LibraryDirectors) | Control.HasFocus(1051)]</visible>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
@@ -2022,7 +1817,7 @@
 		</control>
 		
 		<control type="radiobutton" id="10101">
-			<description>Movie Shows Library Genre Selector 2</description>
+			<deFileion>Movie Shows Library Genre Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2050,7 +1845,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10201">
-			<description>Movie Shows Library Title Selector 2</description>
+			<deFileion>Movie Shows Library Title Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2078,7 +1873,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10301">
-			<description>Movie Shows Library Year Selector 2</description>
+			<deFileion>Movie Shows Library Year Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2106,7 +1901,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10401">
-			<description>Movie Shows Library Actors Selector 2</description>
+			<deFileion>Movie Shows Library Actors Selector 2</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2134,7 +1929,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10501">
-			<description>Movie Shows Library Directors Selector</description>
+			<deFileion>Movie Shows Library Directors Selector</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2162,7 +1957,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="11">
-			<description>TV Name Button</description>
+			<deFileion>TV Name Button</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2180,12 +1975,12 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)] + !Control.IsVisible(10) + !Control.IsVisible(1011) + !Control.IsVisible(1021) + !Control.IsVisible(1031) + !Control.IsVisible(1041) + !Control.IsVisible(1051) + !Control.IsVisible(10101) + !Control.IsVisible(10201) + !Control.IsVisible(10301) + !Control.IsVisible(10401) + !Control.IsVisible(10501) + !Control.IsVisible(12)</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)] + !Control.IsVisible(10) + !Control.IsVisible(1011) + !Control.IsVisible(1021) + !Control.IsVisible(1031) + !Control.IsVisible(1041) + !Control.IsVisible(1051) + !Control.IsVisible(10101) + !Control.IsVisible(10201) + !Control.IsVisible(10301) + !Control.IsVisible(10401) + !Control.IsVisible(10501) + !Control.IsVisible(12)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="12">
-			<description>Movie Top Name Button</description>
+			<deFileion>Movie Top Name Button</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2203,12 +1998,12 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + !Control.IsVisible(10) + !Control.IsVisible(1011) + !Control.IsVisible(1021) + !Control.IsVisible(1031) + !Control.IsVisible(1041) + !Control.IsVisible(1051) + !Control.IsVisible(10101) + !Control.IsVisible(10201) + !Control.IsVisible(10301) + !Control.IsVisible(10401) + !Control.IsVisible(10501) + !Control.IsVisible(11)</visible>
+			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + !Control.IsVisible(10) + !Control.IsVisible(1011) + !Control.IsVisible(1021) + !Control.IsVisible(1031) + !Control.IsVisible(1041) + !Control.IsVisible(1051) + !Control.IsVisible(10101) + !Control.IsVisible(10201) + !Control.IsVisible(10301) + !Control.IsVisible(10401) + !Control.IsVisible(10501) + !Control.IsVisible(11)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 13 and 14 Image</description>
+			<deFileion>Button 13 and 14 Image</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2219,7 +2014,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="13">
-			<description>TV Name Button</description>
+			<deFileion>TV Name Button</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2237,12 +2032,12 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)]</visible>
+			<visible>[Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)]</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="14">
-			<description>Movie Top Name Button</description>
+			<deFileion>Movie Top Name Button</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2260,12 +2055,12 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)] + !Control.IsVisible(13)</visible>
+			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)] + !Control.IsVisible(13)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control> 
 		<control type="image">
-			<description>Button 15 Image</description>
+			<deFileion>Button 15 Image</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -2276,7 +2071,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="15">
-			<description>Movie Bottom Name Button</description>
+			<deFileion>Movie Bottom Name Button</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -2294,7 +2089,7 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)] + Control.IsVisible(13)</visible>
+			<visible>[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Control.IsVisible(10) | Control.IsVisible(1011) | Control.IsVisible(1021) | Control.IsVisible(1031) | Control.IsVisible(1041) | Control.IsVisible(1051) | Control.IsVisible(10101) | Control.IsVisible(10201) | Control.IsVisible(10301) | Control.IsVisible(10401) | Control.IsVisible(10501)] + Control.IsVisible(13)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
@@ -2302,7 +2097,7 @@
 		
 		
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>98</posy>
 			<width>230</width>
@@ -2312,7 +2107,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>134</posy>
 			<width>230</width>
@@ -2322,7 +2117,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>170</posy>
 			<width>230</width>
@@ -2332,7 +2127,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>206</posy>
 			<width>230</width>
@@ -2342,7 +2137,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>242</posy>
 			<width>230</width>
@@ -2352,7 +2147,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>278</posy>
 			<width>230</width>
@@ -2362,7 +2157,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>314</posy>
 			<width>230</width>
@@ -2372,7 +2167,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>350</posy>
 			<width>230</width>
@@ -2382,7 +2177,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>386</posy>
 			<width>230</width>
@@ -2392,7 +2187,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>422</posy>
 			<width>230</width>
@@ -2402,7 +2197,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>458</posy>
 			<width>230</width>
@@ -2412,7 +2207,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for MCE</description>
+			<deFileion>Left Arrow for MCE</deFileion>
 			<posx>29</posx>
 			<posy>101</posy>
 			<width>16</width>
@@ -2423,7 +2218,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for MCE</description>
+			<deFileion>Right Arrow for MCE</deFileion>
 			<posx>305</posx>
 			<posy>101</posy>
 			<width>16</width>
@@ -2434,7 +2229,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for Marketplace</description>
+			<deFileion>Left Arrow for Marketplace</deFileion>
 			<posx>29</posx>
 			<posy>137</posy>
 			<width>16</width>
@@ -2445,7 +2240,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for Marketplace</description>
+			<deFileion>Right Arrow for Marketplace</deFileion>
 			<posx>305</posx>
 			<posy>137</posy>
 			<width>16</width>
@@ -2456,7 +2251,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for TV Button</description>
+			<deFileion>Left Arrow for TV Button</deFileion>
 			<posx>29</posx>
 			<posy>245</posy>
 			<width>16</width>
@@ -2467,7 +2262,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for TV Button</description>
+			<deFileion>Right Arrow for TV Button</deFileion>
 			<posx>305</posx>
 			<posy>245</posy>
 			<width>16</width>
@@ -2478,7 +2273,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for Movie Button</description>
+			<deFileion>Left Arrow for Movie Button</deFileion>
 			<posx>29</posx>
 			<posy>281</posy>
 			<width>16</width>
@@ -2489,7 +2284,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for Movie Button</description>
+			<deFileion>Right Arrow for Movie Button</deFileion>
 			<posx>305</posx>
 			<posy>281</posy>
 			<width>16</width>
@@ -2500,7 +2295,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for TV Library Selector Button</description>
+			<deFileion>Left Arrow for TV Library Selector Button</deFileion>
 			<posx>29</posx>
 			<posy>317</posy>
 			<width>16</width>
@@ -2511,7 +2306,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for TV Library Selector Button</description>
+			<deFileion>Right Arrow for TV Library Selector Button</deFileion>
 			<posx>305</posx>
 			<posy>317</posy>
 			<width>16</width>
@@ -2522,7 +2317,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow for Movie Library Selector Button</description>
+			<deFileion>Left Arrow for Movie Library Selector Button</deFileion>
 			<posx>29</posx>
 			<posy>353</posy>
 			<width>16</width>
@@ -2533,7 +2328,7 @@
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow for Movie Library Selector Button</description>
+			<deFileion>Right Arrow for Movie Library Selector Button</deFileion>
 			<posx>305</posx>
 			<posy>353</posy>
 			<width>16</width>

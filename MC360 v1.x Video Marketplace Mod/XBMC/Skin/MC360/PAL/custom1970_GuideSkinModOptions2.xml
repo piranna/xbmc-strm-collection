@@ -27,7 +27,7 @@
 			<visible>!Window.IsActive(1969)</visible>
 			<onleft>1</onleft>
 			<onright>1</onright>
-			<onup>5</onup>
+			<onup>7</onup>
 			<ondown>2</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
@@ -64,41 +64,6 @@
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<onup>1</onup>
-			<ondown>300</ondown>
-			<font>font14</font>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible>!Window.IsActive(1969)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="image">
-			<description>Button 300 Image</description>
-			<posx>22</posx>
-			<posy>160</posy>
-			<width>290</width>
-			<height>59</height>
-			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(300) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="button" id="300">
-			<description>Favorites Button</description>
-			<posx>22</posx>
-			<posy>160</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>			
-			<onclick>XBMC.ReplaceWindow(1969)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<label>Configure Favorites</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>300</onleft>
-			<onright>300</onright>
-			<onup>2</onup>
 			<ondown>3</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
@@ -111,97 +76,42 @@
 		<control type="image">
 			<description>Button 3 Image</description>
 			<posx>22</posx>
-			<posy>196</posy>
+			<posy>160</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>[Control.HasFocus(3) | Control.HasFocus(30) | Control.HasFocus(31)] + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(3) + !Window.IsActive(1969)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="radiobutton" id="3">
-			<description>Homebrew XBE Button</description>
+		<control type="button" id="3">
+			<description>Favorites Button</description>
 			<posx>22</posx>
-			<posy>196</posy>
+			<posy>160</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
-			<selected>Skin.HasSetting(HomebrewXBE)</selected>
-			<onclick>Skin.ToggleSetting(HomebrewXBE)</onclick>
-			<onclick>Skin.Reset(HomebrewScript)</onclick>
+			<onclick>XBMC.ReplaceWindow(1969)</onclick>
 			<pulseonselect>no</pulseonselect>
-			<label>Custom XBE Button</label>
+			<label>Configure Favorites</label>
 			<visible>!Window.IsActive(1969)</visible>
-			<onleft>30</onleft>
-			<onright>30</onright>
-			<onup>300</onup>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>2</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>!Control.HasFocus(30) + !Control.HasFocus(31) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="radiobutton" id="30">
-			<description>Homebrew Script Button</description>
-			<posx>22</posx>
-			<posy>196</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>			
-			<selected>Skin.HasSetting(HomebrewScript)</selected>
-			<onclick>Skin.ToggleSetting(HomebrewScript)</onclick>
-			<onclick>Skin.Reset(HomebrewXBE)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<label>Custom Script Button</label>
 			<visible>!Window.IsActive(1969)</visible>
-			<onleft>31</onleft>
-			<onright>31</onright>
-			<onup>300</onup>
-			<ondown>4</ondown>
-			<font>font14</font>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(30) + !Window.IsActive(1969)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
-		<control type="radiobutton" id="31">
-			<description>Homebrew XBE Button</description>
-			<posx>22</posx>
-			<posy>196</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>			
-			<selected>Skin.HasSetting(HomebrewXBE)</selected>
-			<onclick>Skin.ToggleSetting(HomebrewXBE)</onclick>
-			<onclick>Skin.Reset(HomebrewScript)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<label>Custom XBE Button</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>30</onleft>
-			<onright>30</onright>
-			<onup>300</onup>
-			<ondown>4</ondown>
-			<font>font14</font>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(31) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		
 		<control type="image">
 			<description>Button 4 Image</description>
 			<posx>22</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
@@ -209,17 +119,19 @@
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="4">
-			<description>Set Homebrew XBE Button</description>
+		<control type="radiobutton" id="4">
+			<description>Custom Keymap Button</description>
 			<posx>22</posx>
-			<posy>232</posy>
+			<posy>196</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
-			<onclick>Skin.SetPath(HomebrewXBE_path)</onclick>
+			<onclick>XBMC.RunScript(Q:\skin\MC360\extras\switchkeymap.py)</onclick>
+			<onclick>XBMC.ActivateWindow(1968)</onclick>
+			<selected>Skin.HasSetting(CustomKeymap)</selected>
 			<pulseonselect>no</pulseonselect>
-			<label>Specify Custom XBE Folder</label>
+			<label>Enable Custom Keymap</label>
 			<visible>!Window.IsActive(1969)</visible>
 			<onleft>4</onleft>
 			<onright>4</onright>
@@ -229,39 +141,14 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>Skin.HasSetting(HomebrewXBE) + !Skin.HasSetting(HomebrewScript) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="4">
-			<description>Set Homebrew Script Button</description>
-			<posx>22</posx>
-			<posy>232</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>			
-			<onclick>Skin.SetPath(HomebrewScript_path)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<label>Specify Custom Script Folder</label>
 			<visible>!Window.IsActive(1969)</visible>
-			<onleft>4</onleft>
-			<onright>4</onright>
-			<onup>3</onup>
-			<ondown>5</ondown>
-			<font>font14</font>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible>Skin.HasSetting(HomebrewScript) + !Skin.HasSetting(HomebrewXBE) + !Window.IsActive(1969)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		
+		</control>		
 		<control type="image">
 			<description>Button 5 Image</description>
 			<posx>22</posx>
-			<posy>268</posy>
+			<posy>232</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
@@ -269,10 +156,82 @@
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="5">
-			<description>Name Homebrew Button</description>
+		<control type="radiobutton" id="5">
+			<description>Homebrew File Button</description>
+			<posx>22</posx>
+			<posy>232</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<selected>Skin.HasSetting(HomebrewFile)</selected>
+			<onclick>Skin.ToggleSetting(HomebrewFile)</onclick>
+			<onclick>Skin.Reset(HomebrewScript)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Custom Games Blade Button</label>
+			<visible>!Window.IsActive(1969)</visible>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>4</onup>
+			<ondown>6</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>yes</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Button 6 Image</description>
 			<posx>22</posx>
 			<posy>268</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(6) + !Window.IsActive(1969)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="button" id="6">
+			<description>Set Homebrew File Button</description>
+			<posx>22</posx>
+			<posy>268</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.SetFile(HomebrewFile_path)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Specify Custom Button File</label>
+			<visible>!Window.IsActive(1969)</visible>
+			<onleft>6</onleft>
+			<onright>6</onright>
+			<onup>5</onup>
+			<ondown>7</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Button 7 Image</description>
+			<posx>22</posx>
+			<posy>305</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(7) + !Window.IsActive(1969)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="button" id="7">
+			<description>Name Homebrew Button</description>
+			<posx>22</posx>
+			<posy>305</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
@@ -281,15 +240,15 @@
 			<pulseonselect>no</pulseonselect>
 			<label>Set Custom Button Name</label>
 			<visible>!Window.IsActive(1969)</visible>
-			<onleft>5</onleft>
-			<onright>5</onright>
-			<onup>4</onup>
+			<onleft>7</onleft>
+			<onright>7</onright>
+			<onup>6</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>[Skin.HasSetting(HomebrewXBE) | Skin.HasSetting(HomebrewScript)] + !Window.IsActive(1969)</visible>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
@@ -349,7 +308,7 @@
 			<posy>278</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>[Skin.HasSetting(HomebrewXBE) | Skin.HasSetting(HomebrewScript)] + !Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -359,31 +318,19 @@
 			<posy>314</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>[Skin.HasSetting(HomebrewXBE) | Skin.HasSetting(HomebrewScript)] + !Window.IsActive(1969)</visible>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow</description>
-			<posx>29</posx>
-			<posy>208</posy>
-			<width>16</width>
-			<height>32</height>
-			<texture>selectarrow-left.png</texture>
-			<visible>[Control.HasFocus(3) | Control.HasFocus(30) | Control.HasFocus(31)] + !Window.IsActive(1969)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
-		</control>
-		<control type="image">
-			<description>Right Arrow</description>
-			<posx>305</posx>
-			<posy>208</posy>
-			<width>16</width>
-			<height>32</height>
-			<texture>selectarrow-right.png</texture>
-			<visible>[Control.HasFocus(3) | Control.HasFocus(30) | Control.HasFocus(31)] + !Window.IsActive(1969)</visible>
-			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
+			<description>Divider</description>
+			<posx>45</posx>
+			<posy>350</posy>
+			<width>230</width>
+			<height>1</height>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 	</controls>
 </window>

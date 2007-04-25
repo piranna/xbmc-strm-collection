@@ -10,7 +10,7 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>No script has been set up for this button in Script Mode.  Please go to the Marketplace configuration menu to select a script.</label>
+			<label>No Game, Application, or Script has been set up for this button in File Mode.  Please go to the Marketplace configuration menu to select a file.</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
 			<include>TextcolorBlack</include>

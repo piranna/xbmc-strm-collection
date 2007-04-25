@@ -546,71 +546,39 @@
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<visible>Skin.String(MarketplaceName) + Skin.HasSetting(GamesMarketplace)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.String(MarketplaceName) + Skin.HasSetting(GamesMarketplace)</visible>
 				<onleft>1</onleft>
 				<onright>2</onright>
 				<onup>8</onup>
 				<ondown>90</ondown>
 			</control>
 			<control type="button" id="90">
-				<description>Homebrew XBE Custom Push Button</description>
+				<description>Homebrew File Custom Push Button</description>
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>360</posy>
 				<label>$INFO[Skin.String(HomebrewName)]</label>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(HomebrewXBE_path)]\default.xbe)</onclick>
+				<onclick>$INFO[Skin.String(HomebrewFile_path)]</onclick>
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<visible>Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewXBE)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewFile) + Skin.String(HomebrewFile_path)</visible>
 				<onleft>1</onleft>
 				<onright>2</onright>
 				<onup>9</onup>
 				<ondown>10</ondown>
 			</control>
 			<control type="button" id="90">
-				<description>Homebrew Script Custom Push Button</description>
-				<include>Home-Button-Commons</include>
-				<posx>145</posx>
-				<posy>360</posy>
-				<label>$INFO[Skin.String(HomebrewName)]</label>
-				<onclick>XBMC.RunScript($INFO[Skin.String(HomebrewScript_path)]\default.py)</onclick>
-				<texturefocus>videomarketplace_icon.png</texturefocus>
-				<texturenofocus>videomarketplace_icon.png</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<visible>Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewScript)</visible>
-				<onleft>1</onleft>
-				<onright>2</onright>
-				<onup>9</onup>
-				<ondown>10</ondown>
-			</control>
-			<control type="button" id="90">
-				<description>Homebrew XBE Default Push Button</description>
+				<description>Homebrew File Default Push Button</description>
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>360</posy>
 				<label>Homebrew</label>
-				<onclick>XBMC.RunXBE($INFO[Skin.String(HomebrewXBE_path)]\default.xbe)</onclick>
+				<onclick>$INFO[Skin.String(HomebrewFile_path)]</onclick>
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
-				<visible>!Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewXBE)</visible>
-				<onleft>1</onleft>
-				<onright>2</onright>
-				<onup>9</onup>
-				<ondown>10</ondown>
-			</control>
-			<control type="button" id="90">
-				<description>Homebrew Script Default Push Button</description>
-				<include>Home-Button-Commons</include>
-				<posx>145</posx>
-				<posy>360</posy>
-				<label>Homebrew</label>
-				<onclick>XBMC.RunScript($INFO[Skin.String(HomebrewScript_path)]\default.py)</onclick>
-				<texturefocus>videomarketplace_icon.png</texturefocus>
-				<texturenofocus>videomarketplace_icon.png</texturenofocus>
-				<pulseonselect>no</pulseonselect>
-				<visible>!Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewScript)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewFile) + Skin.String(HomebrewFile_path)</visible>
 				<onleft>1</onleft>
 				<onright>2</onright>
 				<onup>9</onup>

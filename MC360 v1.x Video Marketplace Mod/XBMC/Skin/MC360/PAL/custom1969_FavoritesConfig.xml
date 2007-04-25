@@ -2,7 +2,7 @@
 	<defaultcontrol>1</defaultcontrol>
 	<controls>
 		<control type="image">
-			<description>Button 1 Image</description>
+			<deFileion>Button 1 Image</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -13,7 +13,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="1">
-			<description>Button 1 Enable Favorites Button</description>
+			<deFileion>Button 1 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -37,7 +37,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="2">
-			<description>Button 1 Set Script Button</description>
+			<deFileion>Button 1 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>350</width>
@@ -45,14 +45,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript1)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE1)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile1)</onclick>
 			<onleft>1</onleft>
-			<onright>3</onright>
+			<onright>3000</onright>
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Set Script 1</label>
+			<label>Set File 1</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -60,32 +59,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="3">
-			<description>Button 1 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>88</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE1)</onclick>
-			<onclick>Skin.Reset(FavoritesScript1)</onclick>
-			<onleft>2</onleft>
-			<onright>3000</onright>
-			<onup>28</onup>
-			<ondown>4</ondown>
-			<font>font14</font>
-			<label>Set XBE 1</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(3)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="3000">
-			<description>Button 1 Name Button Button</description>
+			<deFileion>Button 1 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>350</width>
@@ -94,7 +69,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName1)</onclick>
-			<onleft>3</onleft>
+			<onleft>2</onleft>
 			<onright>1</onright>
 			<onup>28</onup>
 			<ondown>4</ondown>
@@ -108,7 +83,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 2 Image</description>
+			<deFileion>Button 2 Image</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -119,7 +94,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="4">
-			<description>Button 2 Enable Favorites Button</description>
+			<deFileion>Button 2 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -143,7 +118,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="5">
-			<description>Button 2 Set Script Button</description>
+			<deFileion>Button 2 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>350</width>
@@ -151,14 +126,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript2)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE2)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile2)</onclick>
 			<onleft>4</onleft>
-			<onright>6</onright>
+			<onright>60</onright>
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Set Script 2</label>
+			<label>Set File 2</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -166,32 +140,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="6">
-			<description>Button 2 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>124</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE2)</onclick>
-			<onclick>Skin.Reset(FavoritesScript2)</onclick>
-			<onleft>5</onleft>
-			<onright>60</onright>
-			<onup>1</onup>
-			<ondown>7</ondown>
-			<font>font14</font>
-			<label>Set XBE 2</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(6)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="60">
-			<description>Button 2 Name Button Button</description>
+			<deFileion>Button 2 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>350</width>
@@ -200,7 +150,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName2)</onclick>
-			<onleft>6</onleft>
+			<onleft>5</onleft>
 			<onright>4</onright>
 			<onup>1</onup>
 			<ondown>7</ondown>
@@ -214,7 +164,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 3 Image</description>
+			<deFileion>Button 3 Image</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -225,7 +175,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="7">
-			<description>Button 3 Enable Favorites Button</description>
+			<deFileion>Button 3 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -249,7 +199,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="8">
-			<description>Button 3 Set Script Button</description>
+			<deFileion>Button 3 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>350</width>
@@ -257,14 +207,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript3)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE3)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile3)</onclick>
 			<onleft>7</onleft>
-			<onright>9</onright>
+			<onright>90</onright>
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Set Script 3</label>
+			<label>Set File 3</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -272,32 +221,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="9">
-			<description>Button 3 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>160</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE3)</onclick>
-			<onclick>Skin.Reset(FavoritesScript3)</onclick>
-			<onleft>8</onleft>
-			<onright>90</onright>
-			<onup>4</onup>
-			<ondown>10</ondown>
-			<font>font14</font>
-			<label>Set XBE 3</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(9)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="90">
-			<description>Button 3 Name Button Button</description>
+			<deFileion>Button 3 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>350</width>
@@ -306,7 +231,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName3)</onclick>
-			<onleft>9</onleft>
+			<onleft>8</onleft>
 			<onright>7</onright>
 			<onup>4</onup>
 			<ondown>10</ondown>
@@ -320,7 +245,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 4 Image</description>
+			<deFileion>Button 4 Image</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -331,7 +256,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="10">
-			<description>Button 4 Enable Favorites Button</description>
+			<deFileion>Button 4 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -355,7 +280,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="11">
-			<description>Button 4 Set Script Button</description>
+			<deFileion>Button 4 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>350</width>
@@ -363,14 +288,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript4)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE4)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile4)</onclick>
 			<onleft>10</onleft>
-			<onright>12</onright>
+			<onright>120</onright>
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Set Script 4</label>
+			<label>Set File 4</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -378,32 +302,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="12">
-			<description>Button 4 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>196</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE4)</onclick>
-			<onclick>Skin.Reset(FavoritesScript4)</onclick>
-			<onleft>11</onleft>
-			<onright>120</onright>
-			<onup>7</onup>
-			<ondown>13</ondown>
-			<font>font14</font>
-			<label>Set XBE 4</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(12)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="120">
-			<description>Button 4 Name Button Button</description>
+			<deFileion>Button 4 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>350</width>
@@ -412,7 +312,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName4)</onclick>
-			<onleft>12</onleft>
+			<onleft>11</onleft>
 			<onright>10</onright>
 			<onup>7</onup>
 			<ondown>13</ondown>
@@ -426,7 +326,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 5 Image</description>
+			<deFileion>Button 5 Image</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -437,7 +337,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="13">
-			<description>Button 5 Enable Favorites Button</description>
+			<deFileion>Button 5 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -461,7 +361,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="14">
-			<description>Button 5 Set Script Button</description>
+			<deFileion>Button 5 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>350</width>
@@ -469,14 +369,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript5)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE5)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile5)</onclick>
 			<onleft>13</onleft>
-			<onright>15</onright>
+			<onright>150</onright>
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Set Script 5</label>
+			<label>Set File 5</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -484,32 +383,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="15">
-			<description>Button 5 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>232</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE5)</onclick>
-			<onclick>Skin.Reset(FavoritesScript5)</onclick>
-			<onleft>14</onleft>
-			<onright>150</onright>
-			<onup>10</onup>
-			<ondown>16</ondown>
-			<font>font14</font>
-			<label>Set XBE 5</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(15)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="150">
-			<description>Button 5 Name Button Button</description>
+			<deFileion>Button 5 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>350</width>
@@ -518,7 +393,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName5)</onclick>
-			<onleft>15</onleft>
+			<onleft>14</onleft>
 			<onright>13</onright>
 			<onup>10</onup>
 			<ondown>16</ondown>
@@ -532,7 +407,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 6 Image</description>
+			<deFileion>Button 6 Image</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -543,7 +418,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="16">
-			<description>Button 6 Enable Favorites Button</description>
+			<deFileion>Button 6 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -567,7 +442,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="17">
-			<description>Button 6 Set Script Button</description>
+			<deFileion>Button 6 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>350</width>
@@ -575,14 +450,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript6)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE6)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile6)</onclick>
 			<onleft>16</onleft>
-			<onright>18</onright>
+			<onright>180</onright>
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Set Script 6</label>
+			<label>Set File 6</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -590,32 +464,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="18">
-			<description>Button 6 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>268</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE6)</onclick>
-			<onclick>Skin.Reset(FavoritesScript6)</onclick>
-			<onleft>17</onleft>
-			<onright>180</onright>
-			<onup>13</onup>
-			<ondown>19</ondown>
-			<font>font14</font>
-			<label>Set XBE 6</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(18)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="180">
-			<description>Button 6 Name Button Button</description>
+			<deFileion>Button 6 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>350</width>
@@ -624,7 +474,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName6)</onclick>
-			<onleft>18</onleft>
+			<onleft>17</onleft>
 			<onright>16</onright>
 			<onup>13</onup>
 			<ondown>19</ondown>
@@ -638,7 +488,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 7 Image</description>
+			<deFileion>Button 7 Image</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -649,7 +499,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="19">
-			<description>Button 7 Enable Favorites Button</description>
+			<deFileion>Button 7 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -673,7 +523,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="20">
-			<description>Button 7 Set Script Button</description>
+			<deFileion>Button 7 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>350</width>
@@ -681,14 +531,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript7)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE7)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile7)</onclick>
 			<onleft>19</onleft>
-			<onright>21</onright>
+			<onright>210</onright>
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Set Script 7</label>
+			<label>Set File 7</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -696,32 +545,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="21">
-			<description>Button 7 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>304</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE7)</onclick>
-			<onclick>Skin.Reset(FavoritesScript7)</onclick>
-			<onleft>20</onleft>
-			<onright>210</onright>
-			<onup>16</onup>
-			<ondown>22</ondown>
-			<font>font14</font>
-			<label>Set XBE 7</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(21)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="210">
-			<description>Button 7 Name Button Button</description>
+			<deFileion>Button 7 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>350</width>
@@ -730,7 +555,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName7)</onclick>
-			<onleft>210</onleft>
+			<onleft>20</onleft>
 			<onright>19</onright>
 			<onup>16</onup>
 			<ondown>22</ondown>
@@ -744,7 +569,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 8 Image</description>
+			<deFileion>Button 8 Image</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -755,7 +580,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="22">
-			<description>Button 8 Enable Favorites Button</description>
+			<deFileion>Button 8 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -779,7 +604,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="23">
-			<description>Button 8 Set Script Button</description>
+			<deFileion>Button 8 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>350</width>
@@ -787,14 +612,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript8)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE8)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile8)</onclick>
 			<onleft>22</onleft>
-			<onright>24</onright>
+			<onright>240</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Set Script 8</label>
+			<label>Set File 8</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -802,32 +626,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="24">
-			<description>Button 8 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>340</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE8)</onclick>
-			<onclick>Skin.Reset(FavoritesScript8)</onclick>
-			<onleft>23</onleft>
-			<onright>240</onright>
-			<onup>19</onup>
-			<ondown>25</ondown>
-			<font>font14</font>
-			<label>Set XBE 8</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(24)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="240">
-			<description>Button 8 Name Button Button</description>
+			<deFileion>Button 8 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>350</width>
@@ -836,7 +636,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName8)</onclick>
-			<onleft>24</onleft>
+			<onleft>23</onleft>
 			<onright>22</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
@@ -850,7 +650,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 9 Image</description>
+			<deFileion>Button 9 Image</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -861,7 +661,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="25">
-			<description>Button 9 Enable Favorites Button</description>
+			<deFileion>Button 9 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -885,7 +685,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="26">
-			<description>Button 9 Set Script Button</description>
+			<deFileion>Button 9 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>350</width>
@@ -893,14 +693,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript9)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE9)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile9)</onclick>
 			<onleft>25</onleft>
-			<onright>27</onright>
+			<onright>270</onright>
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Set Script 9</label>
+			<label>Set File 9</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -908,32 +707,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="27">
-			<description>Button 9 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>376</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE9)</onclick>
-			<onclick>Skin.Reset(FavoritesScript9)</onclick>
-			<onleft>26</onleft>
-			<onright>270</onright>
-			<onup>22</onup>
-			<ondown>28</ondown>
-			<font>font14</font>
-			<label>Set XBE 9</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(27)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="270">
-			<description>Button 9 Name Button Button</description>
+			<deFileion>Button 9 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>350</width>
@@ -942,7 +717,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName9)</onclick>
-			<onleft>27</onleft>
+			<onleft>26</onleft>
 			<onright>25</onright>
 			<onup>22</onup>
 			<ondown>28</ondown>
@@ -956,7 +731,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Button 10 Image</description>
+			<deFileion>Button 10 Image</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -967,7 +742,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="28">
-			<description>Button 10 Enable Favorites Button</description>
+			<deFileion>Button 10 Enable Favorites Button</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -991,7 +766,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="29">
-			<description>Button 10 Set Script Button</description>
+			<deFileion>Button 10 Set File Button</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>350</width>
@@ -999,14 +774,13 @@
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesScript10)</onclick>
-			<onclick>Skin.Reset(FavoritesXBE10)</onclick>
+			<onclick>Skin.SetFile(FavoritesFile10)</onclick>
 			<onleft>28</onleft>
-			<onright>30</onright>
+			<onright>300</onright>
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Set Script 10</label>
+			<label>Set File 10</label>
 			<textoffsetx>40</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-white</include>
@@ -1014,32 +788,8 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="30">
-			<description>Button 10 XBE Button Button</description>
-			<posx>22</posx>
-			<posy>412</posy>
-			<width>350</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<pulseonselect>no</pulseonselect>
-			<onclick>Skin.SetPath(FavoritesXBE10)</onclick>
-			<onclick>Skin.Reset(FavoritesScript10)</onclick>
-			<onleft>29</onleft>
-			<onright>300</onright>
-			<onup>25</onup>
-			<ondown>1</ondown>
-			<font>font14</font>
-			<label>Set XBE 10</label>
-			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
-			<visible allowhiddenfocus="true">Control.HasFocus(30)</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
 		<control type="button" id="300">
-			<description>Button 10 Name Button Button</description>
+			<deFileion>Button 10 Name Button Button</deFileion>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>350</width>
@@ -1048,7 +798,7 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(FavoritesButtonName10)</onclick>
-			<onleft>30</onleft>
+			<onleft>29</onleft>
 			<onright>28</onright>
 			<onup>25</onup>
 			<ondown>1</ondown>
@@ -1062,7 +812,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 1</description>
+			<deFileion>Left Arrow 1</deFileion>
 			<posx>29</posx>
 			<posy>100</posy>
 			<width>16</width>
@@ -1073,7 +823,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 1</description>
+			<deFileion>Right Arrow 1</deFileion>
 			<posx>305</posx>
 			<posy>100</posy>
 			<width>16</width>
@@ -1084,7 +834,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 2</description>
+			<deFileion>Left Arrow 2</deFileion>
 			<posx>29</posx>
 			<posy>136</posy>
 			<width>16</width>
@@ -1095,7 +845,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 2</description>
+			<deFileion>Right Arrow 2</deFileion>
 			<posx>305</posx>
 			<posy>136</posy>
 			<width>16</width>
@@ -1106,7 +856,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 3</description>
+			<deFileion>Left Arrow 3</deFileion>
 			<posx>29</posx>
 			<posy>172</posy>
 			<width>16</width>
@@ -1117,7 +867,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 3</description>
+			<deFileion>Right Arrow 3</deFileion>
 			<posx>305</posx>
 			<posy>172</posy>
 			<width>16</width>
@@ -1128,7 +878,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 4</description>
+			<deFileion>Left Arrow 4</deFileion>
 			<posx>29</posx>
 			<posy>208</posy>
 			<width>16</width>
@@ -1139,7 +889,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 4</description>
+			<deFileion>Right Arrow 4</deFileion>
 			<posx>305</posx>
 			<posy>208</posy>
 			<width>16</width>
@@ -1150,7 +900,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 5</description>
+			<deFileion>Left Arrow 5</deFileion>
 			<posx>29</posx>
 			<posy>244</posy>
 			<width>16</width>
@@ -1161,7 +911,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 5</description>
+			<deFileion>Right Arrow 5</deFileion>
 			<posx>305</posx>
 			<posy>244</posy>
 			<width>16</width>
@@ -1172,7 +922,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 6</description>
+			<deFileion>Left Arrow 6</deFileion>
 			<posx>29</posx>
 			<posy>280</posy>
 			<width>16</width>
@@ -1183,7 +933,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 6</description>
+			<deFileion>Right Arrow 6</deFileion>
 			<posx>305</posx>
 			<posy>280</posy>
 			<width>16</width>
@@ -1194,7 +944,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 7</description>
+			<deFileion>Left Arrow 7</deFileion>
 			<posx>29</posx>
 			<posy>316</posy>
 			<width>16</width>
@@ -1205,7 +955,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 7</description>
+			<deFileion>Right Arrow 7</deFileion>
 			<posx>305</posx>
 			<posy>316</posy>
 			<width>16</width>
@@ -1216,7 +966,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 8</description>
+			<deFileion>Left Arrow 8</deFileion>
 			<posx>29</posx>
 			<posy>352</posy>
 			<width>16</width>
@@ -1227,7 +977,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 8</description>
+			<deFileion>Right Arrow 8</deFileion>
 			<posx>305</posx>
 			<posy>352</posy>
 			<width>16</width>
@@ -1238,7 +988,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 9</description>
+			<deFileion>Left Arrow 9</deFileion>
 			<posx>29</posx>
 			<posy>388</posy>
 			<width>16</width>
@@ -1249,7 +999,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 9</description>
+			<deFileion>Right Arrow 9</deFileion>
 			<posx>305</posx>
 			<posy>388</posy>
 			<width>16</width>
@@ -1260,7 +1010,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Left Arrow 10</description>
+			<deFileion>Left Arrow 10</deFileion>
 			<posx>29</posx>
 			<posy>424</posy>
 			<width>16</width>
@@ -1271,7 +1021,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Right Arrow 10</description>
+			<deFileion>Right Arrow 10</deFileion>
 			<posx>305</posx>
 			<posy>424</posy>
 			<width>16</width>
@@ -1286,7 +1036,7 @@
 		
 		
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>98</posy>
 			<width>230</width>
@@ -1296,7 +1046,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>134</posy>
 			<width>230</width>
@@ -1306,7 +1056,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>170</posy>
 			<width>230</width>
@@ -1316,7 +1066,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>206</posy>
 			<width>230</width>
@@ -1326,7 +1076,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>242</posy>
 			<width>230</width>
@@ -1336,7 +1086,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>278</posy>
 			<width>230</width>
@@ -1346,7 +1096,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>314</posy>
 			<width>230</width>
@@ -1356,7 +1106,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>350</posy>
 			<width>230</width>
@@ -1366,7 +1116,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>386</posy>
 			<width>230</width>
@@ -1376,7 +1126,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>422</posy>
 			<width>230</width>
@@ -1386,7 +1136,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<description>Divider</description>
+			<deFileion>Divider</deFileion>
 			<posx>45</posx>
 			<posy>458</posy>
 			<width>230</width>

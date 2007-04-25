@@ -88,7 +88,7 @@ class G4Viewer(xbmcgui.Window):
                 H = self.getHeight()
                 LOG("Image: " + IMAGE_DIR + 'background.png')
         	# background animation
-                self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 476, "Q:\\Skin\\MC360\\Extras\\background-ani.gif")
+                self.imgBackgroundani = xbmcgui.ControlImage(0, 0, 720, 476, "Q:\\Skin\\MC360\\Extras\\default-ani.gif")
                 self.addControl(self.imgBackgroundani)
             
         	# background image

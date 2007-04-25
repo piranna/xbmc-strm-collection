@@ -355,6 +355,7 @@
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(6) | Control.HasFocus(7)]</visible>
 			</control>
 			
+			
 			<!-- BEGIN LEVEL 3 BUTTONS (7) -->
 			
 			<control type="image">
@@ -378,7 +379,7 @@
 			</control>
 			<control type="group" id="7">
 				<description>Video Button</description>
-				<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe) + !Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)</visible>
+				<visible>!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file) + !Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)</visible>
 				<control type="button" id="70">
 					<description>Video Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -637,12 +638,12 @@
 					<visible>Skin.HasSetting(USE_movie-library) + Skin.HasSetting(USE_Movie-LibraryDirectors) + Skin.String(MovieName)</visible>
 				</control>
 				<control type="button" id="7100">
-					<description>Movies Script Push Button, Default  Name</description>
+					<description>Movies File Push Button, Default  Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
 					<label>Movies</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(moviesscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(moviesfile_path)]</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -650,15 +651,15 @@
 					<onright>2</onright>
 					<onup>6</onup>
 					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_movie-script) + !Skin.String(MovieName)</visible>
+					<visible>Skin.HasSetting(USE_movie-file) + !Skin.String(MovieName)</visible>
 				</control>
 				<control type="button" id="7100">
-					<description>Movies Script Push Button, Custom Name</description>
+					<description>Movies File Push Button, Custom Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
 					<label>$INFO[Skin.String(MovieName)]</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(moviesscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(moviesfile_path)]</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -666,44 +667,12 @@
 					<onright>2</onright>
 					<onup>6</onup>
 					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_movie-script) + Skin.String(MovieName)</visible>
-				</control>
-				<control type="button" id="7100">
-					<description>Movies XBE Push Button, Default Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>280</posy>
-					<label>Movies</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(moviesxbe_path)]\default.xbe)</onclick>
-					<texturefocus>icon-videos.png</texturefocus>
-					<texturenofocus>icon-videos.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>6</onup>
-					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_movie-xbe) + !Skin.String(MovieName)</visible>
-				</control>
-				<control type="button" id="7100">
-					<description>Movies XBE Push Button, Custom Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>280</posy>
-					<label>$INFO[Skin.String(MovieName)]</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(moviesxbe_path)]\default.xbe)</onclick>
-					<texturefocus>icon-videos.png</texturefocus>
-					<texturenofocus>icon-videos.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>6</onup>
-					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_movie-xbe) + Skin.String(MovieName)</visible>
+					<visible>Skin.HasSetting(USE_movie-file) + Skin.String(MovieName)</visible>
 				</control>
 			</control>
 			<control type="group" id="7">
 				<description>Regular TV Button</description>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)</visible>
 				<control type="button" id="710">
 					<description>TV Shows Video Bookmark Push Button, Default Button</description>
 					<include>Home-Button-Commons</include>
@@ -897,12 +866,12 @@
 					<visible>Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_tv-LibraryActors) + Skin.String(TVName)</visible>
 				</control>
 				<control type="button" id="710">
-					<description>TV Shows Script Push Button, Default  Name</description>
+					<description>TV Shows File Push Button, Default  Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
 					<label>TV Shows</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(tvshowsscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -910,15 +879,15 @@
 					<onright>2</onright>
 					<onup>6</onup>
 					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_tv-script) + !Skin.String(TVName)</visible>
+					<visible>Skin.HasSetting(USE_tv-file) + !Skin.String(TVName)</visible>
 				</control>
 				<control type="button" id="710">
-					<description>TV Shows Script Push Button, Custom Name</description>
+					<description>TV Shows File Push Button, Custom Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
 					<label>$INFO[Skin.String(TVName)]</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(tvshowsscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -926,40 +895,10 @@
 					<onright>2</onright>
 					<onup>6</onup>
 					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_tv-script) + Skin.String(TVName)</visible>
+					<visible>Skin.HasSetting(USE_tv-file) + Skin.String(TVName)</visible>
 				</control>
-				<control type="button" id="710">
-					<description>TV Shows XBE Push Button, Default Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>280</posy>
-					<label>TV Shows</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(tvshowsxbe_path)]\default.xbe)</onclick>
-					<texturefocus>defaultNetworkBig.png</texturefocus>
-					<texturenofocus>defaultNetworkBig.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>6</onup>
-					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_tv-xbe) + !Skin.String(TVName)</visible>
-				</control>
-				<control type="button" id="710">
-					<description>TV Shows XBE Push Button, Custom Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>280</posy>
-					<label>$INFO[Skin.String(TVName)]</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(tvshowsxbe_path)]\default.xbe)</onclick>
-					<texturefocus>defaultNetworkBig.png</texturefocus>
-					<texturenofocus>defaultNetworkBig.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>6</onup>
-					<ondown>8</ondown>
-					<visible>Skin.HasSetting(USE_tv-xbe) + Skin.String(TVName)</visible>
-				</control>
+
+
 			</control>
 			<control type="multiimage">
 				<description>Button 3 Button Shine</description>
@@ -1001,7 +940,7 @@
 				<include>button-shadow</include>
 			</control>
 			<control type="group" id="8">
-				<visible>!Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(remote-control) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]]]</visible>
+				<visible>!Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(remote-control) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]]]</visible>
 				<control type="button" id="80">
 					<description>Remote Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1020,7 +959,7 @@
 				</control>
 			</control>
 			<control type="group" id="8">
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]]]</visible>
 				<control type="button" id="81">
 					<description>AMT Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1039,7 +978,7 @@
 				</control>
 			</control>
 			<control type="group" id="8">
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="82">
 					<description>Marketplace Default Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1074,7 +1013,7 @@
 				</control>
 			</control>
 			<control type="group" id="8">
-				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="83">
 					<description>MCE Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1085,7 +1024,7 @@
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]] + Skin.HasSetting(USE_MediaCenterExtender)</visible>
+					<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]] + Skin.HasSetting(USE_MediaCenterExtender)</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>7</onup>
@@ -1094,7 +1033,7 @@
 			</control>
 			<control type="group" id="8">
 				<description>Regular TV Button</description>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + [Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)]</visible>
 				<control type="button" id="84">
 					<description>TV Shows Video Bookmark Push Button, Default Button</description>
 					<include>Home-Button-Commons</include>
@@ -1288,12 +1227,12 @@
 					<visible>Skin.HasSetting(USE_tv-library) + Skin.HasSetting(USE_tv-LibraryActors) + Skin.String(TVName)</visible>
 				</control>
 				<control type="button" id="84">
-					<description>TV Shows Script Push Button, Default  Name</description>
+					<description>TV Shows File Push Button, Default  Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
 					<label>TV Shows</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(tvshowsscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -1301,15 +1240,15 @@
 					<onright>2</onright>
 					<onup>7</onup>
 					<ondown>9</ondown>
-					<visible>Skin.HasSetting(USE_tv-script) + !Skin.String(TVName)</visible>
+					<visible>Skin.HasSetting(USE_tv-file) + !Skin.String(TVName)</visible>
 				</control>
 				<control type="button" id="84">
-					<description>TV Shows Script Push Button, Custom Name</description>
+					<description>TV Shows File Push Button, Custom Name</description>
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
 					<label>$INFO[Skin.String(TVName)]</label>
-					<onclick>XBMC.RunScript($INFO[Skin.String(tvshowsscript_path)]\default.py)</onclick>
+					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
@@ -1317,39 +1256,7 @@
 					<onright>2</onright>
 					<onup>7</onup>
 					<ondown>9</ondown>
-					<visible>Skin.HasSetting(USE_tv-script) + Skin.String(TVName)</visible>
-				</control>
-				<control type="button" id="84">
-					<description>TV Shows XBE Push Button, Default Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>320</posy>
-					<label>TV Shows</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(tvshowsxbe_path)]\default.xbe)</onclick>
-					<texturefocus>defaultNetworkBig.png</texturefocus>
-					<texturenofocus>defaultNetworkBig.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>7</onup>
-					<ondown>9</ondown>
-					<visible>Skin.HasSetting(USE_tv-xbe) + !Skin.String(TVName)</visible>
-				</control>
-				<control type="button" id="84">
-					<description>TV Shows XBE Push Button, Custom Name</description>
-					<include>Home-Button-Commons</include>
-					<posx>180</posx>
-					<posy>320</posy>
-					<label>$INFO[Skin.String(TVName)]</label>
-					<onclick>XBMC.RunXBE($INFO[Skin.String(tvshowsxbe_path)]\default.xbe)</onclick>
-					<texturefocus>defaultNetworkBig.png</texturefocus>
-					<texturenofocus>defaultNetworkBig.png</texturenofocus>
-					<pulseonselect>no</pulseonselect>
-					<onleft>1</onleft>
-					<onright>2</onright>
-					<onup>7</onup>
-					<ondown>9</ondown>
-					<visible>Skin.HasSetting(USE_tv-xbe) + Skin.String(TVName)</visible>
+					<visible>Skin.HasSetting(USE_tv-file) + Skin.String(TVName)</visible>
 				</control>
 			</control>
 			<control type="multiimage">
@@ -1368,7 +1275,7 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84) + [!Skin.HasSetting(remote-control) | Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(80) + !Control.HasFocus(81) + !Control.HasFocus(82) + !Control.HasFocus(83) + !Control.HasFocus(84) + [!Skin.HasSetting(remote-control) | Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 			</control>
 			<!-- END LEVEL 4 BUTTONS (8) -->
@@ -1403,7 +1310,7 @@
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>!Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]] + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]]]]]</visible>
+					<visible>!Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]] + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + !Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(USE_VideoMarketplace) + [[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]]]]]</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>8</onup>
@@ -1423,7 +1330,7 @@
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_VideoMarketplace)]]</visible>
+					<visible>Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_VideoMarketplace)]]</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>8</onup>
@@ -1439,7 +1346,7 @@
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_VideoMarketplace)]]</visible>
+					<visible>Skin.HasSetting(USE_AppleMovieTrailers) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork] + !Skin.HasSetting(USE_VideoMarketplace)]]</visible>
 					<onleft>1</onleft>
 					<onright>91</onright>
 					<onup>8</onup>
@@ -1493,7 +1400,7 @@
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>!Skin.String(MarketplaceName) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
+					<visible>!Skin.String(MarketplaceName) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>8</onup>
@@ -1509,7 +1416,7 @@
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.String(MarketplaceName) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
+					<visible>Skin.String(MarketplaceName) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>8</onup>
@@ -1525,7 +1432,7 @@
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>!Skin.String(MarketplaceName) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(92) + !Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
+					<visible>!Skin.String(MarketplaceName) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(92) + !Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
 					<onleft>1</onleft>
 					<onright>92</onright>
 					<onup>8</onup>
@@ -1541,7 +1448,7 @@
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.String(MarketplaceName) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(92) + !Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
+					<visible>Skin.String(MarketplaceName) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(92) + !Control.HasFocus(93) + Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [!Skin.HasSetting(USE_MediaCenterExtender) | !System.HasNetwork]]]</visible>
 					<onleft>1</onleft>
 					<onright>93</onright>
 					<onup>8</onup>
@@ -1627,7 +1534,7 @@
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + !Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]] + [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)]]]]</visible>
+					<visible>Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + !Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]] + [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)]]]]</visible>
 					<onleft>1</onleft>
 					<onright>2</onright>
 					<onup>8</onup>
@@ -1643,7 +1550,7 @@
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
 					<pulseonselect>no</pulseonselect>
-					<visible>Skin.HasSetting(USE_MediaCenterExtender) + !Control.HasFocus(991) + !Control.HasFocus(992) + System.HasNetwork + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + !Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-script) + !Skin.HasSetting(USE_movie-xbe)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-script) + !Skin.HasSetting(USE_tv-xbe)]] + [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)]]]]</visible>
+					<visible>Skin.HasSetting(USE_MediaCenterExtender) + !Control.HasFocus(991) + !Control.HasFocus(992) + System.HasNetwork + !Skin.HasSetting(remote-control) + !Control.HasFocus(1) + !Control.HasFocus(2) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + !Skin.HasSetting(USE_VideoMarketplace) + !Skin.HasSetting(USE_AppleMovieTrailers)] | [[[!Skin.HasSetting(USE_movie-VideoBookmark) + !Skin.HasSetting(USE_movie-library) + !Skin.HasSetting(USE_movie-file)] | [!Skin.HasSetting(USE_tv-VideoBookmark) + !Skin.HasSetting(USE_tv-library) + !Skin.HasSetting(USE_tv-file)]] + [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers)]]]]</visible>
 					<onleft>1</onleft>
 					<onright>991</onright>
 					<onup>8</onup>
@@ -1686,7 +1593,7 @@
 			</control>
 			<control type="group" id="9">
 				<description>Media Center and Marketplace Overflows, no remote</description>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9006">
 					<description>Marketplace w/ MCE Default Overflow Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1721,7 +1628,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9001">
 					<description>Marketplace w/ MCE Default Overflow Push Button 2</description>
 					<include>Home-Button-Commons</include>
@@ -1789,7 +1696,7 @@
 			</control>
 			<control type="group" id="9">
 				<description>AMT and MCE Overflows, no remote</description>
-				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9007">
 					<description>AMT w/ MCE Overflow Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1808,7 +1715,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Skin.HasSetting(USE_VideoMarketplace) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(remote-control) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9008">
 					<description>AMT w/ MCE Overflow Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1844,7 +1751,7 @@
 			</control>
 			<control type="group" id="9">
 				<description>Media Center and Marketplace and Remote Overflows</description>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9010">
 					<description>Marketplace w/ MCE and Remote Default Overflow Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1879,7 +1786,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9011">
 					<description>Marketplace w/ MCE and Remote Default Overflow Push Button 2</description>
 					<include>Home-Button-Commons</include>
@@ -1979,7 +1886,7 @@
 			</control>
 			<control type="group" id="9">
 				<description>Media Center and AMT and Remote Overflows</description>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9017">
 					<description>AMT w/ MCE and Remote Default Overflow Push Button</description>
 					<include>Home-Button-Commons</include>
@@ -1998,7 +1905,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(remote-control) + !Skin.HasSetting(USE_VideoMarketplace) + Skin.HasSetting(USE_AppleMovieTrailers) + Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]</visible>
 				<control type="button" id="9018">
 					<description>AMT w/ MCE and Remote Default Overflow Push Button 2</description>
 					<include>Home-Button-Commons</include>
@@ -2064,7 +1971,7 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(993) + !Control.HasFocus(994) + !Control.HasFocus(995) + !Control.HasFocus(9001) + !Control.HasFocus(9002) + !Control.HasFocus(9003) + !Control.HasFocus(9004) + !Control.HasFocus(9005) + !Control.HasFocus(9006) + !Control.HasFocus(9007) + !Control.HasFocus(9008) + !Control.HasFocus(9009) + !Control.HasFocus(9010) + !Control.HasFocus(9011) + !Control.HasFocus(9012) + !Control.HasFocus(9013) + !Control.HasFocus(9014) + !Control.HasFocus(9015) + !Control.HasFocus(9016) + !Control.HasFocus(9017) + !Control.HasFocus(9018) + !Control.HasFocus(9019) + !Control.HasFocus(9020) + [[[!Skin.HasSetting(remote-control) + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]]]]]] | [[[Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork]]] | [[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-script) | Skin.HasSetting(USE_movie-xbe)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-script) | Skin.HasSetting(USE_tv-xbe)]] + [[Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers] | !Skin.HasSetting(remote-control)]]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(993) + !Control.HasFocus(994) + !Control.HasFocus(995) + !Control.HasFocus(9001) + !Control.HasFocus(9002) + !Control.HasFocus(9003) + !Control.HasFocus(9004) + !Control.HasFocus(9005) + !Control.HasFocus(9006) + !Control.HasFocus(9007) + !Control.HasFocus(9008) + !Control.HasFocus(9009) + !Control.HasFocus(9010) + !Control.HasFocus(9011) + !Control.HasFocus(9012) + !Control.HasFocus(9013) + !Control.HasFocus(9014) + !Control.HasFocus(9015) + !Control.HasFocus(9016) + !Control.HasFocus(9017) + !Control.HasFocus(9018) + !Control.HasFocus(9019) + !Control.HasFocus(9020) + [[[!Skin.HasSetting(remote-control) + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]]]]] | [[[Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork]]] | [[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [[Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers] | !Skin.HasSetting(remote-control)]]]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 			</control>
 			<control type="image">
@@ -2163,7 +2070,9 @@
 					<animation effect="fade" time="100">WindowOpen</animation>
 				</control>
 			</control>
+			
 			<!-- END DESCRIPTION MULTILINES -->
+
 			<control type="button" id="10">
 				<description>DVD Launch Button Tray</description>
 				<posx>156</posx>

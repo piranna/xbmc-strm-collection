@@ -1420,7 +1420,7 @@
 					<include>TextcolorWhite</include>
 					<include>shadow-black</include>
 					<font>font18</font>
-					<visible>!Skin.String(MarketplaceName)</visible>
+					<visible>!Skin.String(MarketplaceName) + !Skin.HasSetting(DisableBladeLabels)</visible>
 				</control>
 				<control type="label" id="8">
 					<description>Video Marketplace Custom label</description>
@@ -1431,11 +1431,14 @@
 					<include>TextcolorWhite</include>
 					<include>shadow-black</include>
 					<font>font18</font>
-					<visible>Skin.String(MarketplaceName)</visible>
+					<visible>Skin.String(MarketplaceName) + !Skin.HasSetting(DisableBladeLabels)</visible>
 				</control>
 			</control>
 			<!--- Insert New stuff here -->
-			<include>SystemCustomKeymaps</include>
+			<control type="group">
+				<visible>!Skin.HasSetting(DisableGamepadLogos)</visible>
+				<include>SystemCustomKeymaps</include>
+			</control>
 		</control>
 		<!-- Start Screen Close Animation -->
 		<include>ProgramsCommonsBlades</include>

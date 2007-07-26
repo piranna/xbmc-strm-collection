@@ -917,7 +917,7 @@
 			<ondown>1</ondown>
 			<onup>1</onup>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + [!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)]</visible>
+			<visible>Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + [[!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)] + !Skin.HasSetting(Startup-Partymode)]</visible>
 			<onfocus>ReplaceWindow(startwindow)</onfocus>
 			<onfocus>RunScript(Q:\skin\MC360\extras\gamercardupdate.py)</onfocus>
 			<onfocus>RunScript(Q:\skin\MC360\extras\updatecheck.py)</onfocus>
@@ -933,7 +933,7 @@
 			<ondown>1</ondown>
 			<onup>1</onup>
 			<texturefocus>-</texturefocus>
-			<visible>Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + [!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)]</visible>
+			<visible>Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + [[!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)] + !Skin.HasSetting(Startup-Partymode)]</visible>
 			<onfocus>ReplaceWindow(startwindow)</onfocus>
 			<onfocus>RunScript(Q:\skin\MC360\extras\updatecheck.py)</onfocus>
 			<animation effect="fade" start="0" end="0">Focus</animation>
@@ -948,7 +948,7 @@
 			<ondown>1</ondown>
 			<onup>1</onup>
 			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + [!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)]</visible>
+			<visible>!Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + [[!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)] + !Skin.HasSetting(Startup-Partymode)]</visible>
 			<onfocus>ReplaceWindow(startwindow)</onfocus>
 			<onfocus>RunScript(Q:\skin\MC360\extras\gamercardupdate.py)</onfocus>
 			<animation effect="fade" start="0" end="0">Focus</animation>
@@ -963,7 +963,7 @@
 			<ondown>1</ondown>
 			<onup>1</onup>
 			<texturefocus>-</texturefocus>
-			<visible>!Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + [!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)]</visible>
+			<visible>!Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + [[!Skin.HasSetting(Startup-Playlist) | !Skin.String(playlist)] + !Skin.HasSetting(Startup-Partymode)]</visible>
 			<onfocus>ReplaceWindow(startwindow)</onfocus>
 			<animation effect="fade" start="0" end="0">Focus</animation>
 		</control>
@@ -1032,6 +1032,73 @@
 			<onfocus>ReplaceWindow(startwindow)</onfocus>
 			<animation effect="fade" start="0" end="0">Focus</animation>
 		</control>
+		
+		
+		<control type="button" id="1">
+			<posx>720</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<ondown>1</ondown>
+			<onup>1</onup>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + Skin.HasSetting(Startup-Partymode)</visible>
+			<onfocus>XBMC.PlayerControl(Partymode)</onfocus>
+			<onfocus>ReplaceWindow(startwindow)</onfocus>
+			<onfocus>RunScript(Q:\skin\MC360\extras\gamercardupdate.py)</onfocus>
+			<onfocus>RunScript(Q:\skin\MC360\extras\updatecheck.py)</onfocus>
+			<animation effect="fade" start="0" end="0">Focus</animation>
+		</control>
+		<control type="button" id="1">
+			<posx>720</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<ondown>1</ondown>
+			<onup>1</onup>
+			<texturefocus>-</texturefocus>
+			<visible>Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + Skin.HasSetting(Startup-Partymode))</visible>
+			<onfocus>XBMC.PlayerControl(Partymode)</onfocus>
+			<onfocus>ReplaceWindow(startwindow)</onfocus>
+			<onfocus>RunScript(Q:\skin\MC360\extras\updatecheck.py)</onfocus>
+			<animation effect="fade" start="0" end="0">Focus</animation>
+		</control>
+		<control type="button" id="1">
+			<posx>720</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<ondown>1</ondown>
+			<onup>1</onup>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(UpdateCheck) + Skin.HasSetting(UpdateCard) + Skin.HasSetting(Startup-Partymode)</visible>
+			<onfocus>XBMC.PlayerControl(Partymode)</onfocus>
+			<onfocus>ReplaceWindow(startwindow)</onfocus>
+			<onfocus>RunScript(Q:\skin\MC360\extras\gamercardupdate.py)</onfocus>
+			<animation effect="fade" start="0" end="0">Focus</animation>
+		</control>
+		<control type="button" id="1">
+			<posx>720</posx>
+			<posy>0</posy>
+			<width>0</width>
+			<height>0</height>
+			<onleft>1</onleft>
+			<onright>1</onright>
+			<ondown>1</ondown>
+			<onup>1</onup>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(UpdateCheck) + !Skin.HasSetting(UpdateCard) + Skin.HasSetting(Startup-Partymode)</visible>
+			<onfocus>XBMC.PlayerControl(Partymode)</onfocus>
+			<onfocus>ReplaceWindow(startwindow)</onfocus>
+			<animation effect="fade" start="0" end="0">Focus</animation>
+		</control>
+		
 		<control type="image">
 			<description>Intro Background</description>
 			<posx>0</posx>

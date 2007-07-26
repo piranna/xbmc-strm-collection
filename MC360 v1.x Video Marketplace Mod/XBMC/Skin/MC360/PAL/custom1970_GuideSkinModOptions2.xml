@@ -8,7 +8,7 @@
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(1) + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(1) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -24,7 +24,7 @@
 			<onclick>Skin.ToggleSetting(KaiInfo)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>Disable Kai Info</label>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<onleft>1</onleft>
 			<onright>1</onright>
 			<onup>9</onup>
@@ -33,7 +33,7 @@
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
@@ -44,7 +44,7 @@
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(2) + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(2) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -60,31 +60,31 @@
 			<onclick>Skin.ToggleSetting(T3CHButton)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>XBMC Updater in Live Place</label>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<onup>1</onup>
-			<ondown>4</ondown>
+			<ondown>3</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 4 Image</description>
+			<description>Button 3 Image</description>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(4) + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(3) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="radiobutton" id="4">
+		<control type="radiobutton" id="3">
 			<description>Custom Keymap Button</description>
 			<posx>22</posx>
 			<posy>160</posy>
@@ -97,84 +97,297 @@
 			<selected>Skin.HasSetting(CustomKeymap)</selected>
 			<pulseonselect>no</pulseonselect>
 			<label>Enable Custom Keymap</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>4</onleft>
-			<onright>4</onright>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>3</onleft>
+			<onright>3</onright>
 			<onup>2</onup>
+			<ondown>4</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Button 4 Image</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>[Control.HasFocus(4) | Control.HasFocus(40) | Control.HasFocus(41) | Control.HasFocus(42) | Control.HasFocus(43)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="radiobutton" id="4">
+			<description>Submenu Favorites Games Button</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(favgames)</onclick>
+			<selected>Skin.HasSetting(favgames)</selected>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Games Submenu</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>41</onleft>
+			<onright>41</onright>
+			<onup>3</onup>
 			<ondown>5</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + [!Control.HasFocus(40) + !Control.HasFocus(41) + !Control.HasFocus(42) + !Control.HasFocus(43)]</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="40">
+			<description>Submenu Favorites Games Button</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(favgames)</onclick>
+			<selected>Skin.HasSetting(favgames)</selected>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Games Submenu</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>43</onleft>
+			<onright>41</onright>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(40)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="41">
+			<description>Submenu Favorites Emulators Button</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(favarc)</onclick>
+			<selected>Skin.HasSetting(favarc)</selected>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Xbox Arcade Submenu</label>
+			<onleft>40</onleft>
+			<onright>42</onright>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(41)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="42">
+			<description>Submenu Favorites Apps Button</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(favapps)</onclick>
+			<selected>Skin.HasSetting(favapps)</selected>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Applications Submenu</label>
+			<onleft>41</onleft>
+			<onright>43</onright>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(42)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="radiobutton" id="43">
+			<description>Submenu Favorites Homebrew Button</description>
+			<posx>22</posx>
+			<posy>196</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(favhome)</onclick>
+			<selected>Skin.HasSetting(favhome)</selected>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Cust. Button Submenu</label>
+			<onleft>42</onleft>
+			<onright>40</onright>
+			<onup>3</onup>
+			<ondown>5</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(43)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
 			<description>Button 5 Image</description>
 			<posx>22</posx>
-			<posy>196</posy>
+			<posy>232</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(5) + !Window.IsActive(1969)</visible>
+			<visible>[Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="radiobutton" id="5">
-			<description>Startup Playlist Button</description>
+		<control type="group" id="5">
+			<control type="radiobutton" id="50">
+				<description>Startup Playlist Button</description>
+				<posx>22</posx>
+				<posy>232</posy>
+				<width>290</width>
+				<height>59</height>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>			
+				<onclick>Skin.ToggleSetting(Startup-Playlist)</onclick>
+				<selected>Skin.HasSetting(Startup-Playlist)</selected>
+				<onclick>Skin.Reset(Startup-Partymode)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<label>Enable Startup Playlist</label>
+				<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+				<onleft>52</onleft>
+				<onright>52</onright>
+				<onup>4</onup>
+				<ondown>6</ondown>
+				<font>font14</font>
+				<textoffsetx>30</textoffsetx>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + [!Skin.HasSetting(Startup-Partymode) | Control.HasFocus(50)] + !Control.HasFocus(51) + !Control.HasFocus(52) + !Control.HasFocus(53)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+			</control>
+			<control type="radiobutton" id="51">
+				<description>Startup Party Mode Button</description>
+				<posx>22</posx>
+				<posy>232</posy>
+				<width>290</width>
+				<height>59</height>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>			
+				<onclick>Skin.ToggleSetting(Startup-Partymode)</onclick>
+				<selected>Skin.HasSetting(Startup-Partymode)</selected>
+				<onclick>Skin.Reset(Startup-Playlist)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<label>Enable Startup Partymode</label>
+				<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+				<onleft>53</onleft>
+				<onright>53</onright>
+				<onup>4</onup>
+				<ondown>6</ondown>
+				<font>font14</font>
+				<textoffsetx>30</textoffsetx>
+				<include>TextcolorBlack</include>
+				<include>shadow-grey</include>
+				<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + [Skin.HasSetting(Startup-Partymode) | Control.HasFocus(51)] + !Control.HasFocus(50) + !Control.HasFocus(52) + !Control.HasFocus(53)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+			</control>
+		</control>
+		<control type="radiobutton" id="52">
+			<description>Startup Party Mode Button</description>
 			<posx>22</posx>
-			<posy>196</posy>
+			<posy>232</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
-			<onclick>Skin.ToggleSetting(Startup-Playlist)</onclick>
-			<selected>Skin.HasSetting(Startup-Playlist)</selected>
+			<onclick>Skin.ToggleSetting(Startup-Partymode)</onclick>
+			<selected>Skin.HasSetting(Startup-Partymode)</selected>
+			<onclick>Skin.Reset(Startup-Playlist)</onclick>
 			<pulseonselect>no</pulseonselect>
-			<label>Enable Startup Playlist</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>5</onleft>
-			<onright>5</onright>
+			<label>Enable Startup Partymode</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>53</onleft>
+			<onright>53</onright>
 			<onup>4</onup>
 			<ondown>6</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(52)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>		
-		<control type="image">
-			<description>Button 6 Image</description>
-			<posx>22</posx>
-			<posy>232</posy>
-			<width>290</width>
-			<height>59</height>
-			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(6) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="radiobutton" id="6">
-			<description>Homebrew File Button</description>
+		<control type="radiobutton" id="53">
+			<description>Startup Playlist Button</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.ToggleSetting(Startup-Playlist)</onclick>
+			<selected>Skin.HasSetting(Startup-Playlist)</selected>
+			<onclick>Skin.Reset(Startup-Partymode)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Enable Startup Playlist</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>52</onleft>
+			<onright>52</onright>
+			<onup>4</onup>
+			<ondown>6</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(53)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Button 6 Image</description>
+			<posx>22</posx>
+			<posy>268</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(6) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="radiobutton" id="6">
+			<description>Homebrew File Button</description>
+			<posx>22</posx>
+			<posy>268</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
 			<selected>Skin.HasSetting(HomebrewFile)</selected>
 			<onclick>Skin.ToggleSetting(HomebrewFile)</onclick>
-			<onclick>Skin.Reset(HomebrewScript)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>Custom Games Blade Button</label>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<onleft>6</onleft>
 			<onright>6</onright>
 			<onup>5</onup>
-			<ondown>7</ondown>
+			<ondown>65</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
@@ -184,20 +397,60 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 7 Image</description>
+			<description>Button 65 Image</description>
 			<posx>22</posx>
-			<posy>268</posy>
+			<posy>304</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(7) + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(65) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="radiobutton" id="65">
+			<description>Disable Home Blade Logos Button</description>
+			<posx>22</posx>
+			<posy>304</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<selected>Skin.HasSetting(DisableLogos)</selected>
+			<onclick>Skin.ToggleSetting(DisableLogos)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Disable Home Blade Logos</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>65</onleft>
+			<onright>65</onright>
+			<onup>6</onup>
+			<ondown>7</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>yes</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		
+		
+		
+		
+		<control type="image">
+			<description>Button 7 Image</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>Control.HasFocus(7) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="7">
 			<description>Set Homebrew File Button</description>
 			<posx>22</posx>
-			<posy>268</posy>
+			<posy>340</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
@@ -205,57 +458,34 @@
 			<onclick>Skin.SetFile(HomebrewFile_path)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>Specify Custom Button File</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>7</onleft>
-			<onright>7</onright>
-			<onup>6</onup>
-			<ondown>8</ondown>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>71</onleft>
+			<onright>71</onright>
+			<onup>65</onup>
+			<ondown>75</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-		</control>
-		<control type="button" id="7">
-			<description>Top Choose Startup Playlist Button</description>
-			<posx>22</posx>
-			<posy>268</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>			
-			<onclick>Skin.SetFile(playlist,.m3u,Q:\UserData\playlists\music\)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<label>Choose Startup Playlist</label>
-			<onleft>7</onleft>
-			<onright>7</onright>
-			<onup>6</onup>
-			<ondown>8</ondown>
-			<font>font14</font>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible>!Skin.HasSetting(HomebrewFile) + Skin.HasSetting(Startup-Playlist) + !Window.IsActive(1969)</visible>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Control.HasFocus(71) + !Control.HasFocus(72)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 8 Image</description>
+			<description>Button 71 Image</description>
 			<posx>22</posx>
-			<posy>304</posy>
+			<posy>340</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(8) + !Window.IsActive(1969)</visible>
+			<visible>Control.HasFocus(71) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="8">
+		<control type="button" id="71">
 			<description>Name Homebrew Button</description>
 			<posx>22</posx>
-			<posy>304</posy>
+			<posy>340</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
@@ -263,32 +493,56 @@
 			<onclick>Skin.SetString(HomebrewName)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>Set Custom Button Name</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>8</onleft>
-			<onright>8</onright>
-			<onup>7</onup>
-			<ondown>9</ondown>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>72</onleft>
+			<onright>72</onright>
+			<onup>65</onup>
+			<ondown>75</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
+			<visible allowhiddenfocus="true">Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(71)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<description>Button 9 Image</description>
+			<description>Button 72 Image</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
 			<height>59</height>
 			<texture>guide-button-focus.png</texture>
-			<visible>Control.HasFocus(9) + !Window.IsActive(1969)</visible>
+			<visible>[Control.HasFocus(72) | Control.HasFocus(75) | Control.HasFocus(76) | Control.HasFocus(760) | Control.HasFocus(761) | Control.HasFocus(762) | Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="button" id="9">
-			<description>Select Startup Playlist Button</description>
+		<control type="button" id="72">
+			<description>Set Homebrew File Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.SetFile(HomebrewFile_path)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Specify Custom Button File</label>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<onleft>71</onleft>
+			<onright>71</onright>
+			<onup>65</onup>
+			<ondown>75</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Control.HasFocus(72)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="75">
+			<description>Top Choose Startup Playlist Button</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -298,16 +552,406 @@
 			<onclick>Skin.SetFile(playlist,.m3u,Q:\UserData\playlists\music\)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<label>Choose Startup Playlist</label>
-			<visible>!Window.IsActive(1969)</visible>
-			<onleft>9</onleft>
-			<onright>9</onright>
+			<onleft>75</onleft>
+			<onright>75</onright>
+			<onup>7</onup>
+			<ondown>76</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(HomebrewFile) + Skin.HasSetting(Startup-Playlist) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="76">
+			<description>Top Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>763</onleft>
+			<onright>761</onright>
+			<onup>75</onup>
+			<ondown>8</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>!Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile) + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)] + [!Control.HasFocus(760) + !Control.HasFocus(761) + !Control.HasFocus(762) + !Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="760">
+			<description>Top Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>763</onleft>
+			<onright>761</onright>
+			<onup>75</onup>
+			<ondown>8</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile) + Control.HasFocus(760) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="761">
+			<description>Top Configure Arcade Submenu Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1967)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Arcade Submenu</label>
+			<onleft>760</onleft>
+			<onright>762</onright>
+			<onup>75</onup>
+			<ondown>8</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile) + Control.HasFocus(761) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="762">
+			<description>Top Configure Apps Submenu Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1966)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Apps Submenu</label>
+			<onleft>761</onleft>
+			<onright>763</onright>
+			<onup>75</onup>
+			<ondown>8</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile) + Control.HasFocus(762) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="763">
+			<description>Top Configure Homebrew Submenu Button</description>
+			<posx>22</posx>
+			<posy>340</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1965)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Cust. Submenu</label>
+			<onleft>762</onleft>
+			<onright>760</onright>
+			<onup>75</onup>
+			<ondown>8</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">!Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile) + Control.HasFocus(763) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="image">
+			<description>Button 8 Image</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>[Control.HasFocus(8) | Control.HasFocus(85) | Control.HasFocus(860) | Control.HasFocus(861) | Control.HasFocus(862) | Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="button" id="8">
+			<description>Bottom Choose Startup Playlist Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>Skin.SetFile(playlist,.m3u,Q:\UserData\playlists\music\)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Choose Startup Playlist</label>
+			<onleft>8</onleft>
+			<onright>8</onright>
+			<onup>76</onup>
+			<ondown>85</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>Skin.HasSetting(Startup-Playlist) + Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="85">
+			<description>Middle Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>863</onleft>
+			<onright>861</onright>
 			<onup>8</onup>
+			<ondown>9</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible>[[!Skin.HasSetting(Startup-Playlist) + Skin.HasSetting(HomebrewFile)] | [Skin.HasSetting(Startup-Playlist) + !Skin.HasSetting(HomebrewFile)]] + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)] + [!Control.HasFocus(860) + !Control.HasFocus(861) + !Control.HasFocus(862) + !Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="860">
+			<description>Middle Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>863</onleft>
+			<onright>861</onright>
+			<onup>8</onup>
+			<ondown>9</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(860) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="861">
+			<description>Middle Configure Arcade Submenu Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1967)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Arcade Submenu</label>
+			<onleft>860</onleft>
+			<onright>862</onright>
+			<onup>8</onup>
+			<ondown>9</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(861) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="862">
+			<description>Middle Configure Apps Submenu Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1966)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Apps Submenu</label>
+			<onleft>861</onleft>
+			<onright>863</onright>
+			<onup>8</onup>
+			<ondown>9</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(862) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="863">
+			<description>Middle Configure Homebrew Submenu Button</description>
+			<posx>22</posx>
+			<posy>376</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1965)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Cust. Submenu</label>
+			<onleft>862</onleft>
+			<onright>860</onright>
+			<onup>8</onup>
+			<ondown>9</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(863) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		
+		<control type="image">
+			<description>Button 9 Image</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texture>guide-button-focus.png</texture>
+			<visible>[Control.HasFocus(9) | Control.HasFocus(960) | Control.HasFocus(961) | Control.HasFocus(962) | Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="button" id="9">
+			<description>Bottom Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>963</onleft>
+			<onright>961</onright>
+			<onup>85</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>Skin.HasSetting(Startup-Playlist) + Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
+			<visible>Skin.HasSetting(Startup-Playlist) + Skin.HasSetting(HomebrewFile) + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)] + [!Control.HasFocus(960) + !Control.HasFocus(961) + !Control.HasFocus(962) + !Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="960">
+			<description>Bottom Configure Games Submenu Button</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1969)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Games Submenu</label>
+			<onleft>963</onleft>
+			<onright>961</onright>
+			<onup>85</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(960) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="961">
+			<description>Bottom Configure Arcade Submenu Button</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1967)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Arcade Submenu</label>
+			<onleft>960</onleft>
+			<onright>962</onright>
+			<onup>85</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(961) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="962">
+			<description>Bottom Configure Apps Submenu Button</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1966)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Apps Submenu</label>
+			<onleft>961</onleft>
+			<onright>963</onright>
+			<onup>85</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(962) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+		</control>
+		<control type="button" id="963">
+			<description>Bottom Configure Homebrew Submenu Button</description>
+			<posx>22</posx>
+			<posy>412</posy>
+			<width>290</width>
+			<height>59</height>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>			
+			<onclick>ActivateWindow(1965)</onclick>
+			<pulseonselect>no</pulseonselect>
+			<label>Configure Cust. Submenu</label>
+			<onleft>962</onleft>
+			<onright>960</onright>
+			<onup>85</onup>
+			<ondown>1</ondown>
+			<font>font14</font>
+			<textoffsetx>30</textoffsetx>
+			<include>TextcolorBlack</include>
+			<include>shadow-grey</include>
+			<visible allowhiddenfocus="true">Control.HasFocus(963) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
@@ -317,7 +961,7 @@
 			<posy>98</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -327,7 +971,7 @@
 			<posy>134</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -337,7 +981,7 @@
 			<posy>170</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -347,7 +991,7 @@
 			<posy>206</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -357,7 +1001,7 @@
 			<posy>242</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -367,7 +1011,7 @@
 			<posy>278</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -377,7 +1021,7 @@
 			<posy>314</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>!Window.IsActive(1969) + [Skin.HasSetting(Startup-Playlist) | Skin.HasSetting(HomebrewFile)]</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -387,7 +1031,7 @@
 			<posy>350</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969)</visible>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -397,9 +1041,139 @@
 			<posy>386</posy>
 			<width>230</width>
 			<height>1</height>
-			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + Skin.HasSetting(Startup-Playlist)</visible>
+			<visible>[Skin.HasSetting(HomebrewFile) | Skin.HasSetting(Startup-Playlist) | [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)]] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<texture>divider.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>45</posx>
+			<posy>422</posy>
+			<width>230</width>
+			<height>1</height>
+			<visible>!Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + [[Skin.HasSetting(HomebrewFile) + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)]] | [Skin.HasSetting(Startup-Playlist) + Skin.HasSetting(HomebrewFile)] | [Skin.HasSetting(Startup-Playlist) + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)]]]</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>45</posx>
+			<posy>458</posy>
+			<width>230</width>
+			<height>1</height>
+			<visible>Skin.HasSetting(HomebrewFile) + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965) + Skin.HasSetting(Startup-Playlist) + [Skin.HasSetting(favgames) | Skin.HasSetting(favarc) | Skin.HasSetting(favapps) | Skin.HasSetting(favhome)]</visible>
+			<texture>divider.png</texture>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<deFileion>Left Arrow for Submenu Button</deFileion>
+			<posx>29</posx>
+			<posy>209</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(4) | Control.HasFocus(40) | Control.HasFocus(41) | Control.HasFocus(42) | Control.HasFocus(43)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Right Arrow for Submenu Button</deFileion>
+			<posx>305</posx>
+			<posy>209</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(4) | Control.HasFocus(40) | Control.HasFocus(41) | Control.HasFocus(42) | Control.HasFocus(43)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Left Arrow for Custom Button Button</deFileion>
+			<posx>29</posx>
+			<posy>353</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(7) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(76) | Control.HasFocus(760) | Control.HasFocus(761) | Control.HasFocus(762) | Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Right Arrow for Custom Button Button</deFileion>
+			<posx>276</posx>
+			<posy>353</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(7) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(76) | Control.HasFocus(760) | Control.HasFocus(761) | Control.HasFocus(762) | Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Left Arrow for Middle Submenu Chooser Button</deFileion>
+			<posx>29</posx>
+			<posy>389</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(860) | Control.HasFocus(861) | Control.HasFocus(862) | Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Right Arrow for Middle Submenu Chooser Button</deFileion>
+			<posx>276</posx>
+			<posy>389</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(860) | Control.HasFocus(861) | Control.HasFocus(862) | Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Left Arrow for Bottom Submenu Chooser Button</deFileion>
+			<posx>29</posx>
+			<posy>425</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(9) | Control.HasFocus(960) | Control.HasFocus(961) | Control.HasFocus(962) | Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Right Arrow for Bottom Submenu Chooser Button</deFileion>
+			<posx>276</posx>
+			<posy>425</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(9) | Control.HasFocus(960) | Control.HasFocus(961) | Control.HasFocus(962) | Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Left Arrow for Startup Playlist/Partymode</deFileion>
+			<posx>29</posx>
+			<posy>245</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-left.png</texture>
+			<visible>[Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+		<control type="image">
+			<deFileion>Right Arrow for Startup Playlist/Partymode</deFileion>
+			<posx>305</posx>
+			<posy>245</posy>
+			<width>16</width>
+			<height>32</height>
+			<texture>selectarrow-right.png</texture>
+			<visible>[Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
+			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 	</controls>
 </window>

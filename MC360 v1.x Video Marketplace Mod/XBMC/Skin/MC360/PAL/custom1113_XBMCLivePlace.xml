@@ -17,6 +17,7 @@
 				<include>TextcolorWhite</include>
 				<include>shadow-black</include>
 				<font>font18</font>
+				<visible>!Skin.HasSetting(DisableBladeLabels)</visible>
 			</control>
 			<control type="image">
 				<description>Big Advert Window</description>
@@ -33,7 +34,7 @@
 				<width>290</width>
 				<height>85</height>
 				<texture>XBMCLivePlace\xbmc_live_place_logo.png</texture>
-				<visible>-</visible>
+				<visible>!Skin.HasSetting(DisableLogos)</visible>
 			</control>
 			<control type="group" id="9000">
 				<posy>-7</posy>
@@ -382,7 +383,10 @@
 				</control>
 			</control>
 			<!--- Insert New stuff here -->
-			<include>SystemCustomKeymaps</include>
+			<control type="group">
+				<visible>!Skin.HasSetting(DisableGamepadLogos)</visible>
+				<include>SystemCustomKeymaps</include>
+			</control>
 		</control>
 		<!-- Start Screen Close Animation -->
 		<include>LiveCommonsBlades</include>

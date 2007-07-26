@@ -150,7 +150,7 @@
 			<align>left</align>
 			<font>font18</font>
 			<include>shadow-black</include>
-			<visible>!Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -168,6 +168,7 @@
 		<control type="group" id="4">
 			<posx>86</posx>
 			<posy>77</posy>
+			<visible>!Skin.HasSetting(DisableGamercards)</visible>
 			<control type="group">
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Skin.HasSetting(extra_card_sysinfo) | Skin.HasSetting(extra_card_weather)] + ![Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
@@ -211,7 +212,7 @@
 				<width>128</width>
 				<height>128</height>
 				<texture>xbmclive_homelogo.png</texture>
-				<visible>!Control.HasFocus(2)</visible>
+				<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableLogos)</visible>
 			</control>
 			<control type="image">
 				<description>Logo Shadow</description>
@@ -220,7 +221,7 @@
 				<width>232</width>
 				<height>16</height>
 				<texture>home_logoshadow.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableLogos)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -663,7 +664,7 @@
 				<visible>!Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
 			</control>
 			<control type="label">
-				<description>File Manager Button description</description>
+				<description>Weather Button description</description>
 				<posx>355</posx>
 				<posy>205</posy>
 				<width>210</width>
@@ -673,10 +674,10 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(60) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
 			</control>
 			<control type="label">
-				<description>Weather Button description</description>
+				<description>File Manager Button description</description>
 				<posx>355</posx>
 				<posy>205</posy>
 				<width>210</width>
@@ -686,7 +687,7 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(60) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
 			</control>
 			<control type="label">
 				<description>Scripts Button description</description>
@@ -870,7 +871,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-Y-turnedoff.png</texture>
-			<visible>!Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -880,7 +881,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-X-turnedoff.png</texture>
-			<visible>!Control.HasFocus(2) + !Player.HasMedia</visible>
+			<visible>!Control.HasFocus(2) + !Player.HasMedia + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -890,7 +891,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-X.png</texture>
-			<visible>!Control.HasFocus(2) + Player.HasMedia</visible>
+			<visible>!Control.HasFocus(2) + Player.HasMedia + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -900,7 +901,7 @@
 			<posy>528</posy>
 			<include>20002</include>
 			<align>left</align>
-			<visible>!Control.HasFocus(2) + Player.HasAudio</visible>
+			<visible>!Control.HasFocus(2) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -910,7 +911,7 @@
 			<posy>528</posy>
 			<include>20003</include>
 			<align>left</align>
-			<visible>!Control.HasFocus(2) + Player.HasVideo</visible>
+			<visible>!Control.HasFocus(2) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -920,7 +921,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-B-turnedoff.png</texture>
-			<visible>!Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -930,7 +931,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-A.png</texture>
-			<visible>!Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -940,7 +941,7 @@
 			<posy>528</posy>
 			<include>19020</include>
 			<align>right</align>
-			<visible>!Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<!-- End XLink Control -->

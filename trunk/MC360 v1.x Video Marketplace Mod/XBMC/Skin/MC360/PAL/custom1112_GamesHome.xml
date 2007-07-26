@@ -149,7 +149,7 @@
 			<align>left</align>
 			<font>font18</font>
 			<include>shadow-black</include>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -167,6 +167,7 @@
 		<control type="group" id="4">
 			<posx>121</posx>
 			<posy>77</posy>
+			<visible>!Skin.HasSetting(DisableGamercards)</visible>
 			<control type="group">
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Skin.HasSetting(games_card_sysinfo) | Skin.HasSetting(games_card_weather)] + ![Skin.HasSetting(MusicCard) + Player.HasAudio]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
@@ -201,7 +202,7 @@
 				<width>128</width>
 				<height>128</height>
 				<texture>MC360_logo.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableLogos)</visible>
 			</control>
 			<control type="image">
 				<description>Logo Shadow</description>
@@ -210,8 +211,2119 @@
 				<width>232</width>
 				<height>16</height>
 				<texture>home_logoshadow.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableLogos)</visible>
 			</control>
+			
+			<!-- Begin GAMES Favorites Menus -->			
+			
+			<control type="grouplist" id="105">
+				<description>Games Favorites Wideicon Submenu</description>
+				<posx>392</posx>
+				<posy>194</posy>
+				<width>200</width>
+				<height>213</height>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>2</onright>
+				<onup>105</onup>
+				<ondown>105</ondown>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(favgames) + [Control.HasFocus(5) | ControlGroup(105).HasFocus()]</visible>
+				<control type="group" id="30">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable1)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 1 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image1)</info>
+						<visible>Skin.String(GamesFavorites-1Image1)</visible>
+					</control>
+					<control type="label">
+						<description>Button 1 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name1)</info>
+						<visible>Skin.String(GamesFavorites-1Name1)</visible>
+					</control>
+					<control type="button" id="3000">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>31</ondown>
+						<onup>39</onup>
+						<description>Button 1</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File1)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="31">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable2)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 2 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image2)</info>
+						<visible>Skin.String(GamesFavorites-1Image2)</visible>
+					</control>
+					<control type="label">
+						<description>Button 2 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name2)</info>
+						<visible>Skin.String(GamesFavorites-1Name2)</visible>
+					</control>
+					<control type="button" id="3100">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>32</ondown>
+						<onup>30</onup>
+						<description>Button 2</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File2)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="32">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable3)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 3 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image3)</info>
+						<visible>Skin.String(GamesFavorites-1Image3)</visible>
+					</control>
+					<control type="label">
+						<description>Button 3 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name3)</info>
+						<visible>Skin.String(GamesFavorites-1Name3)</visible>
+					</control>
+					<control type="button" id="3200">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>33</ondown>
+						<onup>31</onup>
+						<description>Button 3</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File3)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="33">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable4)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 4 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image4)</info>
+						<visible>Skin.String(GamesFavorites-1Image4)</visible>
+					</control>
+					<control type="label">
+						<description>Button 4 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name4)</info>
+						<visible>Skin.String(GamesFavorites-1Name4)</visible>
+					</control>
+					<control type="button" id="3300">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>34</ondown>
+						<onup>32</onup>
+						<description>Button 4</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File4)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="34">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable5)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 5 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image5)</info>
+						<visible>Skin.String(GamesFavorites-1Image5)</visible>
+					</control>
+					<control type="label">
+						<description>Button 5 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name5)</info>
+						<visible>Skin.String(GamesFavorites-1Name5)</visible>
+					</control>
+					<control type="button" id="3400">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>35</ondown>
+						<onup>33</onup>
+						<description>Button 5</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File5)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="35">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable6)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 6 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image6)</info>
+						<visible>Skin.String(GamesFavorites-1Image6)</visible>
+					</control>
+					<control type="label">
+						<description>Button 6 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name6)</info>
+						<visible>Skin.String(GamesFavorites-1Name6)</visible>
+					</control>
+					<control type="button" id="3500">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>36</ondown>
+						<onup>34</onup>
+						<description>Button 6</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File6)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="36">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable7)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 7 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image7)</info>
+						<visible>Skin.String(GamesFavorites-1Image7)</visible>
+					</control>
+					<control type="label">
+						<description>Button 7 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name7)</info>
+						<visible>Skin.String(GamesFavorites-1Name7)</visible>
+					</control>
+					<control type="button" id="3600">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>37</ondown>
+						<onup>35</onup>
+						<description>Button 7</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File7)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="37">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable8)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 8 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image8)</info>
+						<visible>Skin.String(GamesFavorites-1Image8)</visible>
+					</control>
+					<control type="label">
+						<description>Button 8 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name8)</info>
+						<visible>Skin.String(GamesFavorites-1Name8)</visible>
+					</control>
+					<control type="button" id="3700">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>38</ondown>
+						<onup>36</onup>
+						<description>Button 8</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File8)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="38">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable9)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 9 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image9)</info>
+						<visible>Skin.String(GamesFavorites-1Image9)</visible>
+					</control>
+					<control type="label">
+						<description>Button 9 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name9)</info>
+						<visible>Skin.String(GamesFavorites-1Name9)</visible>
+					</control>
+					<control type="button" id="3800">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>39</ondown>
+						<onup>37</onup>
+						<description>Button 9</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File9)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="39">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(GamesFavorites-1Enable10)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 10 Icon</description>
+						<info>Skin.String(GamesFavorites-1Image10)</info>
+						<visible>Skin.String(GamesFavorites-1Image10)</visible>
+					</control>
+					<control type="label">
+						<description>Button 10 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(GamesFavorites-1Name10)</info>
+						<visible>Skin.String(GamesFavorites-1Name10)</visible>
+					</control>
+					<control type="button" id="3900">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>30</ondown>
+						<onup>38</onup>
+						<description>Button 10</description>
+						<onclick>$INFO[Skin.String(GamesFavorites-1File10)]</onclick>
+					</control>
+				</control>
+			</control>
+
+			<!-- Begin EMULATORS Favorites Menus -->			
+			
+			<control type="grouplist" id="106">
+				<description>Emulators Favorites Wideicon Submenu</description>
+				<posx>392</posx>
+				<posy>194</posy>
+				<width>200</width>
+				<height>213</height>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>2</onright>
+				<onup>105</onup>
+				<ondown>105</ondown>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(favarc) + [Control.HasFocus(6) | ControlGroup(106).HasFocus()]</visible>
+				<control type="group" id="30">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable1)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 1 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image1)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image1)</visible>
+					</control>
+					<control type="label">
+						<description>Button 1 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name1)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name1)</visible>
+					</control>
+					<control type="button" id="3000">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>31</ondown>
+						<onup>39</onup>
+						<description>Button 1</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File1)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="31">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable2)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 2 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image2)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image2)</visible>
+					</control>
+					<control type="label">
+						<description>Button 2 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name2)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name2)</visible>
+					</control>
+					<control type="button" id="3100">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>32</ondown>
+						<onup>30</onup>
+						<description>Button 2</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File2)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="32">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable3)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 3 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image3)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image3)</visible>
+					</control>
+					<control type="label">
+						<description>Button 3 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name3)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name3)</visible>
+					</control>
+					<control type="button" id="3200">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>33</ondown>
+						<onup>31</onup>
+						<description>Button 3</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File3)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="33">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable4)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 4 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image4)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image4)</visible>
+					</control>
+					<control type="label">
+						<description>Button 4 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name4)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name4)</visible>
+					</control>
+					<control type="button" id="3300">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>34</ondown>
+						<onup>32</onup>
+						<description>Button 4</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File4)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="34">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable5)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 5 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image5)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image5)</visible>
+					</control>
+					<control type="label">
+						<description>Button 5 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name5)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name5)</visible>
+					</control>
+					<control type="button" id="3400">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>35</ondown>
+						<onup>33</onup>
+						<description>Button 5</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File5)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="35">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable6)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 6 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image6)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image6)</visible>
+					</control>
+					<control type="label">
+						<description>Button 6 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name6)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name6)</visible>
+					</control>
+					<control type="button" id="3500">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>36</ondown>
+						<onup>34</onup>
+						<description>Button 6</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File6)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="36">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable7)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 7 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image7)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image7)</visible>
+					</control>
+					<control type="label">
+						<description>Button 7 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name7)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name7)</visible>
+					</control>
+					<control type="button" id="3600">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>37</ondown>
+						<onup>35</onup>
+						<description>Button 7</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File7)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="37">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable8)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 8 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image8)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image8)</visible>
+					</control>
+					<control type="label">
+						<description>Button 8 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name8)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name8)</visible>
+					</control>
+					<control type="button" id="3700">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>38</ondown>
+						<onup>36</onup>
+						<description>Button 8</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File8)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="38">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable9)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 9 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image9)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image9)</visible>
+					</control>
+					<control type="label">
+						<description>Button 9 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name9)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name9)</visible>
+					</control>
+					<control type="button" id="3800">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>39</ondown>
+						<onup>37</onup>
+						<description>Button 9</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File9)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="39">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(ArcadeFavorites-1Enable10)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 10 Icon</description>
+						<info>Skin.String(ArcadeFavorites-1Image10)</info>
+						<visible>Skin.String(ArcadeFavorites-1Image10)</visible>
+					</control>
+					<control type="label">
+						<description>Button 10 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(ArcadeFavorites-1Name10)</info>
+						<visible>Skin.String(ArcadeFavorites-1Name10)</visible>
+					</control>
+					<control type="button" id="3900">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>30</ondown>
+						<onup>38</onup>
+						<description>Button 10</description>
+						<onclick>$INFO[Skin.String(ArcadeFavorites-1File10)]</onclick>
+					</control>
+				</control>
+			</control>
+			
+			
+			<!-- Begin APPLICATIONS Favorites Menus -->			
+			
+			<control type="grouplist" id="107">
+				<description>Applications Favorites Wideicon Submenu</description>
+				<posx>392</posx>
+				<posy>194</posy>
+				<width>200</width>
+				<height>213</height>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>2</onright>
+				<onup>105</onup>
+				<ondown>105</ondown>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(favapps) + [Control.HasFocus(7) | ControlGroup(107).HasFocus()]</visible>
+				<control type="group" id="30">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable1)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 1 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image1)</info>
+						<visible>Skin.String(AppsFavorites-1Image1)</visible>
+					</control>
+					<control type="label">
+						<description>Button 1 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name1)</info>
+						<visible>Skin.String(AppsFavorites-1Name1)</visible>
+					</control>
+					<control type="button" id="3000">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>31</ondown>
+						<onup>39</onup>
+						<description>Button 1</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File1)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="31">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable2)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 2 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image2)</info>
+						<visible>Skin.String(AppsFavorites-1Image2)</visible>
+					</control>
+					<control type="label">
+						<description>Button 2 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name2)</info>
+						<visible>Skin.String(AppsFavorites-1Name2)</visible>
+					</control>
+					<control type="button" id="3100">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>32</ondown>
+						<onup>30</onup>
+						<description>Button 2</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File2)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="32">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable3)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 3 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image3)</info>
+						<visible>Skin.String(AppsFavorites-1Image3)</visible>
+					</control>
+					<control type="label">
+						<description>Button 3 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name3)</info>
+						<visible>Skin.String(AppsFavorites-1Name3)</visible>
+					</control>
+					<control type="button" id="3200">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>33</ondown>
+						<onup>31</onup>
+						<description>Button 3</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File3)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="33">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable4)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 4 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image4)</info>
+						<visible>Skin.String(AppsFavorites-1Image4)</visible>
+					</control>
+					<control type="label">
+						<description>Button 4 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name4)</info>
+						<visible>Skin.String(AppsFavorites-1Name4)</visible>
+					</control>
+					<control type="button" id="3300">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>34</ondown>
+						<onup>32</onup>
+						<description>Button 4</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File4)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="34">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable5)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 5 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image5)</info>
+						<visible>Skin.String(AppsFavorites-1Image5)</visible>
+					</control>
+					<control type="label">
+						<description>Button 5 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name5)</info>
+						<visible>Skin.String(AppsFavorites-1Name5)</visible>
+					</control>
+					<control type="button" id="3400">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>35</ondown>
+						<onup>33</onup>
+						<description>Button 5</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File5)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="35">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable6)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 6 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image6)</info>
+						<visible>Skin.String(AppsFavorites-1Image6)</visible>
+					</control>
+					<control type="label">
+						<description>Button 6 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name6)</info>
+						<visible>Skin.String(AppsFavorites-1Name6)</visible>
+					</control>
+					<control type="button" id="3500">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>36</ondown>
+						<onup>34</onup>
+						<description>Button 6</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File6)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="36">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable7)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 7 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image7)</info>
+						<visible>Skin.String(AppsFavorites-1Image7)</visible>
+					</control>
+					<control type="label">
+						<description>Button 7 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name7)</info>
+						<visible>Skin.String(AppsFavorites-1Name7)</visible>
+					</control>
+					<control type="button" id="3600">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>37</ondown>
+						<onup>35</onup>
+						<description>Button 7</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File7)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="37">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable8)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 8 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image8)</info>
+						<visible>Skin.String(AppsFavorites-1Image8)</visible>
+					</control>
+					<control type="label">
+						<description>Button 8 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name8)</info>
+						<visible>Skin.String(AppsFavorites-1Name8)</visible>
+					</control>
+					<control type="button" id="3700">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>38</ondown>
+						<onup>36</onup>
+						<description>Button 8</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File8)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="38">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable9)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 9 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image9)</info>
+						<visible>Skin.String(AppsFavorites-1Image9)</visible>
+					</control>
+					<control type="label">
+						<description>Button 9 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name9)</info>
+						<visible>Skin.String(AppsFavorites-1Name9)</visible>
+					</control>
+					<control type="button" id="3800">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>39</ondown>
+						<onup>37</onup>
+						<description>Button 9</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File9)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="39">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(AppsFavorites-1Enable10)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 10 Icon</description>
+						<info>Skin.String(AppsFavorites-1Image10)</info>
+						<visible>Skin.String(AppsFavorites-1Image10)</visible>
+					</control>
+					<control type="label">
+						<description>Button 10 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(AppsFavorites-1Name10)</info>
+						<visible>Skin.String(AppsFavorites-1Name10)</visible>
+					</control>
+					<control type="button" id="3900">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>30</ondown>
+						<onup>38</onup>
+						<description>Button 10</description>
+						<onclick>$INFO[Skin.String(AppsFavorites-1File10)]</onclick>
+					</control>
+				</control>
+			</control>
+			
+			
+			<!-- Begin HOMEBREW Favorites Menus -->			
+			
+			<control type="grouplist" id="109">
+				<description>Homebrew Favorites Wideicon Submenu</description>
+				<posx>392</posx>
+				<posy>194</posy>
+				<width>200</width>
+				<height>213</height>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>2</onright>
+				<onup>105</onup>
+				<ondown>105</ondown>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(favhome) + [Control.HasFocus(9) | Control.HasFocus(90) | ControlGroup(109).HasFocus()]</visible>
+				<control type="group" id="30">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable1)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 1 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3000)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 1 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image1)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image1)</visible>
+					</control>
+					<control type="label">
+						<description>Button 1 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name1)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name1)</visible>
+					</control>
+					<control type="button" id="3000">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>31</ondown>
+						<onup>39</onup>
+						<description>Button 1</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File1)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="31">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable2)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 2 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3100)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 2 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image2)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image2)</visible>
+					</control>
+					<control type="label">
+						<description>Button 2 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name2)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name2)</visible>
+					</control>
+					<control type="button" id="3100">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>32</ondown>
+						<onup>30</onup>
+						<description>Button 2</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File2)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="32">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable3)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 3 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3200)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 3 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image3)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image3)</visible>
+					</control>
+					<control type="label">
+						<description>Button 3 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name3)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name3)</visible>
+					</control>
+					<control type="button" id="3200">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>33</ondown>
+						<onup>31</onup>
+						<description>Button 3</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File3)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="33">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable4)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 4 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3300)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 4 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image4)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image4)</visible>
+					</control>
+					<control type="label">
+						<description>Button 4 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name4)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name4)</visible>
+					</control>
+					<control type="button" id="3300">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>34</ondown>
+						<onup>32</onup>
+						<description>Button 4</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File4)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="34">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable5)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 5 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3400)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 5 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image5)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image5)</visible>
+					</control>
+					<control type="label">
+						<description>Button 5 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name5)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name5)</visible>
+					</control>
+					<control type="button" id="3400">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>35</ondown>
+						<onup>33</onup>
+						<description>Button 5</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File5)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="35">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable6)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 6 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3500)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 6 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image6)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image6)</visible>
+					</control>
+					<control type="label">
+						<description>Button 6 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name6)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name6)</visible>
+					</control>
+					<control type="button" id="3500">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>36</ondown>
+						<onup>34</onup>
+						<description>Button 6</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File6)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="36">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable7)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 7 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3600)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 7 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image7)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image7)</visible>
+					</control>
+					<control type="label">
+						<description>Button 7 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name7)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name7)</visible>
+					</control>
+					<control type="button" id="3600">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>37</ondown>
+						<onup>35</onup>
+						<description>Button 7</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File7)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="37">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable8)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 8 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3700)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 8 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image8)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image8)</visible>
+					</control>
+					<control type="label">
+						<description>Button 8 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name8)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name8)</visible>
+					</control>
+					<control type="button" id="3700">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>38</ondown>
+						<onup>36</onup>
+						<description>Button 8</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File8)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="38">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable9)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 9 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3800)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 9 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image9)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image9)</visible>
+					</control>
+					<control type="label">
+						<description>Button 9 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name9)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name9)</visible>
+					</control>
+					<control type="button" id="3800">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>39</ondown>
+						<onup>37</onup>
+						<description>Button 9</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File9)]</onclick>
+					</control>
+				</control>
+				<control type="group" id="39">
+					<width>235</width>
+					<height>53</height>
+					<visible>Skin.HasSetting(HomebrewFavorites-1Enable10)</visible>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-focus.png</texture>
+						<visible>Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<width>200</width>
+						<height>53</height>
+						<description>Button 10 Icon</description>
+						<texture>wide-thumb-nofocus.png</texture>
+						<visible>!Control.HasFocus(3900)</visible>
+					</control>
+					<control type="image">
+						<posx>5</posx>
+						<posy>5</posy>
+						<width>190</width>
+						<height>42</height>
+						<description>Button 10 Icon</description>
+						<info>Skin.String(HomebrewFavorites-1Image10)</info>
+						<visible>Skin.String(HomebrewFavorites-1Image10)</visible>
+					</control>
+					<control type="label">
+						<description>Button 10 Label</description>
+						<posx>0</posx>
+						<posy>14</posy>
+						<width>200</width>
+						<height>53</height>
+						<font>font14</font>
+						<include>TextcolorBlack</include>
+						<include>shadow-grey</include>
+						<align>center</align>
+						<info>Skin.String(HomebrewFavorites-1Name10)</info>
+						<visible>Skin.String(HomebrewFavorites-1Name10)</visible>
+					</control>
+					<control type="button" id="3900">
+						<width>200</width>
+						<height>53</height>
+						<onleft>5</onleft>
+						<onright>2</onright>
+						<ondown>30</ondown>
+						<onup>38</onup>
+						<description>Button 10</description>
+						<onclick>$INFO[Skin.String(HomebrewFavorites-1File10)]</onclick>
+					</control>
+				</control>
+			</control>
+			
 			<!-- Begin Main Buttons -->
 			<control type="image">
 				<description>Button Seperator</description>
@@ -229,7 +2341,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-1a.png</texture>
-				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(5) | Control.HasFocus(105)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Games Highlight Shadow</description>
@@ -238,7 +2350,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-1-shadow.png</texture>
-				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(5) | Control.HasFocus(105)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<include>button-shadow</include>
 			</control>
 			<control type="button" id="5">
@@ -252,7 +2364,7 @@
 				<texturenofocus>icon-games.png</texturenofocus>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>105</onright>
 				<onup>4</onup>
 				<ondown>6</ondown>
 			</control>
@@ -263,7 +2375,7 @@
 				<width>220</width>
 				<height>38</height>
 				<include>Shine</include>
-				<visible>Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(5) | Control.HasFocus(105)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
 				<description>Games description Multiline</description>
@@ -276,7 +2388,7 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>![Skin.HasSetting(favgames) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -294,7 +2406,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-2a.png</texture>
-				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(6) | Control.HasFocus(106)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Emulators Highlight Shadow</description>
@@ -303,7 +2415,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-2-shadow.png</texture>
-				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(6) | Control.HasFocus(106)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<include>button-shadow</include>
 			</control>
 			<control type="button" id="6">
@@ -315,24 +2427,9 @@
 				<onclick>XBMC.ActivateWindow(1,Emulators)</onclick>
 				<texturefocus>icon-emulators.png</texturefocus>
 				<texturenofocus>icon-emulators.png</texturenofocus>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(USE_Retro-X)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
-				<onup>5</onup>
-				<ondown>7</ondown>
-			</control>
-			<control type="button" id="6">
-				<description>Retro-x Emulators Push Button</description>
-				<include>Home-Button-Commons</include>
-				<posx>145</posx>
-				<posy>240</posy>
-				<include>19032</include>
-				<onclick>XBMC.RunScript(Q:\scripts\Retro-x\default.py)</onclick>
-				<texturefocus>icon-emulators.png</texturefocus>
-				<texturenofocus>icon-emulators.png</texturenofocus>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_Retro-X)</visible>
-				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>106</onright>
 				<onup>5</onup>
 				<ondown>7</ondown>
 			</control>
@@ -343,7 +2440,7 @@
 				<width>220</width>
 				<height>38</height>
 				<include>Shine</include>
-				<visible>Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(6) | Control.HasFocus(106)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
 				<description>Emulators description MultiLine</description>
@@ -356,7 +2453,7 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>![Skin.HasSetting(favarc) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -374,7 +2471,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-3a.png</texture>
-				<visible>Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(7) | Control.HasFocus(107)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Applications Highlight Shadow</description>
@@ -383,7 +2480,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-3-shadow.png</texture>
-				<visible>Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(7) | Control.HasFocus(107)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<include>button-shadow</include>
 			</control>
 			<control type="button" id="7">
@@ -397,7 +2494,7 @@
 				<texturenofocus>icon-apps.png</texturenofocus>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>107</onright>
 				<onup>6</onup>
 				<ondown>8</ondown>
 			</control>
@@ -408,7 +2505,7 @@
 				<width>220</width>
 				<height>38</height>
 				<include>Shine</include>
-				<visible>Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(7) | Control.HasFocus(107)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
 				<description>Applications description Multiline</description>
@@ -421,7 +2518,7 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>![Skin.HasSetting(favapps) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -495,9 +2592,11 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(8) | [Control.HasFocus(9) | Control.HasFocus(90)]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(8) | Control.HasFocus(9)]</visible>
 			</control>
+			
 			<!-- Custom Button for modders -->
+			
 			<control type="image">
 				<description>Custom Button Highlight</description>
 				<posx>112</posx>
@@ -505,7 +2604,7 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-5a.png</texture>
-				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90) | Control.HasFocus(109)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Custom Highlight Shadow</description>
@@ -514,10 +2613,9 @@
 				<width>281</width>
 				<height>270</height>
 				<texture>homebutton-5-shadow.png</texture>
-				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90) | Control.HasFocus(109)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<include>button-shadow</include>
 			</control>
-			
 			<control type="button" id="9">
 				<description>Marketplace Push Button</description>
 				<include>Home-Button-Commons</include>
@@ -532,7 +2630,7 @@
 				<!-- Delete this line to show in skin -->
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>109</onright>
 				<onup>8</onup>
 				<ondown>90</ondown>
 			</control>
@@ -548,7 +2646,7 @@
 				<pulseonselect>no</pulseonselect>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.String(MarketplaceName) + Skin.HasSetting(GamesMarketplace)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>109</onright>
 				<onup>8</onup>
 				<ondown>90</ondown>
 			</control>
@@ -564,7 +2662,7 @@
 				<pulseonselect>no</pulseonselect>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewFile) + Skin.String(HomebrewFile_path)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>109</onright>
 				<onup>9</onup>
 				<ondown>10</ondown>
 			</control>
@@ -580,7 +2678,7 @@
 				<pulseonselect>no</pulseonselect>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.String(HomebrewName) + !Skin.HasSetting(GamesMarketplace) + Skin.HasSetting(HomebrewFile) + Skin.String(HomebrewFile_path)</visible>
 				<onleft>1</onleft>
-				<onright>2</onright>
+				<onright>109</onright>
 				<onup>9</onup>
 				<ondown>10</ondown>
 			</control>
@@ -591,7 +2689,7 @@
 				<width>220</width>
 				<height>38</height>
 				<include>Shine</include>
-				<visible>[Control.HasFocus(9) | Control.HasFocus(90)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>[Control.HasFocus(9) | Control.HasFocus(90) | Control.HasFocus(109)] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
 				<description>Marketplace Button Multiline</description>
@@ -604,10 +2702,10 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
-				<description>Marketplace Button Multiline</description>
+				<description>Homebrew Button Multiline</description>
 				<posx>390</posx>
 				<posy>205</posy>
 				<width>210</width>
@@ -617,7 +2715,7 @@
 				<font>font14</font>
 				<include>TextcolorBlack</include>
 				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(90) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(90) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -626,7 +2724,7 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>[Control.IsVisible(9) | Control.IsVisible(90)] + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(9) + !Control.HasFocus(90)</visible>
+				<visible>[Control.IsVisible(9) | Control.IsVisible(90)] + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(9) + !Control.HasFocus(90) + !Control.HasFocus(109)</visible>
 			</control>
 			<!-- END Custom Button for modders -->
 			<control type="button" id="10">
@@ -657,7 +2755,7 @@
 				<height>71</height>
 				<onleft>1</onleft>
 				<onright>2</onright>
-				<onup>90</onup>
+				<onup>9</onup>
 				<ondown>4</ondown>
 				<texturefocus>dvdtray-focus.png</texturefocus>
 				<texturenofocus>dvdtray-nofocus.png</texturenofocus>
@@ -754,7 +2852,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-Y-turnedoff.png</texture>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -764,7 +2862,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-X-turnedoff.png</texture>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Player.HasMedia</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Player.HasMedia + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -774,7 +2872,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-X.png</texture>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasMedia</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasMedia + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -784,7 +2882,7 @@
 			<posy>528</posy>
 			<include>20002</include>
 			<align>left</align>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasAudio</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -794,7 +2892,7 @@
 			<posy>528</posy>
 			<include>20003</include>
 			<align>left</align>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -804,7 +2902,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-B-turnedoff.png</texture>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -814,7 +2912,7 @@
 			<include>Button-Map-Texture-Width</include>
 			<height>21</height>
 			<texture>button-A.png</texture>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="label">
@@ -824,7 +2922,7 @@
 			<posy>528</posy>
 			<include>19020</include>
 			<align>right</align>
-			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<!-- End Games Controls -->

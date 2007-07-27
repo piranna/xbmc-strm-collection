@@ -209,7 +209,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\XBMCLivePlace\yt.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\scripts\YouTube\default.py)</onclick>
 					<visible>yes</visible>
 					<onleft>4</onleft>
 					<onright>4</onright>

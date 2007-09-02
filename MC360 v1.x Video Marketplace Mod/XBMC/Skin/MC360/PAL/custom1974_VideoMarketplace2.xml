@@ -839,7 +839,7 @@
 					<description>Button 2 Default Label</description>
 					<posx>100</posx>
 					<posy>205</posy>
-					<label>XBMC-TV</label>
+					<label>TV Shows</label>
 					<visible>!Skin.String(UniversalButtonName-2) + !Skin.HasSetting(DisableButton-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [Skin.HasSetting(FileMode-2) + !Skin.String(FileButtonName-2)] | [Skin.HasSetting(USE_Category-2) + !Skin.String(CategoryButtonName-2)] | [Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmarkButtonName-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmarkButtonName-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmarkButtonName-2)] | [Skin.HasSetting(XBEMode-2) + !Skin.String(XBEButtonName-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryButtonName-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryButtonName-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryButtonName-2)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>
@@ -1724,7 +1724,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\GameTrailersRssReader\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\default.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -1743,7 +1743,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\GlassGameTrailersRssReader\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\glassdefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -1762,7 +1762,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CarbonGameTrailersRssReader\default.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\carbondefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -3854,7 +3854,7 @@
 					<posy>97</posy>
 					<width>280</width>
 					<height>64</height>
-					<texture>podcast-1.png</texture>
+					<texture>tvshows-3.png</texture>
 					<visible>!Skin.String(UniversalImage-6) + !Skin.HasSetting(DisableButton-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6)</visible>
 				</control>
 				<control type="image">
@@ -3966,49 +3966,11 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<visible>!Skin.HasTheme(glass) + !Skin.HasTheme(Carbon) + !Skin.HasTheme(Hello-Kitty) + !Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
+					<visible>!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\default.py)</onclick>
-					<onleft>1</onleft>
-					<onright>1</onright>
-					<onup>7</onup>
-					<ondown>7</ondown>
-				</control>
-				<control type="button" id="6">
-					<description>Market Place Button 6 Glass Theme Default push button</description>
-					<posx>380</posx>
-					<posy>95</posy>
-					<width>290</width>
-					<height>70</height>
-					<aligny>-</aligny>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>40</textoffsety>
-					<visible>>[Skin.HasTheme(Hello-Kitty) | Skin.HasTheme(Glass)] + !Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>shadow-grey</include>
-					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
-					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\glassdefault.py)</onclick>
-					<onleft>1</onleft>
-					<onright>1</onright>
-					<onup>7</onup>
-					<ondown>7</ondown>
-				</control>
-				<control type="button" id="6">
-					<description>Market Place Button 6 Carbon Theme Default push button</description>
-					<posx>380</posx>
-					<posy>95</posy>
-					<width>290</width>
-					<height>70</height>
-					<aligny>-</aligny>
-					<textoffsetx>10</textoffsetx>
-					<textoffsety>40</textoffsety>
-					<visible>Skin.HasTheme(Carbon) + !Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>shadow-grey</include>
-					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
-					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\carbondefault.py)</onclick>
+					<onclick>XBMC.ActivateWindow(MyVideoFiles,XBMC-TV)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>
@@ -4585,7 +4547,7 @@
 					<description>Button 6 Default Label</description>
 					<posx>389</posx>
 					<posy>135</posy>
-					<label>Podcasts</label>
+					<label>XBMC-TV</label>
 					<visible>!Skin.String(UniversalButtonName-6) + !Skin.HasSetting(DisableButton-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [Skin.HasSetting(FileMode-6) + !Skin.String(FileButtonName-6)] | [Skin.HasSetting(USE_Category-6) + !Skin.String(CategoryButtonName-6)] | [Skin.HasSetting(VideoBookmarkMode-6) + !Skin.String(VideoBookmarkButtonName-6)] | [Skin.HasSetting(AudioBookmarkMode-6) + !Skin.String(AudioBookmarkButtonName-6)] | [Skin.HasSetting(PictureBookmarkMode-6) + !Skin.String(PictureBookmarkButtonName-6)] | [Skin.HasSetting(XBEMode-6) + !Skin.String(XBEButtonName-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryButtonName-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryButtonName-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryButtonName-6)]]</visible>
 					<include>TextcolorBlack</include>
 				</control>

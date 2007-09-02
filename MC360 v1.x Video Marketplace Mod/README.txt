@@ -6,10 +6,10 @@ For suggestions, requests, comments, criticism, bug reports, or anything at all,
         
          -  a centralized spot where you can easily and elegantly access all media related (or not) scripts, apps and media files, including Streaming TV packs.  Each button currently has 3 selectable modes: Single Script Mode, Video Bookmark Mode, Music Bookmark Mode, Picture Bookmark Mode, XBE Mode, and Category Script Mode.
 			
-		-  Single Script Mode: Allows you to launch a script directly from 				that button.
-		-  Video/Music/Picture Bookmark Modes: open up the corresponding 					bookmark, which you specify in the Skin Mod Settings
-		-  XBE Mode: Allows you to launch a game, python script, 						application or dashboard directly from that button.
-		-  Category Mode: Opens a dialog containing a list of other 					scripts from which you can choose one to launch.  This is so 				you can make the button say "Podcasts" or something, add the 				image icon of your choice, and in the dialog you would add 					all your podcast related scripts.  This allows you to have 					your scripts navigable in a clean, organized manner, while 					still keeping them in the root of your scripts folder, where 				they need to be if you are to link to them from skins.
+		-  Single Script Mode: Allows you to launch a script directly from that button.
+		-  Video/Music/Picture Bookmark Modes: open up the corresponding bookmark, which you specify in the Skin Mod Settings
+		-  XBE Mode: Allows you to launch a game, python script, application or dashboard directly from that button.
+		-  Category Mode: Opens a dialog containing a list of other scripts from which you can choose one to launch.  This is so you can make the button say "Podcasts" or something, add the image icon of your choice, and in the dialog you would add all your podcast related scripts.  This allows you to have your scripts navigable in a clean, organized manner, while still keeping them in the root of your scripts folder, where they need to be if you are to link to them from skins.
 
 Everything is completely customizable, even down to an option to rename the marketplace to your liking and/or move the button to the games blade. (this is for those of you who are interested in using this more as a "Script marketplace" or something similar, somewhat similar to the script favorites menu, but configurable in skin, and categorizable.  The marketplace is also great for wives, children, or girlfriends who can't easily navigate throughout the whole skin.  You can link to everything they'll ever need in one spot.
 

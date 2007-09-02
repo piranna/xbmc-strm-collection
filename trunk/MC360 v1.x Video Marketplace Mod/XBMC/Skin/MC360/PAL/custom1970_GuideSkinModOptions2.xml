@@ -1074,7 +1074,6 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>[Control.HasFocus(4) | Control.HasFocus(40) | Control.HasFocus(41) | Control.HasFocus(42) | Control.HasFocus(43)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Right Arrow for Submenu Button</deFileion>
@@ -1085,7 +1084,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>[Control.HasFocus(4) | Control.HasFocus(40) | Control.HasFocus(41) | Control.HasFocus(42) | Control.HasFocus(43)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Left Arrow for Custom Button Button</deFileion>
@@ -1096,7 +1094,6 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>[Control.HasFocus(7) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(76) | Control.HasFocus(760) | Control.HasFocus(761) | Control.HasFocus(762) | Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Right Arrow for Custom Button Button</deFileion>
@@ -1107,7 +1104,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>[Control.HasFocus(7) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(76) | Control.HasFocus(760) | Control.HasFocus(761) | Control.HasFocus(762) | Control.HasFocus(763)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Left Arrow for Middle Submenu Chooser Button</deFileion>
@@ -1118,7 +1114,6 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>[Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(860) | Control.HasFocus(861) | Control.HasFocus(862) | Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Right Arrow for Middle Submenu Chooser Button</deFileion>
@@ -1129,7 +1124,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>[Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(860) | Control.HasFocus(861) | Control.HasFocus(862) | Control.HasFocus(863)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Left Arrow for Bottom Submenu Chooser Button</deFileion>
@@ -1140,7 +1134,6 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>[Control.HasFocus(9) | Control.HasFocus(960) | Control.HasFocus(961) | Control.HasFocus(962) | Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Right Arrow for Bottom Submenu Chooser Button</deFileion>
@@ -1151,7 +1144,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>[Control.HasFocus(9) | Control.HasFocus(960) | Control.HasFocus(961) | Control.HasFocus(962) | Control.HasFocus(963)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Left Arrow for Startup Playlist/Partymode</deFileion>
@@ -1162,7 +1154,6 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>[Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
 			<deFileion>Right Arrow for Startup Playlist/Partymode</deFileion>
@@ -1173,7 +1164,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>[Control.HasFocus(50) | Control.HasFocus(51) | Control.HasFocus(52) | Control.HasFocus(53)] + !Window.IsActive(1969) + !Window.IsActive(1967) + !Window.IsActive(1966) + !Window.IsActive(1965)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 	</controls>
 </window>

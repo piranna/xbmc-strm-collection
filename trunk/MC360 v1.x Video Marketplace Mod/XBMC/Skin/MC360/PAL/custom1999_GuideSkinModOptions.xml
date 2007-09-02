@@ -2,7 +2,7 @@
 	<defaultcontrol>1</defaultcontrol>
 	<controls>
 		<control type="image">
-			<deFileion>Button 1 Image</deFileion>
+			<description>Button 1 Image</description>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -13,7 +13,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="1">
-			<deFileion>MCE Button</deFileion>
+			<description>MCE Button</description>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -38,7 +38,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="2">
-			<deFileion>Link to Media Center Extender Button</deFileion>
+			<description>Link to Media Center Extender Button</description>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -61,7 +61,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="21">
-			<deFileion>MCE Button 2</deFileion>
+			<description>MCE Button 2</description>
 			<posx>22</posx>
 			<posy>88</posy>
 			<width>290</width>
@@ -86,7 +86,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 3, 4 and 41 Image</deFileion>
+			<description>Button 3, 4 and 41 Image</description>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -98,7 +98,7 @@
 		</control>
 		<control type="group" id="3">
 			<control type="radiobutton" id="30">
-				<deFileion>Video Marketplace in Media</deFileion>
+				<description>Video Marketplace in Media</description>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -123,7 +123,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="31">
-				<deFileion>Video Marketplace in Games</deFileion>
+				<description>Video Marketplace in Games</description>
 				<posx>22</posx>
 				<posy>124</posy>
 				<width>290</width>
@@ -149,7 +149,7 @@
 			</control>
 		</control>
 		<control type="radiobutton" id="41">
-			<deFileion>Video Marketplace in Media 2</deFileion>
+			<description>Video Marketplace in Media 2</description>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -174,7 +174,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="4">
-			<deFileion>Video Marketplace in Games 2</deFileion>
+			<description>Video Marketplace in Games 2</description>
 			<posx>22</posx>
 			<posy>124</posy>
 			<width>290</width>
@@ -199,7 +199,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 5 Image</deFileion>
+			<description>Button 5 Image</description>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -210,7 +210,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="5">
-			<deFileion>WOL/SOL Button Option</deFileion>
+			<description>WOL/SOL Button Option</description>
 			<posx>22</posx>
 			<posy>160</posy>
 			<width>290</width>
@@ -234,7 +234,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 6 Image</deFileion>
+			<description>Button 6 Image</description>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -245,7 +245,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="6">
-			<deFileion>Retro-X Button Option</deFileion>
+			<description>Retro-X Button Option</description>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
@@ -269,7 +269,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 7 Image</deFileion>
+			<description>Button 7 Image</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -281,7 +281,7 @@
 		</control>
 		<control type="group" id="7">	
 			<control type="radiobutton" id="70">
-				<deFileion>TV Video Bookmark Mode Button</deFileion>
+				<description>TV Video Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -309,7 +309,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="71">
-				<deFileion>TV Music Bookmark Mode Button</deFileion>
+				<description>TV Music Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -338,7 +338,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="72">
-				<deFileion>TV Picture Bookmark Mode Button</deFileion>
+				<description>TV Picture Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -367,7 +367,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="73">
-				<deFileion>TV Library Mode Button</deFileion>
+				<description>TV Library Mode Button</description>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -395,7 +395,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="74">
-				<deFileion>TV File Mode Button</deFileion>
+				<description>TV File Mode Button</description>
 				<posx>22</posx>
 				<posy>232</posy>
 				<width>290</width>
@@ -424,7 +424,7 @@
 			</control>
 		</control>
 		<control type="radiobutton" id="76">
-			<deFileion>TV Video Bookmark Mode Button 2</deFileion>
+			<description>TV Video Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -452,7 +452,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="77">
-			<deFileion>TV Music Bookmark Mode Button 2</deFileion>
+			<description>TV Music Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -481,7 +481,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="78">
-			<deFileion>TV Picture Bookmark Mode Button 2</deFileion>
+			<description>TV Picture Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -510,7 +510,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="79">
-			<deFileion>TV Library Mode Button 2</deFileion>
+			<description>TV Library Mode Button 2</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -538,7 +538,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="790">
-			<deFileion>TV File Mode Button 2</deFileion>
+			<description>TV File Mode Button 2</description>
 			<posx>22</posx>
 			<posy>232</posy>
 			<width>290</width>
@@ -567,7 +567,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 8 Image</deFileion>
+			<description>Button 8 Image</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -579,7 +579,7 @@
 		</control>
 		<control type="group" id="8">	
 			<control type="radiobutton" id="80">
-				<deFileion>Movie Video Bookmark Mode Button</deFileion>
+				<description>Movie Video Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -607,7 +607,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="81">
-				<deFileion>Movie Music Bookmark Mode Button</deFileion>
+				<description>Movie Music Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -636,7 +636,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="82">
-				<deFileion>Movie Picture Bookmark Mode Button</deFileion>
+				<description>Movie Picture Bookmark Mode Button</description>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -665,7 +665,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="83">
-				<deFileion>Movie Library Mode Button</deFileion>
+				<description>Movie Library Mode Button</description>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -693,7 +693,7 @@
 				<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			</control>
 			<control type="radiobutton" id="84">
-				<deFileion>Movie File Mode Button</deFileion>
+				<description>Movie File Mode Button</description>
 				<posx>22</posx>
 				<posy>268</posy>
 				<width>290</width>
@@ -722,7 +722,7 @@
 			</control>
 		</control>
 		<control type="radiobutton" id="86">
-			<deFileion>Movie Video Bookmark Mode Button 2</deFileion>
+			<description>Movie Video Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -750,7 +750,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="87">
-			<deFileion>Movie Music Bookmark Mode Button 2</deFileion>
+			<description>Movie Music Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -779,7 +779,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="88">
-			<deFileion>Movie Picture Bookmark Mode Button 2</deFileion>
+			<description>Movie Picture Bookmark Mode Button 2</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -808,7 +808,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="89">
-			<deFileion>Movie Library Mode Button 2</deFileion>
+			<description>Movie Library Mode Button 2</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -836,7 +836,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="890">
-			<deFileion>Movie File Mode Button 2</deFileion>
+			<description>Movie File Mode Button 2</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
@@ -869,7 +869,7 @@
 		
 		
 		<control type="image">
-			<deFileion>Button 9 Image</deFileion>
+			<description>Button 9 Image</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -880,7 +880,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>TV Shows Video Bookmark Selector</deFileion>
+			<description>TV Shows Video Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -903,7 +903,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>TV Shows Music Bookmark Selector</deFileion>
+			<description>TV Shows Music Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -927,7 +927,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>TV Shows Picture Bookmark Selector</deFileion>
+			<description>TV Shows Picture Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -951,7 +951,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>TV Shows File Selector</deFileion>
+			<description>TV Shows File Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -974,7 +974,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="91">
-			<deFileion>TV Shows Library Genre Selector</deFileion>
+			<description>TV Shows Library Genre Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1001,7 +1001,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="92">
-			<deFileion>TV Shows Library Title Selector</deFileion>
+			<description>TV Shows Library Title Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1028,7 +1028,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="93">
-			<deFileion>TV Shows Library Year Selector</deFileion>
+			<description>TV Shows Library Year Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1055,7 +1055,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="94">
-			<deFileion>TV Shows Library Actors Selector</deFileion>
+			<description>TV Shows Library Actors Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1084,7 +1084,7 @@
 		
 		
 		<control type="radiobutton" id="910">
-			<deFileion>TV Shows Library Genre Selector 2</deFileion>
+			<description>TV Shows Library Genre Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1111,7 +1111,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="920">
-			<deFileion>TV Shows Library Title Selector 2</deFileion>
+			<description>TV Shows Library Title Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1138,7 +1138,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="930">
-			<deFileion>TV Shows Library Year Selector 2</deFileion>
+			<description>TV Shows Library Year Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1165,7 +1165,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="940">
-			<deFileion>TV Shows Library Actors Selector 2</deFileion>
+			<description>TV Shows Library Actors Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1193,7 +1193,7 @@
 		</control>
 		
 		<control type="radiobutton" id="911">
-			<deFileion>Movie Library Genre Selector</deFileion>
+			<description>Movie Library Genre Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1221,7 +1221,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="921">
-			<deFileion>Movie Library Title Selector</deFileion>
+			<description>Movie Library Title Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1249,7 +1249,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="931">
-			<deFileion>Movie Library Year Selector</deFileion>
+			<description>Movie Library Year Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1277,7 +1277,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="941">
-			<deFileion>Movie Library Actors Selector</deFileion>
+			<description>Movie Library Actors Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1305,7 +1305,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="951">
-			<deFileion>Movie Library Directors Selector</deFileion>
+			<description>Movie Library Directors Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1334,7 +1334,7 @@
 		</control>
 		
 		<control type="radiobutton" id="9101">
-			<deFileion>Movie Library Genre Selector 2</deFileion>
+			<description>Movie Library Genre Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1362,7 +1362,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9201">
-			<deFileion>Movie Library Title Selector 2</deFileion>
+			<description>Movie Library Title Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1390,7 +1390,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9301">
-			<deFileion>Movie Library Year Selector 2</deFileion>
+			<description>Movie Library Year Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1418,7 +1418,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9401">
-			<deFileion>Movie Library Actors Selector 2</deFileion>
+			<description>Movie Library Actors Selector 2</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1446,7 +1446,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="9501">
-			<deFileion>Movie Library Directors Selector</deFileion>
+			<description>Movie Library Directors Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1477,7 +1477,7 @@
 		
 		
 		<control type="button" id="9">
-			<deFileion>Movies, No TV, Video Bookmark Selector</deFileion>
+			<description>Movies, No TV, Video Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1500,7 +1500,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>Movies, No TV, Music Bookmark Selector</deFileion>
+			<description>Movies, No TV, Music Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1524,7 +1524,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>Movies, No TV, Picture Bookmark Selector</deFileion>
+			<description>Movies, No TV, Picture Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1548,7 +1548,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="9">
-			<deFileion>Movies, No TV, File Selector</deFileion>
+			<description>Movies, No TV, File Selector</description>
 			<posx>22</posx>
 			<posy>304</posy>
 			<width>290</width>
@@ -1571,7 +1571,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 10, 11, 12 Image</deFileion>
+			<description>Button 10, 11, 12 Image</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1582,7 +1582,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="10">
-			<deFileion>Movie Video Bookmark Selector</deFileion>
+			<description>Movie Video Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1605,7 +1605,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<deFileion>Movie Music Bookmark Selector</deFileion>
+			<description>Movie Music Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1629,7 +1629,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<deFileion>Movie Picture Bookmark Selector</deFileion>
+			<description>Movie Picture Bookmark Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1653,7 +1653,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="10">
-			<deFileion>Movie File Selector</deFileion>
+			<description>Movie File Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1676,7 +1676,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1011">
-			<deFileion>Movie Shows Library Genre Selector</deFileion>
+			<description>Movie Shows Library Genre Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1704,7 +1704,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1021">
-			<deFileion>Movie Shows Library Title Selector</deFileion>
+			<description>Movie Shows Library Title Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1732,7 +1732,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1031">
-			<deFileion>Movie Shows Library Year Selector</deFileion>
+			<description>Movie Shows Library Year Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1760,7 +1760,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1041">
-			<deFileion>Movie Shows Library Actors Selector</deFileion>
+			<description>Movie Shows Library Actors Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1788,7 +1788,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="1051">
-			<deFileion>Movie Shows Library Directors Selector</deFileion>
+			<description>Movie Shows Library Directors Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1817,7 +1817,7 @@
 		</control>
 		
 		<control type="radiobutton" id="10101">
-			<deFileion>Movie Shows Library Genre Selector 2</deFileion>
+			<description>Movie Shows Library Genre Selector 2</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1845,7 +1845,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10201">
-			<deFileion>Movie Shows Library Title Selector 2</deFileion>
+			<description>Movie Shows Library Title Selector 2</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1873,7 +1873,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10301">
-			<deFileion>Movie Shows Library Year Selector 2</deFileion>
+			<description>Movie Shows Library Year Selector 2</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1901,7 +1901,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10401">
-			<deFileion>Movie Shows Library Actors Selector 2</deFileion>
+			<description>Movie Shows Library Actors Selector 2</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1929,7 +1929,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="radiobutton" id="10501">
-			<deFileion>Movie Shows Library Directors Selector</deFileion>
+			<description>Movie Shows Library Directors Selector</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1957,7 +1957,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="11">
-			<deFileion>TV Name Button</deFileion>
+			<description>TV Name Button</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -1980,7 +1980,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="12">
-			<deFileion>Movie Top Name Button</deFileion>
+			<description>Movie Top Name Button</description>
 			<posx>22</posx>
 			<posy>340</posy>
 			<width>290</width>
@@ -2003,7 +2003,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="image">
-			<deFileion>Button 13 and 14 Image</deFileion>
+			<description>Button 13 and 14 Image</description>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2014,7 +2014,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="13">
-			<deFileion>TV Name Button</deFileion>
+			<description>TV Name Button</description>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2037,7 +2037,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control>
 		<control type="button" id="14">
-			<deFileion>Movie Top Name Button</deFileion>
+			<description>Movie Top Name Button</description>
 			<posx>22</posx>
 			<posy>376</posy>
 			<width>290</width>
@@ -2060,7 +2060,7 @@
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 		</control> 
 		<control type="image">
-			<deFileion>Button 15 Image</deFileion>
+			<description>Button 15 Image</description>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -2071,7 +2071,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="15">
-			<deFileion>Movie Bottom Name Button</deFileion>
+			<description>Movie Bottom Name Button</description>
 			<posx>22</posx>
 			<posy>412</posy>
 			<width>290</width>
@@ -2097,7 +2097,7 @@
 		
 		
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>98</posy>
 			<width>230</width>
@@ -2107,7 +2107,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>134</posy>
 			<width>230</width>
@@ -2117,7 +2117,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>170</posy>
 			<width>230</width>
@@ -2127,7 +2127,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>206</posy>
 			<width>230</width>
@@ -2137,7 +2137,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>242</posy>
 			<width>230</width>
@@ -2147,7 +2147,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>278</posy>
 			<width>230</width>
@@ -2157,7 +2157,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>314</posy>
 			<width>230</width>
@@ -2167,7 +2167,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>350</posy>
 			<width>230</width>
@@ -2177,7 +2177,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>386</posy>
 			<width>230</width>
@@ -2187,7 +2187,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>422</posy>
 			<width>230</width>
@@ -2197,7 +2197,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Divider</deFileion>
+			<description>Divider</description>
 			<posx>45</posx>
 			<posy>458</posy>
 			<width>230</width>
@@ -2207,7 +2207,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for MCE</deFileion>
+			<description>Left Arrow for MCE</description>
 			<posx>29</posx>
 			<posy>101</posy>
 			<width>16</width>
@@ -2215,10 +2215,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(21)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for MCE</deFileion>
+			<description>Right Arrow for MCE</description>
 			<posx>305</posx>
 			<posy>101</posy>
 			<width>16</width>
@@ -2226,10 +2225,9 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(1) | Control.HasFocus(2) | Control.HasFocus(21)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for Marketplace</deFileion>
+			<description>Left Arrow for Marketplace</description>
 			<posx>29</posx>
 			<posy>137</posy>
 			<width>16</width>
@@ -2237,10 +2235,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(41)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for Marketplace</deFileion>
+			<description>Right Arrow for Marketplace</description>
 			<posx>305</posx>
 			<posy>137</posy>
 			<width>16</width>
@@ -2248,10 +2245,9 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(4) | Control.HasFocus(41)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for TV Button</deFileion>
+			<description>Left Arrow for TV Button</description>
 			<posx>29</posx>
 			<posy>245</posy>
 			<width>16</width>
@@ -2259,10 +2255,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74) | Control.HasFocus(75) | Control.HasFocus(76) | Control.HasFocus(77) | Control.HasFocus(78) | Control.HasFocus(79) | Control.HasFocus(790) | Control.HasFocus(791)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for TV Button</deFileion>
+			<description>Right Arrow for TV Button</description>
 			<posx>305</posx>
 			<posy>245</posy>
 			<width>16</width>
@@ -2270,10 +2265,9 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74) | Control.HasFocus(75) | Control.HasFocus(76) | Control.HasFocus(77) | Control.HasFocus(78) | Control.HasFocus(79) | Control.HasFocus(790) | Control.HasFocus(791)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for Movie Button</deFileion>
+			<description>Left Arrow for Movie Button</description>
 			<posx>29</posx>
 			<posy>281</posy>
 			<width>16</width>
@@ -2281,10 +2275,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(80) | Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Control.HasFocus(84) | Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(87) | Control.HasFocus(88) | Control.HasFocus(89) | Control.HasFocus(890) | Control.HasFocus(891)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for Movie Button</deFileion>
+			<description>Right Arrow for Movie Button</description>
 			<posx>305</posx>
 			<posy>281</posy>
 			<width>16</width>
@@ -2292,10 +2285,9 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(80) | Control.HasFocus(81) | Control.HasFocus(82) | Control.HasFocus(83) | Control.HasFocus(84) | Control.HasFocus(85) | Control.HasFocus(86) | Control.HasFocus(87) | Control.HasFocus(88) | Control.HasFocus(89) | Control.HasFocus(890) | Control.HasFocus(891)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for TV Library Selector Button</deFileion>
+			<description>Left Arrow for TV Library Selector Button</description>
 			<posx>29</posx>
 			<posy>317</posy>
 			<width>16</width>
@@ -2303,10 +2295,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(94) | Control.HasFocus(910) | Control.HasFocus(920) | Control.HasFocus(930) | Control.HasFocus(940) | Control.HasFocus(911) | Control.HasFocus(921) | Control.HasFocus(931) | Control.HasFocus(941) | Control.HasFocus(951) | Control.HasFocus(9101) | Control.HasFocus(9201) | Control.HasFocus(9301) | Control.HasFocus(9401) | Control.HasFocus(9501)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for TV Library Selector Button</deFileion>
+			<description>Right Arrow for TV Library Selector Button</description>
 			<posx>305</posx>
 			<posy>317</posy>
 			<width>16</width>
@@ -2314,10 +2305,9 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(94) | Control.HasFocus(910) | Control.HasFocus(920) | Control.HasFocus(930) | Control.HasFocus(940) | Control.HasFocus(911) | Control.HasFocus(921) | Control.HasFocus(931) | Control.HasFocus(941) | Control.HasFocus(951) | Control.HasFocus(9101) | Control.HasFocus(9201) | Control.HasFocus(9301) | Control.HasFocus(9401) | Control.HasFocus(9501)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Left Arrow for Movie Library Selector Button</deFileion>
+			<description>Left Arrow for Movie Library Selector Button</description>
 			<posx>29</posx>
 			<posy>353</posy>
 			<width>16</width>
@@ -2325,10 +2315,9 @@
 			<texture>selectarrow-left.png</texture>
 			<visible>Control.HasFocus(1011) | Control.HasFocus(1021) | Control.HasFocus(1031) | Control.HasFocus(1041) | Control.HasFocus(1051) | Control.HasFocus(10101) | Control.HasFocus(10201) | Control.HasFocus(10301) | Control.HasFocus(10401) | Control.HasFocus(10501)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 		<control type="image">
-			<deFileion>Right Arrow for Movie Library Selector Button</deFileion>
+			<description>Right Arrow for Movie Library Selector Button</description>
 			<posx>305</posx>
 			<posy>353</posy>
 			<width>16</width>
@@ -2336,7 +2325,6 @@
 			<texture>selectarrow-right.png</texture>
 			<visible>Control.HasFocus(1011) | Control.HasFocus(1021) | Control.HasFocus(1031) | Control.HasFocus(1041) | Control.HasFocus(1051) | Control.HasFocus(10101) | Control.HasFocus(10201) | Control.HasFocus(10301) | Control.HasFocus(10401) | Control.HasFocus(10501)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
 	</controls>
 </window>

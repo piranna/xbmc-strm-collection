@@ -120,7 +120,7 @@
       <activate>guide_open.wav</activate>
       <deactivate>guide_close.wav</deactivate>
     </window>
-
+    
     <window>
       <name>1968</name>
       <activate>guide_open.wav</activate>
@@ -290,7 +290,7 @@
 <!-- End Sliding Blades -->
 
 <!-- Xlink Kai Blade -->
-	<window>
+		<window>
       <name>2700</name>
       <activate>tier2_enter.wav</activate>
       <deactivate>tier2_exit.wav</deactivate>
@@ -313,21 +313,6 @@
 <!-- Media Blade -->
     <window>
       <name>6</name>
-      <activate>tier2_enter.wav</activate>
-      <deactivate>tier2_exit.wav</deactivate>
-    </window>
-    <window>
-      <name>24</name>
-      <activate>tier2_enter.wav</activate>
-      <deactivate>tier2_exit.wav</deactivate>
-    </window>
-    <window>
-      <name>25</name>
-      <activate>tier2_enter.wav</activate>
-      <deactivate>tier2_exit.wav</deactivate>
-    </window>
-    <window>
-      <name>501</name>
       <activate>tier2_enter.wav</activate>
       <deactivate>tier2_exit.wav</deactivate>
     </window>
@@ -423,16 +408,30 @@
       <deactivate>tier3_exit.wav</deactivate>
     </window>
     <window>
-      <name>7</name>
-      <activate>tier3_enter.wav</activate>
-      <deactivate>tier3_exit.wav</deactivate>
-    </window>
-    <window>
       <name>10016</name>
       <activate>tier3_enter.wav</activate>
       <deactivate>tier3_exit.wav</deactivate>
     </window>
 <!-- End System Blade -->
+
+<!-- Additional Windows -->
+
+		<window>
+			<name>24</name>
+			<activate>tier2_enter.wav</activate>
+			<deactivate>tier2_exit.wav</deactivate>
+		</window>
+		<window>
+			<name>25</name>
+			<activate>tier2_enter.wav</activate>
+			<deactivate>tier2_exit.wav</deactivate>
+		</window>
+		<window>
+			<name>501</name>
+			<activate>tier2_enter.wav</activate>
+			<deactivate>tier2_exit.wav</deactivate>
+		</window>
+<!-- End Additional Windows -->
 
 <!-- Credits -->
     <window>

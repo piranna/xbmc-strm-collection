@@ -68,7 +68,7 @@
 					<include>shadow-grey</include>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\XBMCLivePlace\get_tbb_themes.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\XBMC Black Market\xbmcthemes.py)</onclick>
 					<visible>yes</visible>
 					<onleft>1</onleft>
 					<onright>1</onright>

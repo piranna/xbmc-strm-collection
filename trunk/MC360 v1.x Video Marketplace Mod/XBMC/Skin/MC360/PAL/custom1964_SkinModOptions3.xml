@@ -160,26 +160,26 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="radiobutton" id="4">
-			<description>Enable Web Browser Button</description>
+			<description>Custom Startup Sound Button</description>
 			<posx>22</posx>
 			<posy>196</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onclick>Skin.ToggleSetting(Webbrowser)</onclick>
-			<selected>Skin.HasSetting(Webbrowser)</selected>
+			<onclick>XBMC.RunScript(Q:\skin\MC360\extras\switchsoundfile.py)</onclick>
+			<selected>Skin.HasSetting(CustomStartupSound)</selected>
 			<pulseonselect>no</pulseonselect>
 			<onleft>4</onleft>
 			<onright>4</onright>
 			<onup>3</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Enable Web Browser Button</label>
+			<label>Enable 360 Startup Sound</label>
 			<textoffsetx>30</textoffsetx>
 			<include>TextcolorBlack</include>
 			<include>shadow-grey</include>
-			<visible>webbrowser.included + ![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965)]</visible>
+			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -191,7 +191,7 @@
 			<height>1</height>
 			<texture>divider.png</texture>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965)]</visible>
-			<visible>no</visible>
+			<visible>yes</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 	</controls>

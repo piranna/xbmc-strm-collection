@@ -52,7 +52,6 @@ FUTURE POSSIBILITIES?
 - Add bookmarks to category scripts dialogs
 
 
-
 - Add names of current script in category config dialog
 
 
@@ -64,4 +63,4 @@ FUTURE POSSIBILITIES?
 KNOWN BUGS: 
 
 
-- Some textures randomly disappear when watching certain video files.  Help?  Not sure how to fix this.
+- xbmcthemes.py blade closes artificially and without sound.

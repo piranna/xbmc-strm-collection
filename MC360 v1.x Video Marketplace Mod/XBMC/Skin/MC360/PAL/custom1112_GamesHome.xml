@@ -2427,7 +2427,22 @@
 				<onclick>XBMC.ActivateWindow(1,Emulators)</onclick>
 				<texturefocus>icon-emulators.png</texturefocus>
 				<texturenofocus>icon-emulators.png</texturenofocus>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(USE_Retro-X)</visible>
+				<onleft>1</onleft>
+				<onright>106</onright>
+				<onup>5</onup>
+				<ondown>7</ondown>
+			</control>
+			<control type="button" id="6">
+				<description>Emulators Push Button</description>
+				<include>Home-Button-Commons</include>
+				<posx>145</posx>
+				<posy>240</posy>
+				<include>19032</include>
+				<onclick>XBMC.RunScript(Q:\scripts\Retro-X\default.py\)</onclick>
+				<texturefocus>icon-emulators.png</texturefocus>
+				<texturenofocus>icon-emulators.png</texturenofocus>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_Retro-X)</visible>
 				<onleft>1</onleft>
 				<onright>106</onright>
 				<onup>5</onup>

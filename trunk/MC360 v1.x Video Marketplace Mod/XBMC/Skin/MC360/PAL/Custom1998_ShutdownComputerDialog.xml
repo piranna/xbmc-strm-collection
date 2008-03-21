@@ -50,7 +50,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>Shutdown Computer</label>
+			<label>31448</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
@@ -61,11 +61,11 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>This will shutdown your personal computer.  All open programs will be closed and any unsaved changes may be lost.  Are you sure you want to continue?</label>
+			<label>31449</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -87,8 +87,8 @@
 			<font>font14</font>
 			<label>107</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,356" time="300">focus</animation>
@@ -110,8 +110,8 @@
 			<font>font14</font>
 			<label>106</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,393" time="300">focus</animation>

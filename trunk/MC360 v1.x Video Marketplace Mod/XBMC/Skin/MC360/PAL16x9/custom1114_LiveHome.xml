@@ -137,7 +137,7 @@
 			<urlset>1</urlset>
 			<titlecolor>E1ffffff</titlecolor>
 			<headlinecolor>A1FFFFFF</headlinecolor>
-			<include>TextcolorWhite</include>
+			<textcolor>TextcolorWhite</textcolor>
 			<visible>!Control.HasFocus(2)</visible>
 			<visible>!Skin.HasSetting(rss-feeds)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -146,10 +146,10 @@
 			<description>XBMC Live Label</description>
 			<posx>102</posx>
 			<posy>42</posy>
-			<include>19046</include>
+			<label>31049</label>
 			<align>left</align>
 			<font>font18</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -160,7 +160,7 @@
 			<info>System.Time</info>
 			<align>right</align>
 			<font>bold14</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>Skin.HasSetting(BladeClock) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -203,7 +203,7 @@
 				<width>225</width>
 				<height>205</height>
 				<texture>middle-panel.png</texture>
-				<visible>!Skin.HasSetting(nodescriptions) + !ControlGroup(4).HasFocus() + !Control.HasFocus(11) + !Control.HasFocus(10) + !Control.HasFocus(2) + !Control.HasFocus(60) + !Control.HasFocus(70) + !Control.HasFocus(80)</visible>
+				<visible>!Skin.HasSetting(nodescriptions) + !ControlGroup(4).HasFocus() + !Control.HasFocus(11) + !Control.HasFocus(10) + !Control.HasFocus(2) + !Control.HasFocus(60) + !Control.HasFocus(70) + !Control.HasFocus(80) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>XBMC Logo</description>
@@ -256,7 +256,7 @@
 				<include>Big-Home-Button-Commons</include>
 				<posx>105</posx>
 				<posy>200</posy>
-				<include>19019</include>
+				<label>31022</label>
 				<texturefocus>icon-connecttokai.png</texturefocus>
 				<texturenofocus>icon-connecttokai.png</texturenofocus>
 				<onclick>ActivateWindow(XLinkKai,Arenas)</onclick>
@@ -290,10 +290,10 @@
 				<posy>226</posy>
 				<width>256</width>
 				<height>15</height>
-				<include>19014</include>
+				<label>31093</label>
 				<font>bold14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + !Control.HasFocus(9) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2) + !Skin.HasSetting(KaiInfo)</visible>
 			</control>
 			<control type="label">
@@ -303,11 +303,11 @@
 				<width>180</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19015</include>
+				<label>31094</label>
 				<font>font12</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + !Control.HasFocus(9) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2) + !Skin.HasSetting(KaiInfo)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + !Control.HasFocus(9) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2) + !Skin.HasSetting(KaiInfo) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="label">
 				<description>XBMCLive Coming Soon description 1</description>
@@ -315,10 +315,10 @@
 				<posy>226</posy>
 				<width>256</width>
 				<height>15</height>
-				<include>19777</include>
+				<label>31095</label>
 				<font>bold14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(9) + !Control.HasFocus(8) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -328,11 +328,11 @@
 				<width>180</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19778</include>
+				<label>31096</label>
 				<font>font12</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(9) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(9) + !ControlGroup(4).HasFocus() + !Control.HasFocus(10) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			
 			
@@ -364,7 +364,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>200</posy>
-				<include>19012</include>
+				<label>31020</label>
 				<onclick>ActivateWindow(XLinkKai,Chat)</onclick>
 				<texturefocus>icon-messages.png</texturefocus>
 				<texturenofocus>icon-messages.png</texturenofocus>
@@ -416,7 +416,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>240</posy>
-				<include>19013</include>
+				<label>31021</label>
 				<onclick>ActivateWindow(XLinkKai,Buddies)</onclick>
 				<texturefocus>icon-Friends.png</texturefocus>
 				<texturenofocus>icon-Friends.png</texturenofocus>
@@ -468,7 +468,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>280</posy>
-				<include>19001</include>
+				<label>31002</label>
 				<onclick>ActivateWindow(XLinkKai,Games)</onclick>
 				<texturefocus>icon-Games.png</texturefocus>
 				<texturenofocus>icon-Games.png</texturenofocus>
@@ -531,7 +531,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>200</posy>
-				<label>File Manager</label>
+				<label>31025</label>
 				<onclick>ActivateWindow(MyFiles)</onclick>
 				<texturefocus>icon-computer.png</texturefocus>
 				<texturenofocus>icon-computer.png</texturenofocus>
@@ -583,7 +583,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>240</posy>
-				<label>Weather</label>
+				<label>8</label>
 				<onclick>ActivateWindow(Weather)</onclick>
 				<texturefocus>icon-weather.png</texturefocus>
 				<texturenofocus>icon-weather.png</texturenofocus>
@@ -635,7 +635,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>110</posx>
 				<posy>280</posy>
-				<label>Scripts</label>
+				<label>31540</label>
 				<onclick>ActivateWindow(Scripts)</onclick>
 				<texturefocus>icon-scripts.png</texturefocus>
 				<texturenofocus>icon-scripts.png</texturenofocus>
@@ -670,11 +670,11 @@
 				<width>210</width>
 				<height>15</height>
 				<wrapmultiline>true</wrapmultiline>
-				<label>Check the 4 day Weather forecast for 3 different Locations.</label>
+				<label>31105</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="label">
 				<description>File Manager Button description</description>
@@ -683,11 +683,11 @@
 				<width>210</width>
 				<height>15</height>
 				<wrapmultiline>true</wrapmultiline>
-				<label>Explore, Copy, Delete, or Move Files on your Xbox Hard Drive.</label>
+				<label>31104</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(60) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(60) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="label">
 				<description>Scripts Button description</description>
@@ -696,11 +696,11 @@
 				<width>210</width>
 				<height>15</height>
 				<wrapmultiline>true</wrapmultiline>
-				<label>Run Python scripts to do custom tasks on your Xbox.</label>
+				<label>31542</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(80) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(80) + !Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(KaiInfo) + !Control.IsVisible(14141)</visible>
 			</control>
 			
 			
@@ -728,7 +728,7 @@
 				<onclick>XBMC.ActivateWindow(1113)</onclick>
 				<visible>!Control.HasFocus(2)</visible>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19046</include>
+				<label>31049</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -745,6 +745,30 @@
 				<randomize>false</randomize>
 				<visible>!Control.HasFocus(2)</visible>
 			</control>
+			
+			<!-- BEGIN Video Preview Window -->
+			
+			<control type="image">
+				<description>Mini Video Preview Border</description>
+				<posx>342</posx>
+				<posy>200</posy>
+				<width>221</width>
+				<height>180</height>
+				<texture>Playlist-Vis-Back.png</texture>
+				<visible>!Control.HasFocus(2) + Player.HasVideo + Skin.HasSetting(LivePreviewWindow)</visible>
+			</control>
+			<control type="videowindow" id="14141">
+				<description>video preview window</description>
+				<posx>344</posx>
+				<posy>203</posy>
+				<width>217</width>
+				<height>174</height>
+				<visible>!Control.HasFocus(2) + Player.HasVideo + Skin.HasSetting(LivePreviewWindow)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+			
+			<!-- END Video Preview Window -->
+			
 			<control type="button" id="10">
 				<description>DVD Launch Button</description>
 				<posx>86</posx>
@@ -762,7 +786,7 @@
 				<visible>![System.hasmediadvd] + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.EjectTray()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19049</include>
+				<label>31057</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -782,7 +806,7 @@
 				<visible>System.hasmediadvd + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.PlayDVD()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19148</include>
+				<label>31133</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -792,11 +816,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19148</include>
+				<label>31133</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>System.hasmediadvd + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -805,11 +829,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049a</include>
+				<label>31058</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -818,11 +842,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049b</include>
+				<label>31059</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + System.trayopen + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -831,11 +855,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049c</include>
+				<label>31060</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + !System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -844,10 +868,10 @@
 				<posy>205</posy>
 				<width>256</width>
 				<height>15</height>
-				<include>19158</include>
+				<label>31177</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -857,11 +881,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19147</include>
+				<label>31132</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 		</control>
 		<control type="image">
@@ -899,7 +923,7 @@
 			<include>KeymapFont</include>
 			<posx>143</posx>
 			<posy>528</posy>
-			<include>20002</include>
+			<label>31180</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(2) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -909,7 +933,7 @@
 			<include>KeymapFont</include>
 			<posx>143</posx>
 			<posy>528</posy>
-			<include>20003</include>
+			<label>31181</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(2) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -939,7 +963,7 @@
 			<include>KeymapFont</include>
 			<posx>518</posx>
 			<posy>528</posy>
-			<include>19020</include>
+			<label>31024</label>
 			<align>right</align>
 			<visible>!Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -1156,11 +1180,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(2)</visible>
@@ -1176,11 +1200,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(2)</visible>
@@ -1196,11 +1220,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(2)</visible>
@@ -1216,11 +1240,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Right</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>607</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(2)</visible>
@@ -1258,11 +1282,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -1273,9 +1297,9 @@
 			<posy>-50</posy>
 			<width>80</width>
 			<height>676</height>
-			<include>19008</include>
+			<label>31011</label>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>62</textoffsetx>
 			<textoffsety>170</textoffsety>
@@ -1302,11 +1326,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -1322,11 +1346,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>

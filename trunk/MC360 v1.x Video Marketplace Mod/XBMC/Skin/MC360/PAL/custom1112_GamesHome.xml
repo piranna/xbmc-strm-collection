@@ -136,7 +136,7 @@
 			<urlset>1</urlset>
 			<titlecolor>E1ffffff</titlecolor>
 			<headlinecolor>A1FFFFFF</headlinecolor>
-			<include>TextcolorWhite</include>
+			<textcolor>TextcolorWhite</textcolor>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<visible>!Skin.HasSetting(rss-feeds)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -145,10 +145,10 @@
 			<description>Games Label</description>
 			<posx>137</posx>
 			<posy>42</posy>
-			<include>19001</include>
+			<label>31002</label>
 			<align>left</align>
 			<font>font18</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -159,7 +159,7 @@
 			<info>System.Time</info>
 			<align>right</align>
 			<font>bold14</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>Skin.HasSetting(BladeClock) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -263,8 +263,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name1)</info>
 						<visible>Skin.String(GamesFavorites-1Name1)</visible>
@@ -314,8 +314,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name2)</info>
 						<visible>Skin.String(GamesFavorites-1Name2)</visible>
@@ -365,8 +365,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name3)</info>
 						<visible>Skin.String(GamesFavorites-1Name3)</visible>
@@ -416,8 +416,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name4)</info>
 						<visible>Skin.String(GamesFavorites-1Name4)</visible>
@@ -467,8 +467,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name5)</info>
 						<visible>Skin.String(GamesFavorites-1Name5)</visible>
@@ -518,8 +518,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name6)</info>
 						<visible>Skin.String(GamesFavorites-1Name6)</visible>
@@ -569,8 +569,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name7)</info>
 						<visible>Skin.String(GamesFavorites-1Name7)</visible>
@@ -620,8 +620,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name8)</info>
 						<visible>Skin.String(GamesFavorites-1Name8)</visible>
@@ -671,8 +671,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name9)</info>
 						<visible>Skin.String(GamesFavorites-1Name9)</visible>
@@ -722,8 +722,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(GamesFavorites-1Name10)</info>
 						<visible>Skin.String(GamesFavorites-1Name10)</visible>
@@ -790,8 +790,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name1)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name1)</visible>
@@ -841,8 +841,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name2)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name2)</visible>
@@ -892,8 +892,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name3)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name3)</visible>
@@ -943,8 +943,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name4)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name4)</visible>
@@ -994,8 +994,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name5)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name5)</visible>
@@ -1045,8 +1045,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name6)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name6)</visible>
@@ -1096,8 +1096,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name7)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name7)</visible>
@@ -1147,8 +1147,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name8)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name8)</visible>
@@ -1198,8 +1198,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name9)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name9)</visible>
@@ -1249,8 +1249,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(ArcadeFavorites-1Name10)</info>
 						<visible>Skin.String(ArcadeFavorites-1Name10)</visible>
@@ -1318,8 +1318,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name1)</info>
 						<visible>Skin.String(AppsFavorites-1Name1)</visible>
@@ -1369,8 +1369,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name2)</info>
 						<visible>Skin.String(AppsFavorites-1Name2)</visible>
@@ -1420,8 +1420,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name3)</info>
 						<visible>Skin.String(AppsFavorites-1Name3)</visible>
@@ -1471,8 +1471,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name4)</info>
 						<visible>Skin.String(AppsFavorites-1Name4)</visible>
@@ -1522,8 +1522,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name5)</info>
 						<visible>Skin.String(AppsFavorites-1Name5)</visible>
@@ -1573,8 +1573,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name6)</info>
 						<visible>Skin.String(AppsFavorites-1Name6)</visible>
@@ -1624,8 +1624,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name7)</info>
 						<visible>Skin.String(AppsFavorites-1Name7)</visible>
@@ -1675,8 +1675,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name8)</info>
 						<visible>Skin.String(AppsFavorites-1Name8)</visible>
@@ -1726,8 +1726,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name9)</info>
 						<visible>Skin.String(AppsFavorites-1Name9)</visible>
@@ -1777,8 +1777,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(AppsFavorites-1Name10)</info>
 						<visible>Skin.String(AppsFavorites-1Name10)</visible>
@@ -1846,8 +1846,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name1)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name1)</visible>
@@ -1897,8 +1897,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name2)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name2)</visible>
@@ -1948,8 +1948,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name3)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name3)</visible>
@@ -1999,8 +1999,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name4)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name4)</visible>
@@ -2050,8 +2050,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name5)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name5)</visible>
@@ -2101,8 +2101,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name6)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name6)</visible>
@@ -2152,8 +2152,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name7)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name7)</visible>
@@ -2203,8 +2203,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name8)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name8)</visible>
@@ -2254,8 +2254,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name9)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name9)</visible>
@@ -2305,8 +2305,8 @@
 						<width>200</width>
 						<height>53</height>
 						<font>font14</font>
-						<include>TextcolorBlack</include>
-						<include>shadow-grey</include>
+						<textcolor>TextcolorBlack</textcolor>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<align>center</align>
 						<info>Skin.String(HomebrewFavorites-1Name10)</info>
 						<visible>Skin.String(HomebrewFavorites-1Name10)</visible>
@@ -2358,7 +2358,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>200</posy>
-				<include>19001</include>
+				<label>31002</label>
 				<onclick>ActivateWindow(1,Games)</onclick>
 				<texturefocus>icon-games.png</texturefocus>
 				<texturenofocus>icon-games.png</texturenofocus>
@@ -2384,11 +2384,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19080</include>
+				<label>31107</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>![Skin.HasSetting(favgames) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>![Skin.HasSetting(favgames) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -2423,7 +2423,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>240</posy>
-				<include>19032</include>
+				<label>31036</label>
 				<onclick>XBMC.ActivateWindow(1,Emulators)</onclick>
 				<texturefocus>icon-emulators.png</texturefocus>
 				<texturenofocus>icon-emulators.png</texturenofocus>
@@ -2434,12 +2434,12 @@
 				<ondown>7</ondown>
 			</control>
 			<control type="button" id="6">
-				<description>Emulators Push Button</description>
+				<description>Retro-X Push Button</description>
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>240</posy>
-				<include>19032</include>
-				<onclick>XBMC.RunScript(Q:\scripts\Retro-X\default.py\)</onclick>
+				<label>31036</label>
+				<onclick>XBMC.RunScript(Q:\scripts\Retro-X\default.py)</onclick>
 				<texturefocus>icon-emulators.png</texturefocus>
 				<texturenofocus>icon-emulators.png</texturenofocus>
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Skin.HasSetting(USE_Retro-X)</visible>
@@ -2464,11 +2464,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19082</include>
+				<label>31108</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>![Skin.HasSetting(favarc) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>![Skin.HasSetting(favarc) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -2503,7 +2503,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>280</posy>
-				<include>19033</include>
+				<label>31037</label>
 				<onclick>XBMC.ActivateWindow(1,Programs)</onclick>
 				<texturefocus>icon-apps.png</texturefocus>
 				<texturenofocus>icon-apps.png</texturenofocus>
@@ -2529,11 +2529,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19084</include>
+				<label>31109</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>![Skin.HasSetting(favapps) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>![Skin.HasSetting(favapps) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(7) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -2594,11 +2594,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19086</include>
+				<label>31110</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(8) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(8) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -2636,13 +2636,11 @@
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>360</posy>
-				<label>Video Marketplace</label>
+				<label>31402</label>
 				<onclick>XBMC.ActivateWindow(1974)</onclick>
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
-				<!-- Delete this line to show in skin -->
 				<visible>Skin.HasSetting(GamesMarketplace) + !Skin.String(MarketplaceName)</visible>
-				<!-- Delete this line to show in skin -->
 				<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onleft>1</onleft>
 				<onright>109</onright>
@@ -2655,7 +2653,7 @@
 				<posx>145</posx>
 				<posy>360</posy>
 				<label>$INFO[Skin.String(MarketplaceName)]</label>
-				<onclick>XBMC.ActivateWindow(1974)</onclick>
+				<onclick>XBMC.ActivateWindow(1996)</onclick>
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
 				<pulseonselect>no</pulseonselect>
@@ -2686,7 +2684,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>145</posx>
 				<posy>360</posy>
-				<label>Homebrew</label>
+				<label>31538</label>
 				<onclick>$INFO[Skin.String(HomebrewFile_path)]</onclick>
 				<texturefocus>videomarketplace_icon.png</texturefocus>
 				<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -2713,11 +2711,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<label>Get the latest in video and entertainment from XBMC Video Marketplace.</label>
+				<label>31406</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(9) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="label">
 				<description>Homebrew Button Multiline</description>
@@ -2726,11 +2724,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<label>Launch a custom Application, Game, or Script.</label>
+				<label>31539</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(90) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>![Skin.HasSetting(favhome) | Skin.HasSetting(nodescriptions)] + Control.HasFocus(90) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -2742,6 +2740,29 @@
 				<visible>[Control.IsVisible(9) | Control.IsVisible(90)] + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(9) + !Control.HasFocus(90) + !Control.HasFocus(109)</visible>
 			</control>
 			<!-- END Custom Button for modders -->
+			
+			<!-- BEGIN Video Preview Window -->
+			<control type="image">
+				<description>Mini Video Preview Border</description>
+				<posx>379</posx>
+				<posy>200</posy>
+				<width>222</width>
+				<height>180</height>
+				<texture>Playlist-Vis-Back.png</texture>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo</visible>
+				<visible>Skin.HasSetting(GamesPreviewWindow) + !Control.IsVisible(105) + !Control.IsVisible(106) + !Control.IsVisible(107) + !Control.IsVisible(109)</visible>
+			</control>
+			<control type="videowindow" id="14141">
+				<description>Mini Video Preview Window</description>
+				<posx>382</posx>
+				<posy>204</posy>
+				<width>217</width>
+				<height>173</height>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo</visible>
+				<visible>Skin.HasSetting(GamesPreviewWindow) + !Control.IsVisible(105) + !Control.IsVisible(106) + !Control.IsVisible(107) + !Control.IsVisible(109)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+			<!-- END Video Preview Window -->
 			<control type="button" id="10">
 				<description>DVD Launch Button Tray</description>
 				<posx>121</posx>
@@ -2758,7 +2779,7 @@
 				<visible>![System.hasmediadvd] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.EjectTray()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19049</include>
+				<label>31057</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -2770,7 +2791,7 @@
 				<height>71</height>
 				<onleft>1</onleft>
 				<onright>2</onright>
-				<onup>9</onup>
+				<onup>90</onup>
 				<ondown>4</ondown>
 				<texturefocus>dvdtray-focus.png</texturefocus>
 				<texturenofocus>dvdtray-nofocus.png</texturenofocus>
@@ -2778,7 +2799,7 @@
 				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.PlayDVD()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19148</include>
+				<label>31133</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -2788,11 +2809,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19148</include>
+				<label>31133</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2801,11 +2822,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049a</include>
+				<label>31058</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2814,11 +2835,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049b</include>
+				<label>31059</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + System.trayopen + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2827,11 +2848,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049c</include>
+				<label>31060</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + !System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2840,10 +2861,10 @@
 				<posy>205</posy>
 				<width>256</width>
 				<height>15</height>
-				<include>19158</include>
+				<label>31177</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2853,11 +2874,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19147</include>
+				<label>31132</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 		</control>
 		<control type="image">
@@ -2895,7 +2916,7 @@
 			<include>KeymapFont</include>
 			<posx>178</posx>
 			<posy>528</posy>
-			<include>20002</include>
+			<label>31180</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -2905,7 +2926,7 @@
 			<include>KeymapFont</include>
 			<posx>178</posx>
 			<posy>528</posy>
-			<include>20003</include>
+			<label>31181</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -2935,7 +2956,7 @@
 			<include>KeymapFont</include>
 			<posx>553</posx>
 			<posy>528</posy>
-			<include>19020</include>
+			<label>31024</label>
 			<align>right</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -3331,11 +3352,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>79</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
@@ -3351,11 +3372,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Left</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>114</posx>
 			<posy>155</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -3371,11 +3392,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>676</posx>
 			<posy>170</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
@@ -3391,11 +3412,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Right</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>641</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(2) + !Control.HasFocus(1)</visible>
@@ -3433,11 +3454,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>79</posx>
 			<posy>155</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -3453,11 +3474,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>676</posx>
 			<posy>177</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -3473,11 +3494,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>641</posx>
 			<posy>170</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -3488,9 +3509,9 @@
 			<posy>0</posy>
 			<width>80</width>
 			<height>576</height>
-			<include>19008</include>
+			<label>31011</label>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>43</textoffsetx>
 			<textoffsety>163</textoffsety>
@@ -3539,11 +3560,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>79</posx>
 			<posy>170</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -3559,11 +3580,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>114</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -3574,9 +3595,9 @@
 			<posy>0</posy>
 			<width>80</width>
 			<height>576</height>
-			<include>19009</include>
+			<label>31012</label>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>61</textoffsetx>
 			<textoffsety>155</textoffsety>
@@ -3603,11 +3624,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>676</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>

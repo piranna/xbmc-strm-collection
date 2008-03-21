@@ -135,7 +135,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>Category Mode Config 5</label>
+			<label>31550</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
@@ -157,10 +157,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Enable File Button 1</label>
+			<label>31556</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(2) + !Control.HasFocus(3)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -181,10 +181,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Add/Change File 1</label>
+			<label>31566</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -205,10 +205,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Name File 1</label>
+			<label>31576</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -230,10 +230,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Enable File Button 2</label>
+			<label>31557</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(5) + !Control.HasFocus(6)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -254,10 +254,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Add/Change File 2</label>
+			<label>31567</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(5)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -278,10 +278,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Name File 2</label>
+			<label>31577</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(6)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -303,10 +303,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Enable File Button 3</label>
+			<label>31558</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(8) + !Control.HasFocus(9)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -327,10 +327,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Add/Change File 3</label>
+			<label>31568</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -351,10 +351,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Name File 3</label>
+			<label>31578</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(9)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -376,10 +376,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Enable File Button 4</label>
+			<label>31559</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(11) + !Control.HasFocus(12)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -400,10 +400,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Add/Change File 4</label>
+			<label>31569</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -424,10 +424,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Name File 4</label>
+			<label>31579</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(12)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -449,10 +449,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Enable File Button 5</label>
+			<label>31560</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(14) + !Control.HasFocus(15)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -473,10 +473,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Add/Change File 5</label>
+			<label>31570</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(14)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -497,10 +497,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Name File 5</label>
+			<label>31580</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(15)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -522,10 +522,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Enable File Button 6</label>
+			<label>31561</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(17) + !Control.HasFocus(18)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -546,10 +546,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Add/Change File 6</label>
+			<label>31571</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(17)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -570,10 +570,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Name File 6</label>
+			<label>31581</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(18)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -595,10 +595,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Enable File Button 7</label>
+			<label>31562</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(20) + !Control.HasFocus(21)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -619,10 +619,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Add/Change File 7</label>
+			<label>31572</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(20)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -643,10 +643,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Name File 7</label>
+			<label>31582</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(21)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -668,10 +668,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Enable File Button 8</label>
+			<label>31563</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(23) + !Control.HasFocus(24)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -692,10 +692,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Add/Change File 8</label>
+			<label>31573</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(23)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -716,10 +716,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Name File 8</label>
+			<label>31583</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(24)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -741,10 +741,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Enable File Button 9</label>
+			<label>31564</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(26) + !Control.HasFocus(27)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -765,10 +765,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Add/Change File 9</label>
+			<label>31574</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(26)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -789,10 +789,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Name File 9</label>
+			<label>31584</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(27)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -814,10 +814,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Enable File Button 10</label>
+			<label>31565</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(29) + !Control.HasFocus(30)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -838,10 +838,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Add/Change File 10</label>
+			<label>31575</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(29)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -862,10 +862,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Name File 10</label>
+			<label>31585</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(30)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>

@@ -50,7 +50,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>Restart Required</label>
+			<label>31528</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
@@ -61,11 +61,11 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>A restart is required for your changes to take effect.  Would you like to restart now or later?&#10;&#10;NOTE: This will affect your keymap functions in other skins as well.  For best results, disable and restart before switching to another skin.</label>
+			<label>31529</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -85,10 +85,10 @@
 			<onup>10</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Restart Now</label>
+			<label>31530</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,356" time="300">focus</animation>
@@ -108,10 +108,10 @@
 			<onup>11</onup>
 			<ondown>11</ondown>
 			<font>font14</font>
-			<label>Restart Later</label>
+			<label>31531</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,393" time="300">focus</animation>

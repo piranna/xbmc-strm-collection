@@ -34,13 +34,13 @@
 			<pulseonselect>no</pulseonselect>
 			<onleft>1</onleft>
 			<onright>1</onright>
-			<onup>10</onup>
+			<onup>8</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<include>190611a</include>
+			<label>31081</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -81,10 +81,10 @@
 			<onup>1</onup>
 			<ondown>59</ondown>
 			<font>font14</font>
-			<include>19054</include>
+			<label>31061</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -125,10 +125,10 @@
 			<onup>4</onup>
 			<ondown>6</ondown>
 			<font>font14</font>
-			<include>19058a</include>
+			<label>31074</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -169,10 +169,10 @@
 			<onup>59</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<include>19200</include>
+			<label>31205</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -213,12 +213,22 @@
 			<onup>6</onup>
 			<ondown>8</ondown>
 			<font>font14</font>
-			<label>Skin Mod Settings</label>
+			<label>31543</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		<control type="image">
+			<description>Divider</description>
+			<posx>45</posx>
+			<posy>278</posy>
+			<width>230</width>
+			<height>1</height>
+			<texture>divider.png</texture>
+			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="image">
@@ -233,130 +243,32 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
 		<control type="button" id="8">
-			<description>Skin Mod Settings 2</description>
+			<description>Reset Settings Label</description>
 			<posx>22</posx>
 			<posy>268</posy>
 			<width>290</width>
 			<height>59</height>
 			<texturefocus>-</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<onclick>XBMC.ReplaceWindow(1970)</onclick>
+			<onclick>XBMC.ReplaceWindow(1198)</onclick>
 			<pulseonselect>no</pulseonselect>
 			<onleft>8</onleft>
 			<onright>8</onright>
 			<onup>7</onup>
-			<ondown>9</ondown>
-			<font>font14</font>
-			<label>Skin Mod Settings 2</label>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="image">
-			<description>Button 9 Image</description>
-			<posx>22</posx>
-			<posy>304</posy>
-			<width>290</width>
-			<height>59</height>
-			<texture>guide-button-focus.png</texture>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)] + Control.HasFocus(9)</visible>
-			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="button" id="9">
-			<description>Skin Mod Settings 3</description>
-			<posx>22</posx>
-			<posy>304</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>XBMC.ReplaceWindow(1964)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>8</onup>
-			<ondown>10</ondown>
-			<font>font14</font>
-			<label>Skin Mod Settings 3</label>
-			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
-			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="image">
-			<description>Button 10 Image</description>
-			<posx>22</posx>
-			<posy>340</posy>
-			<width>290</width>
-			<height>59</height>
-			<texture>guide-button-focus.png</texture>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)] + Control.HasFocus(10)</visible>
-			<animation effect="fade" start="30" time="275" reversible="false">visible</animation>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="button" id="10">
-			<description>Reset Settings Label</description>
-			<posx>22</posx>
-			<posy>340</posy>
-			<width>290</width>
-			<height>59</height>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<onclick>XBMC.ReplaceWindow(1198)</onclick>
-			<pulseonselect>no</pulseonselect>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>9</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<include>19057</include>
+			<label>31072</label>
 			<textoffsetx>30</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
-		<control type="image">
-			<description>Divider</description>
-			<posx>45</posx>
-			<posy>278</posy>
-			<width>230</width>
-			<height>1</height>
-			<texture>divider.png</texture>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>	
 		<control type="image">
 			<description>Divider</description>
 			<posx>45</posx>
 			<posy>314</posy>
-			<width>230</width>
-			<height>1</height>
-			<texture>divider.png</texture>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="image">
-			<description>Divider</description>
-			<posx>45</posx>
-			<posy>350</posy>
-			<width>230</width>
-			<height>1</height>
-			<texture>divider.png</texture>
-			<visible>![Window.IsActive(1120) | Window.IsActive(filebrowser) | Window.IsActive(1129) | Window.IsActive(1123) | Window.IsActive(1124) | Window.IsActive(1999) | Window.IsActive(1970) | Window.IsActive(1969) | Window.IsActive(1967) | Window.IsActive(1966) | Window.IsActive(1965) | Window.IsActive(1964)]</visible>
-			<animation effect="fade" time="100">WindowOpen</animation>
-		</control>
-		<control type="image">
-			<description>Divider</description>
-			<posx>45</posx>
-			<posy>386</posy>
 			<width>230</width>
 			<height>1</height>
 			<texture>divider.png</texture>

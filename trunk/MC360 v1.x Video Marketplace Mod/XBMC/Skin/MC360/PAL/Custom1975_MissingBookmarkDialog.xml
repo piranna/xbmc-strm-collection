@@ -10,11 +10,11 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>No bookmark has been set up for this button.  Please go to the Marketplace configuration menu to select a bookmark.</label>
+			<label>31534</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 		</control>
@@ -33,7 +33,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>No Bookmark Found</label>
+			<label>31535</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<visible>yes</visible>

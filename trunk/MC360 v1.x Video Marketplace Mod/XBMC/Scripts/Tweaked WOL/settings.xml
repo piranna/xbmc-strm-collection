@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <settings name="WebSaver controlpanel">
 	
-	<param id="mac1" name="Timothy's Computer" type="string">
+	<param id="mac1" name="My Computer" type="string">
                <value><![CDATA[00-17-31-8B-2E-1C]]></value>
         </param>
 

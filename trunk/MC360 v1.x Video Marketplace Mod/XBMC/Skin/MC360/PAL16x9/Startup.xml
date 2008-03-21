@@ -148,11 +148,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -172,11 +172,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -195,11 +195,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -217,11 +217,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Right</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>607</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -371,11 +371,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Left</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -395,11 +395,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -419,11 +419,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -442,11 +442,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Right</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -596,11 +596,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -620,11 +620,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -644,11 +644,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Left</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -668,11 +668,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Right</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -823,11 +823,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -847,11 +847,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -871,11 +871,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -895,11 +895,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Left</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>185</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -1178,11 +1178,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1202,11 +1202,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>676</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1226,11 +1226,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1250,11 +1250,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Right</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>607</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1112) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1300,11 +1300,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1324,11 +1324,11 @@
 		</control>
 		<control type="label">
 			<description>Games Blade Label on Left</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1348,11 +1348,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1372,11 +1372,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Right</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>642</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(Home) | Window.Next(settings)]</visible>
@@ -1422,11 +1422,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -1446,11 +1446,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -1470,11 +1470,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Left</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -1494,11 +1494,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Right</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(settings)]</visible>
@@ -1544,11 +1544,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -1568,11 +1568,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -1592,11 +1592,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>
@@ -1616,11 +1616,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Left</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>185</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>![Window.Next(1114) | Window.Next(1112) | Window.Next(Home)]</visible>

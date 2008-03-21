@@ -135,7 +135,7 @@
 			<urlset>1</urlset>
 			<titlecolor>E1ffffff</titlecolor>
 			<headlinecolor>A1FFFFFF</headlinecolor>
-			<include>TextcolorWhite</include>
+			<textcolor>TextcolorWhite</textcolor>
 			<visible>!Control.HasFocus(1)</visible>
 			<visible>!Skin.HasSetting(rss-feeds)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -144,10 +144,10 @@
 			<description>System Label</description>
 			<posx>207</posx>
 			<posy>42</posy>
-			<include>19004</include>
+			<label>31005</label>
 			<align>left</align>
 			<font>font18</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>!Control.HasFocus(1) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -158,7 +158,7 @@
 			<info>System.Time</info>
 			<align>right</align>
 			<font>bold14</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>Skin.HasSetting(BladeClock) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -200,7 +200,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>35</posx>
 				<posy>90</posy>
-				<include>190073</include>
+				<label>31010</label>
 				<onclick>ActivateWindow(1201)</onclick>
 				<texturefocus>icon-gamesaves.png</texturefocus>
 				<texturenofocus>icon-gamesaves.png</texturenofocus>
@@ -226,10 +226,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19097</include>
+				<label>31116</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3)</visible>
 			</control>
 			<control type="image">
@@ -291,10 +291,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19098</include>
+				<label>31117</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(4)</visible>
 			</control>
 			<control type="image">
@@ -330,7 +330,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>35</posx>
 				<posy>160</posy>
-				<include>19046d</include>
+				<label>31052</label>
 				<onclick>ActivateWindow(1202)</onclick>
 				<texturefocus>icon-videos.png</texturefocus>
 				<texturenofocus>icon-videos.png</texturenofocus>
@@ -356,10 +356,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19099</include>
+				<label>31118</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(5)</visible>
 			</control>
 			<control type="image">
@@ -395,7 +395,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>35</posx>
 				<posy>195</posy>
-				<include>19046e</include>
+				<label>31053</label>
 				<onclick>ActivateWindow(1203)</onclick>
 				<texturefocus>icon-scripts.png</texturefocus>
 				<texturenofocus>icon-scripts.png</texturenofocus>
@@ -421,10 +421,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19100</include>
+				<label>31119</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(6)</visible>
 			</control>
 			<control type="image">
@@ -460,7 +460,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>35</posx>
 				<posy>230</posy>
-				<include>19046f</include>
+				<label>31054</label>
 				<onclick>ActivateWindow(Profiles)</onclick>
 				<texturefocus>icon-profile.png</texturefocus>
 				<texturenofocus>icon-profile.png</texturenofocus>
@@ -486,10 +486,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19101</include>
+				<label>31120</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(7)</visible>
 			</control>
 			<control type="image">
@@ -525,7 +525,7 @@
 				<include>Home-Button-Commons</include>
 				<posx>35</posx>
 				<posy>265</posy>
-				<include>19153</include>
+				<label>31135</label>
 				<onclick>ActivateWindow(Shutdownmenu)</onclick>
 				<texturefocus>icon-power.png</texturefocus>
 				<texturenofocus>icon-power.png</texturenofocus>
@@ -551,10 +551,10 @@
 				<width>230</width>
 				<height>367</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19102</include>
+				<label>31121</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(8)</visible>
 			</control>
 			<control type="image">
@@ -567,6 +567,29 @@
 				<visible>!Control.HasFocus(1) + ![Control.HasFocus(8) | Control.HasFocus(9)]</visible>
 			</control>
 		</control>
+		
+		<!-- BEGIN Video Preview Window -->
+		<control type="image">
+			<description>Mini Video Preview Border</description>
+			<posx>435</posx>
+			<posy>301</posy>
+			<width>222</width>
+			<height>180</height>
+			<texture>Playlist-Vis-Back.png</texture>
+			<visible>!Control.HasFocus(1) + Player.HasVideo + Skin.HasSetting(SystemPreviewWindow)</visible>
+		</control>
+		<control type="videowindow">
+			<description>Mini Video Preview Window</description>
+			<posx>438</posx>
+			<posy>305</posy>
+			<width>217</width>
+			<height>173</height>
+			<visible>!Control.HasFocus(1) + Player.HasVideo + Skin.HasSetting(SystemPreviewWindow)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+		</control>
+		
+		<!-- END Video Preview Window -->
+		
 		<control type="image">
 			<description>Y Button</description>
 			<posx>230</posx>
@@ -602,7 +625,7 @@
 			<include>KeymapFont</include>
 			<posx>248</posx>
 			<posy>528</posy>
-			<include>20002</include>
+			<label>31180</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -612,7 +635,7 @@
 			<include>KeymapFont</include>
 			<posx>248</posx>
 			<posy>528</posy>
-			<include>20003</include>
+			<label>31181</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -642,7 +665,7 @@
 			<include>KeymapFont</include>
 			<posx>623</posx>
 			<posy>528</posy>
-			<include>19020</include>
+			<label>31024</label>
 			<align>right</align>
 			<visible>!Control.HasFocus(1) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -859,11 +882,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>79</posx>
 			<posy>177</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -879,11 +902,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>114</posx>
 			<posy>170</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -899,11 +922,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>149</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -919,11 +942,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Left</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>184</posx>
 			<posy>155</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -961,11 +984,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>79</posx>
 			<posy>170</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -981,11 +1004,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>114</posx>
 			<posy>163</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -1001,11 +1024,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>149</posx>
 			<posy>155</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -1016,9 +1039,9 @@
 			<posy>0</posy>
 			<width>80</width>
 			<height>576</height>
-			<include>19011</include>
+			<label>31014</label>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>43</textoffsetx>
 			<textoffsety>163</textoffsety>

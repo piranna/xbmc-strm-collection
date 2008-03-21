@@ -95,10 +95,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19301</include>
+			<label>31137</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3113)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -110,10 +110,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19302</include>
+			<label>31138</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3112)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -125,10 +125,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19303</include>
+			<label>31139</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3111)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -140,10 +140,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19304</include>
+			<label>31140</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3110)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -155,10 +155,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19305</include>
+			<label>31141</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3115)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -170,10 +170,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<include>19306</include>
+			<label>31142</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(3116)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -185,10 +185,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<label>Press A to remotely start your personal computer to stream media or play online.</label>
+			<label>31408</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + [Control.HasFocus(3117) | Control.HasFocus(3119) | Control.HasFocus(3120) | Control.HasFocus(3122) | Control.HasFocus(3123) | Control.HasFocus(3125)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -200,10 +200,10 @@
 			<width>300</width>
 			<height>200</height>
 			<wrapmultiline>true</wrapmultiline>
-			<label>Press A to remotely shutdown your personal computer.</label>
+			<label>31409</label>
 			<font>font14</font>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible>!Skin.HasSetting(nodescriptions) + [Control.HasFocus(3118) | Control.HasFocus(3121) | Control.HasFocus(3124)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -215,9 +215,9 @@
 			<posy>178</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -241,9 +241,9 @@
 			<posy>178</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Shutdown PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31411</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -267,9 +267,9 @@
 			<posy>178</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -295,8 +295,8 @@
 			<height>59</height>
 			<label>20045</label>
 			<altlabel>20046</altlabel>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -322,9 +322,9 @@
 			<posy>215</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -349,9 +349,9 @@
 			<posy>215</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Shutdown PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31411</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -376,9 +376,9 @@
 			<posy>215</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -404,8 +404,8 @@
 			<width>350</width>
 			<height>59</height>
 			<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -432,8 +432,8 @@
 			<height>59</height>
 			<label>20045</label>
 			<altlabel>20046</altlabel>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -461,8 +461,8 @@
 			<width>350</width>
 			<height>59</height>
 			<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -486,9 +486,9 @@
 			<posy>252</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -513,9 +513,9 @@
 			<posy>252</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Shutdown PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31411</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -540,9 +540,9 @@
 			<posy>252</posy>
 			<width>350</width>
 			<height>59</height>
-			<label>Start PC</label>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<label>31410</label>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<font>font14</font>
 			<textoffsetx>40</textoffsetx>
 			<aligny>center</aligny>
@@ -578,8 +578,8 @@
 			<font>font14</font>
 			<label>13006</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,319" time="300" reversible="false">focus</animation>
@@ -601,8 +601,8 @@
 			<font>font14</font>
 			<label>Restart XBMC</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,356" time="300" reversible="false">focus</animation>
@@ -622,10 +622,10 @@
 			<onup>3111</onup>
 			<ondown>3113</ondown>
 			<font>font14</font>
-			<include>19300</include>
+			<label>31136</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<animation effect="zoom" start="95" end="100" center="515,393" time="300" reversible="false">focus</animation>
@@ -647,8 +647,8 @@
 			<font>font14</font>
 			<label>13005</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(3200) + !Control.HasFocus(3201) + !Control.HasFocus(3202) + !Control.HasFocus(3203) + !Control.HasFocus(3204)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -671,8 +671,8 @@
 			<font>font14</font>
 			<label>20147</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3200)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -695,8 +695,8 @@
 			<font>font14</font>
 			<label>20148</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3201)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -719,8 +719,8 @@
 			<font>font14</font>
 			<label>20149</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3202)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -743,8 +743,8 @@
 			<font>font14</font>
 			<label>20150</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3203)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -767,8 +767,8 @@
 			<font>font14</font>
 			<label>20151</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-grey</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-grey</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3204)</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>

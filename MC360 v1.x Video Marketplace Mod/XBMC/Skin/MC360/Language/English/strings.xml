@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<strings>
+  <string id="31002">Games</string>
+  <string id="31003">Media</string>
+
+  <string id="31005">System</string>
+
+  <string id="31008">Videos</string>
+  <string id="31009">MC360 Guide</string>
+  <string id="31010">Memory</string>
+  <!-- These Blade Headers should be in LOWER CASE, no capitol first letters -->
+  <string id="31011">games</string>
+  <string id="31012">media</string>
+
+  <string id="31014">system</string>
+
+  <string id="31018">xbmc live</string>
+  <!-- End of LOWER CASE headers -->
+  <string id="31019">Login</string>
+  <string id="31020">Messages</string>
+  <string id="31021">Friends</string>
+  <string id="31022">Connect to Xlink Kai</string>
+  <string id="31023">Xlink KAI Not Connected</string>
+  <string id="31024">Select</string>
+  <string id="31025">File Explorer</string>
+
+  <string id="31027">Back</string>
+
+  <string id="31029">Cursor</string>
+  <string id="31030">Symbols</string>
+  <string id="31031">Shift</string>
+  <string id="31032">Caps</string>
+  <string id="31033">Space</string>
+  <string id="31034">Backspace</string>
+  <string id="31035">Done</string>
+  <string id="31036">Xbox Arcade</string>
+  <string id="31037">Applications</string>
+
+  <string id="31040">Movie Trailers</string>
+  <string id="31041">Music - Files</string>
+  <string id="31042">Music - Library</string>
+  <string id="31043">Music - Playlist</string>
+
+  <string id="31045">Now Playing</string>
+  <string id="31046">Video - Files</string>
+  <string id="31047">Video - Library</string>
+  <string id="31048">Community</string>
+  <string id="31049">XBMC Live</string>
+  <string id="31050">Favourites</string>
+  <string id="31051">XBMC Live Place</string>
+  <string id="31052">Media Settings</string>
+  <string id="31053">System Settings</string>
+  <string id="31054">Profile Manager</string>
+  <string id="31055">Personal Settings</string>
+  <string id="31056">Select Music</string>
+  <string id="31057">Open/Close Tray</string>
+  <string id="31058">Open Tray</string>
+  <string id="31059">Close Tray</string>
+  <string id="31060">Reading...</string>
+  <string id="31061">Customize Theme</string>
+  <string id="31062">Custom Wallpapers</string>
+
+  <string id="31064">Set Separate Wallpapers</string>
+  <string id="31065">Remove all Wallpapers</string>
+  <string id="31066">Disable BG Animation</string>
+
+  <string id="31069">Guide Blades</string>
+
+  <string id="31071">Reset Skin Settings</string>
+  <string id="31072">Clear All Settings</string>
+  <string id="31073">Advanced Options</string>
+  <string id="31074">Options</string>
+  <string id="31075">Disable List Thumbnail</string>
+  <string id="31076">Disable Music Thumbnail</string>
+  <string id="31077">Use Lite Volume</string>
+
+  <string id="31080">Setup GamerCard</string>
+  <string id="31081">GamerCard Setup</string>
+  <string id="31082">Get Xbox.com GamerCard</string>
+  <string id="31083">Set Gamer Tag</string>
+  <string id="31084">Set Gamer Picture</string>
+  <string id="31085">Set Gamer Score</string>
+  <string id="31086">Set Gamer Zone</string>
+
+  <string id="31088">Remove Custom</string>
+  <string id="31089">Add to Playlist</string>
+  <string id="31090">Video - Playlist</string>
+  <string id="31091">Remove from Playlist</string>
+  <string id="31092">Highlight Files</string>
+  <string id="31093">Xlink Kai: Evolution VII</string>
+  <string id="31094">Lets you connect with other console users around the world, and play online games for free.</string>
+  <string id="31095">XBMC Live Place</string>
+  <string id="31096">Download Themes from XBMC Black Market Themes site, Watch Internet Videos and Update XBMC.</string>
+
+  <string id="31099">Installed XBMC Scripts</string>
+
+  <string id="31101">Black Market Themes</string>
+
+  <string id="31104">Explore, Copy, Delete, Move Files on your Xbox Hard Drive</string>
+  <string id="31105">Check the 4 day Weather forecast for 3 different Locations</string>
+  <string id="31106">Customize your Gamercard type or link your Xbox.com profile.</string>
+  <string id="31107">Play Games stored on your Xbox Hard Drive.</string>
+  <string id="31108">Explore and Enjoy a collection of simple, fun games.</string>
+  <string id="31109">Various Programs stored on your Xbox Hard Drive or DVD.</string>
+  <string id="31110">Manage saved data, copy, delete or download new saves from the internet.</string>
+
+  <string id="31112">Listen to Music from your PC, CD, DVD or Xbox Hard Drive.</string>
+  <string id="31113">View Pictures or slideshows from your PC, CD, DVD or Xbox Hard Drive.</string>
+  <string id="31114">Watch Videos stored on your PC, CD, DVD or Xbox Hard Drive.</string>
+  <string id="31115">Watch Quicktime movie trailers from apple.com using the Apple Movie Trailers Script</string>
+  <string id="31116">Perform System Maintenance, Including:[CR][CR]* Manage your Xbox Hard Drive[CR]* Manage Gamesaves</string>
+  <string id="31117">Edit your Display settings, Including:[CR][CR]* GUI Calibration[CR]* Skin Selection[CR]* Screensaver[CR]* Date &amp; Time</string>
+  <string id="31118">Edit your Media settings, Including:[CR][CR]* Video[CR]* Music[CR]* Pictures[CR]* Programs</string>
+  <string id="31119">Edit your System settings, Including:[CR][CR]* General System[CR]* Weather[CR]* Network Configuration</string>
+  <string id="31120">Manage User Profiles, Including:[CR][CR]* Creating Profiles[CR]* Deleting Profiles[CR]* Changing user settings</string>
+  <string id="31121">Display the shutdown options, Including:[CR][CR]* Shutdown Xbox[CR]* Restart XBMC[CR]* Reboot Xbox[CR]* Exit to Dashboard</string>
+  <string id="31122">Configure Video settings, Including:[CR][CR]* Screen Calibration[CR]* Video filters[CR]* Post Processing[CR]* File Views</string>
+  <string id="31123">Configure Audio settings, Including:[CR][CR]* Visualisations[CR]* Playlists[CR]* CD Ripping[CR]* Karaoke</string>
+  <string id="31124">Arrange Pictures settings, Including:[CR][CR]* Slideshows[CR]* Thumbnails</string>
+  <string id="31125">Set up your Programs and Xlink Kai settings, Including:[CR][CR]* Icon View[CR]* .xbe usage[CR]* Kai Login Details</string>
+  <string id="31126">Configure Network and sharing settings, Including:[CR][CR]* Gateway &amp; DNS[CR]* Samba File Sharing[CR]* XBMC Autodetect[CR]* FTP &amp; Web Server</string>
+  <string id="31127">Choose Weather Display, Including:[CR][CR]* 3 Cities[CR]* Wind Speed[CR]* Temperature</string>
+  <string id="31128">Important System Settings, Including:[CR][CR]* Auto Shutdown[CR]* Autorun[CR]* Fan Speed[CR]* Front LED[CR]* LCD</string>
+  <string id="31129">Check Vital System Info, Including:[CR][CR]* Storage[CR]* Hardware[CR]* Network</string>
+  <string id="31130">View Xbox Media Center and Skin Credits.</string>
+  <string id="31131">View MC360 and Team Blackbolt Skin Credits.</string>
+  <string id="31132">Insert a Game, DVD, VCD, Audio CD, MP3 CD or Photo CD.</string>
+  <string id="31133">Play: $INFO[System.DVDLabel]</string>
+  <string id="31134">Open the Guide Blade, to access your favourites and Personal Settings.</string>
+  <string id="31135">Shutdown</string>
+  <string id="31136">Reboot Xbox</string>
+  <string id="31137">Press A to safely shutdown your Xbox console</string>
+  <string id="31138">Perform a Cold Reboot on your Xbox console, any playing media will be stopped.</string>
+  <string id="31139">Restart Xbox Media Center, this will stop any media content from playing.</string>
+  <string id="31140">Load the Dashboard that you selected in the system settings blade.</string>
+  <string id="31141">Log off your profile and return to the login screen.</string>
+  <string id="31142">Enable or disable the Master Lock for each section of Xbox Media Center.</string>
+
+  <string id="31159">Disable RSS Feeds</string>
+  <string id="31160">Disable Description Text</string>
+  <string id="31161">Disable Guide Button</string>
+  <string id="31162">Disable Blade Hazes</string>
+
+  <string id="31164">Disable BG Video</string>
+  <string id="31165">MC360 Credits</string>
+  <string id="31166">WeatherCard</string>
+  <string id="31167">InfoCard</string>
+  <string id="31168">GamerCard</string>
+  <string id="31169">Choose Card Type</string>
+  <string id="31170">Time on Home Blades</string>
+  <string id="31171">Choose Wallpaper Pack</string>
+
+  <string id="31173">Use Now Playing Card</string>
+  <string id="31174">Disable BG Visualisation</string>
+  <string id="31175">Use Silver GamerCard</string>
+  <string id="31176">User last logged in</string>
+  <string id="31177">Press A to Play Disc.</string>
+  <string id="31178">Plot:</string>
+  <string id="31179">Cast:</string>
+  <string id="31180">Full Screen Visualization</string>
+  <string id="31181">Full Screen Video</string>
+  <string id="31182">Pause</string>
+  <string id="31183">Play</string>
+  <string id="31184">Skip Back</string>
+  <string id="31185">Skip Forward</string>
+  <string id="31186">Video Settings</string>
+  <string id="31187">Audio Settings</string>
+  <string id="31188">Playlist</string>
+  <string id="31189">Bookmarks</string>
+  <string id="31190">DVD Menu</string>
+  <string id="31191">Current Conditions:</string>
+  <string id="31192">Temperature</string>
+
+  <string id="31195">Update XBMC</string>
+
+  <string id="31197">Watch Online Videos</string>
+
+  <string id="31199">Check for MC360 Update</string>
+  <string id="31200">Auto Check for Update</string>
+  <string id="31201">Auto Update Gamercard</string>
+  <string id="31202">Update Gamercard Now</string>
+  <string id="31203">Disable Wide Icon Labels</string>
+  <string id="31204">This will reset all your gamertag settings, all Guide options and all custom backgrounds are you sure you want to continue.[CR][CR][CR]</string>
+  <string id="31205">Addon Scripts Options</string>
+  <string id="31206">AMT on Media Blade</string>
+  <string id="31207">AccuWeather in Weather</string>
+  <string id="31208">Radar</string>
+  <string id="31209">NOTICE !! These are Third Party Scripts and are not included in mc360. [CR][CR]You need to have them installed into their proper locations in the scripts directory of XBMC for the buttons to work.</string>
+  <string id="31210">Song Lyrics</string>
+  <string id="31211">XBMC Lyrics in Music OSD</string>
+  <!-- set_gamercard -->
+  <string id="31212">GamerCard</string>
+  <string id="31213">Detected that DNS is most likey</string>
+  <string id="31214">not working correctly</string>
+  <string id="31215">Please set and try again</string>
+  <string id="31216">Downloading</string>
+  <string id="31217">From Xbox.com</string>
+  <string id="31218">Grab GamerCard</string>
+  <string id="31219">Edit GamerCard</string>
+  <string id="31220">Cancel</string>
+  <string id="31221">Enter Xbox.com Gamertag</string>
+  <string id="31222">Blank Name given</string>
+  <string id="31223">Settings remain unchanged</string>
+  <string id="31224">No Internet Found</string>
+  <string id="31225">Would you like to keep old info</string>
+  <!-- DialogKaiToast -->
+  <string id="31226">MC360 User</string>
+  <string id="31227">has just signed in</string>
+  <!-- LoginScreen -->
+  <string id="31228">Sign In</string>
+  <!-- updatecheck -->
+  <string id="31229">No Update Available</string>
+  <string id="31230">Your MC360 is up-to-date. Be sure to[CR]check for updates at a later time.</string>
+  <string id="31231">Current Version: %s[CR]Available Version: %s</string>
+  <string id="31232">Update Available</string>
+  <string id="31233">There is an Update Available for[CR]your MC360 skin. Please visit [CR]http://blackbolt.x-scene.com [CR][CR]Follow the installation instructions in the[CR]readme.txt file in the download .zip for[CR]proper installation to Xbox Media Center.[CR][CR]Current Version: %s[CR]Available Version: %s</string>
+  <!-- setwallpaperpacks -->
+  <string id="31234">a directory with wallpaper pack</string>
+  <string id="31235">pictures</string>
+  <string id="31236">No %s Wallpaper was found</string>
+  <string id="31237">Press OK to Continue</string>
+  <string id="31238">MC360</string>
+  <!--- End Default MC360 labels -->
+	<!--- Begin MC360 Monster Mod labels -->
+	<!--- Begin Home Labels -->
+	<string id="31400">Movies</string>
+	<string id="31401">TV Shows</string>
+	<string id="31402">Video Marketplace</string>
+	<string id="31403">Media Center</string>
+	<string id="31404">Watch TV Shows stored on your PC, CD, DVD or Xbox Hard Drive.</string>
+	<string id="31405">Watch Movies stored on your PC, CD, DVD or Xbox Hard Drive.</string>
+	<string id="31406">Get the latest in video and entertainment from XBMC Video Marketplace.</string>
+	<string id="31407">Connect or set up Media Center Extender.&#10;&#10;* Live and recorded TV&#10;* On-demand movies&#10;* Music and photos</string>
+	<!--- End Home Labels -->
+	<!--- Begin DialogButtonMenu Labels -->
+	<string id="31408">Press A to remotely start your personal computer to stream media or play online.</string>
+	<string id="31409">Press A to remotely shutdown your personal computer.</string>
+	<string id="31410">Start PC</string>
+	<string id="31411">Shutdown PC</string>
+	<string id="31412">Restart XBMC</string>
+	<!--- End DialogButtonMenu Labels -->
+	<!--- Begin GuideSkinModOptions Labels -->
+	<string id="31413">Enable MCE Button</string>
+	<string id="31414">Specify Media Center Folder...</string>
+	<string id="31415">Video Marketplace in Media</string>
+	<string id="31416">Video Marketplace in Games</string>
+	<string id="31417">Enable WOL/SOL Button</string>
+	<string id="31418">Link Xbox Arcade to Retro-X</string>
+	<string id="31419">TV Button: Bookmark</string>
+	<string id="31422">TV Button: Library Mode</string>
+	<string id="31423">TV Button: File Mode</string>
+	<string id="31424">Movie Button: Bookmark</string>
+	<string id="31427">Movie Button: Library Mode</string>
+	<string id="31428">Movie Button: File Mode</string>
+	<string id="31429">* Link to TV Video Bookmark...</string>
+	<string id="31432">* Link to TV Script/XBE...</string>
+	<string id="31433">* TV Library Folder: Genres</string>
+	<string id="31434">* TV Library Folder: Title</string>
+	<string id="31435">* TV Library Folder: Year</string>
+	<string id="31436">* TV Library Folder: Actors</string>
+	<string id="31437">* Movie Library Folder: Genres</string>
+	<string id="31438">* Movie Library Folder: Title</string>
+	<string id="31439">* Movie Library Folder: Year</string>
+	<string id="31440">* Movie Library Folder: Actors</string>
+	<string id="31441">* Movie Library Folder: Dir.</string>
+	<string id="31442">* Link to Movie Bookmark...</string>
+	<string id="31445">* Link to Movie Script/XBE...</string>
+	<string id="31446">* Rename TV Button</string>
+	<string id="31447">* Rename Movie Button</string>
+	<string id="31448">Shutdown Computer</string>
+	<string id="31449">This will shutdown your personal computer.  All open programs will be closed and any unsaved changes may be lost.  Are you sure you want to continue?</string>
+	<!--- End GuideSkinModOptions Labels -->
+	<!--- Begin MediaCenterExtender Labels -->
+	<string id="31450">A PC running Windows Media Center is the all-in-one entertainment and computing solution for your home.  For more info, go to:</string>
+	<string id="31451">www.microsoft.com/extender</string>
+	<string id="31452">To connect your Xbox console to a PC powered by Windows Media Center on your home network, select Media Center now.</string>
+	<string id="31453">MediaCenter</string>
+	<string id="31454">Windows Media Center</string>
+	<!--- End MediaCenterExtender Labels -->
+	<!--- Begin VideoMarketplace 1-3 Labels -->
+	<string id="31455">News Clips</string>
+	<string id="31456">Game Videos</string>
+	<string id="31457">Clips</string>
+	<string id="31458">Customize Marketplace</string>
+	<string id="31459">XBMC-TV</string>
+	<!--- End VideoMarketplace 1-3 Labels -->
+	<!--- Begin MarketplaceConfig 1-3 Labels -->
+	<string id="31460">Custom 2...</string>
+	<string id="31461">Custom 3...</string>
+	<string id="31462">Custom 4...</string>
+	<string id="31463">Custom 5...</string>
+	<string id="31464">Custom 1...</string>
+	<string id="31465">Change Marketplace Name</string>
+	<string id="31466">Custom 6...</string>
+	<string id="31467">Video Marketplace Configuration</string>
+	<!--- End MarketplaceConfig 1-3 Labels -->
+	<!--- Begin MarketplaceButton 1-6 Labels -->
+	<string id="31468">Configure Button 1</string>
+	<string id="31469">Configure Button 2</string>
+	<string id="31470">Configure Button 3</string>
+	<string id="31471">Configure Button 4</string>
+	<string id="31472">Configure Button 5</string>
+	<string id="31473">Configure Button 6</string>
+	<string id="31474">Disable Button</string>
+	<string id="31475">Enable File Mode</string>
+	<string id="31476">Enable Category File Mode</string>
+	<string id="31477">Enable Video Bookmark Mode</string>
+	<string id="31478">Enable Music Bookmark Mode</string>
+	<string id="31479">Enable Picture Bookmark Mode</string>
+	<string id="31480">Enable Movie Library Mode</string>
+	<string id="31481">Enable TV Library Mode</string>
+	<string id="31482">Enable Music Library Mode</string>
+	<string id="31483">Change Basic Button Name</string>
+	<string id="31484">Change File Button Name</string>
+	<string id="31485">Change Category Button Name</string>
+	<string id="31486">Change Video Bookmark Button Name</string>
+	<string id="31487">Change Audio Bookmark Button Name</string>
+	<string id="31488">Change Picture Bookmark Button Name</string>
+	<string id="31489">Change Movie Library Button Name</string>
+	<string id="31490">Change TV Library Button Name</string>
+	<string id="31491">Change Music Library Button Name</string>
+	<string id="31492">Change Basic Button Icon</string>
+	<string id="31493">Change File Button Icon</string>
+	<string id="31494">Change Category Button Icon</string>
+	<string id="31495">Change Video Bookmark Button Icon</string>
+	<string id="31496">Change Audio Bookmark Button Icon</string>
+	<string id="31497">Change Picture Bookmark Button Icon</string>
+	<string id="31498">Change Movie Library Button Icon</string>
+	<string id="31499">Change TV Library Button Icon</string>
+	<string id="31500">Change Music Library Button Icon</string>
+	<string id="31501">Link to File...</string>
+	<string id="31502">Link to Files...</string>
+	<string id="31503">Link to Video Bookmark...</string>
+	<string id="31504">Link to Audio Bookmark...</string>
+	<string id="31505">Link to Picture Bookmark...</string>
+	<string id="31506">Library Subfolder: Genres</string>
+	<string id="31507">Library Subfolder: Title</string>
+	<string id="31508">Library Subfolder: Year</string>
+	<string id="31509">Library Subfolder: Actors</string>
+	<string id="31510">Library Subfolder: Directors</string>
+	<string id="31511">Library Subfolder: Artists</string>
+	<string id="31512">Library Subfolder: Albums</string>
+	<string id="31513">Library Subfolder: Songs</string>
+	<string id="31514">Library Subfolder: Playlists</string>
+	<!--- End MarketplaceButton 1-6 Labels -->
+	<!--- Begin CategoryButton 1-6 Labels -->
+	<string id="31515">Either you do not have any files set up for this button in Category Mode, or they are all disabled.  Please go to the Marketplace configuration menu to add or enable files.</string>
+	<string id="31516">File Launcher</string>
+	<string id="31517">No Files Found</string>
+	<string id="31518">File 1</string>
+	<string id="31519">File 2</string>
+	<string id="31520">File 3</string>
+	<string id="31521">File 4</string>
+	<string id="31522">File 5</string>
+	<string id="31523">File 6</string>
+	<string id="31524">File 7</string>
+	<string id="31525">File 8</string>
+	<string id="31526">File 9</string>
+	<string id="31527">File 10</string>
+	<!--- End CategoryButton 1-6 Labels -->
+	<!--- Begin RestartRequiredDialog Labels -->
+	<string id="31528">Restart Required</string>
+	<string id="31529">A restart is required for your changes to take effect.  Would you like to restart now or later?&#10;&#10;NOTE: This will affect your keymap functions in other skins as well.  For best results, disable and restart before switching to another skin.</string>
+	<string id="31530">Restart Now</string>
+	<string id="31531">Restart Later</string>
+	<!--- End RestartRequiredDialog Labels -->
+	<!--- Begin MediaCenterExtenderDialog Labels -->
+	<string id="31532">Launch Media Center</string>
+	<string id="31533">This will leave XBMC and launch Media Center Extender.  Any currently playing media will be stopped.  Are you sure you want to continue?</string>
+	<!--- End MediaCenterExtenderDialog Labels -->
+	<!--- Begin MissingBookmarkDialog Labels -->
+	<string id="31534">No bookmark has been set up for this button.  Please go to the Video Marketplace configuration menu to select a bookmark.</string>
+	<string id="31535">No Bookmark Found</string>
+	<!--- End MissingBookmarkDialog Labels -->
+	<!--- Begin MissingFileDialog Labels -->
+	<string id="31536">No Game, Application, or Script has been set up for this button in File Mode.  Please go to the Marketplace configuration menu to select a file.</string>
+	<string id="31537">No File Found</string>
+	<!--- End MissingFileDialog Labels -->
+	<!--- Begin GamesHome Labels -->
+	<string id="31538">Homebrew</string>
+	<string id="31539">Launch a custom Application, Game, or Script.</string>
+	<!--- End GamesHome Labels -->
+	<!--- Begin LiveHome Labels -->
+	<string id="31540">Scripts</string>
+	<string id="31541">Check the 4 day Weather forecast for 3 different Locations.</string>
+	<string id="31542">Run Python scripts to do custom tasks on your Xbox.</string>
+	<!--- End LiveHome Labels -->
+	<!--- Begin GuidePersonal Labels -->
+	<string id="31543">Skin Mod Settings</string>
+	<!--- End GuidePersonal Labels -->
+	<!--- Begin CategoryConfig 1-6 Labels -->
+	<string id="31546">Category Mode Config 1</string>
+	<string id="31547">Category Mode Config 2</string>
+	<string id="31548">Category Mode Config 3</string>
+	<string id="31549">Category Mode Config 4</string>
+	<string id="31550">Category Mode Config 5</string>
+	<string id="31551">Category Mode Config 6</string>
+	<string id="31556">Enable File Button 1</string>
+	<string id="31557">Enable File Button 2</string>
+	<string id="31558">Enable File Button 3</string>
+	<string id="31559">Enable File Button 4</string>
+	<string id="31560">Enable File Button 5</string>
+	<string id="31561">Enable File Button 6</string>
+	<string id="31562">Enable File Button 7</string>
+	<string id="31563">Enable File Button 8</string>
+	<string id="31564">Enable File Button 9</string>
+	<string id="31565">Enable File Button 10</string>
+	<string id="31566">Add/Change File 1</string>
+	<string id="31567">Add/Change File 2</string>
+	<string id="31568">Add/Change File 3</string>
+	<string id="31569">Add/Change File 4</string>
+	<string id="31570">Add/Change File 5</string>
+	<string id="31571">Add/Change File 6</string>
+	<string id="31572">Add/Change File 7</string>
+	<string id="31573">Add/Change File 8</string>
+	<string id="31574">Add/Change File 9</string>
+	<string id="31575">Add/Change File 10</string>
+	<string id="31576">Name File 1</string>
+	<string id="31577">Name File 2</string>
+	<string id="31578">Name File 3</string>
+	<string id="31579">Name File 4</string>
+	<string id="31580">Name File 5</string>
+	<string id="31581">Name File 6</string>
+	<string id="31582">Name File 7</string>
+	<string id="31583">Name File 8</string>
+	<string id="31584">Name File 9</string>
+	<string id="31585">Name File 10</string>
+	<!--- End CategoryConfig 1-6 Labels -->
+	<!--- Begin GuideSkinModOptions2 Labels -->
+	<string id="31552">Disable Kai Info</string>
+	<string id="31553">Enable 360 Startup Sound</string>
+	<string id="31554">Enable Custom Keymap</string>
+	<string id="31555">Enable Games Submenu</string>
+	<string id="31586">Enable Xbox Arcade Submenu</string>
+	<string id="31587">Enable Applications Submenu</string>
+	<string id="31588">Enable Cust. Button Submenu</string>
+	<string id="31589">Enable Startup Playlist</string>
+	<string id="31590">Enable Startup Partymode</string>
+	<string id="31591">Custom Games Blade Button</string>
+	<string id="31592">Disable Home Blade Logos</string>
+	<string id="31593">* Specify Custom Button File</string>
+	<string id="31594">* Set Custom Button Name</string>
+	<string id="31595">* Choose Startup Playlist</string>
+	<string id="31596">* Configure Games Submenu</string>
+	<string id="31597">* Configure Arcade Submenu</string>
+	<string id="31598">* Configure Apps Submenu</string>
+	<string id="31599">* Configure Cust. Submenu</string>
+	<!--- End GuideSkinModOptions2 Labels -->
+	<!--- Begin GuideSkinModOptions3 Labels -->
+	<string id="31600">Disable Gamercards</string>
+	<string id="31601">Disable Gamepad Logos</string>
+	<string id="31602">Disable Blade Labels</string>
+	<!--- End GuideSkinModOptions3 Labels -->
+	<!--- Begin SubmenuConfigs 1-6 Labels -->
+	<string id="31317">Enable Games Button 1</string>
+	<string id="31604">Enable Games Button 2</string>
+	<string id="31605">Enable Games Button 3</string>
+	<string id="31606">Enable Games Button 4</string>
+	<string id="31607">Enable Games Button 5</string>
+	<string id="31608">Enable Games Button 6</string>
+	<string id="31609">Enable Games Button 7</string>
+	<string id="31610">Enable Games Button 8</string>
+	<string id="31611">Enable Games Button 9</string>
+	<string id="31612">Enable Games Button 10</string>
+	<string id="31613">Set File 1</string>
+	<string id="31614">Set File 2</string>
+	<string id="31615">Set File 3</string>
+	<string id="31616">Set File 4</string>
+	<string id="31617">Set File 5</string>
+	<string id="31618">Set File 6</string>
+	<string id="31619">Set File 7</string>
+	<string id="31620">Set File 8</string>
+	<string id="31621">Set File 9</string>
+	<string id="31622">Set File 10</string>
+	<string id="31623">Set Image (Resets Name!)</string>
+	<string id="31633">Name Button 1 (Resets Image!)</string>
+	<string id="31634">Name Button 2 (Resets Image!)</string>
+	<string id="31635">Name Button 3 (Resets Image!)</string>
+	<string id="31636">Name Button 4 (Resets Image!)</string>
+	<string id="31637">Name Button 5 (Resets Image!)</string>
+	<string id="31638">Name Button 6 (Resets Image!)</string>
+	<string id="31639">Name Button 7 (Resets Image!)</string>
+	<string id="31640">Name Button 8 (Resets Image!)</string>
+	<string id="31641">Name Button 9 (Resets Image!)</string>
+	<string id="31642">Name Button 10 (Resets Image!)</string>
+	<string id="31643">Enable Arcade Button 1</string>
+	<string id="31644">Enable Arcade Button 2</string>
+	<string id="31645">Enable Arcade Button 3</string>
+	<string id="31646">Enable Arcade Button 4</string>
+	<string id="31647">Enable Arcade Button 5</string>
+	<string id="31648">Enable Arcade Button 6</string>
+	<string id="31649">Enable Arcade Button 7</string>
+	<string id="31650">Enable Arcade Button 8</string>
+	<string id="31651">Enable Arcade Button 9</string>
+	<string id="31652">Enable Arcade Button 10</string>
+	<string id="31653">Enable Homebrew Button 1</string>
+	<string id="31654">Enable Homebrew Button 2</string>
+	<string id="31655">Enable Homebrew Button 3</string>
+	<string id="31656">Enable Homebrew Button 4</string>
+	<string id="31657">Enable Homebrew Button 5</string>
+	<string id="31658">Enable Homebrew Button 6</string>
+	<string id="31659">Enable Homebrew Button 7</string>
+	<string id="31660">Enable Homebrew Button 8</string>
+	<string id="31661">Enable Homebrew Button 9</string>
+	<string id="31662">Enable Homebrew Button 10</string>
+	<string id="31663">Enable Apps Button 1</string>
+	<string id="31664">Enable Apps Button 2</string>
+	<string id="31665">Enable Apps Button 3</string>
+	<string id="31666">Enable Apps Button 4</string>
+	<string id="31667">Enable Apps Button 5</string>
+	<string id="31668">Enable Apps Button 6</string>
+	<string id="31669">Enable Apps Button 7</string>
+	<string id="31670">Enable Apps Button 8</string>
+	<string id="31671">Enable Apps Button 9</string>
+	<string id="31672">Enable Apps Button 10</string>
+	<!--- End SubmenuConfig 1-4 Labels -->
+	<!--- Begin UpdateMenu Labels -->
+	<string id="31673">Update Center</string>
+	<string id="31674">Update XBMC</string>
+	<string id="31675">Update MC360</string>
+	<string id="31676">Update Marketplace</string>
+	<string id="31693">Update XBMC-TV</string>
+	<!--- End UpdateMenu Labels -->
+	<!--- Begin XBMCDownloads Labels -->
+	<string id="31677">XBMC Downloads</string>
+	<string id="31678">Game Trainers</string>
+	<string id="31679">Splash Screens</string>
+	<string id="31680">Sound Packs</string>
+	<string id="31681">XBMC Changelog</string>
+	<!--- End XBMCDownloads Labels -->
+	<!--- Begin ThemesandPics Labels -->
+	<string id="31682">Themes and Gamer Pictures</string>
+	<string id="31683">Official Wallpapers</string>
+	<string id="31684">From the Community</string>
+	<string id="31685">Themes</string>
+	<!--- End ThemesandPics Labels -->
+	<!--- Begin XBMCLivePlace Labels -->
+	<string id="31688">Media and Entertainment</string>
+	<string id="31689">Skin Mods</string>
+	<string id="31690">Themes and Gamer Pictures</string>
+	<string id="31691">Featured Downloads</string>
+	<string id="31692">Active Downloads</string>
+	<!--- End XBMCLivePlace Labels -->
+	<!-- New Labels -->
+	<string id="31686">Gamer Pictures</string>
+	<string id="31687">Other Skins</string>
+	<string id="31694">Web Browser Button in VMP</string>
+	<string id="31695">Home Blades Options</string>
+	<string id="31696">Adjust Web Browser Settings, and Choose Weather Display, Including:&#10;&#10;* Homepage&#10;* Font and Image Size&#10;* 3 Cities&#10;* Wind Speed&#10;* Temperature</string>
+	<string id="31697">Media Blade Options</string>
+	<string id="31698">Games Blade Options</string>
+	<string id="31699">Live Blade Options</string>
+	<string id="31700">Other Options</string>
+	<string id="31701">Web Browser</string>
+	<string id="31702">Movies</string>
+	<string id="31703">Movies</string>
+	<string id="31704">Movies</string>
+	<string id="31705">Movies</string>
+	<string id="31706">Movies</string>
+</strings>

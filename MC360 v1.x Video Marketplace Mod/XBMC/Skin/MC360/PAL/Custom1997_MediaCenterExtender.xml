@@ -18,10 +18,10 @@
 					<width>550</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>A PC running Windows Media Center is the all-in-one entertainment and computing solution for your home.  For more info, go to:</label>
+					<label>31450</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
 				</control>
 				<control type="label">
 					<description>Website</description>
@@ -29,10 +29,10 @@
 					<posy>230</posy>
 					<width>410</width>
 					<height>200</height>
-					<label>www.microsoft.com/extender</label>
+					<label>31451</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<visible>yes</visible>
 				</control>
 				<control type="label">
@@ -42,11 +42,11 @@
 					<width>550</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>To connect your Xbox console to a PC powered by Windows Media Center on your home network, select Media Center now.</label>
+					<label>31452</label>
 					<font>font14</font>
 					<visible>yes</visible>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
 				</control>
 				<control type="button" id="3">
 					<description>Media Center Button</description>
@@ -55,7 +55,7 @@
 					<width>320</width>
 					<height>42</height>
 					<align>center</align>
-					<label>MediaCenter</label>										
+					<label>31453</label>										
 					<onclick>XBMC.ActivateWindow(1972)</onclick>
 					<pulseonselect>no</pulseonselect>
 					<onleft>1</onleft>
@@ -87,9 +87,9 @@
 					<posx>102</posx>
 					<posy>42</posy>
 					<align>left</align>
-					<label>Windows Media Center</label>
-					<include>TextcolorWhite</include>
-					<include>shadow-black</include>
+					<label>31454</label>
+					<textcolor>TextcolorWhite</textcolor>
+					<shadowcolor>shadow-black</shadowcolor>
 					<font>font18</font>
 				</control>
 			</control>

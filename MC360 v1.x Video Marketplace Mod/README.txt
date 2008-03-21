@@ -1,5 +1,7 @@
 MC360 monster mod by timdog82001 (ElenionTolto)
 
+Mini Video Preview Window Mod by spaz7986
+
 For suggestions, requests, comments, criticism, bug reports, or anything at all, go to the original thread at http://forums.xbox-scene.com/index.php?act=ST&f=193&t=593354
 
 1.  XBMC Video Marketplace / Script  Marketplace
@@ -58,9 +60,3 @@ FUTURE POSSIBILITIES?
 - Ability to automatically look in multiple places for XBMC-TV folder (probably root of E and F drives) and default to looking for bookmark if its not located in either of those places.  Not sure if this is possible however, but if anybody knows how, let me know!
 
 - Fix Launch Browser script to replace current "News Videos" button with "Music Videos" to replicate the actual 360 setup.  Not sure how likely this is to happen, since I know hardly anything about python...
-
-
-KNOWN BUGS: 
-
-
-- xbmcthemes.py blade closes artificially and without sound.

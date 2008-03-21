@@ -10,11 +10,11 @@
 			<posx>380</posx>
 			<posy>115</posy>
 			<width>320</width>
-			<label>Either you do not have any files set up for this button in Category Mode, or they are all disabled.  Please go to the Marketplace configuration menu to add or enable files.</label>
+			<label>31515</label>
 			<font>font14</font>
 			<wrapmultiline>true</wrapmultiline>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible>[!Skin.String(Button-5File1) | !Skin.HasSetting(Button-5Enable1)] + [!Skin.String(Button-5File2) | !Skin.HasSetting(Button-5Enable2)] + [!Skin.String(Button-5File3) | !Skin.HasSetting(Button-5Enable3)] + [!Skin.String(Button-5File4) | !Skin.HasSetting(Button-5Enable4)] + [!Skin.String(Button-5File5) | !Skin.HasSetting(Button-5Enable5)] + [!Skin.String(Button-5File6) | !Skin.HasSetting(Button-5Enable6)] + [!Skin.String(Button-5File7) | !Skin.HasSetting(Button-5Enable7)] + [!Skin.String(Button-5File8) | !Skin.HasSetting(Button-5Enable8)] + [!Skin.String(Button-5File9) | !Skin.HasSetting(Button-5Enable9)] + [!Skin.String(Button-5File10) | !Skin.HasSetting(Button-5Enable10)]</visible>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
@@ -160,7 +160,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>File Launcher</label>
+			<label>31516</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<visible>!Skin.String(category-5) + [Skin.String(Button-5File1) | Skin.String(Button-5File2) | Skin.String(Button-5File3) | Skin.String(Button-5File4) | Skin.String(Button-5File5) | Skin.String(Button-5File6) | Skin.String(Button-5File7) |Skin.String(Button-5File8) | Skin.String(Button-5File9) | Skin.String(Button-5File10)]</visible>
@@ -184,7 +184,7 @@
 			<posx>410</posx>
 			<posy>40</posy>
 			<width>303</width>
-			<label>No Files Found</label>
+			<label>31517</label>
 			<align>left</align>
 			<include>DialogTitle</include>
 			<animation effect="fade" delay="450" time="200">WindowOpen</animation>
@@ -209,8 +209,8 @@
 				<ondown>2</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File1) + Skin.HasSetting(Button-5Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -218,14 +218,14 @@
 			</control>
 			<control type="label">
 				<description>Button 1 Default Label</description>
-				<label>File 1</label>
+				<label>31518</label>
 				<posx>380</posx>
 				<posy>106</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name1) + Skin.String(Button-5File1) + Skin.HasSetting(Button-5Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -238,9 +238,9 @@
 				<posy>106</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name1) + Skin.String(Button-5File1) + Skin.HasSetting(Button-5Enable1)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -263,8 +263,8 @@
 				<ondown>3</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File2) + Skin.HasSetting(Button-5Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -272,14 +272,14 @@
 			</control>
 			<control type="label">
 				<description>Button 2 Default Label</description>
-				<label>File 2</label>
+				<label>31519</label>
 				<posx>380</posx>
 				<posy>142</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name2) + Skin.String(Button-5File2) + Skin.HasSetting(Button-5Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -292,9 +292,9 @@
 				<posy>142</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name2) + Skin.String(Button-5File2) + Skin.HasSetting(Button-5Enable2)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -317,8 +317,8 @@
 				<ondown>4</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File3) + Skin.HasSetting(Button-5Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -326,14 +326,14 @@
 			</control>
 			<control type="label">
 				<description>Button 3 Default Label</description>
-				<label>File 3</label>
+				<label>31520</label>
 				<posx>380</posx>
 				<posy>178</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name3) + Skin.String(Button-5File3) + Skin.HasSetting(Button-5Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -346,9 +346,9 @@
 				<posy>178</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name3) + Skin.String(Button-5File3) + Skin.HasSetting(Button-5Enable3)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -371,8 +371,8 @@
 				<ondown>5</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File4) + Skin.HasSetting(Button-5Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -380,14 +380,14 @@
 			</control>
 			<control type="label">
 				<description>Button 4 Default Label</description>
-				<label>File 4</label>
+				<label>31521</label>
 				<posx>380</posx>
 				<posy>214</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name4) + Skin.String(Button-5File4) + Skin.HasSetting(Button-5Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -400,9 +400,9 @@
 				<posy>214</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name4) + Skin.String(Button-5File4) + Skin.HasSetting(Button-5Enable4)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -425,8 +425,8 @@
 				<ondown>6</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File5) + Skin.HasSetting(Button-5Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -434,14 +434,14 @@
 			</control>
 			<control type="label">
 				<description>Button 5 Default Label</description>
-				<label>File 5</label>
+				<label>31522</label>
 				<posx>380</posx>
 				<posy>250</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name5) + Skin.String(Button-5File5) + Skin.HasSetting(Button-5Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -454,9 +454,9 @@
 				<posy>250</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name5) + Skin.String(Button-5File5) + Skin.HasSetting(Button-5Enable5)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -479,8 +479,8 @@
 				<ondown>7</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File6) + Skin.HasSetting(Button-5Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -488,14 +488,14 @@
 			</control>
 			<control type="label">
 				<description>Button 6 Default Label</description>
-				<label>File 6</label>
+				<label>31523</label>
 				<posx>380</posx>
 				<posy>286</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name6) + Skin.String(Button-5File6) + Skin.HasSetting(Button-5Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -508,9 +508,9 @@
 				<posy>286</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name6) + Skin.String(Button-5File6) + Skin.HasSetting(Button-5Enable6)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -533,8 +533,8 @@
 				<ondown>8</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File7) + Skin.HasSetting(Button-5Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -542,14 +542,14 @@
 			</control>
 			<control type="label">
 				<description>Button 7 Default Label</description>
-				<label>File 7</label>
+				<label>31524</label>
 				<posx>380</posx>
 				<posy>322</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name7) + Skin.String(Button-5File7) + Skin.HasSetting(Button-5Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -562,9 +562,9 @@
 				<posy>322</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name7) + Skin.String(Button-5File7) + Skin.HasSetting(Button-5Enable7)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -587,8 +587,8 @@
 				<ondown>9</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File8) + Skin.HasSetting(Button-5Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -596,14 +596,14 @@
 			</control>
 			<control type="label">
 				<description>Button 8 Default Label</description>
-				<label>File 8</label>
+				<label>31525</label>
 				<posx>380</posx>
 				<posy>358</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name8) + Skin.String(Button-5File8) + Skin.HasSetting(Button-5Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -616,9 +616,9 @@
 				<posy>358</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name8) + Skin.String(Button-5File8) + Skin.HasSetting(Button-5Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -641,8 +641,8 @@
 				<ondown>10</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File9) + Skin.HasSetting(Button-5Enable9)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -650,14 +650,14 @@
 			</control>
 			<control type="label">
 				<description>Button 9 Default Label</description>
-				<label>File 9</label>
+				<label>31526</label>
 				<posx>380</posx>
 				<posy>394</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name9) + Skin.String(Button-5File9) + Skin.HasSetting(Button-5Enable8)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -670,9 +670,9 @@
 				<posy>394</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name9) + Skin.String(Button-5File9) + Skin.HasSetting(Button-5Enable9)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -695,8 +695,8 @@
 				<ondown>1</ondown>
 				<font>font14</font>
 				<textoffsetx>40</textoffsetx>
-				<include>TextcolorBlack</include>
-				<include>shadow-white</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5File10) + Skin.HasSetting(Button-5Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -704,14 +704,14 @@
 			</control>
 			<control type="label">
 				<description>Button 10 Default Label</description>
-				<label>File 10</label>
+				<label>31527</label>
 				<posx>380</posx>
 				<posy>430</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>!Skin.String(Button-5Name10) + Skin.String(Button-5File10) + Skin.HasSetting(Button-5Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
@@ -724,9 +724,9 @@
 				<posy>430</posy>
 				<height>59</height>
 				<width>350</width>
-				<include>TextcolorBlack</include>
+				<textcolor>TextcolorBlack</textcolor>
 				<font>font14</font>
-				<include>shadow-white</include>
+				<shadowcolor>shadow-white</shadowcolor>
 				<visible>Skin.String(Button-5Name10) + Skin.String(Button-5File10) + Skin.HasSetting(Button-5Enable10)</visible>
 				<animation effect="fade" delay="450" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>

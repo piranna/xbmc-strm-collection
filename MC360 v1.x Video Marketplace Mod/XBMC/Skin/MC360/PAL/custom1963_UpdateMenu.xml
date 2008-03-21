@@ -1,0 +1,238 @@
+<window id="1963">
+	<defaultcontrol>9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<controls>
+		<!-- Setup Background and Window Transition -->
+		<include>LiveBackGroundWhitewash</include>
+		<!-- Start Normal Window Controls -->
+		<control type="group">
+			<animation effect="fade" delay="100" time="250">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+			<control type="label" id="101">
+				<description>XBMC Live Place label</description>
+				<posx>102</posx>
+				<posy>42</posy>
+				<align>left</align>
+				<label>31673</label>
+				<textcolor>TextcolorWhite</textcolor>
+				<shadowcolor>shadow-black</shadowcolor>
+				<font>font18</font>
+				<visible>!Skin.HasSetting(DisableBladeLabels)</visible>
+			</control>
+			<control type="image">
+				<description>XBMC Live Place Logo</description>
+				<posx>385</posx>
+				<posy>90</posy>
+				<width>290</width>
+				<height>85</height>
+				<texture>XBMCLivePlace\xbmc_live_place_logo.png</texture>
+				<visible>!Skin.HasSetting(DisableLogos)</visible>
+			</control>
+			<control type="image">
+				<description>Big Advert Window</description>
+				<posx>385</posx>
+				<posy>180</posy>
+				<width>290</width>
+				<height>280</height>
+				<texture border="15">XBMCLivePlace\xbmc_live_eX_ad001.png</texture>
+			</control>
+			<control type="group" id="9000">
+				<control type="group" id="10000">
+					<posy>-7</posy>
+					<control type="image">
+						<description>Market Place Button 1 Hightlight Image</description>
+						<posx>90</posx>
+						<posy>95</posy>
+						<width>290</width>
+						<height>70</height>
+						<texture>button-liveplace-big-focus.png</texture>
+						<visible>Control.HasFocus(1)</visible>
+					</control>
+					<control type="image">
+						<description>Market Place Button 1 Image Icon</description>
+						<posx>95</posx>
+						<posy>97</posy>
+						<width>280</width>
+						<height>64</height>
+						<texture>xbmc.png</texture>
+					</control>
+					<control type="button" id="1">
+						<description>XBMC Update Button 1 push button</description>
+						<posx>90</posx>
+						<posy>95</posy>
+						<width>290</width>
+						<height>70</height>
+						<aligny>-</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>40</textoffsety>
+						<label>31674</label>
+						<shadowcolor>shadow-grey</shadowcolor>
+						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+						<onclick>XBMC.RunScript(Q:\skin\MC360\extras\XBMC Black Market\T3CH Downloader\default.py)</onclick>
+						<visible>yes</visible>
+						<onleft>1</onleft>
+						<onright>1</onright>
+						<onup>5</onup>
+						<ondown>2</ondown>
+					</control>
+					<control type="image">
+						<description>Market Place Button 2 Hightlight Image</description>
+						<posx>90</posx>
+						<posy>165</posy>
+						<width>290</width>
+						<height>70</height>
+						<texture>button-liveplace-big-focus.png</texture>
+						<visible>Control.HasFocus(2)</visible>
+					</control>
+					<control type="image">
+						<description>Market Place Button 2 Image Icon</description>
+						<posx>95</posx>
+						<posy>167</posy>
+						<width>280</width>
+						<height>64</height>
+						<texture>default.png</texture>
+					</control>
+					<control type="button" id="2">
+						<description>MC360 Update Button 2 push button</description>
+						<posx>90</posx>
+						<posy>165</posy>
+						<width>290</width>
+						<height>70</height>
+						<aligny>-</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>40</textoffsety>
+						<label>31675</label>
+						<shadowcolor>shadow-grey</shadowcolor>
+						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+						<onclick>XBMC.RunScript(Q:\skin\MC360\extras\manupdatecheck.py)</onclick>
+						<visible>yes</visible>
+						<onleft>2</onleft>
+						<onright>2</onright>
+						<onup>1</onup>
+						<ondown>3</ondown>
+					</control>
+					<control type="image">
+						<description>Market Place Button 3 Hightlight Image</description>
+						<posx>90</posx>
+						<posy>235</posy>
+						<width>290</width>
+						<height>70</height>
+						<texture>button-liveplace-big-focus.png</texture>
+						<visible>Control.HasFocus(3)</visible>
+					</control>
+					<control type="image">
+						<description>Market Place Button 3 Image Icon</description>
+						<posx>95</posx>
+						<posy>237</posy>
+						<width>280</width>
+						<height>64</height>
+						<texture>Marketplace.png</texture>>
+					</control>
+					<control type="button" id="3">
+						<description>Monster Mod Update 3 push button</description>
+						<posx>90</posx>
+						<posy>235</posy>
+						<width>290</width>
+						<height>70</height>
+						<aligny>-</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>40</textoffsety>
+						<label>31676</label>
+						<shadowcolor>shadow-grey</shadowcolor>
+						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+						<onclick>XBMC.RunScript()</onclick>
+						<onleft>3</onleft>
+						<onright>3</onright>
+						<onup>2</onup>
+						<ondown>4</ondown>
+					</control>
+					<control type="image">
+						<description>Market Place Button 4 Hightlight Image</description>
+						<posx>90</posx>
+						<posy>305</posy>
+						<width>290</width>
+						<height>70</height>
+						<texture>button-liveplace-big-focus.png</texture>
+						<visible>Control.HasFocus(4)</visible>
+					</control>
+					<control type="image">
+						<description>Market Place Button 4 Image Icon</description>
+						<posx>95</posx>
+						<posy>307</posy>
+						<width>280</width>
+						<height>64</height>
+						<texture>webbrowser-2.png</texture>
+					</control>
+					<control type="button" id="4">
+						<description>Update XBMC-TV Button 4 push button</description>
+						<posx>90</posx>
+						<posy>305</posy>
+						<width>290</width>
+						<height>70</height>
+						<aligny>-</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>40</textoffsety>
+						<label>31693</label>
+						<shadowcolor>shadow-grey</shadowcolor>
+						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+						<onclick>XBMC.RunScript()</onclick>
+						<visible>yes</visible>
+						<onleft>4</onleft>
+						<onright>4</onright>
+						<onup>3</onup>
+						<ondown>5</ondown>
+					</control>
+					<control type="image">
+						<description>Market Place Button 5 Hightlight Image</description>
+						<posx>90</posx>
+						<posy>375</posy>
+						<width>290</width>
+						<height>70</height>
+						<texture>button-liveplace-big-focus.png</texture>
+						<visible>Control.HasFocus(5)</visible>
+					</control>
+					<control type="image">
+						<description>Market Place Button 5 Image Icon</description>
+						<posx>95</posx>
+						<posy>377</posy>
+						<width>280</width>
+						<height>64</height>
+						<texture>FeaturedDownloads.png</texture>
+						<visible>no</visible>
+					</control>
+					<control type="button" id="5">
+						<description>Market Place Button 5 push button</description>
+						<posx>90</posx>
+						<posy>375</posy>
+						<width>290</width>
+						<height>70</height>
+						<aligny>-</aligny>
+						<textoffsetx>10</textoffsetx>
+						<textoffsety>40</textoffsety>
+						<label>31691</label>
+						<shadowcolor>shadow-grey</shadowcolor>
+						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+						<onclick>XBMC.RunScript(Q:\scripts\YouTube\default.py)</onclick>
+						<visible>no</visible>
+						<onleft>5</onleft>
+						<onright>5</onright>
+						<onup>4</onup>
+						<ondown>1</ondown>
+					</control>
+				</control>
+			</control>
+			<!--- Insert New stuff here -->
+			<control type="group">
+				<visible>!Skin.HasSetting(DisableGamepadLogos)</visible>
+				<include>SystemCustomKeymaps</include>
+			</control>
+		</control>
+		<!-- Start Screen Close Animation -->
+		<include>LiveCommonsBlades</include>
+	</controls>
+</window>

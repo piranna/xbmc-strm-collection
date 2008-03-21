@@ -28,10 +28,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 1</label>
+			<label>31643</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(3000)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -51,10 +51,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Set File 1</label>
+			<label>31613</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -75,10 +75,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Set Image 1 (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -99,10 +99,10 @@
 			<onup>28</onup>
 			<ondown>4</ondown>
 			<font>font14</font>
-			<label>Name Button 1 (Resets Image!)</label>
+			<label>31633</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(3000)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -134,10 +134,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 2</label>
+			<label>31644</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(5) + !Control.HasFocus(6) + !Control.HasFocus(60)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -157,10 +157,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Set File 2</label>
+			<label>31614</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(5)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -181,10 +181,10 @@
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Set Image 2 (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(6)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -199,15 +199,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name2)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image2)</onclick>
 			<onleft>6</onleft>
 			<onright>4</onright>
 			<onup>1</onup>
 			<ondown>7</ondown>
 			<font>font14</font>
-			<label>Name Button 2 (Resets Image!)</label>
+			<label>31634</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -239,10 +240,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 3</label>
+			<label>31645</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(8) + !Control.HasFocus(9) + !Control.HasFocus(90)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -262,10 +263,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Set File 3</label>
+			<label>31615</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(8)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -286,10 +287,10 @@
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(9)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -304,15 +305,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name3)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image3)</onclick>
 			<onleft>9</onleft>
 			<onright>7</onright>
 			<onup>4</onup>
 			<ondown>10</ondown>
 			<font>font14</font>
-			<label>Name Button 3 (Resets Image!)</label>
+			<label>31645</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(90)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -344,10 +346,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 4</label>
+			<label>31646</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(11) + !Control.HasFocus(12) + !Control.HasFocus(120)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -367,10 +369,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Set File 4</label>
+			<label>31616</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(11)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -391,10 +393,10 @@
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(12)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -409,15 +411,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name4)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image4)</onclick>
 			<onleft>12</onleft>
 			<onright>10</onright>
 			<onup>7</onup>
 			<ondown>13</ondown>
 			<font>font14</font>
-			<label>Name Button 4 (Resets Image!)</label>
+			<label>31636</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(120)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -449,10 +452,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 5</label>
+			<label>31647</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(14) + !Control.HasFocus(15) + !Control.HasFocus(150)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -472,10 +475,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Set File 5</label>
+			<label>31617</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(14)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -496,10 +499,10 @@
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(15)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -514,15 +517,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name5)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image5)</onclick>
 			<onleft>15</onleft>
 			<onright>13</onright>
 			<onup>10</onup>
 			<ondown>16</ondown>
 			<font>font14</font>
-			<label>Name Button 5 (Resets Image!)</label>
+			<label>31637</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(150)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -554,10 +558,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 6</label>
+			<label>31648</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(17) + !Control.HasFocus(18) + !Control.HasFocus(180)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -577,10 +581,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Set File 6</label>
+			<label>31618</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(17)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -601,10 +605,10 @@
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(18)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -619,15 +623,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name6)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image6)</onclick>
 			<onleft>18</onleft>
 			<onright>16</onright>
 			<onup>13</onup>
 			<ondown>19</ondown>
 			<font>font14</font>
-			<label>Name Button 6 (Resets Image!)</label>
+			<label>31638</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(180)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -659,10 +664,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 7</label>
+			<label>31649</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(20) + !Control.HasFocus(21) + !Control.HasFocus(210)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -682,10 +687,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Set File 7</label>
+			<label>31619</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(20)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -706,10 +711,10 @@
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(21)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -724,15 +729,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name7)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image7)</onclick>
 			<onleft>21</onleft>
 			<onright>19</onright>
 			<onup>16</onup>
 			<ondown>22</ondown>
 			<font>font14</font>
-			<label>Name Button 7 (Resets Image!)</label>
+			<label>31639</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(210)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -764,10 +770,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 8</label>
+			<label>31650</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(23) + !Control.HasFocus(24) + !Control.HasFocus(240)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -787,10 +793,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Set File 8</label>
+			<label>31620</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(23)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -811,10 +817,10 @@
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(24)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -829,15 +835,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name8)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image8)</onclick>
 			<onleft>24</onleft>
 			<onright>22</onright>
 			<onup>19</onup>
 			<ondown>25</ondown>
 			<font>font14</font>
-			<label>Name Button 8 (Resets Image!)</label>
+			<label>31640</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(240)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -869,10 +876,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 9</label>
+			<label>31651</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(26) + !Control.HasFocus(27) + !Control.HasFocus(270)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -892,10 +899,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Set File 9</label>
+			<label>31621</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(26)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -916,10 +923,10 @@
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(27)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -934,15 +941,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name9)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image9)</onclick>
 			<onleft>27</onleft>
 			<onright>25</onright>
 			<onup>22</onup>
 			<ondown>28</ondown>
 			<font>font14</font>
-			<label>Name Button 9 (Resets Image!)</label>
+			<label>31641</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(270)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -974,10 +982,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Enable Arcade Button 10</label>
+			<label>31652</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">!Control.HasFocus(29) + !Control.HasFocus(30) + !Control.HasFocus(300)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -997,10 +1005,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Set File 10</label>
+			<label>31622</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(29)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -1021,10 +1029,10 @@
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Set Image (Resets Name!)</label>
+			<label>31623</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(30)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -1039,15 +1047,16 @@
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>no</pulseonselect>
 			<onclick>Skin.SetString(ArcadeFavorites-1Name10)</onclick>
+			<onclick>Skin.Reset(ArcadeFavorites-1Image10)</onclick>
 			<onleft>30</onleft>
 			<onright>28</onright>
 			<onup>25</onup>
 			<ondown>1</ondown>
 			<font>font14</font>
-			<label>Name Button 10 (Resets Image!)</label>
+			<label>31642</label>
 			<textoffsetx>40</textoffsetx>
-			<include>TextcolorBlack</include>
-			<include>shadow-white</include>
+			<textcolor>TextcolorBlack</textcolor>
+			<shadowcolor>shadow-white</shadowcolor>
 			<visible allowhiddenfocus="true">Control.HasFocus(300)</visible>
 			<animation effect="slide" end="-2,0" time="275" reversible="false">focus</animation>
 			<animation effect="fade" time="100">WindowOpen</animation>

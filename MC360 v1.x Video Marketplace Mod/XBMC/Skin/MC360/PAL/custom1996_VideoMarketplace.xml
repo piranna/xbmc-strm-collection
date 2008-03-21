@@ -1,9 +1,8 @@
 <window id="1996">
 	<defaultcontrol>9001</defaultcontrol>
-	<previouswindow>home</previouswindow>
 	<allowoverlay>no</allowoverlay>
+	<previouswindow>home</previouswindow>
 	<controls>
-		<!-- Setup Background and Window Transition -->
 		<include>Background-vis-sub-blades</include>
 		<control type="group">
 			<animation effect="zoom" center="552.147,288" end="86.895,100" time="100" reversible="false" condition="Window.Next(Home)">WindowClose</animation>
@@ -126,7 +125,6 @@
 			<animation effect="slide" end="-30,0" time="100" condition="Window.Next(Home)">WindowClose</animation>
 			<animation effect="slide" start="-30,0" time="100" condition="Window.Previous(Home)">WindowOpen</animation>
 		</control>
-		<!-- Start Normal Window Controls -->
 		<control type="group">
 			<animation effect="fade" delay="100" time="250">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>
@@ -260,7 +258,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\TV Links\default.py)</onclick>
@@ -279,7 +277,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(FileMode-2) + !Skin.HasSetting(DisableButton-2) + Skin.String(FilePath-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-2)]</onclick>
@@ -298,7 +296,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(FileMode-2) + !Skin.HasSetting(DisableButton-2) + !Skin.String(FilePath-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -317,7 +315,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(DisableButton-2) + Skin.String(VideoBookmark-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-2)])</onclick>
@@ -336,7 +334,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(DisableButton-2) + Skin.String(AudioBookmark-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-2)])</onclick>
@@ -355,7 +353,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(DisableButton-2) + Skin.String(PictureBookmark-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-2)])</onclick>
@@ -377,7 +375,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-2) + !Skin.HasSetting(MovieTitle-2) + !Skin.HasSetting(MovieYear-2) + !Skin.HasSetting(MovieActors-2) + !Skin.HasSetting(MovieDirectors-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -396,7 +394,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -415,7 +413,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -434,7 +432,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -453,7 +451,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -472,7 +470,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -495,7 +493,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-2) + !Skin.HasSetting(TVTitle-2) + !Skin.HasSetting(TVYear-2) + !Skin.HasSetting(TVActors-2) + !Skin.HasSetting(TVDirectors-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -514,7 +512,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -533,7 +531,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -552,7 +550,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -571,7 +569,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -594,7 +592,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-2) + !Skin.HasSetting(MusicArtists-2) + !Skin.HasSetting(MusicAlbums-2) + !Skin.HasSetting(MusicSongs-2) + !Skin.HasSetting(MusicPlaylists-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -613,7 +611,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres)</onclick>
@@ -632,7 +630,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -651,7 +649,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -670,7 +668,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -689,7 +687,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-2) + !Skin.HasSetting(DisableButton-2)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -709,7 +707,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(DisableButton-2) + !Skin.String(XBEPath-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1971)</onclick>
@@ -728,7 +726,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>!Skin.HasSetting(DisableButton-2) + [[Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmark-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmark-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmark-2)]]</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -747,7 +745,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1987)</onclick>
@@ -762,7 +760,7 @@
 					<posy>205</posy>
 					<info>Skin.String(UniversalButtonName-2)</info>
 					<visible>Skin.String(UniversalButtonName-2) + !Skin.HasSetting(DisableButton-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [!Skin.String(FileButtonName-2) + Skin.HasSetting(FileMode-2)] | [!Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2)] | [!Skin.String(VideoBookmarkButtonName-2) + Skin.HasSetting(VideoBookmarkMode-2)] | [!Skin.String(AudioBookmarkButtonName-2) + Skin.HasSetting(AudioBookmarkMode-2)] | [!Skin.String(PictureBookmarkButtonName-2) + Skin.HasSetting(PictureBookmarkMode-2)] | [!Skin.String(XBEButtonName-2) + Skin.HasSetting(XBEMode-2)] | [!Skin.String(MovieLibraryButtonName-2) + Skin.HasSetting(MovieLibraryMode-2)] | [!Skin.String(TVLibraryButtonName-2) + Skin.HasSetting(TVLibraryMode-2)] | [!Skin.String(MusicLibraryButtonName-2) + Skin.HasSetting(MusicLibraryMode-2)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Single File Custom Label</description>
@@ -770,7 +768,7 @@
 					<posy>205</posy>
 					<info>Skin.String(FileButtonName-2)</info>
 					<visible>Skin.String(FileButtonName-2) + Skin.HasSetting(FileMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Category File Custom Label</description>
@@ -778,7 +776,7 @@
 					<posy>205</posy>
 					<info>Skin.String(CategoryButtonName-2)</info>
 					<visible>Skin.String(CategoryButtonName-2) + Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Video Bookmark Custom Label</description>
@@ -786,7 +784,7 @@
 					<posy>205</posy>
 					<info>Skin.String(VideoBookmarkButtonName-2)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-2) + Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Audio Bookmark Custom Label</description>
@@ -794,7 +792,7 @@
 					<posy>205</posy>
 					<info>Skin.String(AudioBookmarkButtonName-2)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-2) + Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Picture Bookmark Custom Label</description>
@@ -802,7 +800,7 @@
 					<posy>205</posy>
 					<info>Skin.String(PictureBookmarkButtonName-2)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-2) + Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 XBE Custom Label</description>
@@ -810,7 +808,7 @@
 					<posy>205</posy>
 					<info>Skin.String(XBEButtonName-2)</info>
 					<visible>Skin.String(XBEButtonName-2) + Skin.HasSetting(XBEMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Movie Library Custom Label</description>
@@ -818,7 +816,7 @@
 					<posy>205</posy>
 					<info>Skin.String(MovieLibraryButtonName-2)</info>
 					<visible>Skin.String(MovieLibraryButtonName-2) + Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 TV Library Custom Label</description>
@@ -826,7 +824,7 @@
 					<posy>205</posy>
 					<info>Skin.String(TVLibraryButtonName-2)</info>
 					<visible>Skin.String(TVLibraryButtonName-2) + Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Music Library Custom Label</description>
@@ -834,15 +832,15 @@
 					<posy>205</posy>
 					<info>Skin.String(MusicLibraryButtonName-2)</info>
 					<visible>Skin.String(MusicLibraryButtonName-2) + Skin.HasSetting(MusicLibraryMode-2) + !Skin.HasSetting(DisableButton-2)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 2 Default Label</description>
 					<posx>100</posx>
 					<posy>205</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<visible>!Skin.String(UniversalButtonName-2) + !Skin.HasSetting(DisableButton-2) + [[!Skin.HasSetting(FileMode-2) + !Skin.HasSetting(USE_Category-2) + !Skin.HasSetting(VideoBookmarkMode-2) + !Skin.HasSetting(AudioBookmarkMode-2) + !Skin.HasSetting(PictureBookmarkMode-2) + !Skin.HasSetting(MovieLibraryMode-2) + !Skin.HasSetting(TVLibraryMode-2) + !Skin.HasSetting(MusicLibraryMode-2)] | [Skin.HasSetting(FileMode-2) + !Skin.String(FileButtonName-2)] | [Skin.HasSetting(USE_Category-2) + !Skin.String(CategoryButtonName-2)] | [Skin.HasSetting(VideoBookmarkMode-2) + !Skin.String(VideoBookmarkButtonName-2)] | [Skin.HasSetting(AudioBookmarkMode-2) + !Skin.String(AudioBookmarkButtonName-2)] | [Skin.HasSetting(PictureBookmarkMode-2) + !Skin.String(PictureBookmarkButtonName-2)] | [Skin.HasSetting(XBEMode-2) + !Skin.String(XBEButtonName-2)] | [Skin.HasSetting(MovieLibraryMode-2) + !Skin.String(MovieLibraryButtonName-2)] | [Skin.HasSetting(TVLibraryMode-2) + !Skin.String(TVLibraryButtonName-2)] | [Skin.HasSetting(MusicLibraryMode-2) + !Skin.String(MusicLibraryButtonName-2)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="image">
 					<description>Market Place Button 3 Hightlight Image</description>
@@ -860,7 +858,16 @@
 					<width>280</width>
 					<height>64</height>
 					<texture>news.png</texture>
-					<visible>!Skin.String(UniversalImage-3) + !Skin.HasSetting(DisableButton-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3)</visible>
+					<visible>!Skin.HasSetting(WebBrowser) + !Skin.String(UniversalImage-3) + !Skin.HasSetting(DisableButton-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3)</visible>
+				</control>
+				<control type="image">
+					<description>Market Place Button 3 Web Browser Image Icon</description>
+					<posx>95</posx>
+					<posy>237</posy>
+					<width>280</width>
+					<height>64</height>
+					<texture>webbrowser.png</texture>
+					<visible>Skin.HasSetting(WebBrowser) + !Skin.String(UniversalImage-3) + !Skin.HasSetting(DisableButton-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3)</visible>
 				</control>
 				<control type="image">
 					<description>Market Place Button 3 Default Custom Image Icon</description>
@@ -963,6 +970,25 @@
 					<visible>Skin.String(XBEImage-3) + Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
 				</control>
 				<control type="button" id="3">
+					<description>Market Place Button 3 Web Browser push button</description>
+					<posx>90</posx>
+					<posy>235</posy>
+					<width>290</width>
+					<height>70</height>
+					<aligny>-</aligny>
+					<textoffsetx>10</textoffsetx>
+					<textoffsety>40</textoffsety>
+					<visible>Skin.HasSetting(WebBrowser) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
+					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(webbrowser)</onclick>
+					<onleft>7</onleft>
+					<onright>7</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+				</control>
+				<control type="button" id="3">
 					<description>Market Place Button 3 Default Default Theme push button</description>
 					<posx>90</posx>
 					<posy>235</posy>
@@ -971,8 +997,8 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<visible>!Skin.HasTheme(glass) + !Skin.HasTheme(Carbon) + !Skin.HasTheme(Hello-Kitty) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>shadow-grey</include>
+					<visible>!Skin.HasSetting(WebBrowser) + !Skin.HasTheme(glass) + !Skin.HasTheme(Carbon) + !Skin.HasTheme(Hello-Kitty) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\default.py)</onclick>
@@ -990,8 +1016,8 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<visible>[Skin.HasTheme(Hello-Kitty) | Skin.HasTheme(Glass)] + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>shadow-grey</include>
+					<visible>!Skin.HasSetting(WebBrowser) + [Skin.HasTheme(Hello-Kitty) | Skin.HasTheme(Glass)] + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\glassdefault.py)</onclick>
@@ -1009,8 +1035,8 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<visible>Skin.HasTheme(Carbon) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>shadow-grey</include>
+					<visible>!Skin.HasSetting(WebBrowser) + Skin.HasTheme(Carbon) + !Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CNN\carbondefault.py)</onclick>
@@ -1032,7 +1058,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-3) + !Skin.HasSetting(MovieTitle-3) + !Skin.HasSetting(MovieYear-3) + !Skin.HasSetting(MovieActors-3) + !Skin.HasSetting(MovieDirectors-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -1051,7 +1077,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -1070,7 +1096,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -1089,7 +1115,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -1108,7 +1134,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -1127,7 +1153,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -1150,7 +1176,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-3) + !Skin.HasSetting(TVTitle-3) + !Skin.HasSetting(TVYear-3) + !Skin.HasSetting(TVActors-3) + !Skin.HasSetting(TVDirectors-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -1169,7 +1195,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -1188,7 +1214,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -1207,7 +1233,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -1226,7 +1252,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -1249,7 +1275,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-3) + !Skin.HasSetting(MusicArtists-3) + !Skin.HasSetting(MusicAlbums-3) + !Skin.HasSetting(MusicSongs-3) + !Skin.HasSetting(MusicPlaylists-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -1268,7 +1294,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres)</onclick>
@@ -1287,7 +1313,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -1306,7 +1332,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -1325,7 +1351,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -1344,7 +1370,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-3) + !Skin.HasSetting(DisableButton-3)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -1363,7 +1389,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-3)]</onclick>
@@ -1382,7 +1408,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -1402,7 +1428,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(DisableButton-3) + !Skin.String(XBEPath-3)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1971)</onclick>
@@ -1420,7 +1446,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1986)</onclick>
@@ -1439,7 +1465,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-3)])</onclick>
@@ -1458,7 +1484,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-3)])</onclick>
@@ -1477,7 +1503,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-3)])</onclick>
@@ -1496,7 +1522,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -1512,7 +1538,7 @@
 					<posy>275</posy>
 					<info>Skin.String(UniversalButtonName-3)</info>
 					<visible>Skin.String(UniversalButtonName-3) + !Skin.HasSetting(DisableButton-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [!Skin.String(FileButtonName-3) + Skin.HasSetting(FileMode-3)] | [!Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3)] | [!Skin.String(VideoBookmarkButtonName-3) + Skin.HasSetting(VideoBookmarkMode-3)] | [!Skin.String(AudioBookmarkButtonName-3) + Skin.HasSetting(AudioBookmarkMode-3)] | [!Skin.String(PictureBookmarkButtonName-3) + Skin.HasSetting(PictureBookmarkMode-3)] | [!Skin.String(XBEButtonName-3) + Skin.HasSetting(XBEMode-3)] | [!Skin.String(MovieLibraryButtonName-3) + Skin.HasSetting(MovieLibraryMode-3)] | [!Skin.String(TVLibraryButtonName-3) + Skin.HasSetting(TVLibraryMode-3)] | [!Skin.String(MusicLibraryButtonName-3) + Skin.HasSetting(MusicLibraryMode-3)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Movie Library Custom Label</description>
@@ -1520,7 +1546,7 @@
 					<posy>275</posy>
 					<info>Skin.String(MovieLibraryButtonName-3)</info>
 					<visible>Skin.String(MovieLibraryButtonName-3) + Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 TV Library Custom Label</description>
@@ -1528,7 +1554,7 @@
 					<posy>275</posy>
 					<info>Skin.String(TVLibraryButtonName-3)</info>
 					<visible>Skin.String(TVLibraryButtonName-3) + Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Music Library Custom Label</description>
@@ -1536,7 +1562,7 @@
 					<posy>275</posy>
 					<info>Skin.String(MusicLibraryButtonName-3)</info>
 					<visible>Skin.String(MusicLibraryButtonName-3) + Skin.HasSetting(MusicLibraryMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Single File Custom Label</description>
@@ -1544,7 +1570,7 @@
 					<posy>275</posy>
 					<info>Skin.String(FileButtonName-3)</info>
 					<visible>Skin.String(FileButtonName-3) + Skin.HasSetting(FileMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Category File Custom Label</description>
@@ -1552,7 +1578,7 @@
 					<posy>275</posy>
 					<info>Skin.String(CategoryButtonName-3)</info>
 					<visible>Skin.String(CategoryButtonName-3) + Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Video Bookmark Custom Label</description>
@@ -1560,7 +1586,7 @@
 					<posy>275</posy>
 					<info>Skin.String(VideoBookmarkButtonName-3)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-3) + Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Audio Bookmark Custom Label</description>
@@ -1568,7 +1594,7 @@
 					<posy>275</posy>
 					<info>Skin.String(AudioBookmarkButtonName-3)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-3) + Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Picture Bookmark Custom Label</description>
@@ -1576,7 +1602,7 @@
 					<posy>275</posy>
 					<info>Skin.String(PictureBookmarkButtonName-3)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-3) + Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 XBE Custom Label</description>
@@ -1584,15 +1610,23 @@
 					<posy>275</posy>
 					<info>Skin.String(XBEButtonName-3)</info>
 					<visible>Skin.String(XBEButtonName-3) + Skin.HasSetting(XBEMode-3) + !Skin.HasSetting(DisableButton-3)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 3 Default Label</description>
 					<posx>100</posx>
 					<posy>275</posy>
-					<label>News Clips</label>
-					<visible>!Skin.String(UniversalButtonName-3) + !Skin.HasSetting(DisableButton-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [Skin.HasSetting(FileMode-3) + !Skin.String(FileButtonName-3)] | [Skin.HasSetting(USE_Category-3) + !Skin.String(CategoryButtonName-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkButtonName-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkButtonName-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkButtonName-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEButtonName-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryButtonName-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryButtonName-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryButtonName-3)]]</visible>
-					<include>TextcolorBlack</include>
+					<label>31455</label>
+					<visible>!Skin.HasSetting(WebBrowser) + !Skin.String(UniversalButtonName-3) + !Skin.HasSetting(DisableButton-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [Skin.HasSetting(FileMode-3) + !Skin.String(FileButtonName-3)] | [Skin.HasSetting(USE_Category-3) + !Skin.String(CategoryButtonName-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkButtonName-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkButtonName-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkButtonName-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEButtonName-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryButtonName-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryButtonName-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryButtonName-3)]]</visible>
+					<textcolor>TextcolorBlack</textcolor>
+				</control>
+				<control type="label">
+					<description>Button 3 Web Browser Label</description>
+					<posx>100</posx>
+					<posy>275</posy>
+					<label>31701</label>
+					<visible>Skin.HasSetting(WebBrowser) + !Skin.String(UniversalButtonName-3) + !Skin.HasSetting(DisableButton-3) + [[!Skin.HasSetting(FileMode-3) + !Skin.HasSetting(USE_Category-3) + !Skin.HasSetting(VideoBookmarkMode-3) + !Skin.HasSetting(AudioBookmarkMode-3) + !Skin.HasSetting(PictureBookmarkMode-3) + !Skin.HasSetting(MovieLibraryMode-3) + !Skin.HasSetting(TVLibraryMode-3) + !Skin.HasSetting(MusicLibraryMode-3)] | [Skin.HasSetting(FileMode-3) + !Skin.String(FileButtonName-3)] | [Skin.HasSetting(USE_Category-3) + !Skin.String(CategoryButtonName-3)] | [Skin.HasSetting(VideoBookmarkMode-3) + !Skin.String(VideoBookmarkButtonName-3)] | [Skin.HasSetting(AudioBookmarkMode-3) + !Skin.String(AudioBookmarkButtonName-3)] | [Skin.HasSetting(PictureBookmarkMode-3) + !Skin.String(PictureBookmarkButtonName-3)] | [Skin.HasSetting(XBEMode-3) + !Skin.String(XBEButtonName-3)] | [Skin.HasSetting(MovieLibraryMode-3) + !Skin.String(MovieLibraryButtonName-3)] | [Skin.HasSetting(TVLibraryMode-3) + !Skin.String(TVLibraryButtonName-3)] | [Skin.HasSetting(MusicLibraryMode-3) + !Skin.String(MusicLibraryButtonName-3)]]</visible>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="image">
 					<description>Market Place Button 4 Hightlight Image</description>
@@ -1722,7 +1756,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>!Skin.HasTheme(Glass) + !Skin.HasTheme(Carbon) + !Skin.HasTheme(Hello-Kitty) + !Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\default.py)</onclick>
@@ -1741,7 +1775,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>[Skin.HasTheme(Hello-Kitty) | Skin.HasTheme(Glass)] + !Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\glassdefault.py)</onclick>
@@ -1760,10 +1794,10 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasTheme(Carbon) + !Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\CarbonGameTrailersRssReader\carbondefault.py)</onclick>
+					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\G4tv.com xbmcCAST\carbondefault.py)</onclick>
 					<onleft>7</onleft>
 					<onright>7</onright>
 					<onup>3</onup>
@@ -1782,7 +1816,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-4) + !Skin.HasSetting(MovieTitle-4) + !Skin.HasSetting(MovieYear-4) + !Skin.HasSetting(MovieActors-4) + !Skin.HasSetting(MovieDirectors-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -1801,7 +1835,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -1820,7 +1854,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -1839,7 +1873,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -1858,7 +1892,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -1877,7 +1911,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -1900,7 +1934,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-4) + !Skin.HasSetting(TVTitle-4) + !Skin.HasSetting(TVYear-4) + !Skin.HasSetting(TVActors-4) + !Skin.HasSetting(TVDirectors-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -1919,7 +1953,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -1938,7 +1972,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -1957,7 +1991,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -1976,7 +2010,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -1999,7 +2033,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-4) + !Skin.HasSetting(MusicArtists-4) + !Skin.HasSetting(MusicAlbums-4) + !Skin.HasSetting(MusicSongs-4) + !Skin.HasSetting(MusicPlaylists-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -2018,7 +2052,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres)</onclick>
@@ -2037,7 +2071,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -2056,7 +2090,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -2075,7 +2109,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -2094,7 +2128,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-4) + !Skin.HasSetting(DisableButton-4)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -2113,7 +2147,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-4)]</onclick>
@@ -2132,7 +2166,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -2151,7 +2185,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1985)</onclick>
@@ -2170,7 +2204,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-4)])</onclick>
@@ -2189,7 +2223,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-4)])</onclick>
@@ -2208,7 +2242,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-4)])</onclick>
@@ -2227,7 +2261,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -2243,7 +2277,7 @@
 					<posy>345</posy>
 					<info>Skin.String(UniversalButtonName-4)</info>
 					<visible>Skin.String(UniversalButtonName-4) + !Skin.HasSetting(DisableButton-4) + [[!Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [!Skin.String(FileButtonName-4) + Skin.HasSetting(FileMode-4)] | [!Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4)] | [!Skin.String(VideoBookmarkButtonName-4) + Skin.HasSetting(VideoBookmarkMode-4)] | [!Skin.String(AudioBookmarkButtonName-4) + Skin.HasSetting(AudioBookmarkMode-4)] | [!Skin.String(PictureBookmarkButtonName-4) + Skin.HasSetting(PictureBookmarkMode-4)] | [!Skin.String(XBEButtonName-4) + Skin.HasSetting(XBEMode-4)] | [!Skin.String(MovieLibraryButtonName-4) + Skin.HasSetting(MovieLibraryMode-4)] | [!Skin.String(TVLibraryButtonName-4) + Skin.HasSetting(TVLibraryMode-4)] | [!Skin.String(MusicLibraryButtonName-4) + Skin.HasSetting(MusicLibraryMode-4)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Movie Library Custom Label</description>
@@ -2251,7 +2285,7 @@
 					<posy>345</posy>
 					<info>Skin.String(MovieLibraryButtonName-4)</info>
 					<visible>Skin.String(MovieLibraryButtonName-4) + Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 TV Library Custom Label</description>
@@ -2259,7 +2293,7 @@
 					<posy>345</posy>
 					<info>Skin.String(TVLibraryButtonName-4)</info>
 					<visible>Skin.String(TVLibraryButtonName-4) + Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Music Library Custom Label</description>
@@ -2267,7 +2301,7 @@
 					<posy>345</posy>
 					<info>Skin.String(MusicLibraryButtonName-4)</info>
 					<visible>Skin.String(MusicLibraryButtonName-4) + Skin.HasSetting(MusicLibraryMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Single File Custom Label</description>
@@ -2275,7 +2309,7 @@
 					<posy>345</posy>
 					<info>Skin.String(FileButtonName-4)</info>
 					<visible>Skin.String(FileButtonName-4) + Skin.HasSetting(FileMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Category File Custom Label</description>
@@ -2283,7 +2317,7 @@
 					<posy>345</posy>
 					<info>Skin.String(CategoryButtonName-4)</info>
 					<visible>Skin.String(CategoryButtonName-4) + Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Video Bookmark Custom Label</description>
@@ -2291,7 +2325,7 @@
 					<posy>345</posy>
 					<info>Skin.String(VideoBookmarkButtonName-4)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-4) + Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Audio Bookmark Custom Label</description>
@@ -2299,7 +2333,7 @@
 					<posy>345</posy>
 					<info>Skin.String(AudioBookmarkButtonName-4)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-4) + Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Picture Bookmark Custom Label</description>
@@ -2307,7 +2341,7 @@
 					<posy>345</posy>
 					<info>Skin.String(PictureBookmarkButtonName-4)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-4) + Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 XBE Custom Label</description>
@@ -2315,15 +2349,15 @@
 					<posy>345</posy>
 					<info>Skin.String(XBEButtonName-4)</info>
 					<visible>Skin.String(XBEButtonName-4) + Skin.HasSetting(XBEMode-4) + !Skin.HasSetting(DisableButton-4)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 4 Default Label</description>
 					<posx>100</posx>
 					<posy>345</posy>
-					<label>Game Videos</label>
+					<label>31456</label>
 					<visible>!Skin.String(UniversalButtonName-4) + !Skin.HasSetting(DisableButton-4) + [[!Skin.HasSetting(FileMode-4) + !Skin.HasSetting(USE_Category-4) + !Skin.HasSetting(VideoBookmarkMode-4) + !Skin.HasSetting(AudioBookmarkMode-4) + !Skin.HasSetting(PictureBookmarkMode-4) + !Skin.HasSetting(MovieLibraryMode-4) + !Skin.HasSetting(TVLibraryMode-4) + !Skin.HasSetting(MusicLibraryMode-4)] | [Skin.HasSetting(FileMode-4) + !Skin.String(FileButtonName-4)] | [Skin.HasSetting(USE_Category-4) + !Skin.String(CategoryButtonName-4)] | [Skin.HasSetting(VideoBookmarkMode-4) + !Skin.String(VideoBookmarkButtonName-4)] | [Skin.HasSetting(AudioBookmarkMode-4) + !Skin.String(AudioBookmarkButtonName-4)] | [Skin.HasSetting(PictureBookmarkMode-4) + !Skin.String(PictureBookmarkButtonName-4)] | [Skin.HasSetting(XBEMode-4) + !Skin.String(XBEButtonName-4)] | [Skin.HasSetting(MovieLibraryMode-4) + !Skin.String(MovieLibraryButtonName-4)] | [Skin.HasSetting(TVLibraryMode-4) + !Skin.String(TVLibraryButtonName-4)] | [Skin.HasSetting(MusicLibraryMode-4) + !Skin.String(MusicLibraryButtonName-4)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="image">
 					<description>Market Place Button 5 Hightlight Image</description>
@@ -2453,7 +2487,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>>!Skin.HasTheme(glass) + !Skin.HasTheme(Carbon) + !Skin.HasTheme(Hello-Kitty) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\default.py)</onclick>
@@ -2472,7 +2506,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>>[Skin.HasTheme(Hello-Kitty) | Skin.HasTheme(Glass)] + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\glassdefault.py)</onclick>
@@ -2491,7 +2525,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasTheme(Carbon) + !Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\skin\MC360\extras\ComedyCentral\carbondefault.py)</onclick>
@@ -2513,7 +2547,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-5) + !Skin.HasSetting(MovieTitle-5) + !Skin.HasSetting(MovieYear-5) + !Skin.HasSetting(MovieActors-5) + !Skin.HasSetting(MovieDirectors-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -2532,7 +2566,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -2551,7 +2585,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -2570,7 +2604,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -2589,7 +2623,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -2608,7 +2642,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -2631,7 +2665,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-5) + !Skin.HasSetting(TVTitle-5) + !Skin.HasSetting(TVYear-5) + !Skin.HasSetting(TVActors-5) + !Skin.HasSetting(TVDirectors-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -2650,7 +2684,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -2669,7 +2703,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -2688,7 +2722,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -2707,7 +2741,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -2730,7 +2764,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-5) + !Skin.HasSetting(MusicArtists-5) + !Skin.HasSetting(MusicAlbums-5) + !Skin.HasSetting(MusicSongs-5) + !Skin.HasSetting(MusicPlaylists-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -2749,7 +2783,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres)</onclick>
@@ -2768,7 +2802,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -2787,7 +2821,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -2806,7 +2840,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -2825,7 +2859,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-5) + !Skin.HasSetting(DisableButton-5)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -2844,7 +2878,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-5)]</onclick>
@@ -2863,7 +2897,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -2882,7 +2916,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1984)</onclick>
@@ -2901,7 +2935,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-5)])</onclick>
@@ -2920,7 +2954,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-5)])</onclick>
@@ -2939,7 +2973,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-5)])</onclick>
@@ -2958,7 +2992,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -2974,7 +3008,7 @@
 					<posy>415</posy>
 					<info>Skin.String(UniversalButtonName-5)</info>
 					<visible>Skin.String(UniversalButtonName-5) + !Skin.HasSetting(DisableButton-5) + [[!Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [!Skin.String(FileButtonName-5) + Skin.HasSetting(FileMode-5)] | [!Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5)] | [!Skin.String(VideoBookmarkButtonName-5) + Skin.HasSetting(VideoBookmarkMode-5)] | [!Skin.String(AudioBookmarkButtonName-5) + Skin.HasSetting(AudioBookmarkMode-5)] | [!Skin.String(PictureBookmarkButtonName-5) + Skin.HasSetting(PictureBookmarkMode-5)] | [!Skin.String(XBEButtonName-5) + Skin.HasSetting(XBEMode-5)] | [!Skin.String(MovieLibraryButtonName-5) + Skin.HasSetting(MovieLibraryMode-5)] | [!Skin.String(TVLibraryButtonName-5) + Skin.HasSetting(TVLibraryMode-5)] | [!Skin.String(MusicLibraryButtonName-5) + Skin.HasSetting(MusicLibraryMode-5)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Movie Library Custom Label</description>
@@ -2982,7 +3016,7 @@
 					<posy>415</posy>
 					<info>Skin.String(MovieLibraryButtonName-5)</info>
 					<visible>Skin.String(MovieLibraryButtonName-5) + Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 TV Library Custom Label</description>
@@ -2990,7 +3024,7 @@
 					<posy>415</posy>
 					<info>Skin.String(TVLibraryButtonName-5)</info>
 					<visible>Skin.String(TVLibraryButtonName-5) + Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Music Library Custom Label</description>
@@ -2998,7 +3032,7 @@
 					<posy>415</posy>
 					<info>Skin.String(MusicLibraryButtonName-5)</info>
 					<visible>Skin.String(MusicLibraryButtonName-5) + Skin.HasSetting(MusicLibraryMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Single File Custom Label</description>
@@ -3006,7 +3040,7 @@
 					<posy>415</posy>
 					<info>Skin.String(FileButtonName-5)</info>
 					<visible>Skin.String(FileButtonName-5) + Skin.HasSetting(FileMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Category File Custom Label</description>
@@ -3014,7 +3048,7 @@
 					<posy>415</posy>
 					<info>Skin.String(CategoryButtonName-5)</info>
 					<visible>Skin.String(CategoryButtonName-5) + Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Video Bookmark Custom Label</description>
@@ -3022,7 +3056,7 @@
 					<posy>415</posy>
 					<info>Skin.String(VideoBookmarkButtonName-5)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-5) + Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Audio Bookmark Custom Label</description>
@@ -3030,7 +3064,7 @@
 					<posy>415</posy>
 					<info>Skin.String(AudioBookmarkButtonName-5)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-5) + Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>	
 				<control type="label">
 					<description>Button 5 XBE Custom Label</description>
@@ -3038,15 +3072,15 @@
 					<posy>415</posy>
 					<info>Skin.String(XBEButtonName-5)</info>
 					<visible>Skin.String(XBEButtonName-5) + Skin.HasSetting(XBEMode-5) + !Skin.HasSetting(DisableButton-5)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 5 Default Label</description>
 					<posx>100</posx>
 					<posy>415</posy>
-					<label>Clips</label>
+					<label>31457</label>
 					<visible>!Skin.String(UniversalButtonName-5) + !Skin.HasSetting(DisableButton-5) + [[!Skin.HasSetting(FileMode-5) + !Skin.HasSetting(USE_Category-5) + !Skin.HasSetting(VideoBookmarkMode-5) + !Skin.HasSetting(AudioBookmarkMode-5) + !Skin.HasSetting(PictureBookmarkMode-5) + !Skin.HasSetting(MovieLibraryMode-5) + !Skin.HasSetting(TVLibraryMode-5) + !Skin.HasSetting(MusicLibraryMode-5)] | [Skin.HasSetting(FileMode-5) + !Skin.String(FileButtonName-5)] | [Skin.HasSetting(USE_Category-5) + !Skin.String(CategoryButtonName-5)] | [Skin.HasSetting(VideoBookmarkMode-5) + !Skin.String(VideoBookmarkButtonName-5)] | [Skin.HasSetting(AudioBookmarkMode-5) + !Skin.String(AudioBookmarkButtonName-5)] | [Skin.HasSetting(PictureBookmarkMode-5) + !Skin.String(PictureBookmarkButtonName-5)] | [Skin.HasSetting(XBEMode-5) + !Skin.String(XBEButtonName-5)] | [Skin.HasSetting(MovieLibraryMode-5) + !Skin.String(MovieLibraryButtonName-5)] | [Skin.HasSetting(TVLibraryMode-5) + !Skin.String(TVLibraryButtonName-5)] | [Skin.HasSetting(MusicLibraryMode-5) + !Skin.String(MusicLibraryButtonName-5)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="image">
 					<description>Market Place Button 9 Highlight Image Shadow</description>
@@ -3072,7 +3106,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>110</posx>
 					<posy>446</posy>
-					<label>Customize Marketplace</label>
+					<label>31458</label>
 					<onclick>ReplaceWindow(1995)</onclick>
 					<texturefocus>icon-scripts.png</texturefocus>
 					<texturenofocus>icon-scripts.png</texturenofocus>
@@ -3090,7 +3124,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>110</posx>
 					<posy>446</posy>
-					<label>Customize Marketplace</label>
+					<label>31458</label>
 					<onclick>ReplaceWindow(1995)</onclick>
 					<texturefocus>icon-scripts.png</texturefocus>
 					<texturenofocus>icon-scripts.png</texturenofocus>
@@ -3256,7 +3290,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
@@ -3278,7 +3312,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-1) + !Skin.HasSetting(MovieTitle-1) + !Skin.HasSetting(MovieYear-1) + !Skin.HasSetting(MovieActors-1) + !Skin.HasSetting(MovieDirectors-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -3297,7 +3331,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -3316,7 +3350,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -3335,7 +3369,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -3354,7 +3388,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -3373,7 +3407,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -3396,7 +3430,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-1) + !Skin.HasSetting(TVTitle-1) + !Skin.HasSetting(TVYear-1) + !Skin.HasSetting(TVActors-1) + !Skin.HasSetting(TVDirectors-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -3415,7 +3449,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -3434,7 +3468,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -3453,7 +3487,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -3472,7 +3506,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -3495,7 +3529,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-1) + !Skin.HasSetting(MusicArtists-1) + !Skin.HasSetting(MusicAlbums-1) + !Skin.HasSetting(MusicSongs-1) + !Skin.HasSetting(MusicPlaylists-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -3514,7 +3548,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,genres)</onclick>
@@ -3533,7 +3567,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -3552,7 +3586,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -3571,7 +3605,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -3590,7 +3624,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-1) + !Skin.HasSetting(DisableButton-1)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -3609,7 +3643,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-1)]</onclick>
@@ -3628,7 +3662,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -3648,7 +3682,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(DisableButton-1) + !Skin.String(XBEPath-1)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1971)</onclick>
@@ -3666,7 +3700,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1988)</onclick>
@@ -3685,7 +3719,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-1)])</onclick>
@@ -3704,7 +3738,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-1)])</onclick>
@@ -3723,7 +3757,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-1)])</onclick>
@@ -3742,7 +3776,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -3758,7 +3792,7 @@
 					<posy>135</posy>
 					<info>Skin.String(UniversalButtonName-1)</info>
 					<visible>Skin.String(UniversalButtonName-1) + !Skin.HasSetting(DisableButton-1) + [[!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [!Skin.String(FileButtonName-1) + Skin.HasSetting(FileMode-1)] | [!Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1)] | [!Skin.String(VideoBookmarkButtonName-1) + Skin.HasSetting(VideoBookmarkMode-1)] | [!Skin.String(AudioBookmarkButtonName-1) + Skin.HasSetting(AudioBookmarkMode-1)] | [!Skin.String(PictureBookmarkButtonName-1) + Skin.HasSetting(PictureBookmarkMode-1)] | [!Skin.String(XBEButtonName-1) + Skin.HasSetting(XBEMode-1)] | [!Skin.String(MovieLibraryButtonName-1) + Skin.HasSetting(MovieLibraryMode-1)] | [!Skin.String(TVLibraryButtonName-1) + Skin.HasSetting(TVLibraryMode-1)] | [!Skin.String(MusicLibraryButtonName-1) + Skin.HasSetting(MusicLibraryMode-1)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Movie Library Custom Label</description>
@@ -3766,7 +3800,7 @@
 					<posy>135</posy>
 					<info>Skin.String(MovieLibraryButtonName-1)</info>
 					<visible>Skin.String(MovieLibraryButtonName-1) + Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 TV Library Custom Label</description>
@@ -3774,7 +3808,7 @@
 					<posy>135</posy>
 					<info>Skin.String(TVLibraryButtonName-1)</info>
 					<visible>Skin.String(TVLibraryButtonName-1) + Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Music Library Custom Label</description>
@@ -3782,7 +3816,7 @@
 					<posy>135</posy>
 					<info>Skin.String(MusicLibraryButtonName-1)</info>
 					<visible>Skin.String(MusicLibraryButtonName-1) + Skin.HasSetting(MusicLibraryMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Single File Custom Label</description>
@@ -3790,7 +3824,7 @@
 					<posy>135</posy>
 					<info>Skin.String(FileButtonName-1)</info>
 					<visible>Skin.String(FileButtonName-1) + Skin.HasSetting(FileMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Category File Custom Label</description>
@@ -3798,7 +3832,7 @@
 					<posy>135</posy>
 					<info>Skin.String(CategoryButtonName-1)</info>
 					<visible>Skin.String(CategoryButtonName-1) + Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Video Bookmark Custom Label</description>
@@ -3806,7 +3840,7 @@
 					<posy>135</posy>
 					<info>Skin.String(VideoBookmarkButtonName-1)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-1) + Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Audio Bookmark Custom Label</description>
@@ -3814,7 +3848,7 @@
 					<posy>135</posy>
 					<info>Skin.String(AudioBookmarkButtonName-1)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-1) + Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Picture Bookmark Custom Label</description>
@@ -3822,7 +3856,7 @@
 					<posy>135</posy>
 					<info>Skin.String(PictureBookmarkButtonName-1)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-1) + Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 XBE Custom Label</description>
@@ -3830,15 +3864,15 @@
 					<posy>135</posy>
 					<info>Skin.String(XBEButtonName-1)</info>
 					<visible>Skin.String(XBEButtonName-1) + Skin.HasSetting(XBEMode-1) + !Skin.HasSetting(DisableButton-1)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 1 Default Label</description>
 					<posx>100</posx>
 					<posy>135</posy>
-					<label>Movie Trailers</label>
+					<label>31040</label>
 					<visible>!Skin.String(UniversalButtonName-1) + !Skin.HasSetting(DisableButton-1) + [[!Skin.HasSetting(FileMode-1) + !Skin.HasSetting(USE_Category-1) + !Skin.HasSetting(VideoBookmarkMode-1) + !Skin.HasSetting(AudioBookmarkMode-1) + !Skin.HasSetting(PictureBookmarkMode-1) + !Skin.HasSetting(MovieLibraryMode-1) + !Skin.HasSetting(TVLibraryMode-1) + !Skin.HasSetting(MusicLibraryMode-1)] | [Skin.HasSetting(FileMode-1) + !Skin.String(FileButtonName-1)] | [Skin.HasSetting(USE_Category-1) + !Skin.String(CategoryButtonName-1)] | [Skin.HasSetting(VideoBookmarkMode-1) + !Skin.String(VideoBookmarkButtonName-1)] | [Skin.HasSetting(AudioBookmarkMode-1) + !Skin.String(AudioBookmarkButtonName-1)] | [Skin.HasSetting(PictureBookmarkMode-1) + !Skin.String(PictureBookmarkButtonName-1)] | [Skin.HasSetting(XBEMode-1) + !Skin.String(XBEButtonName-1)] | [Skin.HasSetting(MovieLibraryMode-1) + !Skin.String(MovieLibraryButtonName-1)] | [Skin.HasSetting(TVLibraryMode-1) + !Skin.String(TVLibraryButtonName-1)] | [Skin.HasSetting(MusicLibraryMode-1) + !Skin.String(MusicLibraryButtonName-1)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="image">
 					<description>Market Place Button 6 Hightlight Image</description>
@@ -3855,7 +3889,7 @@
 					<posy>97</posy>
 					<width>280</width>
 					<height>64</height>
-					<texture>tvshows-3.png</texture>
+					<texture>webbrowser-2.png</texture>
 					<visible>!Skin.String(UniversalImage-6) + !Skin.HasSetting(DisableButton-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6)</visible>
 				</control>
 				<control type="image">
@@ -3968,10 +4002,10 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
-					<onclick>XBMC.ActivateWindow(MyVideoFiles,XBMC-TV)</onclick>
+					<onclick>XBMC.ActivateWindow(myvideofiles,XBMC-TV)</onclick>
 					<onleft>1</onleft>
 					<onright>1</onright>
 					<onup>7</onup>
@@ -3990,7 +4024,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MovieGenres-6) + !Skin.HasSetting(MovieTitle-6) + !Skin.HasSetting(MovieYear-6) + !Skin.HasSetting(MovieActors-6) + !Skin.HasSetting(MovieDirectors-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
@@ -4009,7 +4043,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieGenres-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
@@ -4028,7 +4062,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieTitle-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
@@ -4047,7 +4081,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieYear-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
@@ -4066,7 +4100,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieActors-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
@@ -4085,7 +4119,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MovieDirectors-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
@@ -4108,7 +4142,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(TVGenres-6) + !Skin.HasSetting(TVTitle-6) + !Skin.HasSetting(TVYear-6) + !Skin.HasSetting(TVActors-6) + !Skin.HasSetting(TVDirectors-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
@@ -4127,7 +4161,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVGenres-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
@@ -4146,7 +4180,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVTitle-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
@@ -4165,7 +4199,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVYear-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
@@ -4184,7 +4218,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(TVActors-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
@@ -4207,7 +4241,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>!Skin.HasSetting(MusicGenres-6) + !Skin.HasSetting(MusicArtists-6) + !Skin.HasSetting(MusicAlbums-6) + !Skin.HasSetting(MusicSongs-6) + !Skin.HasSetting(MusicPlaylists-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,root)</onclick>
@@ -4226,7 +4260,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicGenres-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,musicgenre)</onclick>
@@ -4245,7 +4279,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicArtists-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,artists)</onclick>
@@ -4264,7 +4298,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicAlbums-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,albums)</onclick>
@@ -4283,7 +4317,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicSongs-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,songs)</onclick>
@@ -4302,7 +4336,7 @@
 						<textoffsetx>10</textoffsetx>
 						<textoffsety>40</textoffsety>
 						<visible>Skin.HasSetting(MusicPlaylists-6) + !Skin.HasSetting(DisableButton-6)</visible>
-						<include>shadow-grey</include>
+						<shadowcolor>shadow-grey</shadowcolor>
 						<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 						<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 						<onclick>XBMC.ActivateWindow(MyMusicLibrary,playlists)</onclick>
@@ -4321,7 +4355,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>$INFO[Skin.String(FilePath-6)]</onclick>
@@ -4340,7 +4374,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1976)</onclick>
@@ -4360,7 +4394,7 @@
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
 					<visible>Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(DisableButton-6) + !Skin.String(XBEPath-6)</visible>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1971)</onclick>
@@ -4378,7 +4412,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1983)</onclick>
@@ -4397,7 +4431,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(VideoBookmark-6)])</onclick>
@@ -4416,7 +4450,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(MyMusicFiles,$INFO[Skin.String(AudioBookmark-6)])</onclick>
@@ -4435,7 +4469,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(mypictures,$INFO[Skin.String(PictureBookmark-6)])</onclick>
@@ -4454,7 +4488,7 @@
 					<aligny>-</aligny>
 					<textoffsetx>10</textoffsetx>
 					<textoffsety>40</textoffsety>
-					<include>shadow-grey</include>
+					<shadowcolor>shadow-grey</shadowcolor>
 					<texturefocus>button-liveplace-big-nofocus.png</texturefocus>
 					<texturenofocus>button-liveplace-big-nofocus.png</texturenofocus>
 					<onclick>XBMC.ActivateWindow(1975)</onclick>
@@ -4470,7 +4504,7 @@
 					<posy>135</posy>
 					<info>Skin.String(UniversalButtonName-6)</info>
 					<visible>Skin.String(UniversalButtonName-6) + !Skin.HasSetting(DisableButton-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [!Skin.String(FileButtonName-6) + Skin.HasSetting(FileMode-6)] | [!Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6)] | [!Skin.String(VideoBookmarkButtonName-6) + Skin.HasSetting(VideoBookmarkMode-6)] | [!Skin.String(AudioBookmarkButtonName-6) + Skin.HasSetting(AudioBookmarkMode-6)] | [!Skin.String(PictureBookmarkButtonName-6) + Skin.HasSetting(PictureBookmarkMode-6)] | [!Skin.String(XBEButtonName-6) + Skin.HasSetting(XBEMode-6)] | [!Skin.String(MovieLibraryButtonName-6) + Skin.HasSetting(MovieLibraryMode-6)] | [!Skin.String(TVLibraryButtonName-6) + Skin.HasSetting(TVLibraryMode-6)] | [!Skin.String(MusicLibraryButtonName-6) + Skin.HasSetting(MusicLibraryMode-6)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Movie Library Custom Label</description>
@@ -4478,7 +4512,7 @@
 					<posy>135</posy>
 					<info>Skin.String(MovieLibraryButtonName-6)</info>
 					<visible>Skin.String(MovieLibraryButtonName-6) + Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 TV Library Custom Label</description>
@@ -4486,7 +4520,7 @@
 					<posy>135</posy>
 					<info>Skin.String(TVLibraryButtonName-6)</info>
 					<visible>Skin.String(TVLibraryButtonName-6) + Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Music Library Custom Label</description>
@@ -4494,7 +4528,7 @@
 					<posy>135</posy>
 					<info>Skin.String(MusicLibraryButtonName-6)</info>
 					<visible>Skin.String(MusicLibraryButtonName-6) + Skin.HasSetting(MusicLibraryMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Single File Custom Label</description>
@@ -4502,7 +4536,7 @@
 					<posy>135</posy>
 					<info>Skin.String(FileButtonName-6)</info>
 					<visible>Skin.String(FileButtonName-6) + Skin.HasSetting(FileMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Category File Custom Label</description>
@@ -4510,7 +4544,7 @@
 					<posy>135</posy>
 					<info>Skin.String(CategoryButtonName-6)</info>
 					<visible>Skin.String(CategoryButtonName-6) + Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Video Bookmark Custom Label</description>
@@ -4518,7 +4552,7 @@
 					<posy>135</posy>
 					<info>Skin.String(VideoBookmarkButtonName-6)</info>
 					<visible>Skin.String(VideoBookmarkButtonName-6) + Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Audio Bookmark Custom Label</description>
@@ -4526,7 +4560,7 @@
 					<posy>135</posy>
 					<info>Skin.String(AudioBookmarkButtonName-6)</info>
 					<visible>Skin.String(AudioBookmarkButtonName-6) + Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Picture Bookmark Custom Label</description>
@@ -4534,7 +4568,7 @@
 					<posy>135</posy>
 					<info>Skin.String(PictureBookmarkButtonName-6)</info>
 					<visible>Skin.String(PictureBookmarkButtonName-6) + Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 XBE Custom Label</description>
@@ -4542,15 +4576,15 @@
 					<posy>135</posy>
 					<info>Skin.String(XBEButtonName-6)</info>
 					<visible>Skin.String(XBEButtonName-6) + Skin.HasSetting(XBEMode-6) + !Skin.HasSetting(DisableButton-6)</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="label">
 					<description>Button 6 Default Label</description>
 					<posx>389</posx>
 					<posy>135</posy>
-					<label>XBMC-TV</label>
+					<label>31459</label>
 					<visible>!Skin.String(UniversalButtonName-6) + !Skin.HasSetting(DisableButton-6) + [[!Skin.HasSetting(FileMode-6) + !Skin.HasSetting(USE_Category-6) + !Skin.HasSetting(VideoBookmarkMode-6) + !Skin.HasSetting(AudioBookmarkMode-6) + !Skin.HasSetting(PictureBookmarkMode-6) + !Skin.HasSetting(MovieLibraryMode-6) + !Skin.HasSetting(TVLibraryMode-6) + !Skin.HasSetting(MusicLibraryMode-6)] | [Skin.HasSetting(FileMode-6) + !Skin.String(FileButtonName-6)] | [Skin.HasSetting(USE_Category-6) + !Skin.String(CategoryButtonName-6)] | [Skin.HasSetting(VideoBookmarkMode-6) + !Skin.String(VideoBookmarkButtonName-6)] | [Skin.HasSetting(AudioBookmarkMode-6) + !Skin.String(AudioBookmarkButtonName-6)] | [Skin.HasSetting(PictureBookmarkMode-6) + !Skin.String(PictureBookmarkButtonName-6)] | [Skin.HasSetting(XBEMode-6) + !Skin.String(XBEButtonName-6)] | [Skin.HasSetting(MovieLibraryMode-6) + !Skin.String(MovieLibraryButtonName-6)] | [Skin.HasSetting(TVLibraryMode-6) + !Skin.String(TVLibraryButtonName-6)] | [Skin.HasSetting(MusicLibraryMode-6) + !Skin.String(MusicLibraryButtonName-6)]]</visible>
-					<include>TextcolorBlack</include>
+					<textcolor>TextcolorBlack</textcolor>
 				</control>
 				<control type="button" id="7">
 					<description>Video Button 7</description>
@@ -4595,9 +4629,9 @@
 					<posx>102</posx>
 					<posy>49</posy>
 					<align>left</align>
-					<label>Video Marketplace</label>
-					<include>TextcolorWhite</include>
-					<include>shadow-black</include>
+					<label>31402</label>
+					<textcolor>TextcolorWhite</textcolor>
+					<shadowcolor>shadow-black</shadowcolor>
 					<font>font18</font>
 					<visible>!Skin.String(MarketplaceName) + !Skin.HasSetting(DisableBladeLabels)</visible>
 				</control>
@@ -4607,8 +4641,8 @@
 					<posy>49</posy>
 					<align>left</align>
 					<label>$INFO[Skin.String(MarketplaceName)]</label>
-					<include>TextcolorWhite</include>
-					<include>shadow-black</include>
+					<textcolor>TextcolorWhite</textcolor>
+					<shadowcolor>shadow-black</shadowcolor>
 					<font>font18</font>
 					<visible>Skin.String(MarketplaceName) + !Skin.HasSetting(DisableBladeLabels)</visible>
 				</control>

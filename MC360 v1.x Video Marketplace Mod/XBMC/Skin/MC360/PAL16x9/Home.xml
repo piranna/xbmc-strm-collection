@@ -139,7 +139,7 @@
 			<urlset>1</urlset>
 			<titlecolor>E1ffffff</titlecolor>
 			<headlinecolor>A1FFFFFF</headlinecolor>
-			<include>TextcolorWhite</include>
+			<textcolor>TextcolorWhite</textcolor>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<visible>!Skin.HasSetting(rss-feeds)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -148,10 +148,10 @@
 			<description>Media Label</description>
 			<posx>172</posx>
 			<posy>42</posy>
-			<include>19002</include>
+			<label>31003</label>
 			<align>left</align>
 			<font>font18</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableBladeLabels)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -162,7 +162,7 @@
 			<info>System.Time</info>
 			<align>right</align>
 			<font>bold14</font>
-			<include>shadow-black</include>
+			<shadowcolor>shadow-black</shadowcolor>
 			<visible>Skin.HasSetting(BladeClock) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
 		</control>
@@ -275,11 +275,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19091</include>
+				<label>31112</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(5) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -340,11 +340,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19092</include>
+				<label>31113</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(6) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 			<control type="image">
 				<description>Button Seperator</description>
@@ -353,9 +353,8 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(6) | Control.HasFocus(7)]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + ![Control.HasFocus(6) | Control.HasFocus(70) | Control.HasFocus(71) | Control.HasFocus(72) | Control.HasFocus(73) | Control.HasFocus(74)]</visible>
 			</control>
-			
 			
 			<!-- BEGIN LEVEL 3 BUTTONS (7) -->
 			
@@ -386,7 +385,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<include>19007</include>
+					<label>31008</label>
 					<onclick>ActivateWindow(6)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -404,11 +403,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<include>19093</include>
+					<label>31114</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>!Skin.HasSetting(nodescriptions) + Control.HasFocus(70) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 				</control>
 			</control>
 			<control type="group" id="7">
@@ -419,7 +418,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(moviesvideobookmark_path)])</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -451,7 +450,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movies)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -483,7 +482,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviegenres)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -515,7 +514,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -547,7 +546,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieyears)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -579,7 +578,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,movieactors)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -611,7 +610,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,moviedirectors)</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -643,7 +642,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>Movies</label>
+					<label>31400</label>
 					<onclick>$INFO[Skin.String(moviesfile_path)]</onclick>
 					<texturefocus>icon-videos.png</texturefocus>
 					<texturenofocus>icon-videos.png</texturenofocus>
@@ -679,7 +678,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(tvshowsvideobookmark_path)])</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -711,7 +710,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -743,7 +742,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -775,7 +774,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -807,7 +806,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -839,7 +838,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -871,7 +870,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>280</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -947,7 +946,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -966,7 +965,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -985,7 +984,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1020,7 +1019,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1040,7 +1039,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoFiles,$INFO[Skin.String(tvshowsvideobookmark_path)])</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1072,7 +1071,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshows)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1104,7 +1103,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowgenres)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1136,7 +1135,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1168,7 +1167,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowyears)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1200,7 +1199,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowactors)</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1232,7 +1231,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>320</posy>
-					<label>TV Shows</label>
+					<label>31401</label>
 					<onclick>$INFO[Skin.String(tvshowsfile_path)]</onclick>
 					<texturefocus>defaultNetworkBig.png</texturefocus>
 					<texturenofocus>defaultNetworkBig.png</texturenofocus>
@@ -1306,7 +1305,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1326,7 +1325,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1342,7 +1341,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1360,7 +1359,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1376,7 +1375,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1396,7 +1395,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1428,7 +1427,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1462,7 +1461,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1494,7 +1493,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1510,7 +1509,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1530,7 +1529,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1546,7 +1545,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1564,7 +1563,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1580,7 +1579,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1600,7 +1599,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1635,7 +1634,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1667,7 +1666,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1683,7 +1682,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1703,7 +1702,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1722,7 +1721,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1738,7 +1737,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1758,7 +1757,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1793,7 +1792,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Video Marketplace</label>
+					<label>31402</label>
 					<onclick>XBMC.ActivateWindow(1996)</onclick>
 					<texturefocus>videomarketplace_icon.png</texturefocus>
 					<texturenofocus>videomarketplace_icon.png</texturenofocus>
@@ -1825,7 +1824,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1841,7 +1840,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1857,7 +1856,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1873,7 +1872,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1893,7 +1892,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1912,7 +1911,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>19036</include>
+					<label>31040</label>
 					<onclick>XBMC.RunScript(Q:\scripts\Apple Movie Trailers\default.py)</onclick>
 					<texturefocus>icon-appletrailers.png</texturefocus>
 					<texturenofocus>icon-appletrailers.png</texturenofocus>
@@ -1928,7 +1927,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<label>Media Center</label>
+					<label>31403</label>
 					<onclick>XBMC.ActivateWindow(1997)</onclick>
 					<texturefocus>media_center_extender.png</texturefocus>
 					<texturenofocus>media_center_extender.png</texturenofocus>
@@ -1944,7 +1943,7 @@
 					<include>Home-Button-Commons</include>
 					<posx>180</posx>
 					<posy>360</posy>
-					<include>190071</include>
+					<label>31009</label>
 					<onclick>XBMC.ActivateWindow(114)</onclick>
 					<texturefocus>icon-x360globe.png</texturefocus>
 					<texturenofocus>icon-x360globe.png</texturenofocus>
@@ -1972,7 +1971,7 @@
 				<width>235</width>
 				<height>1</height>
 				<texture>divider.png</texture>
-				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(993) + !Control.HasFocus(994) + !Control.HasFocus(995) + !Control.HasFocus(9001) + !Control.HasFocus(9002) + !Control.HasFocus(9003) + !Control.HasFocus(9004) + !Control.HasFocus(9005) + !Control.HasFocus(9006) + !Control.HasFocus(9007) + !Control.HasFocus(9008) + !Control.HasFocus(9009) + !Control.HasFocus(9010) + !Control.HasFocus(9011) + !Control.HasFocus(9012) + !Control.HasFocus(9013) + !Control.HasFocus(9014) + !Control.HasFocus(9015) + !Control.HasFocus(9016) + !Control.HasFocus(9017) + !Control.HasFocus(9018) + !Control.HasFocus(9019) + !Control.HasFocus(9020) + [[[!Skin.HasSetting(remote-control) + [Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace) | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]]]]]] | [[[Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + [[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] | [Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork]]] | [[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [[Skin.HasSetting(USE_MediaCenterExtender) + System.HasNetwork] | [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers] | !Skin.HasSetting(remote-control)]]]</visible>
+				<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Control.HasFocus(90) + !Control.HasFocus(91) + !Control.HasFocus(92) + !Control.HasFocus(93) + !Control.HasFocus(94) + !Control.HasFocus(95) + !Control.HasFocus(96) + !Control.HasFocus(97) + !Control.HasFocus(98) + !Control.HasFocus(99) + !Control.HasFocus(990) + !Control.HasFocus(991) + !Control.HasFocus(992) + !Control.HasFocus(993) + !Control.HasFocus(994) + !Control.HasFocus(995) + !Control.HasFocus(9001) + !Control.HasFocus(9002) + !Control.HasFocus(9003) + !Control.HasFocus(9004) + !Control.HasFocus(9005) + !Control.HasFocus(9006) + !Control.HasFocus(9007) + !Control.HasFocus(9008) + !Control.HasFocus(9009) + !Control.HasFocus(9010) + !Control.HasFocus(9011) + !Control.HasFocus(9012) + !Control.HasFocus(9013) + !Control.HasFocus(9014) + !Control.HasFocus(9015) + !Control.HasFocus(9016) + !Control.HasFocus(9017) + !Control.HasFocus(9018) + !Control.HasFocus(9019) + !Control.HasFocus(9020) + [[!Skin.HasSetting(remote-control) + [[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] | [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_MediaCenterExtender)]]] | [Skin.HasSetting(remote-control) + [[[[Skin.HasSetting(USE_movie-VideoBookmark) | Skin.HasSetting(USE_movie-library) | Skin.HasSetting(USE_movie-file)] + [Skin.HasSetting(USE_tv-VideoBookmark) | Skin.HasSetting(USE_tv-library) | Skin.HasSetting(USE_tv-file)]] + [Skin.HasSetting(USE_VideoMarketplace) | Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_MediaCenterExtender)]] | [[Skin.HasSetting(USE_AppleMovieTrailers) | Skin.HasSetting(USE_VideoMarketplace)] + Skin.HasSetting(USE_MediaCenterExtender)]]]]</visible>
 				<animation effect="fade" time="100">WindowOpen</animation>
 			</control>
 			<control type="image">
@@ -1995,11 +1994,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>Watch TV Shows stored on your PC, CD, DVD or Xbox Hard Drive.</label>
+					<label>31404</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(710) | Control.HasFocus(84)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(710) | Control.HasFocus(84) + !Control.IsVisible(14141)</visible>
 				</control>
 				<control type="label">
 					<description>Movies description multiline</description>
@@ -2008,11 +2007,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>Watch Movies stored on your PC, CD, DVD or Xbox Hard Drive.</label>
+					<label>31405</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(7100)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(7100) + !Control.IsVisible(14141)</visible>
 				</control>
 				<control type="label">
 					<description>Remote description multiline</description>
@@ -2021,11 +2020,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<include>19150</include>
+					<label>31134</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(80) | Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(991) | Control.HasFocus(9015) | Control.HasFocus(9016) | Control.HasFocus(9020)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(80) | Control.HasFocus(90) | Control.HasFocus(91) | Control.HasFocus(92) | Control.HasFocus(93) | Control.HasFocus(991) | Control.HasFocus(9015) | Control.HasFocus(9016) | Control.HasFocus(9020) + !Control.IsVisible(14141)</visible>
 					<animation effect="fade" time="100">WindowOpen</animation>
 				</control>
 				<control type="label">
@@ -2035,11 +2034,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<include>19096</include>
+					<label>31115</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(81) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(994) | Control.HasFocus(9007) | Control.HasFocus(9008) | Control.HasFocus(9017) | Control.HasFocus(9018)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(81) | Control.HasFocus(94) | Control.HasFocus(95) | Control.HasFocus(994) | Control.HasFocus(9007) | Control.HasFocus(9008) | Control.HasFocus(9017) | Control.HasFocus(9018) + !Control.IsVisible(14141)</visible>
 					<animation effect="fade" time="100">WindowOpen</animation>
 				</control>
 				<control type="label">
@@ -2049,11 +2048,11 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>Get the latest in video and entertainment from XBMC Video Marketplace.</label>
+					<label>31406</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(82) | Control.HasFocus(96) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(993) | Control.HasFocus(9006) | Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(82) | Control.HasFocus(96) | Control.HasFocus(98) | Control.HasFocus(99) | Control.HasFocus(993) | Control.HasFocus(9006) | Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) + !Control.IsVisible(14141)</visible>
 					<animation effect="fade" time="100">WindowOpen</animation>
 				</control>
 				<control type="label">
@@ -2063,17 +2062,40 @@
 					<width>210</width>
 					<height>200</height>
 					<wrapmultiline>true</wrapmultiline>
-					<label>Connect or set up Media Center Extender.&#10;&#10;* Live and recorded TV&#10;* On-demand movies&#10;* Music and photos</label>
+					<label>31407</label>
 					<font>font14</font>
-					<include>TextcolorBlack</include>
-					<include>shadow-grey</include>
-					<visible>Control.HasFocus(83) | Control.HasFocus(990) | Control.HasFocus(992) | Control.HasFocus(995) | Control.HasFocus(9003) | Control.HasFocus(9004) | Control.HasFocus(9013) | Control.HasFocus(9014) | Control.HasFocus(9019)</visible>
+					<textcolor>TextcolorBlack</textcolor>
+					<shadowcolor>shadow-grey</shadowcolor>
+					<visible>Control.HasFocus(83) | Control.HasFocus(990) | Control.HasFocus(992) | Control.HasFocus(995) | Control.HasFocus(9003) | Control.HasFocus(9004) | Control.HasFocus(9013) | Control.HasFocus(9014) | Control.HasFocus(9019) + !Control.IsVisible(14141)</visible>
 					<animation effect="fade" time="100">WindowOpen</animation>
 				</control>
 			</control>
 			
 			<!-- END DESCRIPTION MULTILINES -->
 
+			<!-- BEGIN Video Preview Window -->
+
+			<control type="image">
+				<description>Mini Video Preview Border</description>
+				<posx>414</posx>
+				<posy>200</posy>
+				<width>223</width>
+				<height>180</height>
+				<texture>Playlist-Vis-Back.png</texture>
+				<visible>!Control.HasFocus(2) + Player.HasVideo + Skin.HasSetting(MediaPreviewWindow)</visible>
+			</control>
+			<control type="videowindow" id="14141">
+				<description>video preview window</description>
+				<posx>417</posx>
+				<posy>203</posy>
+				<width>217</width>
+				<height>174</height>
+				<visible>!Control.HasFocus(2) + Player.HasVideo + Skin.HasSetting(MediaPreviewWindow)</visible>
+				<animation effect="fade" time="100">WindowOpen</animation>
+			</control>
+			
+			<!-- END Video Preview Window -->
+			
 			<control type="button" id="10">
 				<description>DVD Launch Button Tray</description>
 				<posx>156</posx>
@@ -2090,7 +2112,7 @@
 				<visible>![System.hasmediadvd] + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.EjectTray()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19049</include>
+				<label>31057</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -2110,7 +2132,7 @@
 				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 				<onclick>XBMC.PlayDVD()</onclick>
 				<!-- Begin Fake Label Name for LCD displays dont touch -->
-				<include>19148</include>
+				<label>31133</label>
 				<textcolor>00000000</textcolor>
 				<!-- End Fake Label Name for LCD displays dont touch -->
 			</control>
@@ -2120,11 +2142,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19148</include>
+				<label>31133</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>System.hasmediadvd + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2133,11 +2155,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049a</include>
+				<label>31058</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2146,11 +2168,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049b</include>
+				<label>31059</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + System.trayopen + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2159,11 +2181,11 @@
 				<posy>413</posy>
 				<width>492</width>
 				<height>71</height>
-				<include>19049c</include>
+				<label>31060</label>
 				<font>font14</font>
 				<aligny>center</aligny>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!System.hasmediadvd + !System.trayopen + !System.dvdready + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2172,10 +2194,10 @@
 				<posy>205</posy>
 				<width>256</width>
 				<height>15</height>
-				<include>19158</include>
+				<label>31177</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
 				<visible>!Skin.HasSetting(nodescriptions) + System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
 			</control>
 			<control type="label">
@@ -2185,11 +2207,11 @@
 				<width>210</width>
 				<height>200</height>
 				<wrapmultiline>true</wrapmultiline>
-				<include>19147</include>
+				<label>31132</label>
 				<font>font14</font>
-				<include>TextcolorBlack</include>
-				<include>shadow-grey</include>
-				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2)</visible>
+				<textcolor>TextcolorBlack</textcolor>
+				<shadowcolor>shadow-grey</shadowcolor>
+				<visible>!Skin.HasSetting(nodescriptions) + !System.hasmediadvd + Control.HasFocus(10) + !Control.HasFocus(1) + !Control.HasFocus(2) + !Control.IsVisible(14141)</visible>
 			</control>
 		</control>
 		<control type="image">
@@ -2227,7 +2249,7 @@
 			<include>KeymapFont</include>
 			<posx>213</posx>
 			<posy>528</posy>
-			<include>20002</include>
+			<label>31180</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasAudio + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -2237,7 +2259,7 @@
 			<include>KeymapFont</include>
 			<posx>213</posx>
 			<posy>528</posy>
-			<include>20003</include>
+			<label>31181</label>
 			<align>left</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + Player.HasVideo + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -2267,7 +2289,7 @@
 			<include>KeymapFont</include>
 			<posx>588</posx>
 			<posy>528</posy>
-			<include>19020</include>
+			<label>31024</label>
 			<align>right</align>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2) + !Skin.HasSetting(DisableGamepadLogos)</visible>
 			<animation effect="fade" time="100">WindowOpen</animation>
@@ -2663,11 +2685,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
@@ -2683,11 +2705,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
@@ -2703,11 +2725,11 @@
 		</control>
 		<control type="label">
 			<description>Media Blade Label on Left</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1)</visible>
@@ -2723,11 +2745,11 @@
 		</control>
 		<control type="label">
 			<description>System Blade Label on Right</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>!Control.HasFocus(1) + !Control.HasFocus(2)</visible>
@@ -2765,11 +2787,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -2785,11 +2807,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>120</posy>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -2805,11 +2827,11 @@
 		</control>
 		<control type="label">
 			<description>System Label</description>
-			<include>19011</include>
+			<label>31014</label>
 			<posx>677</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(1)</visible>
@@ -2820,9 +2842,9 @@
 			<posy>-50</posy>
 			<width>80</width>
 			<height>676</height>
-			<include>19009</include>
+			<label>31012</label>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>44</textoffsetx>
 			<textoffsety>182</textoffsety>
@@ -2871,11 +2893,11 @@
 		</control>
 		<control type="label">
 			<description>XBMC Live Label</description>
-			<include>19046a</include>
+			<label>31018</label>
 			<posx>80</posx>
 			<posy>148</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -2891,11 +2913,11 @@
 		</control>
 		<control type="label">
 			<description>Games Label</description>
-			<include>19008</include>
+			<label>31011</label>
 			<posx>115</posx>
 			<posy>140</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -2911,11 +2933,11 @@
 		</control>
 		<control type="label">
 			<description>Media Label</description>
-			<include>19009</include>
+			<label>31012</label>
 			<posx>150</posx>
 			<posy>132</posy>
 			<font>BladeFont</font>
-			<include>TextcolorDarkGrey</include>
+			<textcolor>TextcolorDarkGrey</textcolor>
 			<aligny>top</aligny>
 			<angle>270</angle>
 			<visible>Control.HasFocus(2)</visible>
@@ -2926,9 +2948,9 @@
 			<posy>-50</posy>
 			<width>80</width>
 			<height>676</height>
-			<include>19011</include>
+			<label>31014</label>
 			<font>BladeFont</font>
-			<include>TextcolorBlack</include>
+			<textcolor>TextcolorBlack</textcolor>
 			<aligny>top</aligny>
 			<textoffsetx>62</textoffsetx>
 			<textoffsety>170</textoffsety>
